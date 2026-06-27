@@ -1,0 +1,44 @@
+{
+  "model_number": "ISEMMET-WRUH",
+  "title": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP. | Schneider Electric 대한민국",
+  "range_name": "EOCR",
+  "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+  "description": "Schneider Electric 대한민국. ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP..",
+  "end_of_sale": null,
+  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMME-WRUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+  "local_photo_path": null,
+  "image_confirmed_unavailable": false,
+  "documents": [
+    {
+      "label": "제품 데이터 시트",
+      "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMET-WRUH?filename=Schneider+Electric_EOCR_ISEMMET-WRUH.pdf",
+      "local_path": null
+    },
+    {
+      "label": "사용자 가이드",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
+      "local_path": null
+    },
+    {
+      "label": "설명서",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
+      "local_path": null
+    },
+    {
+      "label": "카탈로그",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
+      "local_path": null
+    },
+    {
+      "label": "CAD",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=CAD&p_File_Name=EOCR-ISEMxExx.dwg&p_Doc_Ref=EOCR-ISEMxExx_2D_CAD",
+      "local_path": null
+    }
+  ],
+  "source_url": "https://www.se.com/kr/ko/product/ISEMMET-WRUH/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-isemmet-eth-wr-100240vac-hole-tmp-/",
+  "scraped_at": "2026-06-27T15:53:42.186229+00:00",
+  "category": null,
+  "in_stock": true,
+  "your_price": null,
+  "your_notes": null
+}

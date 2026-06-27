@@ -6,27 +6,27 @@
   "description": "Schneider Electric 대한민국. EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널..",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUT_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-  "local_photo_path": "/products/EOCRPFZ-WRDUT/photo.jpg",
+  "local_photo_path": null,
   "image_confirmed_unavailable": false,
   "documents": [
     {
       "label": "제품 데이터 시트",
       "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZ-WRDUT?filename=Schneider+Electric_EOCR_EOCRPFZ-WRDUT.pdf",
-      "local_path": "/products/EOCRPFZ-WRDUT/제품_데이터_시트.pdf"
+      "local_path": null
     },
     {
       "label": "사용자 가이드",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
-      "local_path": "/products/EOCRPFZ-WRDUT/사용자_가이드.pdf"
+      "local_path": null
     },
     {
       "label": "카탈로그",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
-      "local_path": "/products/EOCRPFZ-WRDUT/카탈로그.pdf"
+      "local_path": null
     }
   ],
-  "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUT/%EB%94%94%EC%A7%80%ED%84%B8-%EB%8B%A4%EA%B8%B0%EB%8A%A5-%EA%B3%BC%EB%B6%80%ED%95%98-%EB%A6%B4%EB%A0%88%EC%9D%B4-eocrpfz-100240-vac-dc-%ED%84%B0%EB%AF%B8%EB%84%90-/",
-  "scraped_at": "2026-06-27T13:22:23.913437+00:00",
+  "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUT/eocr-pfz-100~240-vac-dc-terminal./",
+  "scraped_at": "2026-06-27T15:49:06.379964+00:00",
   "category": null,
   "in_stock": true,
   "your_price": null,
