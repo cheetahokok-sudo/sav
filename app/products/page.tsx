@@ -26,6 +26,30 @@ type Product = {
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
+// Document labels come straight from whatever language the source page was
+// scraped in (mostly Korean, since that's the only site with full content
+// for this Korea-origin product line). Translate the known ones for display;
+// anything not in this map (e.g. "CAD", or our own "EOCR Catalog (English)")
+// is already fine as-is and passes through unchanged.
+const LABEL_TRANSLATIONS: Record<string, string> = {
+  "제품 데이터 시트": "Datasheet",
+  "사용자 가이드": "User Guide",
+  "카탈로그": "Catalog",
+  "제품 선택도구": "Product Selector",
+};
+
+function translateLabel(label: string): string {
+  return LABEL_TRANSLATIONS[label.trim()] || label;
+}
+
+// Scraped titles carry a trailing site-branding suffix in Korean (e.g.
+// "... | Schneider Electric 대한민국") -- strip that for display, the
+// model description itself is already in Latin characters.
+function cleanTitle(title: string | null): string | null {
+  if (!title) return title;
+  return title.replace(/\s*\|\s*Schneider Electric\s*\S*\s*$/, "").trim();
+}
+
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[] | null>(null);
   const [query, setQuery] = useState("");
@@ -142,7 +166,7 @@ export default function ProductsPage() {
                   {p.model_number}
                 </h3>
                 {p.title && (
-                  <p className="text-xs text-gray-500 mb-2 line-clamp-2">{p.title}</p>
+                  <p className="text-xs text-gray-500 mb-2 line-clamp-2">{cleanTitle(p.title)}</p>
                 )}
 
                 {p.end_of_sale && (
@@ -160,7 +184,7 @@ export default function ProductsPage() {
                       rel="noopener noreferrer"
                       className="text-[11px] font-display font-semibold text-brand border border-brand/30 rounded px-2.5 py-1 hover:bg-brand hover:text-white hover:border-brand transition-colors"
                     >
-                      {doc.label || "Document"}
+                      {translateLabel(doc.label || "Document")}
                     </a>
                   ))}
                   {p.documents.length === 0 && (

@@ -6,7 +6,7 @@
   "description": "Schneider Electric 대한민국. I3DM-WRDUWZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 윈도우..",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-  "local_photo_path": null,
+  "local_photo_path": "/docs/b8c9a9a7a8_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
     {
@@ -17,11 +17,16 @@
     {
       "label": "사용자 가이드",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
-      "local_path": null
+      "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
     },
     {
       "label": "카탈로그",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
+      "local_path": "/docs/4e41af41bd_카탈로그.pdf"
+    },
+    {
+      "label": "EOCR Catalog (English)",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
       "local_path": null
     }
   ],

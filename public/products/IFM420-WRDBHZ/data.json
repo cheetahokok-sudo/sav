@@ -6,22 +6,27 @@
   "description": "Schneider Electric 대한민국. IFM420-WRDBHZ - EOCR-iFM420 WR 24V Bottom..",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-  "local_photo_path": null,
+  "local_photo_path": "/docs/41f17ffe22_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
     {
       "label": "제품 데이터 시트",
       "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBHZ?filename=Schneider+Electric_EOCR_IFM420-WRDBHZ.pdf",
-      "local_path": null
+      "local_path": "/docs/0753cf67d6_제품_데이터_시트.pdf"
     },
     {
       "label": "사용자 가이드",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
-      "local_path": null
+      "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
     },
     {
       "label": "카탈로그",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
+      "local_path": "/docs/4e41af41bd_카탈로그.pdf"
+    },
+    {
+      "label": "EOCR Catalog (English)",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
       "local_path": null
     }
   ],
