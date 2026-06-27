@@ -6,6 +6,8 @@ const nextConfig = {
     unoptimized: true, // required for static export — no Next.js image server on GH Pages
   },
   trailingSlash: true, // avoids GitHub Pages 404s on folder-style routes
+  basePath: "/sav",
+  assetPrefix: "/sav/",
 
   // --- Only needed if you deploy to https://<user>.github.io/<repo-name>/ ---
   // (a "project site" instead of a custom domain or a <user>.github.io root repo).
