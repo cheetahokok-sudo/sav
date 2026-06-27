@@ -144,16 +144,23 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white shadow-md flex items-center justify-between px-6 h-16">
         <Logo />
         <ul className="hidden lg:flex items-center font-display text-xs font-semibold tracking-wider uppercase">
-          {navLinks.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                className="px-4 h-16 flex items-center text-gray-700 border-b-[3px] border-transparent hover:text-brand hover:border-brand transition-colors"
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((l) => {
+            const linkClass =
+              "px-4 h-16 flex items-center text-gray-700 border-b-[3px] border-transparent hover:text-brand hover:border-brand transition-colors";
+            return (
+              <li key={l.href}>
+                {l.href.startsWith("/") ? (
+                  <Link href={l.href} className={linkClass}>
+                    {l.label}
+                  </Link>
+                ) : (
+                  <a href={l.href} className={linkClass}>
+                    {l.label}
+                  </a>
+                )}
+              </li>
+            );
+          })}
           <li>
             <a
               href="#contact"
@@ -738,9 +745,15 @@ export default function Home() {
             <ul className="flex flex-col gap-2.5 text-sm text-gray-500">
               {navLinks.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="hover:text-brand transition-colors">
-                    {l.label}
-                  </a>
+                  {l.href.startsWith("/") ? (
+                    <Link href={l.href} className="hover:text-brand transition-colors">
+                      {l.label}
+                    </Link>
+                  ) : (
+                    <a href={l.href} className="hover:text-brand transition-colors">
+                      {l.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
