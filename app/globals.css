@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — matches the approved White / Red / Gray design */
+  --color-brand: #cc1f1f;
+  --color-brand-dark: #a61818;
+  --color-ink: #1e1e1e;
+
+  /* Fonts are loaded via next/font in app/layout.tsx and exposed as CSS vars */
+  --font-display: var(--font-barlow);
+  --font-body: var(--font-sarabun);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+}
+
+/* Scroll-reveal utility (mirrors the effect from the original HTML preview) */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
