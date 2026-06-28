@@ -177,10 +177,11 @@ export default function ProductsPage() {
                 </div>
 
                 <p className="text-xs text-gray-500 mb-1">
-                  <span className="font-semibold text-gray-600">Model:</span> {p.model_number}
+                  <span className="font-semibold text-gray-600">Model:</span>{" "}
+                  <span className="font-display font-bold text-ink">{p.model_number}</span>
                 </p>
                 {description && (
-                  <p className="font-display font-bold text-sm text-ink mb-3 leading-snug">
+                  <p className="font-light text-sm text-gray-700 mb-3 leading-snug">
                     {description}
                   </p>
                 )}
