@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileNav from "./components/MobileNav";
 
 const navLinks = [
   { href: "#why", label: "ABOUT US" },
@@ -141,7 +142,7 @@ export default function Home() {
       </div>
 
       {/* NAV */}
-      <nav className="sticky top-0 z-50 bg-white shadow-md flex items-center justify-between px-6 h-16">
+      <nav className="sticky top-0 z-50 bg-white shadow-md flex items-center justify-between px-6 h-16 relative">
         <Logo />
         <ul className="hidden lg:flex items-center font-display text-xs font-semibold tracking-wider uppercase">
           {navLinks.map((l) => {
@@ -170,6 +171,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
+        <MobileNav navLinks={navLinks} />
       </nav>
 
       {/* HERO */}
