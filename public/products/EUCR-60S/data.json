@@ -1,0 +1,29 @@
+{
+  "model_number": "EUCR-60S",
+  "title": "EUCR-60S - Electronic undercurrent relay, EOCR Digital, 5.0 to 60A, 24 to 240VAC/DC, Standard",
+  "range_name": "EOCR",
+  "range_short_desc": "Electronic overcurrent relays",
+  "description": "EUCR-60S - Electronic undercurrent relay, EOCR Digital, 5.0 to 60A, 24 to 240VAC/DC, Standard.",
+  "end_of_sale": null,
+  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EUCR-05S_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+  "local_photo_path": "/docs/8e31092485_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+    {
+      "label": "Product datasheet",
+      "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-60S?filename=Schneider+Electric_EOCR_EUCR-60S.pdf",
+      "local_path": "/docs/ef2de8bbfc_product_datasheet.pdf"
+    },
+    {
+      "label": "EOCR Catalog (English)",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+    }
+  ],
+  "source_url": "https://www.se.com/eg/en/product/EUCR-60S/electronic-undercurrent-relay-eocr-digital-5-0-to-60a-24-to-240vac-dc-standard/",
+  "scraped_at": "2026-06-28T04:29:13.726482+00:00",
+  "category": null,
+  "in_stock": true,
+  "your_price": null,
+  "your_notes": null
+}

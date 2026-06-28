@@ -77,3 +77,6 @@ https://www.se.com/eg/en/product/EOCRSS-30S/electronic-overcurrent-relay-330a-22
 https://www.se.com/eg/en/product/EOCRSS-60S/electronic-overcurrent-relay-560a-220-v-ac/
 https://www.se.com/eg/en/product/EOCRSSD-05S/electronic-overcurrent-relay-eocr-digital-0-5-to-6a-220vac/
 https://www.se.com/eg/en/product/EOCRSSD-60S/electronic-overcurrent-relay-eocr-digital-10-to-60a-220vac/
+https://www.se.com/eg/en/product/EUCR-05S/electronic-undercurrent-relay-eocr-digital-0-5-to-6a-24-to-240vac-dc-standard/
+https://www.se.com/eg/en/product/EUCR-30S/electronic-undercurrent-relay-eocr-digital-3-0-to-30a-24-to-240vac-dc-standard/
+https://www.se.com/eg/en/product/EUCR-60S/electronic-undercurrent-relay-eocr-digital-5-0-to-60a-24-to-240vac-dc-standard/

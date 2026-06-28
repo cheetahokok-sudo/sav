@@ -1,9 +1,9 @@
 {
-  "model_number": "3MZ2-WRDUWZ",
-  "title": "3MZ2-WRDUWZ - Protection relay, EOCR Digital, 0.5 to 60A, 100 to 240VAC/DC, window connt, for motor protection",
+  "model_number": "EUCR-05S",
+  "title": "EUCR-05S - Electronic undercurrent relay, EOCR Digital, 0.5 to 6A, 24 to 240VAC/DC, Standard",
   "range_name": "EOCR",
   "range_short_desc": "Electronic overcurrent relays",
-  "description": "3MZ2-WRDUWZ - Protection relay, EOCR Digital, 0.5 to 60A, 100 to 240VAC/DC, window connt, for motor protection.",
+  "description": "EUCR-05S - Electronic undercurrent relay, EOCR Digital, 0.5 to 6A, 24 to 240VAC/DC, Standard.",
   "end_of_sale": null,
   "official_image_url": null,
   "local_photo_path": null,
@@ -15,8 +15,8 @@
       "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
     }
   ],
-  "source_url": "https://www.se.com/eg/en/product/3MZ2-WRDUWZ/protection-relay-eocr-digital-0-5-to-60a-100-to-240vac-dc-window-connt-for-motor-protection/",
-  "scraped_at": "2026-06-28T03:29:05.907405+00:00",
+  "source_url": "https://www.se.com/eg/en/product/EUCR-05S/electronic-undercurrent-relay-eocr-digital-0-5-to-6a-24-to-240vac-dc-standard/",
+  "scraped_at": "2026-06-28T04:29:07.919279+00:00",
   "category": null,
   "in_stock": true,
   "your_price": null,
