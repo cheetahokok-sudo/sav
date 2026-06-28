@@ -42,18 +42,35 @@ function translateLabel(label: string): string {
   return LABEL_TRANSLATIONS[label.trim()] || label;
 }
 
-// Scraped titles carry a trailing site-branding suffix in Korean (e.g.
-// "... | Schneider Electric 대한민국") -- strip that for display, the
-// model description itself is already in Latin characters.
-function cleanTitle(title: string | null): string | null {
+// Scraped titles look like "MODEL - Protection relay, EOCR Digital, 0.5 to
+// 60A... | Schneider Electric Egypt" -- strip both the model-number prefix
+// and the trailing site-branding suffix, leaving just the clean spec
+// description (which is what actually matters to a customer: current/
+// voltage range, mounting type).
+function cleanDescription(title: string | null, model: string): string | null {
   if (!title) return title;
-  return title.replace(/\s*\|\s*Schneider Electric\s*\S*\s*$/, "").trim();
+  let cleaned = title.replace(/\s*\|\s*Schneider Electric\s*\S*\s*$/, "").trim();
+  const prefix = `${model} - `;
+  if (cleaned.startsWith(prefix)) {
+    cleaned = cleaned.slice(prefix.length);
+  }
+  return cleaned.trim();
 }
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[] | null>(null);
   const [query, setQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [expandedDocs, setExpandedDocs] = useState<Set<string>>(new Set());
+
+  const toggleDocs = (model: string) => {
+    setExpandedDocs((prev) => {
+      const next = new Set(prev);
+      if (next.has(model)) next.delete(model);
+      else next.add(model);
+      return next;
+    });
+  };
 
   useEffect(() => {
     fetch(`${BASE}/products/index.json`)
@@ -139,10 +156,12 @@ export default function ProductsPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {filtered.map((p) => {
             const imgSrc = p.local_photo_path || p.official_image_url;
+            const isExpanded = expandedDocs.has(p.model_number);
+            const description = cleanDescription(p.title, p.model_number);
             return (
               <div
                 key={p.model_number}
-                className="bg-white border border-gray-200 border-t-[3px] border-t-gray-300 hover:border-t-brand hover:shadow-lg hover:-translate-y-0.5 transition-all rounded p-6 flex flex-col"
+                className="bg-white border border-gray-200 border-t-[3px] border-t-gray-300 hover:border-t-brand hover:shadow-lg transition-all rounded p-6 flex flex-col"
               >
                 <div className="h-36 mb-4 bg-gray-50 rounded flex items-center justify-center overflow-hidden">
                   {imgSrc ? (
@@ -157,16 +176,13 @@ export default function ProductsPage() {
                   )}
                 </div>
 
-                {p.range_name && (
-                  <p className="font-display text-[10px] font-extrabold tracking-wider uppercase text-brand mb-1">
-                    {p.range_name}
+                <p className="text-xs text-gray-500 mb-1">
+                  <span className="font-semibold text-gray-600">Model:</span> {p.model_number}
+                </p>
+                {description && (
+                  <p className="font-display font-bold text-sm text-ink mb-3 leading-snug">
+                    {description}
                   </p>
-                )}
-                <h3 className="font-display font-extrabold text-lg text-ink mb-1 leading-tight">
-                  {p.model_number}
-                </h3>
-                {p.title && (
-                  <p className="text-xs text-gray-500 mb-2 line-clamp-2">{cleanTitle(p.title)}</p>
                 )}
 
                 {p.end_of_sale && (
@@ -175,22 +191,53 @@ export default function ProductsPage() {
                   </p>
                 )}
 
-                <div className="mt-auto flex flex-wrap gap-2 pt-3 border-t border-gray-100">
-                  {p.documents.slice(0, 3).map((doc) => (
-                    <a
-                      key={doc.label + doc.official_url}
-                      href={doc.local_path ? `${BASE}${doc.local_path}` : doc.official_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[11px] font-display font-semibold text-brand border border-brand/30 rounded px-2.5 py-1 hover:bg-brand hover:text-white hover:border-brand transition-colors"
-                    >
-                      {translateLabel(doc.label || "Document")}
-                    </a>
-                  ))}
-                  {p.documents.length === 0 && (
-                    <span className="text-[11px] text-gray-400">ไม่มีเอกสาร</span>
-                  )}
-                </div>
+                <a
+                  href={p.source_url || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-center text-sm font-display font-semibold text-ink border border-gray-300 rounded px-4 py-2 mb-3 hover:border-brand hover:text-brand transition-colors"
+                >
+                  View details
+                </a>
+
+                <button
+                  onClick={() => toggleDocs(p.model_number)}
+                  className="flex items-center justify-center gap-2 text-sm font-display font-semibold text-blue-600 hover:text-blue-700 transition-colors py-1"
+                >
+                  📄 Documents <span>{isExpanded ? "▲" : "▼"}</span>
+                </button>
+
+                {isExpanded && (
+                  <div className="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 justify-center">
+                    {p.documents.length === 0 && (
+                      <span className="text-[11px] text-gray-400">No documents yet</span>
+                    )}
+                    {p.documents.map((doc) =>
+                      doc.local_path ? (
+                        <a
+                          key={doc.label + doc.official_url}
+                          href={`${BASE}${doc.local_path}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[11px] font-display font-semibold text-brand border border-brand/30 rounded px-2.5 py-1 hover:bg-brand hover:text-white hover:border-brand transition-colors"
+                        >
+                          {translateLabel(doc.label || "Document")}
+                        </a>
+                      ) : (
+                        // Deliberately NOT linking to doc.official_url here --
+                        // documents must be hosted on our own server. Shown
+                        // grayed-out/disabled until it's actually downloaded.
+                        <span
+                          key={doc.label + doc.official_url}
+                          title="Not hosted on our server yet"
+                          className="text-[11px] font-display font-semibold text-gray-400 border border-gray-200 rounded px-2.5 py-1 cursor-not-allowed"
+                        >
+                          {translateLabel(doc.label || "Document")} (pending)
+                        </span>
+                      )
+                    )}
+                  </div>
+                )}
               </div>
             );
           })}
