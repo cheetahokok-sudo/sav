@@ -27,11 +27,11 @@
     {
       "label": "EOCR Catalog (English)",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": null
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
     }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRCUHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifmz-wr-1a1b-100240v-bot-/",
-  "scraped_at": "2026-06-27T15:49:33.428704+00:00",
+  "scraped_at": "2026-06-28T03:23:38.486637+00:00",
   "category": null,
   "in_stock": true,
   "your_price": null,

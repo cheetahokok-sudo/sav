@@ -27,11 +27,11 @@
     {
       "label": "EOCR Catalog (English)",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": null
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
     }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFBZ-WRABHZ/eocrifbz-wr-aa-24v-bottom-/",
-  "scraped_at": "2026-06-27T15:52:46.768682+00:00",
+  "scraped_at": "2026-06-28T03:27:02.484048+00:00",
   "category": null,
   "in_stock": true,
   "your_price": null,

@@ -1,0 +1,39 @@
+{
+  "model_number": "EOCRSSD-60S",
+  "title": "EOCRSSD-60S - Electronic overcurrent relay, EOCR Digital, 10 to 60A, 220VAC | Schneider Electric Egypt",
+  "range_name": "EOCR",
+  "range_short_desc": "Electronic overcurrent relays",
+  "description": "Schneider Electric Egypt. EOCRSSD-60S - Electronic overcurrent relay, EOCR Digital, 10 to 60A, 220VAC.",
+  "end_of_sale": null,
+  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRSSD-05S_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+  "local_photo_path": "/docs/d8e79c0290_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+    {
+      "label": "Product datasheet",
+      "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-60S?filename=Schneider+Electric_EOCR_EOCRSSD-60S.pdf",
+      "local_path": "/docs/00f7f26001_product_datasheet.pdf"
+    },
+    {
+      "label": "CAD",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=CAD&p_File_Name=EOCR-SSD%28n%29.dwg&p_Doc_Ref=EOCR-SSD_2D_CAD",
+      "local_path": "/docs/3a7361dc4b_cad.pdf"
+    },
+    {
+      "label": "Environmental Disclosure",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
+      "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
+    },
+    {
+      "label": "EOCR Catalog (English)",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+    }
+  ],
+  "source_url": "https://www.se.com/eg/en/product/EOCRSSD-60S/electronic-overcurrent-relay-eocr-digital-10-to-60a-220vac/",
+  "scraped_at": "2026-06-28T03:29:47.539726+00:00",
+  "category": null,
+  "in_stock": true,
+  "your_price": null,
+  "your_notes": null
+}

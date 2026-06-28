@@ -32,11 +32,11 @@
     {
       "label": "EOCR Catalog (English)",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": null
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
     }
   ],
   "source_url": "https://www.se.com/kr/ko/product/ISEMMETS-WRBH/isemmet-eth-wr-24vdc-hole-tmp-%2B-spectrum./",
-  "scraped_at": "2026-06-27T15:49:36.193097+00:00",
+  "scraped_at": "2026-06-28T03:23:40.534989+00:00",
   "category": null,
   "in_stock": true,
   "your_price": null,

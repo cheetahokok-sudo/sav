@@ -66,6 +66,22 @@ SUPPLEMENTARY_DOCS = [
 _download_cache: dict[str, str] = {}
 
 
+def clean_country_branding(text: str | None) -> str | None:
+    """Strips 'Schneider Electric <Country>' branding out of scraped title/
+    description text -- e.g. '... | Schneider Electric Egypt' or 'Schneider
+    Electric Egypt. ...' -- leaving just the product description itself.
+    Matches any single trailing word as the country name, not just Egypt,
+    so this stays correct if products are ever scraped from another
+    country's site too."""
+    if not text:
+        return text
+    # Suffix form: "... | Schneider Electric Egypt"
+    text = re.sub(r"\s*\|\s*Schneider Electric\s+\S+\s*$", "", text)
+    # Prefix form: "Schneider Electric Egypt. ..."
+    text = re.sub(r"^Schneider Electric\s+\S+\.\s*", "", text)
+    return text.strip()
+
+
 def slugify_filename(label: str, url: str) -> str:
     """Turn a document label into a safe filename, falling back to the
     original filename in the URL if the label is empty/generic."""
@@ -97,13 +113,15 @@ def _get_or_download(session, url: str, label_hint: str, default_ext: str = ".pd
         return local_path
 
     try:
-        resp = session.get(url, impersonate="chrome124", timeout=30)
+        resp = session.get(url, impersonate="chrome124", timeout=180)
         resp.raise_for_status()
         dest.write_bytes(resp.content)
         _download_cache[url] = local_path
         return local_path
     except Exception as e:
         print(f"    ! failed to download {url} -> {e}")
+        _download_cache[url] = None  # remember the failure so we don't retry
+        return None  # this same URL again for every other product in this run
         return None
 
 
@@ -156,10 +174,10 @@ def build_folders(records: list[dict], download: bool):
 
         data = {
             "model_number": model,
-            "title": record.get("title"),
+            "title": clean_country_branding(record.get("title")),
             "range_name": record.get("range_name"),
             "range_short_desc": record.get("range_short_desc"),
-            "description": record.get("description"),
+            "description": clean_country_branding(record.get("description")),
             "end_of_sale": record.get("end_of_sale"),
             "official_image_url": record.get("product_image_url"),
             "local_photo_path": local_photo_path,

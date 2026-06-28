@@ -27,11 +27,11 @@
     {
       "label": "EOCR Catalog (English)",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": null
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
     }
   ],
   "source_url": "https://www.se.com/kr/ko/product/I3BZ-WRABHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocri3bz-wr-aa-24v-%EB%B0%94%ED%85%80-%EC%BB%A4%EB%84%A5%ED%8A%B8/",
-  "scraped_at": "2026-06-27T15:51:51.731581+00:00",
+  "scraped_at": "2026-06-28T03:26:40.629690+00:00",
   "category": null,
   "in_stock": true,
   "your_price": null,

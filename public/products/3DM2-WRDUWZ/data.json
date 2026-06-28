@@ -1,0 +1,29 @@
+{
+  "model_number": "3DM2-WRDUWZ",
+  "title": "3DM2-WRDUWZ - Protection relay, EOCR Digital, 0.5 to 60A, 100 to 240VAC/DC, window connt, for motor protection | Schneider Electric Egypt",
+  "range_name": "EOCR",
+  "range_short_desc": "Electronic overcurrent relays",
+  "description": "Schneider Electric Egypt. 3DM2-WRDUWZ - Protection relay, EOCR Digital, 0.5 to 60A, 100 to 240VAC/DC, window connt, for motor protection.",
+  "end_of_sale": null,
+  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=3DM2-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+  "local_photo_path": "/docs/0dcc837820_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+    {
+      "label": "Product datasheet",
+      "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUWZ?filename=Schneider+Electric_EOCR_3DM2-WRDUWZ.pdf",
+      "local_path": "/docs/86fd559290_product_datasheet.pdf"
+    },
+    {
+      "label": "EOCR Catalog (English)",
+      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+    }
+  ],
+  "source_url": "https://www.se.com/eg/en/product/3DM2-WRDUWZ/protection-relay-eocr-digital-0-5-to-60a-100-to-240vac-dc-window-connt-for-motor-protection/",
+  "scraped_at": "2026-06-28T03:28:53.761198+00:00",
+  "category": null,
+  "in_stock": true,
+  "your_price": null,
+  "your_notes": null
+}

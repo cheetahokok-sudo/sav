@@ -25,10 +25,14 @@ USAGE:
     pip install playwright
     playwright install chromium      <- one-time, downloads the browser (~150MB)
 
-    python discover_schneider_range_urls.py <listing-url> [--max-pages N] [--page-size N]
+    python discover_schneider_range_urls.py <listing-url> [<listing-url> ...] [--max-pages N] [--page-size N]
 
-  If the URL you give it already has a "Nrpp=" in it, that page size is
-  used automatically. Otherwise it defaults to 12 (confirmed working).
+  Pass as many category/listing URLs as you want in one run -- each is
+  processed in turn, and results are deduped across ALL of them (so the
+  same product showing up under two categories only counts once).
+
+  If a URL already has a "Nrpp=" in it, that page size is used automatically
+  for that specific URL. Otherwise it defaults to 12 (confirmed working).
 
   Writes one product URL per line to range_urls.txt (appends, deduped).
   Feed that file straight into scrape_schneider_product.py afterwards:
@@ -39,13 +43,15 @@ USAGE:
 
 import sys
 import re
+import time
 from urllib.parse import urlsplit, urlunsplit, parse_qs, urlencode
 
 from playwright.sync_api import sync_playwright
 
 OUTPUT_FILE = "range_urls.txt"
-DEFAULT_MAX_PAGES = 20
+DEFAULT_MAX_PAGES = 3
 DEFAULT_PAGE_SIZE = 12
+DEFAULT_TIME_BUDGET_SECONDS = 90
 
 # Buttons Schneider's site might show to reveal more products within a
 # single page load (Korean/English/Thai variants seen on their sites).
@@ -120,7 +126,12 @@ def _extract_product_links(page) -> dict[str, str]:
     return sku_to_url
 
 
-def discover(listing_url: str, max_pages: int = DEFAULT_MAX_PAGES, page_size: int = DEFAULT_PAGE_SIZE) -> list[str]:
+def discover(
+    listing_url: str,
+    max_pages: int = DEFAULT_MAX_PAGES,
+    page_size: int = DEFAULT_PAGE_SIZE,
+    time_budget_seconds: int = DEFAULT_TIME_BUDGET_SECONDS,
+) -> list[str]:
     # If the URL already specifies Nrpp, respect it instead of the default.
     existing_query = parse_qs(urlsplit(listing_url).query)
     if "Nrpp" in existing_query:
@@ -130,12 +141,18 @@ def discover(listing_url: str, max_pages: int = DEFAULT_MAX_PAGES, page_size: in
             pass
 
     sku_to_url: dict[str, str] = {}
+    start_time = time.monotonic()
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
         for page_num in range(max_pages):
+            elapsed = time.monotonic() - start_time
+            if elapsed > time_budget_seconds:
+                print(f"  hit the {time_budget_seconds}s time budget for this category -- stopping here, not stuck forever")
+                break
+
             offset = page_num * page_size
             page_url = _build_paged_url(listing_url, offset, page_size)
 
@@ -170,16 +187,7 @@ def discover(listing_url: str, max_pages: int = DEFAULT_MAX_PAGES, page_size: in
     return sorted(sku_to_url.values())
 
 
-def main(listing_url: str, max_pages: int, page_size: int):
-    urls = discover(listing_url, max_pages=max_pages, page_size=page_size)
-    if not urls:
-        print(
-            "No product links found. The page may need more time to load, or "
-            "the site structure may differ from what this script expects — "
-            "send me what you see and I'll adjust it."
-        )
-        return
-
+def main(listing_urls: list[str], max_pages: int, page_size: int, time_budget_seconds: int):
     existing = set()
     try:
         with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
@@ -187,13 +195,30 @@ def main(listing_url: str, max_pages: int, page_size: int):
     except FileNotFoundError:
         pass
 
-    new_urls = [u for u in urls if u not in existing]
-    with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
-        for u in new_urls:
-            f.write(u + "\n")
+    grand_total_new = 0
 
-    print(f"\nFound {len(urls)} product URLs across all pages.")
-    print(f"{len(new_urls)} new ones written to {OUTPUT_FILE} (skipped {len(urls) - len(new_urls)} duplicates).")
+    for i, listing_url in enumerate(listing_urls):
+        print(f"\n=== Category {i + 1}/{len(listing_urls)}: {listing_url[:90]}{'...' if len(listing_url) > 90 else ''} ===")
+        urls = discover(listing_url, max_pages=max_pages, page_size=page_size, time_budget_seconds=time_budget_seconds)
+        if not urls:
+            print(
+                "  No product links found for this category. The page may need more time "
+                "to load, or the site structure may differ from what this script expects."
+            )
+            continue
+
+        new_urls = [u for u in urls if u not in existing]
+        with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
+            for u in new_urls:
+                f.write(u + "\n")
+        existing.update(new_urls)
+        grand_total_new += len(new_urls)
+
+        print(f"  Found {len(urls)} product URLs in this category.")
+        print(f"  {len(new_urls)} new (skipped {len(urls) - len(new_urls)} already in {OUTPUT_FILE}).")
+
+    print(f"\n=== Done: {grand_total_new} new product URLs added across {len(listing_urls)} categories. ===")
+    print(f"{OUTPUT_FILE} now has {len(existing)} unique products total.")
 
 
 if __name__ == "__main__":
@@ -203,6 +228,7 @@ if __name__ == "__main__":
         sys.exit(1)
     max_pages = DEFAULT_MAX_PAGES
     page_size = DEFAULT_PAGE_SIZE
+    time_budget_seconds = DEFAULT_TIME_BUDGET_SECONDS
     if "--max-pages" in args:
         idx = args.index("--max-pages")
         max_pages = int(args[idx + 1])
@@ -211,8 +237,12 @@ if __name__ == "__main__":
         idx = args.index("--page-size")
         page_size = int(args[idx + 1])
         del args[idx:idx + 2]
-    url_arg = next((a for a in args if not a.startswith("--")), None)
-    if not url_arg:
+    if "--time-budget" in args:
+        idx = args.index("--time-budget")
+        time_budget_seconds = int(args[idx + 1])
+        del args[idx:idx + 2]
+    url_args = [a for a in args if not a.startswith("--")]
+    if not url_args:
         print(__doc__)
         sys.exit(1)
-    main(url_arg, max_pages, page_size)
+    main(url_args, max_pages, page_size, time_budget_seconds)
