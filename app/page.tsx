@@ -109,7 +109,7 @@ const whyItems = [
   },
   {
     title: "รองรับทั้งในประเทศและ International Orders",
-    desc: "Mr. Cheetah รองรับ International Orders โดยตรง ติดต่อ +66 85 212 0255 หรือ Kakao Talk: cheetahokok",
+    desc: "Mr. Cheetah รองรับ International Orders โดยตรง ติดต่อ +66 94 924 9829 หรือ Line and WhatsApp",
   },
 ];
 
@@ -246,7 +246,7 @@ export default function Home() {
               </span>
             </Link>
             <a
-              href="mailto:sales@savthai.com"
+              href="mailto:sav-545@hotmail.com"
               className="flex items-center gap-3 px-3 py-2.5 rounded bg-white/5 hover:bg-brand/20 transition-colors"
             >
               <span className="w-8 h-8 bg-brand rounded-full flex items-center justify-center text-sm flex-shrink-0">
@@ -256,7 +256,7 @@ export default function Home() {
                 <span className="block text-[10px] font-bold tracking-wider uppercase text-white/50">
                   Email Us
                 </span>
-                <span className="block text-sm font-bold text-white">sales@savthai.com</span>
+                <span className="block text-sm font-bold text-white">sav-545@hotmail.com</span>
               </span>
             </a>
           </div>
@@ -555,10 +555,10 @@ export default function Home() {
                   <p className="font-display text-[10px] font-bold tracking-wider uppercase text-gray-500">
                     International — Mr. Cheetah
                   </p>
-                  <a href="tel:+66852120255" className="font-display font-semibold text-white text-sm hover:text-brand">
-                    +66 85 212 0255
+                  <a href="tel:+66949249829" className="font-display font-semibold text-white text-sm hover:text-brand">
+                    +66 94 924 9829
                   </a>
-                  <p className="text-xs text-gray-500 mt-0.5">Kakao Talk: cheetahokok</p>
+                  <p className="text-xs text-gray-500 mt-0.5">Line and WhatsApp</p>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -702,18 +702,18 @@ export default function Home() {
                   <span className="w-8 h-8 bg-red-50 text-brand rounded flex items-center justify-center flex-shrink-0">🌏</span>
                   <div>
                     <p className="font-display text-[10px] font-bold tracking-wider uppercase text-gray-500">International (Mr. Cheetah)</p>
-                    <a href="tel:+66852120255" className="font-display font-semibold text-ink hover:text-brand">
-                      +66 85 212 0255
+                    <a href="tel:+66949249829" className="font-display font-semibold text-ink hover:text-brand">
+                      +66 94 924 9829
                     </a>
-                    <p className="text-xs text-gray-500">Kakao Talk: cheetahokok</p>
+                    <p className="text-xs text-gray-500">Line and WhatsApp</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <span className="w-8 h-8 bg-red-50 text-brand rounded flex items-center justify-center flex-shrink-0">✉️</span>
                   <div>
                     <p className="font-display text-[10px] font-bold tracking-wider uppercase text-gray-500">Email</p>
-                    <a href="mailto:sales@savthai.com" className="font-display font-semibold text-ink hover:text-brand">
-                      sales@savthai.com
+                    <a href="mailto:sav-545@hotmail.com" className="font-display font-semibold text-ink hover:text-brand">
+                      sav-545@hotmail.com
                     </a>
                     <p className="text-xs text-gray-500">Mon–Fri: 8.30 AM – 5.30 PM</p>
                   </div>
@@ -722,7 +722,7 @@ export default function Home() {
             </div>
             <div className="rounded overflow-hidden h-[180px] bg-gray-200">
               <iframe
-                src="https://maps.google.com/maps?q=13.5987,100.5969&hl=th&z=15&output=embed"
+                src="https://maps.google.com/maps?q=13.5909269,100.6159041&hl=th&z=17&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
               />
@@ -793,8 +793,8 @@ export default function Home() {
                 📞 02-702-8801-4
               </a>
               <br />
-              <a href="mailto:sales@savthai.com" className="hover:text-brand transition-colors">
-                ✉️ sales@savthai.com
+              <a href="mailto:sav-545@hotmail.com" className="hover:text-brand transition-colors">
+                ✉️ sav-545@hotmail.com
               </a>
             </p>
             <p className="font-display text-xs text-gray-600 mt-3">Mon–Fri: 8.30 AM – 5.30 PM</p>
