@@ -193,11 +193,27 @@ def _get_or_download(session, url: str, label_hint: str, default_ext: str = ".pd
         print(f"    ! failed to download {url} -> {e}")
         _download_cache[url] = None  # remember the failure so we don't retry
         return None  # this same URL again for every other product in this run
-        return None
 
 
 def build_folders(records: list[dict], download: bool):
     PRODUCTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Dedupe by model_number before processing -- the same product can end
+    # up scraped more than once across separate runs over time (e.g. once
+    # from an early Korea-site pass, again later), and duplicate entries in
+    # index.json cause React key collisions on the catalog page (the count
+    # stays correct since it's just array length, but the rendered cards can
+    # go stale/wrong when the list re-filters). Keep the LAST occurrence of
+    # each model, since later scrapes are more likely to have the cleaned-up
+    # text fields.
+    deduped: dict[str, dict] = {}
+    for record in records:
+        model = record.get("model_number")
+        if model:
+            deduped[model] = record
+    if len(deduped) != len(records):
+        print(f"Deduped {len(records)} scraped records down to {len(deduped)} unique products.\n")
+    records = list(deduped.values())
     index = []
 
     # Only import curl_cffi if we're actually downloading -- keeps step 1
