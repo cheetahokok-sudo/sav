@@ -86,10 +86,10 @@ const brands = [
 ];
 
 const solutions = [
-  { icon: "🏭", name: "FACTORY AUTOMATION", sub: "ระบบอัตโนมัติในโรงงาน" },
-  { icon: "⚡", name: "ENERGY & POWER", sub: "ระบบพลังงานและไฟฟ้า" },
-  { icon: "🏙️", name: "INFRASTRUCTURE", sub: "ระบบสาธารณูปโภคและอาคาร" },
-  { icon: "🔩", name: "OEM & MACHINE BUILDER", sub: "ผู้ผลิตเครื่องจักรและระบบ (OEM)" },
+  { icon: "🏭", name: "FACTORY AUTOMATION", sub: "ระบบอัตโนมัติในโรงงาน", image: "/images/solutions/sav_factory_automation_400x300.jpg" },
+  { icon: "⚡", name: "ENERGY & POWER", sub: "ระบบพลังงานและไฟฟ้า", image: "/images/solutions/sav_energy_and_power_400x300.jpg" },
+  { icon: "🏙️", name: "INFRASTRUCTURE", sub: "ระบบสาธารณูปโภคและอาคาร", image: "/images/solutions/sav_infrastructure_400x300.jpg" },
+  { icon: "🔩", name: "OEM & MACHINE BUILDER", sub: "ผู้ผลิตเครื่องจักรและระบบ (OEM)", image: "/images/solutions/sav_oem_and_machine_builder_400x300.jpg" },
 ];
 
 const whyItems = [
@@ -413,12 +413,15 @@ export default function Home() {
           {solutions.map((s) => (
             <div
               key={s.name}
-              className="relative aspect-[4/3] rounded overflow-hidden bg-gradient-to-br from-neutral-900 to-neutral-700 group cursor-pointer"
+              className="relative aspect-[4/3] rounded overflow-hidden bg-neutral-900 group cursor-pointer"
             >
-              <div className="absolute inset-0 flex items-center justify-center text-7xl opacity-10 grayscale group-hover:scale-110 transition-transform">
-                {s.icon}
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={s.image}
+                alt={s.name}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/10" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <div className="w-9 h-9 bg-brand rounded-full flex items-center justify-center text-sm mb-2">
                   {s.icon}
