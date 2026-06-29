@@ -1,26 +1,26 @@
 {
   "model_number": "IFM420-WRDBWZ",
-  "title": "IFM420-WRDBWZ - 디지털 보호 계전기 EOCR-iFM420 WR 24V 윈도우.",
+  "title": "IFM420-WRDBWZ - Digital protection relay EOCR-iFM420 WR 24V Window.",
   "range_name": "EOCR",
-  "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-  "description": "IFM420-WRDBWZ - 디지털 보호 계전기 EOCR-iFM420 WR 24V 윈도우..",
+  "range_short_desc": "Electronic motor protection device (EOCR)",
+  "description": "IFM420-WRDBWZ - Digital protection relay EOCR-iFM420 WR 24V Window..",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/3b553ae721_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
     {
-      "label": "제품 데이터 시트",
+      "label": "Datasheet",
       "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBWZ?filename=Schneider+Electric_EOCR_IFM420-WRDBWZ.pdf",
       "local_path": "/docs/4993745923_제품_데이터_시트.pdf"
     },
     {
-      "label": "사용자 가이드",
+      "label": "User Guide",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
       "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
     },
     {
-      "label": "카탈로그",
+      "label": "Catalog",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
       "local_path": "/docs/4e41af41bd_카탈로그.pdf"
     },

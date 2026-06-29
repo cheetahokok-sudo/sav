@@ -1,10 +1,10 @@
 [
   {
     "model_number": "EOCRPFZ-WRDUH",
-    "title": "EOCRPFZ-WRDUH - 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC Hole.",
+    "title": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPFZ-WRDUH - 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC Hole..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole..",
     "end_of_sale": null,
     "official_image_url": null,
     "local_photo_path": null,
@@ -25,27 +25,27 @@
   },
   {
     "model_number": "EOCRPFZ-WRDUT",
-    "title": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널.",
+    "title": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUT_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/65fe6cb6bc_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZ-WRDUT?filename=Schneider+Electric_EOCR_EOCRPFZ-WRDUT.pdf",
         "local_path": "/docs/f331fda9d3_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -64,27 +64,27 @@
   },
   {
     "model_number": "EOCRPFZ-WRDUT",
-    "title": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널.",
+    "title": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUT_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/65fe6cb6bc_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZ-WRDUT?filename=Schneider+Electric_EOCR_EOCRPFZ-WRDUT.pdf",
         "local_path": "/docs/f331fda9d3_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -105,7 +105,7 @@
     "model_number": "EOCRPFZT-WRDUH",
     "title": "EOCRPFZT-WRDUH - EOCR-PFZ 100~240 VAC/DC Hole TMP.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "EOCRPFZT-WRDUH - EOCR-PFZ 100~240 VAC/DC Hole TMP..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -113,17 +113,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZT-WRDUH?filename=Schneider+Electric_EOCR_EOCRPFZT-WRDUH.pdf",
         "local_path": "/docs/7c8db82378_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -142,27 +142,27 @@
   },
   {
     "model_number": "I3DM-WRDBWZ",
-    "title": "I3DM-WRDBWZ - 디지털 보호 계전기 EOCR-i3DM WR 24V 윈도우.",
+    "title": "I3DM-WRDBWZ - Digital protection relay EOCR-i3DM WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDBWZ - 디지털 보호 계전기 EOCR-i3DM WR 24V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDBWZ - Digital protection relay EOCR-i3DM WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/b8c9a9a7a8_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBWZ?filename=Schneider+Electric_EOCR_I3DM-WRDBWZ.pdf",
         "local_path": "/docs/5621153c2f_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -183,7 +183,7 @@
     "model_number": "I3DM-WRDUTZ",
     "title": "I3DM-WRDUTZ - EOCR-i3DM WR 100~240V Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3DM-WRDUTZ - EOCR-i3DM WR 100~240V Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -191,17 +191,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDUTZ?filename=Schneider+Electric_EOCR_I3DM-WRDUTZ.pdf",
         "local_path": "/docs/0720bf0e58_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -220,27 +220,27 @@
   },
   {
     "model_number": "I3M420-WRDBHZ",
-    "title": "I3M420-WRDBHZ - 디지털 보호 계전기 EOCR-i3M420 WR 24V 바텀 커넥트",
+    "title": "I3M420-WRDBHZ - Digital protection relay EOCR-i3M420 WR 24V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3M420-WRDBHZ - 디지털 보호 계전기 EOCR-i3M420 WR 24V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3M420-WRDBHZ - Digital protection relay EOCR-i3M420 WR 24V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDBHZ?filename=Schneider+Electric_EOCR_I3M420-WRDBHZ.pdf",
         "local_path": "/docs/8dfe5dba0f_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -261,7 +261,7 @@
     "model_number": "I3MZ-WRAUWZ",
     "title": "I3MZ-WRAUWZ - EOCR-i3MZ WR A-A 100~240V Wind.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRAUWZ - EOCR-i3MZ WR A-A 100~240V Wind..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -269,17 +269,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRAUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRAUWZ.pdf",
         "local_path": "/docs/5630ee58a7_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -300,7 +300,7 @@
     "model_number": "I3MZ-WRCUHZ",
     "title": "I3MZ-WRCUHZ - EOCR-i3MZ WR 1A1B 100~240V Bot.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCUHZ - EOCR-i3MZ WR 1A1B 100~240V Bot..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -308,17 +308,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUHZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUHZ.pdf",
         "local_path": "/docs/574ab8fe54_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -339,7 +339,7 @@
     "model_number": "I3MZ-WRCUTZ",
     "title": "I3MZ-WRCUTZ - EOCR-i3MZ WR 1A1B 100~240V Ter.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCUTZ - EOCR-i3MZ WR 1A1B 100~240V Ter..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -347,17 +347,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUTZ.pdf",
         "local_path": "/docs/7108ceb687_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -376,27 +376,27 @@
   },
   {
     "model_number": "IFM420-WRDBWZ",
-    "title": "IFM420-WRDBWZ - 디지털 보호 계전기 EOCR-iFM420 WR 24V 윈도우.",
+    "title": "IFM420-WRDBWZ - Digital protection relay EOCR-iFM420 WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDBWZ - 디지털 보호 계전기 EOCR-iFM420 WR 24V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDBWZ - Digital protection relay EOCR-iFM420 WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBWZ?filename=Schneider+Electric_EOCR_IFM420-WRDBWZ.pdf",
         "local_path": "/docs/4993745923_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -415,27 +415,27 @@
   },
   {
     "model_number": "IFMZ-WRAUHZ",
-    "title": "IFMZ-WRAUHZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 바텀 커넥트",
+    "title": "IFMZ-WRAUHZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRAUHZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRAUHZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRAUHZ?filename=Schneider+Electric_EOCR_IFMZ-WRAUHZ.pdf",
         "local_path": "/docs/2dde7c4ed6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -454,27 +454,27 @@
   },
   {
     "model_number": "IFMZ-WRCUHZ",
-    "title": "IFMZ-WRCUHZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V Bot.",
+    "title": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRCUHZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V Bot..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRCUHZ?filename=Schneider+Electric_EOCR_IFMZ-WRCUHZ.pdf",
         "local_path": "/docs/e99f83dd46_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -495,7 +495,7 @@
     "model_number": "ISEMMETS-WRBH",
     "title": "ISEMMETS-WRBH - ISEMMET ETH WR 24VDC HOLE TMP + SPECTRUM.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "ISEMMETS-WRBH - ISEMMET ETH WR 24VDC HOLE TMP + SPECTRUM..",
     "end_of_sale": "2023. 6. 30.",
     "official_image_url": null,
@@ -503,17 +503,17 @@
     "image_confirmed_unavailable": true,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMETS-WRBH?filename=Schneider+Electric_EOCR_ISEMMETS-WRBH.pdf",
         "local_path": "/docs/abbf519252_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
         "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-iSEM_Catalog.pdf&p_Doc_Ref=Digitial-iSEM_Catalog",
         "local_path": "/docs/8b3c5864e8_카탈로그.pdf"
       },
@@ -537,27 +537,27 @@
   },
   {
     "model_number": "I3BZ-WRABHZ",
-    "title": "I3BZ-WRABHZ - 디지털 보호 계전기 EOCR-I3BZ WR A-A 24V 바텀 커넥트",
+    "title": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3BZ-WRABHZ - 디지털 보호 계전기 EOCR-I3BZ WR A-A 24V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRABHZ?filename=Schneider+Electric_EOCR_I3BZ-WRABHZ.pdf",
         "local_path": "/docs/8c6624cf83_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -576,27 +576,27 @@
   },
   {
     "model_number": "I3BZ-WRCBHZ",
-    "title": "I3BZ-WRCBHZ - 이오씨알 디지털;  EOCR-I3BZ WR 1A1B 24V 바텀.",
+    "title": "I3BZ-WRCBHZ - ; EOCR-I3BZ WR 1A1B 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3BZ-WRCBHZ - 이오씨알 디지털;  EOCR-I3BZ WR 1A1B 24V 바텀..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3BZ-WRCBHZ - ; EOCR-I3BZ WR 1A1B 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCBHZ?filename=Schneider+Electric_EOCR_I3BZ-WRCBHZ.pdf",
         "local_path": "/docs/b17861f782_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -615,27 +615,27 @@
   },
   {
     "model_number": "I3BZ-WRCUHZ",
-    "title": "I3BZ-WRCUHZ - 디지털 보호 계전기 EOCR-I3BZ WR 1A1B 100~240V.",
+    "title": "I3BZ-WRCUHZ - Digital protection relay EOCR-I3BZ WR 1A1B 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3BZ-WRCUHZ - 디지털 보호 계전기 EOCR-I3BZ WR 1A1B 100~240V..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3BZ-WRCUHZ - Digital protection relay EOCR-I3BZ WR 1A1B 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUHZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUHZ.pdf",
         "local_path": "/docs/207bad7885_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -656,7 +656,7 @@
     "model_number": "I3BZ-WRCUTZ",
     "title": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -664,17 +664,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUTZ.pdf",
         "local_path": "/docs/df2463db72_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -693,27 +693,27 @@
   },
   {
     "model_number": "I3DM-WRDUHZ",
-    "title": "I3DM-WRDUHZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 바텀 커넥트",
+    "title": "I3DM-WRDUHZ - Digital protection relay EOCR-i3DM WR 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDUHZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDUHZ - Digital protection relay EOCR-i3DM WR 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDUHZ?filename=Schneider+Electric_EOCR_I3DM-WRDUHZ.pdf",
         "local_path": "/docs/201467b6d7_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -732,27 +732,27 @@
   },
   {
     "model_number": "I3DM-WRDUWZ",
-    "title": "I3DM-WRDUWZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 윈도우.",
+    "title": "I3DM-WRDUWZ - Digital protection relay EOCR-i3DM WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDUWZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDUWZ - Digital protection relay EOCR-i3DM WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/b8c9a9a7a8_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/se/kr/ko/product/download-pdf/I3DM-WRDUWZ?filename=Schneider+Electric_EOCR_I3DM-WRDUWZ.pdf",
         "local_path": null
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -773,7 +773,7 @@
     "model_number": "I3M420-WRDBWZ",
     "title": "I3M420-WRDBWZ - EOCR-i3M420 WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3M420-WRDBWZ - EOCR-i3M420 WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -781,17 +781,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDBWZ?filename=Schneider+Electric_EOCR_I3M420-WRDBWZ.pdf",
         "local_path": "/docs/1630efc1d6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -810,27 +810,27 @@
   },
   {
     "model_number": "I3M420-WRDUHZ",
-    "title": "I3M420-WRDUHZ - 디지털 보호 계전기 EOCR-i3M420 WR 100~240V 바텀 커넥트",
+    "title": "I3M420-WRDUHZ - Digital protection relay EOCR-i3M420 WR 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3M420-WRDUHZ - 디지털 보호 계전기 EOCR-i3M420 WR 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3M420-WRDUHZ - Digital protection relay EOCR-i3M420 WR 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDUHZ?filename=Schneider+Electric_EOCR_I3M420-WRDUHZ.pdf",
         "local_path": "/docs/b76864d7c3_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -851,7 +851,7 @@
     "model_number": "I3M420-WRDUWZ",
     "title": "I3M420-WRDUWZ - EOCR-i3M420 WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3M420-WRDUWZ - EOCR-i3M420 WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -859,17 +859,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDUWZ?filename=Schneider+Electric_EOCR_I3M420-WRDUWZ.pdf",
         "local_path": "/docs/a13223b738_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -890,7 +890,7 @@
     "model_number": "I3MZ-WRAUHZ",
     "title": "I3MZ-WRAUHZ - EOCR-i3MZ WR A-A 100~240V Bott.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRAUHZ - EOCR-i3MZ WR A-A 100~240V Bott..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -898,17 +898,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRAUHZ?filename=Schneider+Electric_EOCR_I3MZ-WRAUHZ.pdf",
         "local_path": "/docs/d85ed90329_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -929,7 +929,7 @@
     "model_number": "I3MZ-WRCUWZ",
     "title": "I3MZ-WRCUWZ - EOCR-i3MZ WR 1A1B 100~240V Win.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCUWZ - EOCR-i3MZ WR 1A1B 100~240V Win..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -937,17 +937,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUWZ.pdf",
         "local_path": "/docs/c4f64aae4a_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -968,7 +968,7 @@
     "model_number": "IFBZ-WRABHZ",
     "title": "IFBZ-WRABHZ - EOCR-IFBZ WR A-A 24V BOTTOM.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFBZ-WRABHZ - EOCR-IFBZ WR A-A 24V BOTTOM..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -976,17 +976,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRABHZ?filename=Schneider+Electric_EOCR_IFBZ-WRABHZ.pdf",
         "local_path": "/docs/e2dc8fc1b9_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1007,7 +1007,7 @@
     "model_number": "IFBZ-WRABTZ",
     "title": "IFBZ-WRABTZ - EOCR-IFBZ WR A-A 24V TERMINAL.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFBZ-WRABTZ - EOCR-IFBZ WR A-A 24V TERMINAL..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1015,17 +1015,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRABTZ?filename=Schneider+Electric_EOCR_IFBZ-WRABTZ.pdf",
         "local_path": "/docs/3c2d82c18d_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1044,27 +1044,27 @@
   },
   {
     "model_number": "IFBZ-WRAUHZ",
-    "title": "IFBZ-WRAUHZ - 디지털 보호 계전기 EOCR-IFBZ WR A-A 100~240V.",
+    "title": "IFBZ-WRAUHZ - Digital protection relay EOCR-IFBZ WR A-A 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFBZ-WRAUHZ - 디지털 보호 계전기 EOCR-IFBZ WR A-A 100~240V..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFBZ-WRAUHZ - Digital protection relay EOCR-IFBZ WR A-A 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRAUHZ?filename=Schneider+Electric_EOCR_IFBZ-WRAUHZ.pdf",
         "local_path": "/docs/3308de614b_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1083,27 +1083,27 @@
   },
   {
     "model_number": "IFBZ-WRCUHZ",
-    "title": "IFBZ-WRCUHZ - 디지털 보호 계전기 EOCR-IFBZ WR 1A1B 100~240V.",
+    "title": "IFBZ-WRCUHZ - Digital protection relay EOCR-IFBZ WR 1A1B 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFBZ-WRCUHZ - 디지털 보호 계전기 EOCR-IFBZ WR 1A1B 100~240V..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFBZ-WRCUHZ - Digital protection relay EOCR-IFBZ WR 1A1B 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRCUHZ?filename=Schneider+Electric_EOCR_IFBZ-WRCUHZ.pdf",
         "local_path": "/docs/78b1571373_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1122,27 +1122,27 @@
   },
   {
     "model_number": "IFDM-WRDUHZ",
-    "title": "IFDM-WRDUHZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 바텀.",
+    "title": "IFDM-WRDUHZ - Digital protection relay EOCR-iFDM WR 100~240V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFDM-WRDUHZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 바텀..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFDM-WRDUHZ - Digital protection relay EOCR-iFDM WR 100~240V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDUHZ?filename=Schneider+Electric_EOCR_IFDM-WRDUHZ.pdf",
         "local_path": "/docs/6a5916f6ff_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1161,27 +1161,27 @@
   },
   {
     "model_number": "IFDM-WRDUWZ",
-    "title": "IFDM-WRDUWZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 윈도우.",
+    "title": "IFDM-WRDUWZ - Digital protection relay EOCR-iFDM WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFDM-WRDUWZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFDM-WRDUWZ - Digital protection relay EOCR-iFDM WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDUWZ?filename=Schneider+Electric_EOCR_IFDM-WRDUWZ.pdf",
         "local_path": "/docs/36779d1e87_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1200,27 +1200,27 @@
   },
   {
     "model_number": "IFM420-WRDUHZ",
-    "title": "IFM420-WRDUHZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 바텀 커넥트",
+    "title": "IFM420-WRDUHZ - Digital protection relay EOCR-iFM420 WR 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDUHZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDUHZ - Digital protection relay EOCR-iFM420 WR 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUHZ?filename=Schneider+Electric_EOCR_IFM420-WRDUHZ.pdf",
         "local_path": "/docs/3fd2e692bd_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1239,27 +1239,27 @@
   },
   {
     "model_number": "IFM420-WRDUTZ",
-    "title": "IFM420-WRDUTZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 터미널.",
+    "title": "IFM420-WRDUTZ - Digital protection relay EOCR-iFM420 WR 100~240V Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDUTZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 터미널..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDUTZ - Digital protection relay EOCR-iFM420 WR 100~240V Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/fd80dc10ee_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUTZ?filename=Schneider+Electric_EOCR_IFM420-WRDUTZ.pdf",
         "local_path": "/docs/360a5383ae_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1278,27 +1278,27 @@
   },
   {
     "model_number": "IFM420-WRDUWZ",
-    "title": "IFM420-WRDUWZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 윈도우.",
+    "title": "IFM420-WRDUWZ - Digital protection relay EOCR-iFM420 WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDUWZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDUWZ - Digital protection relay EOCR-iFM420 WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUWZ?filename=Schneider+Electric_EOCR_IFM420-WRDUWZ.pdf",
         "local_path": "/docs/844394e41f_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1317,27 +1317,27 @@
   },
   {
     "model_number": "IFMZ-WRAUWZ",
-    "title": "IFMZ-WRAUWZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 윈도우.",
+    "title": "IFMZ-WRAUWZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRAUWZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRAUWZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRAUWZ?filename=Schneider+Electric_EOCR_IFMZ-WRAUWZ.pdf",
         "local_path": "/docs/b398a86527_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1356,27 +1356,27 @@
   },
   {
     "model_number": "IFMZ-WRCUWZ",
-    "title": "IFMZ-WRCUWZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V 윈도우.",
+    "title": "IFMZ-WRCUWZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRCUWZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRCUWZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRCUWZ?filename=Schneider+Electric_EOCR_IFMZ-WRCUWZ.pdf",
         "local_path": "/docs/f07484ca23_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1395,32 +1395,32 @@
   },
   {
     "model_number": "ISEMMET-WRUH",
-    "title": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP.",
+    "title": "ISEMMET-WRUH - Digital protection relay ISEMMET ETH WR 100~240VAC HOLE TMP.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "ISEMMET-WRUH - Digital protection relay ISEMMET ETH WR 100~240VAC HOLE TMP..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMME-WRUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/ecf5ba16c9_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMET-WRUH?filename=Schneider+Electric_EOCR_ISEMMET-WRUH.pdf",
         "local_path": "/docs/cb69354612_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
         "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
       },
       {
-        "label": "설명서",
+        "label": "Manual",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
         "local_path": "/docs/ba772d4ddb_설명서.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
         "local_path": "/docs/6591bcc480_카탈로그.pdf"
       },
@@ -1444,32 +1444,32 @@
   },
   {
     "model_number": "ISEMMETS-WRUH",
-    "title": "ISEMMETS-WRUH - 이오씨알 디지털;  보호릴레이 ISEMMET ETH WR 100~240VAC HOLE TMP.",
+    "title": "ISEMMETS-WRUH - ; ISEMMET ETH WR 100~240VAC HOLE TMP.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "ISEMMETS-WRUH - 이오씨알 디지털;  보호릴레이 ISEMMET ETH WR 100~240VAC HOLE TMP..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "ISEMMETS-WRUH - ; ISEMMET ETH WR 100~240VAC HOLE TMP..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMME-WRUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/ecf5ba16c9_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMETS-WRUH?filename=Schneider+Electric_EOCR_ISEMMETS-WRUH.pdf",
         "local_path": "/docs/de1473e941_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
         "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
       },
       {
-        "label": "설명서",
+        "label": "Manual",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
         "local_path": "/docs/ba772d4ddb_설명서.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
         "local_path": "/docs/6591bcc480_카탈로그.pdf"
       },
@@ -1493,27 +1493,27 @@
   },
   {
     "model_number": "EOCRPMZ-WRDUH",
-    "title": "EOCRPMZ-WRDUH - 다기능 과부하 릴레이 - 0.5~60A - 85~250V AC/DC",
+    "title": "EOCRPMZ-WRDUH - Multi-function overload relay - 0.5~60A - 85~250V AC/DC",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPMZ-WRDUH - 다기능 과부하 릴레이 - 0.5~60A - 85~250V AC/DC.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPMZ-WRDUH - Multi-function overload relay - 0.5~60A - 85~250V AC/DC.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPMZ-WRDUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/14ad3c4df9_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPMZ-WRDUH?filename=Schneider+Electric_EOCR_EOCRPMZ-WRDUH.pdf",
         "local_path": "/docs/0941eda1da_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -1534,7 +1534,7 @@
     "model_number": "I3DM-WRDBTZ",
     "title": "I3DM-WRDBTZ - EOCR-i3DM WR 24V Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3DM-WRDBTZ - EOCR-i3DM WR 24V Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1542,17 +1542,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBTZ?filename=Schneider+Electric_EOCR_I3DM-WRDBTZ.pdf",
         "local_path": "/docs/36d31938d6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1573,7 +1573,7 @@
     "model_number": "I3M420-WRDUTZ",
     "title": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin..",
     "end_of_sale": null,
     "official_image_url": null,
@@ -1597,7 +1597,7 @@
     "model_number": "I3MZ-WRABHZ",
     "title": "I3MZ-WRABHZ - EOCR-i3MZ WR A-A 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRABHZ - EOCR-i3MZ WR A-A 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1605,17 +1605,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRABHZ?filename=Schneider+Electric_EOCR_I3MZ-WRABHZ.pdf",
         "local_path": "/docs/77ceecabfb_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1636,7 +1636,7 @@
     "model_number": "I3MZ-WRABWZ",
     "title": "I3MZ-WRABWZ - EOCR-i3MZ WR A-A 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRABWZ - EOCR-i3MZ WR A-A 24V Window..",
     "end_of_sale": null,
     "official_image_url": null,
@@ -1660,7 +1660,7 @@
     "model_number": "I3MZ-WRCBHZ",
     "title": "I3MZ-WRCBHZ - EOCR-i3MZ WR 1A1B 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCBHZ - EOCR-i3MZ WR 1A1B 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1668,17 +1668,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCBHZ?filename=Schneider+Electric_EOCR_I3MZ-WRCBHZ.pdf",
         "local_path": "/docs/9404f7c99a_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1699,7 +1699,7 @@
     "model_number": "IFDM-WRDBHZ",
     "title": "IFDM-WRDBHZ - EOCR-iFDM WR 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFDM-WRDBHZ - EOCR-iFDM WR 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1707,17 +1707,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDBHZ?filename=Schneider+Electric_EOCR_IFDM-WRDBHZ.pdf",
         "local_path": "/docs/56033d70ae_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1738,7 +1738,7 @@
     "model_number": "IFDM-WRDBWZ",
     "title": "IFDM-WRDBWZ - EOCR-iFDM WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFDM-WRDBWZ - EOCR-iFDM WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1746,17 +1746,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDBWZ?filename=Schneider+Electric_EOCR_IFDM-WRDBWZ.pdf",
         "local_path": "/docs/e9f780dd34_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1777,7 +1777,7 @@
     "model_number": "IFM420-WRDBHZ",
     "title": "IFM420-WRDBHZ - EOCR-iFM420 WR 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFM420-WRDBHZ - EOCR-iFM420 WR 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1785,17 +1785,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBHZ?filename=Schneider+Electric_EOCR_IFM420-WRDBHZ.pdf",
         "local_path": "/docs/0753cf67d6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1816,7 +1816,7 @@
     "model_number": "IFMZ-WRABHZ",
     "title": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": null,
@@ -1824,17 +1824,17 @@
     "image_confirmed_unavailable": true,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRABHZ?filename=Schneider+Electric_EOCR_IFMZ-WRABHZ.pdf",
         "local_path": "/docs/c6808b93bd_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1855,7 +1855,7 @@
     "model_number": "IFMZ-WRABWZ",
     "title": "IFMZ-WRABWZ - EOCR-iFMZ WR A-A 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFMZ-WRABWZ - EOCR-iFMZ WR A-A 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -1863,17 +1863,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRABWZ?filename=Schneider+Electric_EOCR_IFMZ-WRABWZ.pdf",
         "local_path": "/docs/7035d8efed_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -1892,10 +1892,10 @@
   },
   {
     "model_number": "EOCRPFZ-WRDUH",
-    "title": "EOCRPFZ-WRDUH - 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC Hole.",
+    "title": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPFZ-WRDUH - 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC Hole..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole..",
     "end_of_sale": null,
     "official_image_url": null,
     "local_photo_path": null,
@@ -1916,27 +1916,27 @@
   },
   {
     "model_number": "EOCRPFZ-WRDUT",
-    "title": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널.",
+    "title": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUT_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/65fe6cb6bc_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZ-WRDUT?filename=Schneider+Electric_EOCR_EOCRPFZ-WRDUT.pdf",
         "local_path": "/docs/f331fda9d3_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -1955,27 +1955,27 @@
   },
   {
     "model_number": "EOCRPFZ-WRDUT",
-    "title": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널.",
+    "title": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPFZ-WRDUT - 디지털 다기능 과부하 릴레이 EOCR-PFZ 100~240 VAC/DC 터미널..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPFZ-WRDUT - Digital multi-function overload relay EOCR-PFZ 100~240 VAC/DC Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUT_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/65fe6cb6bc_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZ-WRDUT?filename=Schneider+Electric_EOCR_EOCRPFZ-WRDUT.pdf",
         "local_path": "/docs/f331fda9d3_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -1996,7 +1996,7 @@
     "model_number": "EOCRPFZT-WRDUH",
     "title": "EOCRPFZT-WRDUH - EOCR-PFZ 100~240 VAC/DC Hole TMP.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "EOCRPFZT-WRDUH - EOCR-PFZ 100~240 VAC/DC Hole TMP..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPFZ-WRDUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2004,17 +2004,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZT-WRDUH?filename=Schneider+Electric_EOCR_EOCRPFZT-WRDUH.pdf",
         "local_path": "/docs/7c8db82378_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -2033,27 +2033,27 @@
   },
   {
     "model_number": "I3DM-WRDBWZ",
-    "title": "I3DM-WRDBWZ - 디지털 보호 계전기 EOCR-i3DM WR 24V 윈도우.",
+    "title": "I3DM-WRDBWZ - Digital protection relay EOCR-i3DM WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDBWZ - 디지털 보호 계전기 EOCR-i3DM WR 24V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDBWZ - Digital protection relay EOCR-i3DM WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/b8c9a9a7a8_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBWZ?filename=Schneider+Electric_EOCR_I3DM-WRDBWZ.pdf",
         "local_path": "/docs/5621153c2f_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2074,7 +2074,7 @@
     "model_number": "I3DM-WRDUTZ",
     "title": "I3DM-WRDUTZ - EOCR-i3DM WR 100~240V Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3DM-WRDUTZ - EOCR-i3DM WR 100~240V Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2082,17 +2082,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDUTZ?filename=Schneider+Electric_EOCR_I3DM-WRDUTZ.pdf",
         "local_path": "/docs/0720bf0e58_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2111,27 +2111,27 @@
   },
   {
     "model_number": "I3M420-WRDBHZ",
-    "title": "I3M420-WRDBHZ - 디지털 보호 계전기 EOCR-i3M420 WR 24V 바텀 커넥트",
+    "title": "I3M420-WRDBHZ - Digital protection relay EOCR-i3M420 WR 24V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3M420-WRDBHZ - 디지털 보호 계전기 EOCR-i3M420 WR 24V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3M420-WRDBHZ - Digital protection relay EOCR-i3M420 WR 24V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDBHZ?filename=Schneider+Electric_EOCR_I3M420-WRDBHZ.pdf",
         "local_path": "/docs/8dfe5dba0f_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2152,7 +2152,7 @@
     "model_number": "I3MZ-WRAUWZ",
     "title": "I3MZ-WRAUWZ - EOCR-i3MZ WR A-A 100~240V Wind.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRAUWZ - EOCR-i3MZ WR A-A 100~240V Wind..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2160,17 +2160,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRAUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRAUWZ.pdf",
         "local_path": "/docs/5630ee58a7_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2191,7 +2191,7 @@
     "model_number": "I3MZ-WRCUHZ",
     "title": "I3MZ-WRCUHZ - EOCR-i3MZ WR 1A1B 100~240V Bot.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCUHZ - EOCR-i3MZ WR 1A1B 100~240V Bot..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2199,17 +2199,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUHZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUHZ.pdf",
         "local_path": "/docs/574ab8fe54_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2230,7 +2230,7 @@
     "model_number": "I3MZ-WRCUTZ",
     "title": "I3MZ-WRCUTZ - EOCR-i3MZ WR 1A1B 100~240V Ter.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCUTZ - EOCR-i3MZ WR 1A1B 100~240V Ter..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2238,17 +2238,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUTZ.pdf",
         "local_path": "/docs/7108ceb687_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2267,27 +2267,27 @@
   },
   {
     "model_number": "IFM420-WRDBWZ",
-    "title": "IFM420-WRDBWZ - 디지털 보호 계전기 EOCR-iFM420 WR 24V 윈도우.",
+    "title": "IFM420-WRDBWZ - Digital protection relay EOCR-iFM420 WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDBWZ - 디지털 보호 계전기 EOCR-iFM420 WR 24V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDBWZ - Digital protection relay EOCR-iFM420 WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBWZ?filename=Schneider+Electric_EOCR_IFM420-WRDBWZ.pdf",
         "local_path": "/docs/4993745923_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2306,27 +2306,27 @@
   },
   {
     "model_number": "IFMZ-WRAUHZ",
-    "title": "IFMZ-WRAUHZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 바텀 커넥트",
+    "title": "IFMZ-WRAUHZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRAUHZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRAUHZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRAUHZ?filename=Schneider+Electric_EOCR_IFMZ-WRAUHZ.pdf",
         "local_path": "/docs/2dde7c4ed6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2345,27 +2345,27 @@
   },
   {
     "model_number": "IFMZ-WRCUHZ",
-    "title": "IFMZ-WRCUHZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V Bot.",
+    "title": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRCUHZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V Bot..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRCUHZ?filename=Schneider+Electric_EOCR_IFMZ-WRCUHZ.pdf",
         "local_path": "/docs/e99f83dd46_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2386,7 +2386,7 @@
     "model_number": "ISEMMETS-WRBH",
     "title": "ISEMMETS-WRBH - ISEMMET ETH WR 24VDC HOLE TMP + SPECTRUM.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "ISEMMETS-WRBH - ISEMMET ETH WR 24VDC HOLE TMP + SPECTRUM..",
     "end_of_sale": "2023. 6. 30.",
     "official_image_url": null,
@@ -2394,17 +2394,17 @@
     "image_confirmed_unavailable": true,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMETS-WRBH?filename=Schneider+Electric_EOCR_ISEMMETS-WRBH.pdf",
         "local_path": "/docs/abbf519252_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
         "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-iSEM_Catalog.pdf&p_Doc_Ref=Digitial-iSEM_Catalog",
         "local_path": "/docs/8b3c5864e8_카탈로그.pdf"
       },
@@ -2428,27 +2428,27 @@
   },
   {
     "model_number": "I3BZ-WRABHZ",
-    "title": "I3BZ-WRABHZ - 디지털 보호 계전기 EOCR-I3BZ WR A-A 24V 바텀 커넥트",
+    "title": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3BZ-WRABHZ - 디지털 보호 계전기 EOCR-I3BZ WR A-A 24V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRABHZ?filename=Schneider+Electric_EOCR_I3BZ-WRABHZ.pdf",
         "local_path": "/docs/8c6624cf83_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2467,27 +2467,27 @@
   },
   {
     "model_number": "I3BZ-WRCBHZ",
-    "title": "I3BZ-WRCBHZ - 이오씨알 디지털;  EOCR-I3BZ WR 1A1B 24V 바텀.",
+    "title": "I3BZ-WRCBHZ - ; EOCR-I3BZ WR 1A1B 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3BZ-WRCBHZ - 이오씨알 디지털;  EOCR-I3BZ WR 1A1B 24V 바텀..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3BZ-WRCBHZ - ; EOCR-I3BZ WR 1A1B 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCBHZ?filename=Schneider+Electric_EOCR_I3BZ-WRCBHZ.pdf",
         "local_path": "/docs/b17861f782_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2506,27 +2506,27 @@
   },
   {
     "model_number": "I3BZ-WRCUHZ",
-    "title": "I3BZ-WRCUHZ - 디지털 보호 계전기 EOCR-I3BZ WR 1A1B 100~240V.",
+    "title": "I3BZ-WRCUHZ - Digital protection relay EOCR-I3BZ WR 1A1B 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3BZ-WRCUHZ - 디지털 보호 계전기 EOCR-I3BZ WR 1A1B 100~240V..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3BZ-WRCUHZ - Digital protection relay EOCR-I3BZ WR 1A1B 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUHZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUHZ.pdf",
         "local_path": "/docs/207bad7885_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2547,7 +2547,7 @@
     "model_number": "I3BZ-WRCUTZ",
     "title": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2555,17 +2555,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUTZ.pdf",
         "local_path": "/docs/df2463db72_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2584,27 +2584,27 @@
   },
   {
     "model_number": "I3DM-WRDUHZ",
-    "title": "I3DM-WRDUHZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 바텀 커넥트",
+    "title": "I3DM-WRDUHZ - Digital protection relay EOCR-i3DM WR 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDUHZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDUHZ - Digital protection relay EOCR-i3DM WR 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDUHZ?filename=Schneider+Electric_EOCR_I3DM-WRDUHZ.pdf",
         "local_path": "/docs/201467b6d7_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2623,27 +2623,27 @@
   },
   {
     "model_number": "I3DM-WRDUWZ",
-    "title": "I3DM-WRDUWZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 윈도우.",
+    "title": "I3DM-WRDUWZ - Digital protection relay EOCR-i3DM WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDUWZ - 디지털 보호 계전기 EOCR-i3DM WR 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDUWZ - Digital protection relay EOCR-i3DM WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/b8c9a9a7a8_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/se/kr/ko/product/download-pdf/I3DM-WRDUWZ?filename=Schneider+Electric_EOCR_I3DM-WRDUWZ.pdf",
         "local_path": null
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2664,7 +2664,7 @@
     "model_number": "I3M420-WRDBWZ",
     "title": "I3M420-WRDBWZ - EOCR-i3M420 WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3M420-WRDBWZ - EOCR-i3M420 WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2672,17 +2672,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDBWZ?filename=Schneider+Electric_EOCR_I3M420-WRDBWZ.pdf",
         "local_path": "/docs/1630efc1d6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2701,27 +2701,27 @@
   },
   {
     "model_number": "I3M420-WRDUHZ",
-    "title": "I3M420-WRDUHZ - 디지털 보호 계전기 EOCR-i3M420 WR 100~240V 바텀 커넥트",
+    "title": "I3M420-WRDUHZ - Digital protection relay EOCR-i3M420 WR 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3M420-WRDUHZ - 디지털 보호 계전기 EOCR-i3M420 WR 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3M420-WRDUHZ - Digital protection relay EOCR-i3M420 WR 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDUHZ?filename=Schneider+Electric_EOCR_I3M420-WRDUHZ.pdf",
         "local_path": "/docs/b76864d7c3_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2742,7 +2742,7 @@
     "model_number": "I3M420-WRDUWZ",
     "title": "I3M420-WRDUWZ - EOCR-i3M420 WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3M420-WRDUWZ - EOCR-i3M420 WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2750,17 +2750,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDUWZ?filename=Schneider+Electric_EOCR_I3M420-WRDUWZ.pdf",
         "local_path": "/docs/a13223b738_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2781,7 +2781,7 @@
     "model_number": "I3MZ-WRAUHZ",
     "title": "I3MZ-WRAUHZ - EOCR-i3MZ WR A-A 100~240V Bott.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRAUHZ - EOCR-i3MZ WR A-A 100~240V Bott..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2789,17 +2789,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRAUHZ?filename=Schneider+Electric_EOCR_I3MZ-WRAUHZ.pdf",
         "local_path": "/docs/d85ed90329_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2820,7 +2820,7 @@
     "model_number": "I3MZ-WRCUWZ",
     "title": "I3MZ-WRCUWZ - EOCR-i3MZ WR 1A1B 100~240V Win.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCUWZ - EOCR-i3MZ WR 1A1B 100~240V Win..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2828,17 +2828,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUWZ.pdf",
         "local_path": "/docs/c4f64aae4a_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2859,7 +2859,7 @@
     "model_number": "IFBZ-WRABHZ",
     "title": "IFBZ-WRABHZ - EOCR-IFBZ WR A-A 24V BOTTOM.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFBZ-WRABHZ - EOCR-IFBZ WR A-A 24V BOTTOM..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2867,17 +2867,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRABHZ?filename=Schneider+Electric_EOCR_IFBZ-WRABHZ.pdf",
         "local_path": "/docs/e2dc8fc1b9_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2898,7 +2898,7 @@
     "model_number": "IFBZ-WRABTZ",
     "title": "IFBZ-WRABTZ - EOCR-IFBZ WR A-A 24V TERMINAL.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFBZ-WRABTZ - EOCR-IFBZ WR A-A 24V TERMINAL..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -2906,17 +2906,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRABTZ?filename=Schneider+Electric_EOCR_IFBZ-WRABTZ.pdf",
         "local_path": "/docs/3c2d82c18d_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2935,27 +2935,27 @@
   },
   {
     "model_number": "IFBZ-WRAUHZ",
-    "title": "IFBZ-WRAUHZ - 디지털 보호 계전기 EOCR-IFBZ WR A-A 100~240V.",
+    "title": "IFBZ-WRAUHZ - Digital protection relay EOCR-IFBZ WR A-A 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFBZ-WRAUHZ - 디지털 보호 계전기 EOCR-IFBZ WR A-A 100~240V..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFBZ-WRAUHZ - Digital protection relay EOCR-IFBZ WR A-A 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRAUHZ?filename=Schneider+Electric_EOCR_IFBZ-WRAUHZ.pdf",
         "local_path": "/docs/3308de614b_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -2974,27 +2974,27 @@
   },
   {
     "model_number": "IFBZ-WRCUHZ",
-    "title": "IFBZ-WRCUHZ - 디지털 보호 계전기 EOCR-IFBZ WR 1A1B 100~240V.",
+    "title": "IFBZ-WRCUHZ - Digital protection relay EOCR-IFBZ WR 1A1B 100~240V.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFBZ-WRCUHZ - 디지털 보호 계전기 EOCR-IFBZ WR 1A1B 100~240V..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFBZ-WRCUHZ - Digital protection relay EOCR-IFBZ WR 1A1B 100~240V..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRCUHZ?filename=Schneider+Electric_EOCR_IFBZ-WRCUHZ.pdf",
         "local_path": "/docs/78b1571373_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3013,27 +3013,27 @@
   },
   {
     "model_number": "IFDM-WRDUHZ",
-    "title": "IFDM-WRDUHZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 바텀.",
+    "title": "IFDM-WRDUHZ - Digital protection relay EOCR-iFDM WR 100~240V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFDM-WRDUHZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 바텀..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFDM-WRDUHZ - Digital protection relay EOCR-iFDM WR 100~240V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDUHZ?filename=Schneider+Electric_EOCR_IFDM-WRDUHZ.pdf",
         "local_path": "/docs/6a5916f6ff_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3052,27 +3052,27 @@
   },
   {
     "model_number": "IFDM-WRDUWZ",
-    "title": "IFDM-WRDUWZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 윈도우.",
+    "title": "IFDM-WRDUWZ - Digital protection relay EOCR-iFDM WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFDM-WRDUWZ - 디지털 보호 계전기 EOCR-iFDM WR 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFDM-WRDUWZ - Digital protection relay EOCR-iFDM WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDUWZ?filename=Schneider+Electric_EOCR_IFDM-WRDUWZ.pdf",
         "local_path": "/docs/36779d1e87_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3091,27 +3091,27 @@
   },
   {
     "model_number": "IFM420-WRDUHZ",
-    "title": "IFM420-WRDUHZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 바텀 커넥트",
+    "title": "IFM420-WRDUHZ - Digital protection relay EOCR-iFM420 WR 100~240V Bottom connect",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDUHZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 바텀 커넥트.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDUHZ - Digital protection relay EOCR-iFM420 WR 100~240V Bottom connect.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/41f17ffe22_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUHZ?filename=Schneider+Electric_EOCR_IFM420-WRDUHZ.pdf",
         "local_path": "/docs/3fd2e692bd_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3130,27 +3130,27 @@
   },
   {
     "model_number": "IFM420-WRDUTZ",
-    "title": "IFM420-WRDUTZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 터미널.",
+    "title": "IFM420-WRDUTZ - Digital protection relay EOCR-iFM420 WR 100~240V Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDUTZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 터미널..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDUTZ - Digital protection relay EOCR-iFM420 WR 100~240V Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/fd80dc10ee_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUTZ?filename=Schneider+Electric_EOCR_IFM420-WRDUTZ.pdf",
         "local_path": "/docs/360a5383ae_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3169,27 +3169,27 @@
   },
   {
     "model_number": "IFM420-WRDUWZ",
-    "title": "IFM420-WRDUWZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 윈도우.",
+    "title": "IFM420-WRDUWZ - Digital protection relay EOCR-iFM420 WR 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFM420-WRDUWZ - 디지털 보호 계전기 EOCR-iFM420 WR 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFM420-WRDUWZ - Digital protection relay EOCR-iFM420 WR 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUWZ?filename=Schneider+Electric_EOCR_IFM420-WRDUWZ.pdf",
         "local_path": "/docs/844394e41f_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3208,27 +3208,27 @@
   },
   {
     "model_number": "IFMZ-WRAUWZ",
-    "title": "IFMZ-WRAUWZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 윈도우.",
+    "title": "IFMZ-WRAUWZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRAUWZ - 디지털 보호 계전기 EOCR-iFMZ WR A-A 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRAUWZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRAUWZ?filename=Schneider+Electric_EOCR_IFMZ-WRAUWZ.pdf",
         "local_path": "/docs/b398a86527_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3247,27 +3247,27 @@
   },
   {
     "model_number": "IFMZ-WRCUWZ",
-    "title": "IFMZ-WRCUWZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V 윈도우.",
+    "title": "IFMZ-WRCUWZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "IFMZ-WRCUWZ - 디지털 보호 계전기 EOCR-iFMZ WR 1A1B 100~240V 윈도우..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "IFMZ-WRCUWZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/3b553ae721_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRCUWZ?filename=Schneider+Electric_EOCR_IFMZ-WRCUWZ.pdf",
         "local_path": "/docs/f07484ca23_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3286,32 +3286,32 @@
   },
   {
     "model_number": "ISEMMET-WRUH",
-    "title": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP.",
+    "title": "ISEMMET-WRUH - Digital protection relay ISEMMET ETH WR 100~240VAC HOLE TMP.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "ISEMMET-WRUH - Digital protection relay ISEMMET ETH WR 100~240VAC HOLE TMP..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMME-WRUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/ecf5ba16c9_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMET-WRUH?filename=Schneider+Electric_EOCR_ISEMMET-WRUH.pdf",
         "local_path": "/docs/cb69354612_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
         "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
       },
       {
-        "label": "설명서",
+        "label": "Manual",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
         "local_path": "/docs/ba772d4ddb_설명서.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
         "local_path": "/docs/6591bcc480_카탈로그.pdf"
       },
@@ -3335,32 +3335,32 @@
   },
   {
     "model_number": "ISEMMETS-WRUH",
-    "title": "ISEMMETS-WRUH - 이오씨알 디지털;  보호릴레이 ISEMMET ETH WR 100~240VAC HOLE TMP.",
+    "title": "ISEMMETS-WRUH - ; ISEMMET ETH WR 100~240VAC HOLE TMP.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "ISEMMETS-WRUH - 이오씨알 디지털;  보호릴레이 ISEMMET ETH WR 100~240VAC HOLE TMP..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "ISEMMETS-WRUH - ; ISEMMET ETH WR 100~240VAC HOLE TMP..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMME-WRUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/ecf5ba16c9_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMETS-WRUH?filename=Schneider+Electric_EOCR_ISEMMETS-WRUH.pdf",
         "local_path": "/docs/de1473e941_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
         "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
       },
       {
-        "label": "설명서",
+        "label": "Manual",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
         "local_path": "/docs/ba772d4ddb_설명서.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
         "local_path": "/docs/6591bcc480_카탈로그.pdf"
       },
@@ -3384,27 +3384,27 @@
   },
   {
     "model_number": "EOCRPMZ-WRDUH",
-    "title": "EOCRPMZ-WRDUH - 다기능 과부하 릴레이 - 0.5~60A - 85~250V AC/DC",
+    "title": "EOCRPMZ-WRDUH - Multi-function overload relay - 0.5~60A - 85~250V AC/DC",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "EOCRPMZ-WRDUH - 다기능 과부하 릴레이 - 0.5~60A - 85~250V AC/DC.",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "EOCRPMZ-WRDUH - Multi-function overload relay - 0.5~60A - 85~250V AC/DC.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRPMZ-WRDUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/14ad3c4df9_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPMZ-WRDUH?filename=Schneider+Electric_EOCR_EOCRPMZ-WRDUH.pdf",
         "local_path": "/docs/0941eda1da_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
         "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
         "local_path": "/docs/d331336f23_카탈로그.pdf"
       },
@@ -3423,27 +3423,27 @@
   },
   {
     "model_number": "I3DM-WRDBHZ",
-    "title": "I3DM-WRDBHZ - 이오씨알 디지털; EOCR-i3DM WR 24V 바텀.",
+    "title": "I3DM-WRDBHZ - ; EOCR-i3DM WR 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-    "description": "I3DM-WRDBHZ - 이오씨알 디지털; EOCR-i3DM WR 24V 바텀..",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
+    "description": "I3DM-WRDBHZ - ; EOCR-i3DM WR 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/e281b20394_photo.jpg",
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBHZ?filename=Schneider+Electric_EOCR_I3DM-WRDBHZ.pdf",
         "local_path": "/docs/735abd3392_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3464,7 +3464,7 @@
     "model_number": "I3DM-WRDBTZ",
     "title": "I3DM-WRDBTZ - EOCR-i3DM WR 24V Terminal.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3DM-WRDBTZ - EOCR-i3DM WR 24V Terminal..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3472,17 +3472,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBTZ?filename=Schneider+Electric_EOCR_I3DM-WRDBTZ.pdf",
         "local_path": "/docs/36d31938d6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3503,7 +3503,7 @@
     "model_number": "I3M420-WRDUTZ",
     "title": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin..",
     "end_of_sale": null,
     "official_image_url": null,
@@ -3527,7 +3527,7 @@
     "model_number": "I3MZ-WRABHZ",
     "title": "I3MZ-WRABHZ - EOCR-i3MZ WR A-A 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRABHZ - EOCR-i3MZ WR A-A 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3535,17 +3535,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRABHZ?filename=Schneider+Electric_EOCR_I3MZ-WRABHZ.pdf",
         "local_path": "/docs/77ceecabfb_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3566,7 +3566,7 @@
     "model_number": "I3MZ-WRABWZ",
     "title": "I3MZ-WRABWZ - EOCR-i3MZ WR A-A 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRABWZ - EOCR-i3MZ WR A-A 24V Window..",
     "end_of_sale": null,
     "official_image_url": null,
@@ -3590,7 +3590,7 @@
     "model_number": "I3MZ-WRCBHZ",
     "title": "I3MZ-WRCBHZ - EOCR-i3MZ WR 1A1B 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "I3MZ-WRCBHZ - EOCR-i3MZ WR 1A1B 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3598,17 +3598,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCBHZ?filename=Schneider+Electric_EOCR_I3MZ-WRCBHZ.pdf",
         "local_path": "/docs/9404f7c99a_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3629,7 +3629,7 @@
     "model_number": "IFDM-WRDBHZ",
     "title": "IFDM-WRDBHZ - EOCR-iFDM WR 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFDM-WRDBHZ - EOCR-iFDM WR 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3637,17 +3637,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDBHZ?filename=Schneider+Electric_EOCR_IFDM-WRDBHZ.pdf",
         "local_path": "/docs/56033d70ae_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3668,7 +3668,7 @@
     "model_number": "IFDM-WRDBWZ",
     "title": "IFDM-WRDBWZ - EOCR-iFDM WR 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFDM-WRDBWZ - EOCR-iFDM WR 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3676,17 +3676,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDBWZ?filename=Schneider+Electric_EOCR_IFDM-WRDBWZ.pdf",
         "local_path": "/docs/e9f780dd34_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3707,7 +3707,7 @@
     "model_number": "IFM420-WRDBHZ",
     "title": "IFM420-WRDBHZ - EOCR-iFM420 WR 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFM420-WRDBHZ - EOCR-iFM420 WR 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3715,17 +3715,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBHZ?filename=Schneider+Electric_EOCR_IFM420-WRDBHZ.pdf",
         "local_path": "/docs/0753cf67d6_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3746,7 +3746,7 @@
     "model_number": "IFMZ-WRABHZ",
     "title": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom..",
     "end_of_sale": null,
     "official_image_url": null,
@@ -3754,17 +3754,17 @@
     "image_confirmed_unavailable": true,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRABHZ?filename=Schneider+Electric_EOCR_IFMZ-WRABHZ.pdf",
         "local_path": "/docs/c6808b93bd_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -3785,7 +3785,7 @@
     "model_number": "IFMZ-WRABWZ",
     "title": "IFMZ-WRABWZ - EOCR-iFMZ WR A-A 24V Window.",
     "range_name": "EOCR",
-    "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+    "range_short_desc": "Electronic motor protection device (EOCR)",
     "description": "IFMZ-WRABWZ - EOCR-iFMZ WR A-A 24V Window..",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -3793,17 +3793,17 @@
     "image_confirmed_unavailable": false,
     "documents": [
       {
-        "label": "제품 데이터 시트",
+        "label": "Datasheet",
         "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRABWZ?filename=Schneider+Electric_EOCR_IFMZ-WRABWZ.pdf",
         "local_path": "/docs/7035d8efed_제품_데이터_시트.pdf"
       },
       {
-        "label": "사용자 가이드",
+        "label": "User Guide",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
         "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
       },
       {
-        "label": "카탈로그",
+        "label": "Catalog",
         "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
         "local_path": "/docs/4e41af41bd_카탈로그.pdf"
       },
@@ -4224,10 +4224,10 @@
   },
   {
     "model_number": "EOCRSS-30S",
-    "title": "EOCRSS-30S - electronic overcurrent relay - 3-30A  - 220 V AC",
+    "title": "EOCRSS-30S - electronic overcurrent relay - 3-30A - 220 V AC",
     "range_name": "EOCR",
     "range_short_desc": "Electronic overcurrent relays",
-    "description": "EOCRSS-30S - electronic overcurrent relay - 3-30A  - 220 V AC.",
+    "description": "EOCRSS-30S - electronic overcurrent relay - 3-30A - 220 V AC.",
     "end_of_sale": null,
     "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=EOCRSS-05S_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
     "local_photo_path": "/docs/1b27f038b7_photo.jpg",

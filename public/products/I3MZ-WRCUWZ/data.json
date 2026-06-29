@@ -2,7 +2,7 @@
   "model_number": "I3MZ-WRCUWZ",
   "title": "I3MZ-WRCUWZ - EOCR-i3MZ WR 1A1B 100~240V Win.",
   "range_name": "EOCR",
-  "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
+  "range_short_desc": "Electronic motor protection device (EOCR)",
   "description": "I3MZ-WRCUWZ - EOCR-i3MZ WR 1A1B 100~240V Win..",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
@@ -10,17 +10,17 @@
   "image_confirmed_unavailable": false,
   "documents": [
     {
-      "label": "제품 데이터 시트",
+      "label": "Datasheet",
       "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUWZ.pdf",
       "local_path": "/docs/c4f64aae4a_제품_데이터_시트.pdf"
     },
     {
-      "label": "사용자 가이드",
+      "label": "User Guide",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
       "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
     },
     {
-      "label": "카탈로그",
+      "label": "Catalog",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
       "local_path": "/docs/4e41af41bd_카탈로그.pdf"
     },

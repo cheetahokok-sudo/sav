@@ -82,6 +82,77 @@ def clean_country_branding(text: str | None) -> str | None:
     return text.strip()
 
 
+# Known recurring Korean technical phrases seen across the Korea-origin EOCR
+# range (the products that have no English-site equivalent, so this is the
+# only language available for them). Longer/more specific phrases are
+# listed first so they match before their shorter sub-phrases do.
+KOREAN_PHRASE_TRANSLATIONS: list[tuple[str, str]] = [
+    ("전자식 모터 보호 기기", "Electronic motor protection device"),
+    ("디지털 다기능 과부하 릴레이", "Digital multi-function overload relay"),
+    ("다기능 과부하 릴레이", "Multi-function overload relay"),
+    ("디지털 보호 계전기", "Digital protection relay"),
+    ("과부하 릴레이", "Overload relay"),
+    ("보호 계전기", "Protection relay"),
+    ("언더 커런트 릴레이", "Under current relay"),
+    ("절연 모니터", "Insulation monitor"),
+    ("전자식", "Electronic"),
+    ("모터", "Motor"),
+    ("터미널", "Terminal"),
+    ("윈도우", "Window"),
+    ("바텀", "Bottom"),
+    ("커넥트", "connect"),
+    ("홀", "Hole"),
+]
+
+_HANGUL_RE = re.compile(r"[\uAC00-\uD7A3]+")
+
+# Known document-type labels seen on Korean product pages. Unlike titles/
+# descriptions (which mix Korean with English model codes/numbers, so
+# stripping leftover Korean still leaves something readable), a document
+# label can be ENTIRELY Korean -- stripping that would leave an empty
+# button. So: translate known ones, and fall back to a generic "Document"
+# for anything else still containing Korean (never leave it untranslated).
+DOCUMENT_LABEL_TRANSLATIONS: dict[str, str] = {
+    "제품 데이터 시트": "Datasheet",
+    "사용자 가이드": "User Guide",
+    "카탈로그": "Catalog",
+    "제품 선택도구": "Product Selector",
+    "설명서": "Manual",
+    "사용 설명서": "Instruction Manual",
+    "제품 사양서": "Product Specification",
+    "성적서": "Test Report",
+    "인증서": "Certificate",
+}
+
+
+def translate_document_label(label: str | None) -> str:
+    if not label:
+        return "Document"
+    label = label.strip()
+    if label in DOCUMENT_LABEL_TRANSLATIONS:
+        return DOCUMENT_LABEL_TRANSLATIONS[label]
+    if _HANGUL_RE.search(label):
+        return "Document"  # unmapped Korean label -- safe generic fallback
+    return label  # already English (e.g. "CAD", "EOCR Catalog (English)")
+
+
+def translate_or_strip_korean(text: str | None) -> str | None:
+    """Translates known recurring Korean phrases to English; anything left
+    over that's still Korean gets stripped out entirely (per explicit
+    request -- no raw Korean should remain on the live site), with the
+    surrounding whitespace/punctuation cleaned up afterward."""
+    if not text:
+        return text
+    for korean, english in KOREAN_PHRASE_TRANSLATIONS:
+        text = text.replace(korean, english)
+    # Strip any Hangul still remaining (untranslated phrases)
+    text = _HANGUL_RE.sub("", text)
+    # Clean up leftover double spaces / stray punctuation from the removal
+    text = re.sub(r"\s{2,}", " ", text)
+    text = re.sub(r"\s+([.,])", r"\1", text)
+    return text.strip()
+
+
 def slugify_filename(label: str, url: str) -> str:
     """Turn a document label into a safe filename, falling back to the
     original filename in the URL if the label is empty/generic."""
@@ -161,7 +232,7 @@ def build_folders(records: list[dict], download: bool):
                     else:
                         fetched += 1
             local_documents.append({
-                "label": doc.get("label"),
+                "label": translate_document_label(doc.get("label")),
                 "official_url": doc.get("url"),
                 "local_path": local_path,
             })
@@ -174,10 +245,10 @@ def build_folders(records: list[dict], download: bool):
 
         data = {
             "model_number": model,
-            "title": clean_country_branding(record.get("title")),
+            "title": translate_or_strip_korean(clean_country_branding(record.get("title"))),
             "range_name": record.get("range_name"),
-            "range_short_desc": record.get("range_short_desc"),
-            "description": clean_country_branding(record.get("description")),
+            "range_short_desc": translate_or_strip_korean(record.get("range_short_desc")),
+            "description": translate_or_strip_korean(clean_country_branding(record.get("description"))),
             "end_of_sale": record.get("end_of_sale"),
             "official_image_url": record.get("product_image_url"),
             "local_photo_path": local_photo_path,

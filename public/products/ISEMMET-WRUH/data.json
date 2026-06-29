@@ -1,31 +1,31 @@
 {
   "model_number": "ISEMMET-WRUH",
-  "title": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP.",
+  "title": "ISEMMET-WRUH - Digital protection relay ISEMMET ETH WR 100~240VAC HOLE TMP.",
   "range_name": "EOCR",
-  "range_short_desc": "전자식 모터 보호 기기 (EOCR)",
-  "description": "ISEMMET-WRUH - 디지털 보호 계전기 ISEMMET ETH WR 100~240VAC HOLE TMP..",
+  "range_short_desc": "Electronic motor protection device (EOCR)",
+  "description": "ISEMMET-WRUH - Digital protection relay ISEMMET ETH WR 100~240VAC HOLE TMP..",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMME-WRUH_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/ecf5ba16c9_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
     {
-      "label": "제품 데이터 시트",
+      "label": "Datasheet",
       "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMET-WRUH?filename=Schneider+Electric_EOCR_ISEMMET-WRUH.pdf",
       "local_path": "/docs/cb69354612_제품_데이터_시트.pdf"
     },
     {
-      "label": "사용자 가이드",
+      "label": "User Guide",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
       "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
     },
     {
-      "label": "설명서",
+      "label": "Manual",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
       "local_path": "/docs/ba772d4ddb_설명서.pdf"
     },
     {
-      "label": "카탈로그",
+      "label": "Catalog",
       "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
       "local_path": "/docs/6591bcc480_카탈로그.pdf"
     },
