@@ -1,6 +1,8 @@
 import Link from "next/link";
 import MobileNav from "./components/MobileNav";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const navLinks = [
   { href: "#why", label: "ABOUT US" },
   { href: "/products/", label: "PRODUCTS" },
@@ -417,7 +419,7 @@ export default function Home() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={s.image}
+                src={`${BASE}${s.image}`}
                 alt={s.name}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
