@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import ContactBar from "../components/ContactBar";
+import { COMPANY, whatsappLink, mailtoLink } from "../lib/company";
 
 type ProductDoc = {
   label: string;
@@ -21,16 +23,20 @@ type Product = {
   documents: ProductDoc[];
   source_url: string | null;
   category: string | null;
-  in_stock: boolean;
+  // Stock states: true = in stock in Thailand (พร้อมส่ง),
+  // false = pre-order / lead time (สั่งล่วงหน้า), null/undefined = ask.
+  // Edit per-SKU in public/products/index.json (field: "in_stock").
+  in_stock: boolean | null;
+  your_price?: string | null;
 };
 
+type QuoteItem = { model: string; qty: number };
+
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const QUOTE_KEY = "sav_quote_v1";
 
 // Document labels come straight from whatever language the source page was
-// scraped in (mostly Korean, since that's the only site with full content
-// for this Korea-origin product line). Translate the known ones for display;
-// anything not in this map (e.g. "CAD", or our own "EOCR Catalog (English)")
-// is already fine as-is and passes through unchanged.
+// scraped in (mostly Korean). Translate the known ones for display.
 const LABEL_TRANSLATIONS: Record<string, string> = {
   "제품 데이터 시트": "Datasheet",
   "사용자 가이드": "User Guide",
@@ -42,11 +48,8 @@ function translateLabel(label: string): string {
   return LABEL_TRANSLATIONS[label.trim()] || label;
 }
 
-// Scraped titles look like "MODEL - Protection relay, EOCR Digital, 0.5 to
-// 60A... | Schneider Electric Egypt" -- strip both the model-number prefix
-// and the trailing site-branding suffix, leaving just the clean spec
-// description (which is what actually matters to a customer: current/
-// voltage range, mounting type).
+// Strip "MODEL - " prefix and "| Schneider Electric ..." suffix from scraped
+// titles, leaving the clean spec description a customer actually reads.
 function cleanDescription(title: string | null, model: string): string | null {
   if (!title) return title;
   let cleaned = title.replace(/\s*\|\s*Schneider Electric\s*\S*\s*$/, "").trim();
@@ -57,11 +60,102 @@ function cleanDescription(title: string | null, model: string): string | null {
   return cleaned.trim();
 }
 
+// Group cryptic model numbers into series a buyer recognizes, so the filter
+// dropdown reads like the catalog instead of like part-number soup.
+function seriesOf(model: string): string {
+  const m = model.toUpperCase();
+  if (/^EOCR(SS|SSD|SE2)/.test(m)) return "EOCR-SS / SE2";
+  if (/^(EOCR3|3DM2|3MZ2)/.test(m)) return "EOCR-3D / 3E";
+  if (/^EOCR(PFZ|PMZ)/.test(m)) return "EOCR-PFZ / PMZ";
+  if (/^EUCR/.test(m)) return "EUCR (Under Current)";
+  if (/^I3/.test(m)) return "EOCR-i3 (Digital)";
+  if (/^IF/.test(m)) return "EOCR-iF (Ground Fault)";
+  if (/^ISEM/.test(m)) return "iSEM (Communication)";
+  return "Other";
+}
+
+function StockBadge({ inStock }: { inStock: boolean | null }) {
+  if (inStock === true)
+    return (
+      <span className="inline-flex items-center gap-1 font-display text-[10px] font-bold bg-green-50 text-green-700 rounded px-2 py-0.5">
+        ● พร้อมส่ง
+      </span>
+    );
+  if (inStock === false)
+    return (
+      <span className="inline-flex items-center gap-1 font-display text-[10px] font-bold bg-amber-50 text-amber-700 rounded px-2 py-0.5">
+        ◐ สั่งล่วงหน้า
+      </span>
+    );
+  return (
+    <span className="inline-flex items-center gap-1 font-display text-[10px] font-bold bg-gray-100 text-gray-500 rounded px-2 py-0.5">
+      สอบถามสต็อก
+    </span>
+  );
+}
+
 export default function ProductsPage() {
   const [products, setProducts] = useState<Product[] | null>(null);
   const [query, setQuery] = useState("");
+  const [series, setSeries] = useState("all");
+  const [inStockOnly, setInStockOnly] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [expandedDocs, setExpandedDocs] = useState<Set<string>>(new Set());
+  const [quote, setQuote] = useState<QuoteItem[]>([]);
+  const [basketOpen, setBasketOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  // Load catalog + restore basket + read ?q= prefill (e.g. links from the
+  // homepage category cards). window.location instead of useSearchParams so
+  // the page stays compatible with `output: "export"` without a Suspense
+  // boundary.
+  useEffect(() => {
+    fetch(`${BASE}/products/index.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((data: Product[]) => setProducts(data))
+      .catch((e) => setError(String(e)));
+
+    try {
+      const saved = localStorage.getItem(QUOTE_KEY);
+      if (saved) setQuote(JSON.parse(saved));
+    } catch {
+      /* corrupted storage — start fresh */
+    }
+
+    const q = new URLSearchParams(window.location.search).get("q");
+    if (q) setQuery(q);
+  }, []);
+
+  // Persist basket on every change.
+  useEffect(() => {
+    try {
+      localStorage.setItem(QUOTE_KEY, JSON.stringify(quote));
+    } catch {
+      /* storage full/unavailable — basket still works in-memory */
+    }
+  }, [quote]);
+
+  const seriesOptions = useMemo(() => {
+    if (!products) return [];
+    const set = new Set(products.map((p) => seriesOf(p.model_number)));
+    return Array.from(set).sort();
+  }, [products]);
+
+  const filtered = useMemo(() => {
+    if (!products) return [];
+    const q = query.trim().toLowerCase();
+    return products.filter((p) => {
+      if (series !== "all" && seriesOf(p.model_number) !== series) return false;
+      if (inStockOnly && p.in_stock !== true) return false;
+      if (!q) return true;
+      return [p.model_number, p.title, p.range_name, p.description]
+        .filter(Boolean)
+        .some((field) => field!.toLowerCase().includes(q));
+    });
+  }, [products, query, series, inStockOnly]);
 
   const toggleDocs = (model: string) => {
     setExpandedDocs((prev) => {
@@ -72,32 +166,56 @@ export default function ProductsPage() {
     });
   };
 
-  useEffect(() => {
-    fetch(`${BASE}/products/index.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then((data: Product[]) => setProducts(data))
-      .catch((e) => setError(String(e)));
-  }, []);
+  const addToQuote = (model: string) => {
+    setQuote((prev) => {
+      const existing = prev.find((i) => i.model === model);
+      if (existing) {
+        return prev.map((i) =>
+          i.model === model ? { ...i, qty: i.qty + 1 } : i
+        );
+      }
+      return [...prev, { model, qty: 1 }];
+    });
+    setBasketOpen(true);
+  };
 
-  const filtered = useMemo(() => {
-    if (!products) return [];
-    const q = query.trim().toLowerCase();
-    if (!q) return products;
-    return products.filter((p) =>
-      [p.model_number, p.title, p.range_name, p.description]
-        .filter(Boolean)
-        .some((field) => field!.toLowerCase().includes(q))
+  const setQty = (model: string, qty: number) => {
+    setQuote((prev) =>
+      qty <= 0
+        ? prev.filter((i) => i.model !== model)
+        : prev.map((i) => (i.model === model ? { ...i, qty } : i))
     );
-  }, [products, query]);
+  };
+
+  const quoteMessage = useMemo(
+    () =>
+      [
+        "ขอใบเสนอราคา (จากเว็บไซต์ SAV)",
+        ...quote.map((i) => `- ${i.model} x ${i.qty}`),
+        "",
+        "ชื่อ/บริษัท: ",
+        "จังหวัดจัดส่ง: ",
+      ].join("\n"),
+    [quote]
+  );
+
+  const copyQuote = async () => {
+    try {
+      await navigator.clipboard.writeText(quoteMessage);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const totalItems = quote.reduce((s, i) => s + i.qty, 0);
 
   return (
     <main className="bg-gray-100 min-h-screen">
-      {/* Simple top bar so this page isn't orphaned from the rest of the site */}
-      <nav className="bg-white shadow-md flex items-center justify-between px-6 h-16">
-        <a href={`${BASE}/`} className="flex items-center gap-2">
+      {/* Top bar */}
+      <nav className="sticky top-0 z-40 bg-white shadow-md flex items-center justify-between px-6 h-16 gap-4">
+        <a href={`${BASE}/`} className="flex items-center gap-2 flex-shrink-0">
           <span className="bg-brand text-white font-display font-extrabold italic text-lg px-2.5 py-1 rounded-sm tracking-tight">
             SAV
           </span>
@@ -110,12 +228,17 @@ export default function ProductsPage() {
             </span>
           </span>
         </a>
-        <a
-          href={`${BASE}/#contact`}
-          className="font-display text-xs font-bold tracking-wider uppercase bg-brand text-white px-5 py-2.5 hover:bg-brand-dark transition-colors"
+        <button
+          onClick={() => setBasketOpen((o) => !o)}
+          className="relative font-display text-xs font-bold tracking-wider uppercase border-[1.5px] border-ink text-ink px-4 py-2.5 hover:border-brand hover:text-brand transition-colors"
         >
-          REQUEST QUOTATION
-        </a>
+          🧾 ใบเสนอราคา
+          {totalItems > 0 && (
+            <span className="absolute -top-2 -right-2 w-5 h-5 bg-brand text-white text-[10px] rounded-full flex items-center justify-center font-bold">
+              {totalItems}
+            </span>
+          )}
+        </button>
       </nav>
 
       <div className="px-6 py-12 max-w-6xl mx-auto">
@@ -123,18 +246,47 @@ export default function ProductsPage() {
           PRODUCT CATALOG
         </p>
         <h1 className="text-center font-display font-extrabold text-3xl sm:text-4xl text-ink mb-4">
-          ค้นหาสินค้าทั้งหมด
+          สินค้า EOCR ทั้งหมด
         </h1>
         <div className="w-10 h-[3px] bg-brand rounded mx-auto mb-8" />
 
-        <div className="max-w-xl mx-auto mb-10">
+        {/* Search + filters */}
+        <div className="max-w-3xl mx-auto mb-4 flex flex-col sm:flex-row gap-3">
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="ค้นหารุ่นสินค้า... (model number, ชื่อ, รายละเอียด)"
-            className="w-full bg-white border border-gray-200 rounded px-5 py-3 text-sm outline-none focus:border-brand shadow-sm"
+            placeholder="ค้นหารุ่นสินค้า... (เช่น EOCRSS, i3, ground fault)"
+            className="flex-1 bg-white border border-gray-200 rounded px-5 py-3 text-sm outline-none focus:border-brand shadow-sm"
           />
+          <select
+            value={series}
+            onChange={(e) => setSeries(e.target.value)}
+            className="bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-brand shadow-sm"
+          >
+            <option value="all">ทุกซีรีส์</option>
+            {seriesOptions.map((s) => (
+              <option key={s} value={s}>
+                {s}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="max-w-3xl mx-auto mb-8 flex items-center justify-between flex-wrap gap-2">
+          <label className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={inStockOnly}
+              onChange={(e) => setInStockOnly(e.target.checked)}
+              className="accent-[#cc1f1f] w-4 h-4"
+            />
+            แสดงเฉพาะพร้อมส่ง
+          </label>
+          {products && (
+            <p className="text-sm text-gray-500">
+              พบ {filtered.length} จาก {products.length} รายการ
+            </p>
+          )}
         </div>
 
         {error && (
@@ -142,22 +294,17 @@ export default function ProductsPage() {
             โหลดข้อมูลสินค้าไม่สำเร็จ: {error}
           </p>
         )}
-
         {!products && !error && (
           <p className="text-center text-gray-500">กำลังโหลดสินค้า...</p>
         )}
 
-        {products && (
-          <p className="text-center text-sm text-gray-500 mb-6">
-            พบ {filtered.length} จาก {products.length} รายการ
-          </p>
-        )}
-
+        {/* Product grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {filtered.map((p) => {
             const imgSrc = p.local_photo_path || p.official_image_url;
             const isExpanded = expandedDocs.has(p.model_number);
             const description = cleanDescription(p.title, p.model_number);
+            const inQuote = quote.find((i) => i.model === p.model_number);
             return (
               <div
                 key={p.model_number}
@@ -176,9 +323,14 @@ export default function ProductsPage() {
                   )}
                 </div>
 
-                <p className="text-xs text-gray-500 mb-1">
-                  <span className="font-semibold text-gray-600">Model:</span>{" "}
-                  <span className="font-display font-bold text-ink">{p.model_number}</span>
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <p className="font-display font-bold text-ink">
+                    {p.model_number}
+                  </p>
+                  <StockBadge inStock={p.in_stock ?? null} />
+                </div>
+                <p className="font-display text-[10px] text-gray-400 uppercase tracking-wide mb-1.5">
+                  {seriesOf(p.model_number)}
                 </p>
                 {description && (
                   <p className="font-light text-sm text-gray-700 mb-3 leading-snug">
@@ -192,14 +344,18 @@ export default function ProductsPage() {
                   </p>
                 )}
 
-                <a
-                  href={p.source_url || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center text-sm font-display font-semibold text-ink border border-gray-300 rounded px-4 py-2 mb-3 hover:border-brand hover:text-brand transition-colors"
+                <button
+                  onClick={() => addToQuote(p.model_number)}
+                  className={`mt-auto text-center text-sm font-display font-bold rounded px-4 py-2.5 mb-3 transition-colors ${
+                    inQuote
+                      ? "bg-green-50 text-green-700 border border-green-200"
+                      : "bg-brand text-white hover:bg-brand-dark"
+                  }`}
                 >
-                  View details
-                </a>
+                  {inQuote
+                    ? `✓ อยู่ในใบเสนอราคา (${inQuote.qty}) — กดเพิ่ม`
+                    : "＋ ใส่ใบเสนอราคา"}
+                </button>
 
                 <button
                   onClick={() => toggleDocs(p.model_number)}
@@ -211,7 +367,9 @@ export default function ProductsPage() {
                 {isExpanded && (
                   <div className="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 justify-center">
                     {p.documents.length === 0 && (
-                      <span className="text-[11px] text-gray-400">No documents yet</span>
+                      <span className="text-[11px] text-gray-400">
+                        No documents yet
+                      </span>
                     )}
                     {p.documents.map((doc) =>
                       doc.local_path ? (
@@ -225,9 +383,8 @@ export default function ProductsPage() {
                           {translateLabel(doc.label || "Document")}
                         </a>
                       ) : (
-                        // Deliberately NOT linking to doc.official_url here --
-                        // documents must be hosted on our own server. Shown
-                        // grayed-out/disabled until it's actually downloaded.
+                        // Deliberately NOT linking to doc.official_url —
+                        // documents must be hosted on our own server.
                         <span
                           key={doc.label + doc.official_url}
                           title="Not hosted on our server yet"
@@ -245,9 +402,110 @@ export default function ProductsPage() {
         </div>
 
         {products && filtered.length === 0 && (
-          <p className="text-center text-gray-500 mt-10">ไม่พบสินค้าที่ตรงกับคำค้นหา</p>
+          <div className="text-center text-gray-500 mt-10">
+            <p className="mb-3">ไม่พบสินค้าที่ตรงกับคำค้นหา</p>
+            <a
+              href={whatsappLink(
+                `สวัสดีครับ หารุ่น "${query}" ไม่พบบนเว็บไซต์ รบกวนสอบถามครับ`
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-display text-xs font-bold tracking-wider uppercase border-[1.5px] border-brand text-brand px-5 py-2.5 hover:bg-brand hover:text-white transition-colors"
+            >
+              💬 สอบถามรุ่นนี้ทาง LINE/WA →
+            </a>
+          </div>
         )}
       </div>
+
+      {/* QUOTE BASKET — persists in localStorage; submits through the
+          channels SAV actually answers (WhatsApp/LINE first). Static-site
+          friendly: no backend required. */}
+      {quote.length > 0 && (
+        <div className="fixed bottom-14 lg:bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-ink shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
+          <button
+            onClick={() => setBasketOpen((o) => !o)}
+            className="w-full flex items-center justify-between px-6 py-3"
+          >
+            <span className="font-display font-bold text-sm text-ink">
+              🧾 ใบเสนอราคาของคุณ ({totalItems} ชิ้น · {quote.length} รุ่น)
+            </span>
+            <span className="font-display text-xs text-gray-500">
+              {basketOpen ? "ซ่อน ▼" : "แสดง ▲"}
+            </span>
+          </button>
+
+          {basketOpen && (
+            <div className="px-6 pb-5 max-h-[45vh] overflow-y-auto">
+              <div className="flex flex-col gap-2 mb-4">
+                {quote.map((i) => (
+                  <div
+                    key={i.model}
+                    className="flex items-center justify-between gap-3 bg-gray-50 rounded px-4 py-2"
+                  >
+                    <span className="font-display font-semibold text-sm text-ink">
+                      {i.model}
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <button
+                        onClick={() => setQty(i.model, i.qty - 1)}
+                        className="w-7 h-7 border border-gray-300 rounded text-sm hover:border-brand hover:text-brand"
+                        aria-label={`ลดจำนวน ${i.model}`}
+                      >
+                        −
+                      </button>
+                      <span className="font-display font-bold text-sm w-6 text-center">
+                        {i.qty}
+                      </span>
+                      <button
+                        onClick={() => setQty(i.model, i.qty + 1)}
+                        className="w-7 h-7 border border-gray-300 rounded text-sm hover:border-brand hover:text-brand"
+                        aria-label={`เพิ่มจำนวน ${i.model}`}
+                      >
+                        ＋
+                      </button>
+                      <button
+                        onClick={() => setQty(i.model, 0)}
+                        className="ml-2 text-gray-400 hover:text-brand text-sm"
+                        aria-label={`ลบ ${i.model}`}
+                      >
+                        ✕
+                      </button>
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={whatsappLink(quoteMessage)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 min-w-[180px] text-center bg-brand text-white font-display text-xs font-bold tracking-wider uppercase py-3 hover:bg-brand-dark transition-colors"
+                >
+                  💬 ส่งขอราคาทาง LINE / WhatsApp →
+                </a>
+                <a
+                  href={mailtoLink("ขอใบเสนอราคา (SAV Website)", quoteMessage)}
+                  className="text-center border border-gray-300 text-ink font-display text-xs font-bold tracking-wider uppercase px-5 py-3 hover:border-brand hover:text-brand transition-colors"
+                >
+                  ✉️ อีเมล
+                </a>
+                <button
+                  onClick={copyQuote}
+                  className="text-center border border-gray-300 text-ink font-display text-xs font-bold tracking-wider uppercase px-5 py-3 hover:border-brand hover:text-brand transition-colors"
+                >
+                  {copied ? "✓ คัดลอกแล้ว" : "คัดลอก"}
+                </button>
+              </div>
+              <p className="text-[11px] text-gray-500 mt-3">
+                รายการจะถูกบันทึกไว้ในเครื่องของคุณ — ทีมงานตอบกลับพร้อมราคาและสถานะสต็อกภายในวันทำการ ({COMPANY.hoursTh})
+              </p>
+            </div>
+          )}
+        </div>
+      )}
+
+      <ContactBar />
     </main>
   );
 }

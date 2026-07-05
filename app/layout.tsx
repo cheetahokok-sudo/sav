@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Sarabun } from "next/font/google";
 import "./globals.css";
+import { COMPANY } from "./lib/company";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -53,11 +54,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "SAV Mechanical Services & Supplies Ltd., Part.",
-  alternateName: "หจก. เอส เอ วี เมคคานิคคอล เซอร์วิสส์ แอนด์ ซัพพลายส์",
-  url: "https://www.savthai.com",
+  name: COMPANY.nameEn,
+  alternateName: COMPANY.nameTh,
+  url: siteUrl,
   logo: `${siteUrl}/logo.png`,
-  taxID: "0113530000263",
+  taxID: COMPANY.taxId,
+  foundingDate: String(COMPANY.registeredYearAD),
   address: {
     "@type": "PostalAddress",
     streetAddress: "107/58 หมู่ 8",
@@ -69,15 +71,18 @@ const jsonLd = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+66-2-702-8801",
+      // Primary number — answers phone, LINE, and WhatsApp.
+      telephone: "+66-94-924-9829",
       contactType: "sales",
-      areaServed: "TH",
+      areaServed: ["TH", "International"],
+      availableLanguage: ["th", "en"],
     },
     {
       "@type": "ContactPoint",
-      telephone: "+66-85-212-0255",
+      telephone: "+66-2-702-8801",
       contactType: "sales",
-      areaServed: ["International"],
+      areaServed: "TH",
+      availableLanguage: ["th"],
     },
   ],
 };
