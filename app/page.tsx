@@ -136,14 +136,7 @@ const eocrProducts = [
 // relationship; the rest are brands SAV can source on request — labelled
 // exactly that, so no buyer ever asks for a distributor certificate we
 // can't produce.
-const sourcingBrands = [
-  "Schneider Electric",
-  "SIEMENS",
-  "ABB",
-  "MITSUBISHI ELECTRIC",
-  "OMRON",
-  "EATON",
-];
+const sourcingBrands = ["Deesys", "WYES", "CTE TECH", "J&D", "VITZRO"];
 
 const orderSteps = [
   {
@@ -200,20 +193,17 @@ const stockBadge = {
   ),
 };
 
-function Logo({ className = "" }: { className?: string }) {
+// Real logo image. `dark` variant swaps in the light-text version for the
+// footer. 2x-resolution PNG so it stays sharp on retina screens.
+function Logo({ dark = false }: { dark?: boolean }) {
   return (
-    <Link href="/" className={`flex items-center gap-2 ${className}`}>
-      <span className="bg-brand text-white font-display font-extrabold italic text-lg px-2.5 py-1 rounded-sm tracking-tight">
-        SAV
-      </span>
-      <span className="hidden sm:flex flex-col leading-tight">
-        <span className="font-display font-bold text-sm text-gray-700 tracking-wide">
-          MECHANICAL
-        </span>
-        <span className="font-display font-medium text-[10px] text-gray-500 tracking-wider">
-          SERVICES &amp; SUPPLIES
-        </span>
-      </span>
+    <Link href="/" className="flex items-center">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={`${BASE}${dark ? "/sav-logo-footer.png" : "/sav-logo.png"}`}
+        alt="SAV Mechanical Services & Supplies"
+        className="h-10 w-auto"
+      />
     </Link>
   );
 }
@@ -291,7 +281,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 px-6 lg:px-16 py-14 lg:py-20 max-w-7xl mx-auto">
           <div className="flex-1 max-w-xl">
             <p className="font-display text-xs font-bold tracking-[0.2em] uppercase text-brand mb-5">
-              ตัวแทนนำเข้าตรง · Samwha EOCR / DSP Korea
+              ตัวแทนนำเข้าตรง · Schneider Electric EOCR · Samwha DSP
             </p>
             <h1 className="font-extrabold text-white text-3xl sm:text-[2.6rem] leading-[1.25] mb-3">
               EOCR รีเลย์ป้องกันมอเตอร์
@@ -402,6 +392,66 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      {/* BRANDS — placed BEFORE the product categories so buyers recognize
+          the official brands first. Both are direct-import relationships. */}
+      <section className="bg-white py-16 px-6">
+        <p className="text-center font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
+          OUR BRANDS
+        </p>
+        <h2 className="text-center font-display font-extrabold text-3xl sm:text-4xl text-ink mb-4">
+          แบรนด์ที่เราจัดจำหน่าย
+        </h2>
+        <div className="w-10 h-[3px] bg-brand rounded mx-auto mb-10" />
+
+        <div className="max-w-4xl mx-auto">
+          <div className="border-[1.5px] border-brand rounded p-6 sm:p-8 mb-8">
+            <p className="text-center font-display text-[10px] font-extrabold tracking-widest uppercase text-brand mb-6">
+              Direct Import · ตัวแทนนำเข้าโดยตรง
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-14 mb-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`${BASE}/images/brands/schneider-eocr.png`}
+                alt="Schneider Electric EOCR"
+                className="h-14 sm:h-16 w-auto"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`${BASE}/images/brands/samwha-dsp.png`}
+                alt="Samwha DSP Ltd."
+                className="h-12 sm:h-14 w-auto"
+              />
+            </div>
+            <p className="text-center text-sm text-gray-600 leading-relaxed mb-6 max-w-xl mx-auto">
+              นำเข้าตรงจากประเทศเกาหลี — สินค้าแท้ 100% จากโรงงาน
+              รับประกัน 1 ปีทุกชิ้น พร้อมเอกสารกำกับสินค้า
+            </p>
+            <div className="text-center">
+              <Link
+                href="/products/"
+                className="inline-block bg-brand text-white font-display text-xs font-bold tracking-wider uppercase px-7 py-3 hover:bg-brand-dark transition-colors"
+              >
+                ดูสินค้าทั้งหมด →
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-center font-display text-[10px] font-bold tracking-widest uppercase text-gray-400 mb-4">
+            แบรนด์อื่น ๆ จัดหาให้ได้ตามสั่ง — Sourcing on request
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            {sourcingBrands.map((b) => (
+              <span
+                key={b}
+                className="font-display font-bold text-sm text-gray-400"
+              >
+                {b}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* PRODUCT CATEGORIES — EOCR first + stock badges + real links */}
       <section id="products" className="bg-white py-20 px-6">
@@ -536,54 +586,6 @@ export default function Home() {
             >
               💬 ส่งรุ่นเดิมทาง LINE/WA →
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* BRANDS — honest split: direct import vs sourcing on request */}
-      <section className="bg-white py-20 px-6">
-        <p className="text-center font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
-          OUR BRANDS
-        </p>
-        <h2 className="text-center font-display font-extrabold text-3xl sm:text-4xl text-ink mb-4">
-          แบรนด์ที่เราจัดจำหน่าย
-        </h2>
-        <div className="w-10 h-[3px] bg-brand rounded mx-auto mb-12" />
-
-        <div className="max-w-4xl mx-auto">
-          <div className="border-[1.5px] border-brand rounded p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 mb-8">
-            <div className="text-center sm:text-left flex-1">
-              <p className="font-display text-[10px] font-extrabold tracking-widest uppercase text-brand mb-1">
-                Direct Import · ตัวแทนนำเข้าโดยตรง
-              </p>
-              <p className="font-display font-extrabold text-3xl text-blue-800">
-                Samwha <span className="text-lg font-semibold">EOCR / DSP</span>
-              </p>
-              <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                นำเข้าตรงจาก Samwha EOCR Ltd. และ Samwha DSP ประเทศเกาหลี —
-                สินค้าแท้ 100% พร้อมเอกสารกำกับทุกชิ้น
-              </p>
-            </div>
-            <Link
-              href="/products/"
-              className="flex-shrink-0 bg-brand text-white font-display text-xs font-bold tracking-wider uppercase px-6 py-3 hover:bg-brand-dark transition-colors"
-            >
-              ดูสินค้า Samwha →
-            </Link>
-          </div>
-
-          <p className="text-center font-display text-[10px] font-bold tracking-widest uppercase text-gray-400 mb-4">
-            แบรนด์อื่น ๆ จัดหาให้ได้ตามสั่ง — Sourcing on request
-          </p>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
-            {sourcingBrands.map((b) => (
-              <span
-                key={b}
-                className="font-display font-bold text-sm text-gray-400"
-              >
-                {b}
-              </span>
-            ))}
           </div>
         </div>
       </section>
@@ -878,7 +880,7 @@ export default function Home() {
       <footer className="bg-neutral-900">
         <div className="max-w-6xl mx-auto px-6 pt-16 pb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <Logo className="[&>span:last-child]:hidden" />
+            <Logo dark />
             <p className="text-sm text-gray-500 leading-relaxed mt-4">
               {COMPANY.nameTh}
               <br />
