@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-// Set this to match your GitHub repo name if deploying to a GitHub Pages
-// *project* site (https://<user>.github.io/<repo>/) -- e.g. "/sav".
-// Leave it "" if you're using a custom domain or a <user>.github.io root repo.
-const basePath = "/sav";
+// Empty because the site is served from the custom domain savautomation.com,
+// where GitHub Pages publishes a project site at the ROOT. Set this back to
+// "/sav" only if reverting to https://<user>.github.io/sav/.
+const basePath = "";
 
 const nextConfig = {
   // Static export -> outputs to /out, deployable to GitHub Pages (no Node server needed)

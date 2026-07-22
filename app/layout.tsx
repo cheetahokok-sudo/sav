@@ -18,7 +18,7 @@ const sarabun = Sarabun({
 });
 
 // TODO: replace with your real production URL once you have a domain.
-const siteUrl = "https://savthai-new.example.com";
+const siteUrl = "https://savautomation.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
