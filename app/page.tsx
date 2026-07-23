@@ -9,9 +9,19 @@ const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const navLinks = [
   { href: "/products/", label: "PRODUCTS" },
   { href: "#eocr", label: "EOCR SERIES" },
+  { href: "#solutions", label: "SOLUTIONS" },
   { href: "#why", label: "ABOUT US" },
   { href: "#how-to-order", label: "HOW TO ORDER" },
   { href: "#contact", label: "CONTACT" },
+];
+
+// Market segments SAV serves. Photos live in public/images/solutions/ — real
+// stock imagery illustrating each segment (not claims about specific clients).
+const solutions = [
+  { icon: "🏭", name: "FACTORY AUTOMATION", sub: "ระบบอัตโนมัติในโรงงาน", image: "/images/solutions/sav_factory_automation_400x300.jpg" },
+  { icon: "⚡", name: "ENERGY & POWER", sub: "ระบบพลังงานและไฟฟ้า", image: "/images/solutions/sav_energy_and_power_400x300.jpg" },
+  { icon: "🏙️", name: "INFRASTRUCTURE", sub: "ระบบสาธารณูปโภคและอาคาร", image: "/images/solutions/sav_infrastructure_400x300.jpg" },
+  { icon: "🔩", name: "OEM & MACHINE BUILDER", sub: "ผู้ผลิตเครื่องจักรและระบบ (OEM)", image: "/images/solutions/sav_oem_and_machine_builder_400x300.jpg" },
 ];
 
 // Category cards: EOCR first and featured (it's the business), each linked to
@@ -590,9 +600,103 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOW TO ORDER — replaces the unverifiable "Latest Project" stats.
-          Answers the questions Thai B2B buyers actually ask before ordering:
-          quote channel, VAT invoice (ใบกำกับภาษี), payment, delivery. */}
+      {/* INDUSTRY SOLUTIONS — market segments SAV serves. Illustrative stock
+          photos per segment; no claims about specific clients. */}
+      <section id="solutions" className="bg-white py-20 px-6">
+        <h2 className="text-center font-display font-extrabold text-3xl sm:text-4xl text-ink mb-4">
+          INDUSTRY SOLUTIONS
+        </h2>
+        <div className="w-10 h-[3px] bg-brand rounded mx-auto mb-12" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+          {solutions.map((s) => (
+            <div
+              key={s.name}
+              className="relative aspect-[4/3] rounded overflow-hidden bg-neutral-900 group"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`${BASE}${s.image}`}
+                alt={s.name}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/10" />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <div className="w-9 h-9 bg-brand rounded-full flex items-center justify-center text-sm mb-2">
+                  {s.icon}
+                </div>
+                <p className="font-display font-bold text-white text-sm uppercase tracking-wide">
+                  {s.name}
+                </p>
+                <p className="text-xs text-white/65">{s.sub}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-10">
+          <Link
+            href="/products/"
+            className="inline-flex items-center gap-2 border border-brand text-brand font-display text-xs font-bold tracking-wider uppercase px-6 py-3 hover:bg-brand hover:text-white transition-colors"
+          >
+            VIEW ALL SOLUTIONS →
+          </Link>
+        </div>
+      </section>
+
+      {/* LATEST PROJECT — example installation. Stats shown per the owner's
+          request; swap for figures from a named/consented job when available.
+          The left image is a stand-in (energy/power) until the real switchgear
+          photo is supplied → drop it at public/images/projects/ and update src. */}
+      <section id="applications" className="bg-gray-100 py-20 px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div>
+            <p className="font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
+              LATEST PROJECT
+            </p>
+            <h3 className="font-display font-extrabold text-2xl text-ink mb-4 leading-snug">
+              ติดตั้งระบบควบคุมและตรวจสอบพลังงาน
+              <br />
+              โรงงานอุตสาหกรรมแห่งหนึ่ง
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-6">
+              ออกแบบและติดตั้งระบบ Power Monitoring System พร้อมอุปกรณ์ป้องกัน
+              เพื่อเพิ่มประสิทธิภาพการใช้พลังงานและลดความเสี่ยงของระบบไฟฟ้า
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 border border-brand text-brand font-display text-xs font-bold tracking-wider uppercase px-6 py-2.5 hover:bg-brand hover:text-white transition-colors"
+            >
+              VIEW CASE STUDY →
+            </a>
+          </div>
+          <div className="grid grid-cols-[1fr_0.62fr] bg-neutral-900 rounded overflow-hidden min-h-[240px]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${BASE}/images/solutions/sav_energy_and_power_400x300.jpg`}
+              alt="ตัวอย่างงานติดตั้งระบบควบคุมและตรวจสอบพลังงาน"
+              className="w-full h-full object-cover"
+            />
+            <div className="flex flex-col gap-5 justify-center p-6 bg-ink">
+              {[
+                ["ENERGY SAVING", "18%", "ลดการใช้พลังงาน"],
+                ["SYSTEM UPTIME", "99.9%", "ความเสถียรของระบบ"],
+                ["ROI", "1.2", "Years คืนทุน"],
+              ].map(([label, num, unit]) => (
+                <div key={label}>
+                  <p className="font-display text-[9px] font-bold tracking-wider uppercase text-brand">
+                    {label}
+                  </p>
+                  <p className="font-display font-extrabold text-2xl text-white">{num}</p>
+                  <p className="text-xs text-gray-400">{unit}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW TO ORDER — answers the questions Thai B2B buyers actually ask
+          before ordering: quote channel, VAT invoice (ใบกำกับภาษี), payment,
+          delivery. */}
       <section id="how-to-order" className="bg-gray-100 py-20 px-6">
         <p className="text-center font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
           HOW TO ORDER
