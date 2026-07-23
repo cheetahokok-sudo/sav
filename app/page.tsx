@@ -642,10 +642,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LATEST PROJECT — example installation. Stats shown per the owner's
-          request; swap for figures from a named/consented job when available.
-          The left image is a stand-in (energy/power) until the real switchgear
-          photo is supplied → drop it at public/images/projects/ and update src. */}
+      {/* LATEST PROJECT — example installation (real motor-protection panel
+          photo). Stats shown per the owner's request; swap for figures from a
+          named/consented job when available. */}
       <section id="applications" className="bg-gray-100 py-20 px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
@@ -653,12 +652,12 @@ export default function Home() {
               LATEST PROJECT
             </p>
             <h3 className="font-display font-extrabold text-2xl text-ink mb-4 leading-snug">
-              ติดตั้งระบบป้องกันมอเตอร์ด้วย EOCR
+              ติดตั้งระบบป้องกันมอเตอร์ด้วย Smart Motor Protection Relay
               <br />
               โรงงานอุตสาหกรรมแห่งหนึ่ง
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-6">
-              ออกแบบและติดตั้งระบบป้องกันมอเตอร์ครบวงจรด้วยอุปกรณ์ EOCR
+              ออกแบบและติดตั้งระบบป้องกันมอเตอร์ครบวงจรด้วย Smart Motor Protection Relay
               ป้องกันความเสียหายจากโหลดเกิน กระแสไม่สมดุล และกราวด์ฟอลต์
               ช่วยลดการหยุดเดินเครื่องและยืดอายุการใช้งานมอเตอร์
             </p>
@@ -672,15 +671,15 @@ export default function Home() {
           <div className="grid grid-cols-[1fr_0.62fr] bg-neutral-900 rounded overflow-hidden min-h-[240px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${BASE}/images/solutions/sav_energy_and_power_400x300.jpg`}
-              alt="ตัวอย่างงานติดตั้งระบบป้องกันมอเตอร์ด้วย EOCR"
+              src={`${BASE}/images/projects/sav_motor_protection_panel.jpg`}
+              alt="ตู้ควบคุมและระบบป้องกันมอเตอร์ Smart Motor Protection Relay"
               className="w-full h-full object-cover"
             />
             <div className="flex flex-col gap-5 justify-center p-6 bg-ink">
               {[
                 ["ENERGY SAVING", "18%", "ลดการใช้พลังงาน"],
                 ["SYSTEM UPTIME", "99.9%", "ความเสถียรของระบบ"],
-                ["ROI", "1.2", "Years คืนทุน"],
+                ["TRIP PROTECTION", "24/7", "ตัดวงจรทันทีเมื่อผิดปกติ"],
               ].map(([label, num, unit]) => (
                 <div key={label}>
                   <p className="font-display text-[9px] font-bold tracking-wider uppercase text-brand">
