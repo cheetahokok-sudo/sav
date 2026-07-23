@@ -653,13 +653,14 @@ export default function Home() {
               LATEST PROJECT
             </p>
             <h3 className="font-display font-extrabold text-2xl text-ink mb-4 leading-snug">
-              ติดตั้งระบบควบคุมและตรวจสอบพลังงาน
+              ติดตั้งระบบป้องกันมอเตอร์ด้วย EOCR
               <br />
               โรงงานอุตสาหกรรมแห่งหนึ่ง
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-6">
-              ออกแบบและติดตั้งระบบ Power Monitoring System พร้อมอุปกรณ์ป้องกัน
-              เพื่อเพิ่มประสิทธิภาพการใช้พลังงานและลดความเสี่ยงของระบบไฟฟ้า
+              ออกแบบและติดตั้งระบบป้องกันมอเตอร์ครบวงจรด้วยอุปกรณ์ EOCR
+              ป้องกันความเสียหายจากโหลดเกิน กระแสไม่สมดุล และกราวด์ฟอลต์
+              ช่วยลดการหยุดเดินเครื่องและยืดอายุการใช้งานมอเตอร์
             </p>
             <a
               href="#contact"
@@ -672,7 +673,7 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={`${BASE}/images/solutions/sav_energy_and_power_400x300.jpg`}
-              alt="ตัวอย่างงานติดตั้งระบบควบคุมและตรวจสอบพลังงาน"
+              alt="ตัวอย่างงานติดตั้งระบบป้องกันมอเตอร์ด้วย EOCR"
               className="w-full h-full object-cover"
             />
             <div className="flex flex-col gap-5 justify-center p-6 bg-ink">
