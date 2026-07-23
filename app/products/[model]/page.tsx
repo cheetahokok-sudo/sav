@@ -248,8 +248,8 @@ export default async function ProductDetail(
         {/* downloads */}
         {docs.length > 0 && (
           <div className="bg-white border border-gray-200 rounded p-8 mb-6">
-            <h2 className="font-display font-extrabold text-lg text-ink mb-4 pb-3 border-b border-gray-200">
-              Downloads — เอกสารสำหรับขออนุมัติโครงการ
+            <h2 className="font-display font-extrabold text-lg text-brand mb-4 pb-3 border-b border-gray-200">
+              📥 Downloads — เอกสารสำหรับขออนุมัติโครงการ
             </h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {docs.map((d, i) =>
