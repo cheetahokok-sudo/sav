@@ -1,0 +1,52 @@
+{
+ "model_number": "DSP-CM44",
+ "title": "DSP-CM44 - Communication Module/RS485",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Communication Module/RS485",
+ "base_model": "DSP-CM44",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-CM44 series. Communication Module/RS485.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Internal communication with a converter of VIP Series by RS232 (DSP-VIP-PL/PM , DSP-VIP-RL/RTL, RM/RTM)",
+    "External communication with a Master(PC, PLC) through 485/422 as a RTU,Modbus",
+    "Able to communicate with PC directly through a protocol converter of 485 < > USB/232",
+    "Convenient engagement for a termination resistance of extreme end unit by DIP SW",
+    "Possible to meet 485 or 422 by the DIP SW selection",
+    "Responsible for Communication speed : 9.6Kbps~ 115.2Kbps",
+    "CM-44E : Ethernet, Modbus TCP",
+    "Convenient wiring connection through RJ45 or 10P screw terminal",
+    "– RJ45 : diagnostic communication test of each unit through \"Samdsp\"",
+    "– Screw terminal : actual wiring connecion in installed field"
+   ]
+  }
+ ],
+ "specs": [],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=vDFtvHDwan.jpg&name=117p-1.jpg&",
+ "local_photo_path": "/docs/a5e82e1cd2_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=ZCJR8fKtXt.pdf&name=Communication+Module-CM44-Eng.pdf&",
+   "local_path": "/docs/e941dac116_Communication_Module-CM44-Eng.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00014",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "โมดูลสื่อสาร RS485 สำหรับรุ่น RTM"
+}

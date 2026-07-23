@@ -1,0 +1,198 @@
+{
+ "model_number": "DSP-PCM-10Z7",
+ "title": "DSP-PCM-10Z7 - Digital",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Digital",
+ "base_model": "DSP-PCM",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-PCM series. Digital.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Panel Flush Mounting Type",
+    "Access restricted to authorized operator : Password",
+    "One Model is able to meet three kind of independent function",
+    "– Voltage relay",
+    "– Current relay",
+    "– Power[Load/KW,Current]relay",
+    "Compact size,Multi function",
+    "– Protection :Over/Under Voltage/Over current/Under current/Phase loss/Reverse phase/Locked rotor/Current unbalance,Ground fault",
+    "– Indication :Voltage, Load[KW]/Current,KWH, Earth current, AWT[Accumulated Working Time], Power Factor, Load Factor",
+    "– Digital Communication:RS485",
+    "To show a trip cause and operational information in a character and/or a number : 5 Digit Window",
+    "To indicate a necessasary information in every 3 sec: V,KW/Curr,KWH,Ec,AWT,Pf,Lf(Load factor)",
+    "Convenient installation of ZCT to sense a zero-phase current for GF protection",
+    "– Basic type : to use external ZCT(200mA/1.5mA)",
+    "– Optional type : to use embedded ZCT (not suitable for external CT application)",
+    "High sensitive level and wide range for ground fault protection :30mA∼5A/Zero-phase sequence current",
+    "RS485,Modbus/RTU : possible to monitor by “samdsp” and to construct data base by “samdspdb” necessary for preventive maintenance",
+    "Alarm for disconnection with ZCT",
+    "Alarm before Tripping by over current",
+    "to check and/or to change preset value of each mode during the operation",
+    "– Possible to check :press \"SET\" key",
+    "– Possible to check and to change : firstly make \"oPSEt\" mode \"on\",then press \"SET\" key",
+    "procedure after pressing \"SET\" key is same manner with usual preset job",
+    "Various way to reset after trip: Manual,Electrical or Automatic /to response flexibly for applied sequence system",
+    "Self-diagonostic test by one touch for \"CLR\" key",
+    "History,Latest 8 trip events"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Current rating",
+   "rows": [
+    "10 Type : 0.5A∼10A(:0.37[KW] ∼7.4[KW]/3P 480V)/ 0.5A~6A with external CT",
+    "70 Type : 5A ∼70A(3.7[KW] ∼ 52[KW]/3P 480V)",
+    "External CT : 1A ∼ 3600A"
+   ]
+  },
+  {
+   "group": "Exclusive operation as voltage relay by direct voltage detection",
+   "rows": [
+    "110V : 40~180V , 220V : 150V∼290V",
+    "380V : 310V∼450V , 440V : 370V∼510V ,480V : 410V∼550V"
+   ]
+  },
+  {
+   "group": "Operation Time",
+   "rows": [
+    "Starting trip delay time(dt) : 1 ~ 300sec /Definite T-I",
+    "Over/Under voltage trip delay time :1~30sec",
+    "definite T-I:1~60sec",
+    "Inverse :1~30Class",
+    "Inverse:1~30Class /800% to \"oc\": 10 type/0.5~6A,70 type:5A~40A",
+    "Under current trip delay time : 1~30sec",
+    "Phase loss trip delay time(PLc) : 1~5sec",
+    "Reverse phase trip delay time : within 0.5sec",
+    "Ground fault trip delay time : Edt/1~25sec,Eot/1~30sec",
+    "current unbalance trip delay time : 8sec",
+    "locked rotor trip delay time : dt+0.1sec"
+   ]
+  },
+  {
+   "group": "Allowable tollerance",
+   "rows": [
+    "Current : C≤2A : 0.2A, C>2A : ±5%",
+    "Time : t≤2sec : ±0.2sec, t>2sec : ±10%",
+    "Control power : 24VDC (Optional Type)"
+   ]
+  },
+  {
+   "group": "Trip output",
+   "rows": [
+    "Main : 95-96-98 : 1c(1-SPDT), 250VAC/3A, 30VDC/1A, Resistive",
+    "Aux:05-06-08 : 1c(1-SPDT),3A/Resistive(possible to alarm output one of Ec/Ec-tb/AL/uc/Shoc"
+   ]
+  },
+  {
+   "group": "Application environment",
+   "rows": [
+    "Operation : -25℃ ~ +70℃",
+    "Storage : -40℃ ~ +80℃",
+    "Relative humidity : 30∼85%, non-condensing"
+   ]
+  },
+  {
+   "group": "Stable operation under frequency variation from Inverter : 30Hz ∼ 400Hz ,avg ±5%",
+   "rows": []
+  },
+  {
+   "group": "Screw Torque : Max 0.6N.m",
+   "rows": []
+  },
+  {
+   "group": "Insulation Resistence / IEC-60255-5 : circuit-case, 10Mohm , 500VDC",
+   "rows": []
+  },
+  {
+   "group": "High Voltage Withstand Test : IEC-60255-5",
+   "rows": [
+    "circuit-case : AC2000V, 60Hz, 1min",
+    "contact-contact : AC1000V, 60Hz, 1min"
+   ]
+  },
+  {
+   "group": "Lightning Impulse Voltage Withstand Test : IEC-60255-5",
+   "rows": [
+    "Circuit-Ground, Circuit-Circuit : 1.2/50uS, 5KV",
+    "Control Circuits : 1.2/50uS, 5KV"
+   ]
+  },
+  {
+   "group": "1MHz Burst Immunity Test / IEC 61000-4-18 : 2.5KV, Positive / Negative under 2sec",
+   "rows": []
+  },
+  {
+   "group": "Electrostatic Discharge : IEC-61000-4-2",
+   "rows": [
+    "Air : Level 3, 8KV",
+    "Contact : Level 13, 6KV"
+   ]
+  },
+  {
+   "group": "Radiated Electromagnetic Field Disturbance / IEC-61000-4-3 : Level 3, 10V/m",
+   "rows": []
+  },
+  {
+   "group": "Electric Fast Transient Burst : IEC-61000-4-4",
+   "rows": [
+    "power,relay output : Level 4, 4KV"
+   ]
+  },
+  {
+   "group": "Surge Immunity test : IEC-61000-4-5",
+   "rows": [
+    "relay output : 1.2×50uS, 2KV(0°, 90°, 180°, 270°)"
+   ]
+  },
+  {
+   "group": "Conducted Disturbence Test / IEC-61000-4-6 : 10V, Level 3",
+   "rows": []
+  },
+  {
+   "group": "Control Voltage : 100~240VAC/Standard, 24VDC/Optional",
+   "rows": []
+  },
+  {
+   "group": "Power consumption : 4W Max",
+   "rows": []
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=F4DeyJIGJS.jpg&name=46p-1.jpg&",
+ "local_photo_path": "/docs/a6ffa9cd7e_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=08vGuXYIkU.pdf&name=PCM-New+Meter-Ectb-485us-Eng20Aug7.pdf&",
+   "local_path": "/docs/1de79b8570_PCM-New_Meter-Ectb-485us-Eng20Aug7.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=Ld6xeg9k6R.pdf&name=DSP-PCM.pdf&",
+   "local_path": "/docs/60532e1a78_DSP-PCM.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=eRPHmjDQld.dwg&name=DSP-PCM.dwg&",
+   "local_path": "/docs/ea97f2607e_DSP-PCM.dwg"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00186",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": null
+}

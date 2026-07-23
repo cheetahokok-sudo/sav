@@ -1,0 +1,145 @@
+{
+ "model_number": "DSP-DGFR-A",
+ "title": "DSP-DGFR-A - Digital Ground Fault Relay",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Digital Ground Fault Relay",
+ "base_model": "DSP-DGFR",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-DGFR series. Digital Ground Fault Relay.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Panel Mounting Type",
+    "Minimized compact size,panel mounting type",
+    "MCU(Microprocessor Control Unit) based",
+    "High sensitive wide range:30mA~4A",
+    "Precised preset for zero phase current & time :3 Digit Window",
+    "Various response : variable Eot",
+    "Various type based on ZCT type",
+    "Self diagnostic function"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Trip delay time :0.05sec,0.1~60sec/definite T-I",
+   "rows": []
+  },
+  {
+   "group": "Trip output relay:a/3A,250VAC, Resistive",
+   "rows": []
+  },
+  {
+   "group": "Power Line",
+   "rows": []
+  },
+  {
+   "group": "Environment",
+   "rows": [
+    "Temperature :Operation:-20°C ~ 60°C, Storage:-30°C~80 °C",
+    "Humidity:30~85%,Relative/Non-condensing"
+   ]
+  },
+  {
+   "group": "Allowable tollerance",
+   "rows": [
+    "Earth current : A,V Type:IO ≤100mA:±10mA, O >100mA:±10% / N Type: IO ≤500mA: ±10mA,IO > 500mA: ±10%",
+    "Operation time: t ≤2sec:± 0.2sec, t>2sec:±10%"
+   ]
+  },
+  {
+   "group": "Insulation Resistence/IEC-60255-5:100Mohm or more/500VDC,circuit-case",
+   "rows": []
+  },
+  {
+   "group": "High Voltage Withstand Test/ IEC-60255-5:circuit-case:AC2000V,60Hz, 1 min / contact-contact:AC2000V,60Hz, 1min",
+   "rows": []
+  },
+  {
+   "group": "Lightning Impulse Voltage Withstand Test)/ IEC-60255-5:Circuit-Ground,Circuit-Circuit: 1.2/50(uS),5KV / Control Circuits:1.2/50(uS), 5KV",
+   "rows": []
+  },
+  {
+   "group": "1 MHz Burst Immunity Test/IEC-61000-4-18:2.5KV,Positive/Negative under 2sec",
+   "rows": []
+  },
+  {
+   "group": "Electrostatic Discharge/IEC-61000-4-2:Air:Level 3, 8KV /Contact:Level 3,6KV",
+   "rows": []
+  },
+  {
+   "group": "Radiated Electromagnetic Field Disturbance/IEC-61000-4-3:Level 3, 10V/m",
+   "rows": []
+  },
+  {
+   "group": "Electric Fast Transient Burst/IEC-61000-4-4:Power,Realy output:Level 4, 4KV",
+   "rows": []
+  },
+  {
+   "group": "Surge Immunity test/IEC-61000-4-5:Relay output:1.2X50(uS),2KV(0°,90°,180°,270°)",
+   "rows": []
+  },
+  {
+   "group": "Conducted Disturbence Test/EC-61000-4-6:0V,Level 3",
+   "rows": []
+  },
+  {
+   "group": "Control Power:85∼260VAC,50/60Hz(120∼370VDC)",
+   "rows": []
+  },
+  {
+   "group": "Installation:35mm DIN Rail,Panel Mounting",
+   "rows": []
+  },
+  {
+   "group": "Power consumption:2W/max",
+   "rows": []
+  }
+ ],
+ "oem": false,
+ "needs_review": true,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202403&file=hcA5W5piSl.jpg&name=DGFR.jpg&",
+ "local_photo_path": "/docs/572b336094_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=O3qPEOP34L.pdf&name=DGFR-M-PIN-DM+II-Eng-21Feb25.pdf&",
+   "local_path": "/docs/ab615e274c_DGFR-M-PIN-DM_II-Eng-21Feb25.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202404&file=zGNahIKwko.pdf&name=DSP-DGFR+%EC%B9%98%EC%88%98%EB%8F%84.pdf&",
+   "local_path": "/docs/6bbeca06bf_DSP-DGFR_.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202404&file=nlFnBsMiv4.dwg&name=DSP-DGFR+%EC%B9%98%EC%88%98%EB%8F%84.dwg&",
+   "local_path": "/docs/f6d10163fb_DSP-DGFR_.dwg"
+  },
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202404&file=vXZRgLEBwg.pdf&name=DSP-DGFR+%EA%B2%B0%EC%84%A0%EB%8F%84.pdf&",
+   "local_path": "/docs/350de5176f_DSP-DGFR_.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202404&file=mXrP5ESW5g.dwg&name=DSP-DGFR+%EA%B2%B0%EC%84%A0%EB%8F%84.dwg&",
+   "local_path": "/docs/55fc9f87f2_DSP-DGFR_.dwg"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00144",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "แมปกับหน้า DSP-DGFR — รอยืนยันรุ่น -A"
+}

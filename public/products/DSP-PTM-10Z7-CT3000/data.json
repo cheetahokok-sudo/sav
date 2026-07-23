@@ -1,0 +1,87 @@
+{
+ "model_number": "DSP-PTM-10Z7-CT3000",
+ "title": "DSP-PTM-10Z7-CT3000 - Digital",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Digital",
+ "base_model": "DSP-PTM",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-PTM series. Digital.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Panel Flush Mounting Type",
+    "Access restricted to authorized operator : Password",
+    "One Model is able to meet three kind of independent function",
+    "– Voltage relay",
+    "– Current relay",
+    "– Power[Load/KW,Current]relay",
+    "Compact size,Multi function",
+    "– Protection :Over/Under Voltage/Over current/Under current/Phase loss/Reverse phase/Locked rotor/Current unbalance,Ground fault",
+    "– Indication :Voltage, Load[KW]/Current,KWH, Earth current, AWT[Accumulated Working Time], Power Factor, Load Factor",
+    "To show a trip cause and operational information in a character and/or a number : 5 Digit Window",
+    "To indicate a necessasary information in every 3 sec: V,KW/Curr,KWH,Ec,AWT,Pf,Lf(Load factor)",
+    "Convenient installation of ZCT to sense a zero-phase current for GF protection",
+    "– Basic type : to use external ZCT(200mA/1.5mA)",
+    "– Optional type : to use embedded ZCT (not suitable for external CT application)",
+    "Current Loop Communication:Max current value in 3 phase is transformed into 20mA",
+    "High sensitive level and wide range for ground fault protection :30mA∼5A/Zero-phase sequence current",
+    "Alarm for disconnection with ZCT",
+    "Alarm before Tripping by over current",
+    "to check and/or to change preset value of each mode during the operation",
+    "– Possible to check :press \"SET\" key",
+    "– Possible to check and to change : firstly make \"oPSEt\" mode \"on\",then press \"SET\" key",
+    "procedure after pressing \"SET\" key is same manner with usual preset job",
+    "Various way to reset after trip: Manual,Electrical or Automatic /to response flexibly for applied sequence system",
+    "Self-diagonostic test by one touch for \"CLR\" key",
+    "History,Latest 8 trip events"
+   ]
+  }
+ ],
+ "specs": [],
+ "oem": true,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=F4DeyJIGJS.jpg&name=46p-1.jpg&",
+ "local_photo_path": "/docs/a6ffa9cd7e_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=NemcoXqTI5.pdf&name=POM-PTM-New+Meter-Ectb-Eng-19Sep30.pdf&",
+   "local_path": "/docs/7f26cb421f_POM-PTM-New_Meter-Ectb-Eng-19Sep30.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=yQfg3EnX4U.pdf&name=DSP-PTM.pdf&",
+   "local_path": "/docs/7085e82999_DSP-PTM.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=QTgNZYp8eF.dwg&name=DSP-PTM.dwg&",
+   "local_path": "/docs/dccf71c7f3_DSP-PTM.dwg"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=euSe2JJmyd.pdf&name=DSP-PTM.pdf&",
+   "local_path": "/docs/7085e82999_DSP-PTM.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=HVtwGEEcto.dwg&name=DSP-PTM.dwg&",
+   "local_path": "/docs/dccf71c7f3_DSP-PTM.dwg"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00188",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "รุ่น OEM — รายละเอียดเพิ่มเติมติดต่อ SAV"
+}

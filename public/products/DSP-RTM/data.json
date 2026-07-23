@@ -1,0 +1,96 @@
+{
+ "model_number": "DSP-RTM",
+ "title": "DSP-RTM - Motor Working Recorder",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Motor Working Recorder",
+ "base_model": "DSP-MWR-S",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-MWR-S series. Motor Working Recorder.",
+ "feature_groups": [
+  {
+   "title": "Mortor is working",
+   "items": [
+    "Internal communication with a converter of VIP by RS232 :DSP-VIP-PL/PM , DSP-VIP-RL/RTL, RM/RTM",
+    "External communication with Master(PC, PLC) through 485 as a RTU/Modbus",
+    "Operating data is stored in every second while the motor is working",
+    "Able to communicate with PC directly through a protocol converter with 485 < > USB/232",
+    "Convenient engagement for a termination resistance of extreme end unit by DIP SW",
+    "Possible to select data storage interval time(DSIT) in DIP SW",
+    "– DSIT : 0.05sec, 0.1sec, 0.2sec, 1sec",
+    "– Data is recorded while the motor operated only by logic input is working",
+    "Convenient wiring connection through RJ45 or 10P screw terminal",
+    "– RJ45 : only available for the test",
+    "– screw terminal : available for actual field connection",
+    "– Evacuate a storage space of this recorder prior to adopt actual job as clicking “REC Reset”,which is shown as pressing F10 of User’s PC after entering into record mode in main window , then existed data is clear and this recorder is ready to work."
+   ]
+  },
+  {
+   "title": "Motor is stopping",
+   "items": [
+    "Possible to monitor and to retrieve a data from DSP-VIP combined with MWR-S in the field by the PC executed in “samdsp”",
+    "Possible to monitor and to retrieve a data from this seperated recorder in the office by the PC executed in “samdsp”, but to do so, DC 12V must be supplied for this recorder",
+    "Possible to retrieve a raw data by Excel format",
+    "Possible to analyze a data by the typical graphic format"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Memory capacity : 1 Gbyte Flash Memory",
+   "rows": []
+  },
+  {
+   "group": "Embeded calendar / real time clock",
+   "rows": [
+    "life time :10 years under power-off state",
+    "time count : Year,Month,Hour,Minute,Second",
+    "time adjustment : possible by “samdsp”"
+   ]
+  },
+  {
+   "group": "Comvenient function selection in DIP SW",
+   "rows": [
+    "Communication speed : 9.6Kbps~230.4Kbps",
+    "Data Storage Interval Time",
+    "Read only mode",
+    "Master/Slave"
+   ]
+  },
+  {
+   "group": "Serial communication wiring through RJ45 or screw terminal",
+   "rows": [
+    "RJ45 : convenient test by “Samdsp” monitoring program",
+    "Screw terminal : actual field wiring"
+   ]
+  },
+  {
+   "group": "Possible to evacuate stored data",
+   "rows": []
+  }
+ ],
+ "oem": false,
+ "needs_review": true,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=YggihJow9o.jpg&name=118p-1.jpg&",
+ "local_photo_path": "/docs/13f7800e1c_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=xgtKw2beLB.pdf&name=MWRs+Motor+Working+Recorder-Eng.pdf&",
+   "local_path": "/docs/51aeba0a49_MWRs_Motor_Working_Recorder-Eng.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00013",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "แมปกับหน้า Motor Working Recorder — รอยืนยัน"
+}

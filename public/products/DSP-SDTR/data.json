@@ -1,0 +1,124 @@
+{
+ "model_number": "DSP-SDTR",
+ "title": "DSP-SDTR - Digital Shut Down Turn-over Relay",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Digital Shut Down Turn-over Relay",
+ "base_model": "DSP-SDTR",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-SDTR series. Digital Shut Down Turn-over Relay.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "DSP-SDTR :Shut Down Turn-over Relay",
+    "Socket-Pin Insatallation Type",
+    "Compact size, Complete Digital Type based on MCU",
+    "Just restart execution under instant power-off and voltage drop(Sag)",
+    "3 Wire Easy Connection : not concerend with ON-OFF Switch Position",
+    "– Possible to prest numerical operation time :3 Digit Window",
+    "– Shut down delay time/S-t",
+    "– Delay on make time/d-t",
+    "Applied benift",
+    "– Just one model charges its job wothout concerning with ON-OFF switch position",
+    "– Correct response for voltage drop, Zero Voltage",
+    "– Neccessary minimum voltage duration time : 25ms or more",
+    "Critical Note",
+    "– The contact of \"ON\" switch state must be self-holding by auxiliary output of the contactor",
+    "– This relay needs to wait for 3 minitue at least under no-voltage state to change sequence control voltage",
+    "– In case the sequence control power is on , then at first “v***”(version) is shown and nextly “actual voltage” is appeared. This means this relay has completed to remember a system voltage as a reference voltage, consequently this relay works after 1 min from an appearance of actual voltage",
+    "– Once this relay remembers a reference voltage to be basis for an instant power-off state,then this reference voltage is indicated in motor stop state",
+    "– Self-diagnostic test : press “CLR” key foe 3 sec or more in motor running state,then “tESt” is flickerd 3 times and and execute restarting once ” as showing “RUN” after “dt → “rUn”means that the restart is done",
+    "– In order to reestablish a reference voltage, press both “UP” and “DN” key,then release them when “oPSEt” is shown",
+    "– The minimum sustained time of the system voltage signal in order for this relay to do its job shall be 25mS or more"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Shut down delay time(SDDT):0(Instant)~10 sec",
+   "rows": []
+  },
+  {
+   "group": "Delay on make time(DOMT):1~30/60 sec",
+   "rows": []
+  },
+  {
+   "group": "trip output :1a,3A/Resistive",
+   "rows": []
+  },
+  {
+   "group": "Application environment/temperature",
+   "rows": []
+  },
+  {
+   "group": "operation/-20°C~60°C",
+   "rows": []
+  },
+  {
+   "group": "Storage/ -30°C~80 °C",
+   "rows": []
+  },
+  {
+   "group": "Humidity/30~85%,Relative/Non-condensing",
+   "rows": []
+  },
+  {
+   "group": "Time torrerence:±10%",
+   "rows": []
+  },
+  {
+   "group": "Insulation/case-Circuit: 10MOhm or more,/500VDC",
+   "rows": []
+  },
+  {
+   "group": "High voltage insulation:Case-Circuit/ 2KV,50/60Hz,1 min",
+   "rows": []
+  },
+  {
+   "group": "Contact-Contact:1KV,50/60Hz, 1 min",
+   "rows": []
+  },
+  {
+   "group": "Control power: 85~260VAC,50/60Hz(120~370VDC)",
+   "rows": []
+  },
+  {
+   "group": "Consuming power : 2VA/max",
+   "rows": []
+  },
+  {
+   "group": "Installation: 35mm DIN Rail,Panel Mounting",
+   "rows": []
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=E8bUNQmckL.jpg&name=129p-1.jpg&",
+ "local_photo_path": "/docs/5e42593080_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=5n5MBePtec.pdf&name=SDTR-PS-PIN-OFSET-Volt-Eng-19Sep6.pdf&",
+   "local_path": "/docs/5c3add6051_SDTR-PS-PIN-OFSET-Volt-Eng-19Sep6.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=jAJXqXoSBX.dwg&name=SDTR-P+%EC%B9%98%EC%88%98+%EA%B2%B0%EC%84%A0%EB%8F%84.dwg&",
+   "local_path": "/docs/92847d3fd6_SDTR-P_.dwg"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00150",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": null
+}

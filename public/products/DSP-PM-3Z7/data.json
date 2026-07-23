@@ -1,0 +1,147 @@
+{
+ "model_number": "DSP-PM-3Z7",
+ "title": "DSP-PM-3Z7 - Relay",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Relay",
+ "base_model": "DSP-VIP-PM/Voltage-Current based power type",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-VIP-PM/Voltage-Current based power type series. Relay.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Panel Flush Mounting Type:Converter,Display meter,Communication Module",
+    "Protection:Over/Under voltage,Over/Under Load(KW)/Current,Ground fault,Over Temp,Short circuit,Shock,Locked Rotor,Phase Loss,Reverse Phase",
+    "Indication:KW,KWH,A, V,GR,TEMP,PF(CosΘ),working time,Number of MC ON-OFF",
+    "Additional Function:RS 422/485, Y-D,R-F,Reactor starting,Shut down delay timer & Delay on-make timer",
+    "Pre-maintenance:Able to preset alarm point/O,U curr.GF,Temp,Shock(Stall),MOTOR working time, short circuit in Instant (within 30msec)",
+    "Particulary Useful for process control and pre-maintenance as presetting various alarm factor"
+   ]
+  },
+  {
+   "title": "Easy Handling",
+   "items": [
+    "to realize convenient & various data input",
+    "– Display Meter",
+    "– Loader",
+    "– Note Book PC",
+    "Main/Sub/Cab Menu :three seperated menu according to usage and data input frequency",
+    "– Main menu :Data input frequency is rather higher",
+    "– Sub menu : ratherly common application for all kind of motor",
+    "– Cab menu(calibration menu):adjustable for indicating value within narrow range(+,- 12.7%)/this menu is appeared when \"SET\" key is pressed for 5 sec or more and disappeared right after pressing again",
+    "Back lit display:easy handling in dark space of the panel",
+    "To indicate a necessary in every 3 sec",
+    "– basic factor circulating indication:V,I,KW,GR/\"OFF\" must be set in \"rota\" mode",
+    "– Basic Factor + PF,temp,KWH,AWT(Accumulated working Time)/\"ON\" must be set in \"rota\" mode/Possible to fix one of circulated factor or to release:one touch for \"CLR\" key",
+    "– Possible to check presetting value during operation / \"SET\" & \"MODE\" key / Mode and value is shown alternatively / return to operating state without input for 10 sec or pressing \"Mode\" key/ not possible to preset value",
+    "– To show load factor(actual/setting)/65%~100%,Round type",
+    "Duplex Alarm : Higher Alarm,Lower Alarm to OC",
+    "To secure a safety: Password input for setting a data",
+    "ON-OFF switch/DSP-VIP-PM:to save wiring and labor inside panel",
+    "Convenient installation:65 Phi circle or rectangular hole/DSP-VIP-PM:Display Meter",
+    "To indicate tripped number of main contactor:contributing to check a replacing term and effective maintenance",
+    "To call initialized factory setting value:pressing test button before power-on and keeping a press for 3 sec after power-on.",
+    "To keep a stable operation under frequency variation of inverter:10 Hz~400Hz"
+   ]
+  },
+  {
+   "title": "Multi-complexed Function",
+   "items": [
+    "Power type protection relay based on Voltage and Current",
+    "to indicate RMS value/Voltage,Current:RMS chip adopted in every input/to contribute to check an exact condition of motor",
+    "Provides actual meter function:V,I,KW,PF,KWH,temp",
+    "– Voltage Select:110V/220V/380V/440V",
+    "– Current Meter with CT:0.5A~3600A(Auto range for dcimal point)",
+    "– KW Meter:0.01~66535 KW(Auto range for dcimal point)",
+    "– Power factor Meter:+,-,0%~100%",
+    "– Meter:0.1KWH~66535 KWH",
+    "– Temperature Meter:0 ~150 degree C",
+    "– Auto ramge:to indicate decimal point in conjunction with \"K/Test\" LED in Loader and DM",
+    "To cover a wide current range",
+    "– 70 Type : 0.2 ~70A/ 0.2A~6A with an external CT(“5t” must be selected in “cto”mode)",
+    "– With external CT:0.5A ~ 3000A",
+    "To realize Short,Ground fault protection by instant time:within 0.05sec",
+    "To be acceptable for various rating of ZCT:200/1.5mA or 200/100mV,selectable in DIP SW",
+    "Temperature protection/motor winding:sensed by PT100",
+    "– Not posible to start under keeping over temperature than presetted value",
+    "– if PT100 is not connected before starting, alarm message is coming out and not allow to start.",
+    "– Above all condition can be clear as making temperature mode disable.",
+    "various and multiple output of Main and Aux internal relay",
+    "Main / 1a-1b(95-96,97-98) :energized with output of internal relay,C-M-D-Y,at same time",
+    "AUX : 1C X 1 / 07-08-10 :acts same as main trip or one of Shoc/Ec/AL/Uc/AL/Temp/Ec-tE selected in \"Au-o\" mode",
+    "X1 / 27-28-30:trip for voltage protection ,but possible to change into \"ALLc\"(lower level alarm) in \"Line\" mode",
+    "Y-Delta Starting Timer: not neccessary for additional circuit ,to save labor and space",
+    "to memoize latest number of 8 tripped cause:to contribute analysing trouble cause and keeping a data after power-off",
+    "main contactor Auto Close:in case a line power is \"ON\" again within a presetting time(SDDT) after a line power is \"OFF\" during a normal operation,main contactor is closed automatically after another presetting time(DOMT)",
+    "Shut Down delay Time:1~5 sec/Adjustable",
+    "delay On make Time:0(Instant)~25sec/Adjustable 5 sec unit",
+    "Expression in mode:eg/2-3:in case power is \"on\" within 2 sec after power-off,motor restarts after 15 sec(3 is matched with 15 sec) from instant of power-on.",
+    "Self-diagonostics:main trip output is tripped after counting down o-time of definite T-I or a time of 550% to \"OC\" Inverse T-I"
+   ]
+  },
+  {
+   "title": "Remote Control through RS 485/422, Ethernet Communication",
+   "items": [
+    "Remote Control through RS 485/422 Digital Communicatio",
+    "Basically 4~20mA Output:max curremnt of 3 phase",
+    "To realize effective system for digital communication:posible to combine a module simply if neccessary",
+    "To response for RS 485/422, Modbus",
+    "CM-44E Model : Ethernet, Modbus TCP",
+    "To select one of RS485 and 422:Simply selectable in DIP SW inside communication module",
+    "To put easily termination resistance in extreme end unit:Simply selectable in DIP SW inside communication module",
+    "To monitor and input a data in the field:Note PC converter<>in DSP"
+   ]
+  }
+ ],
+ "specs": [],
+ "oem": false,
+ "needs_review": true,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=Ir4WnqMiXd.jpg&name=7p-1.jpg&",
+ "local_photo_path": "/docs/85cf77164c_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=1nvdHPd7uw.pdf&name=VIP-PM-PL+English-Enha-PS1-22Aug18.pdf&",
+   "local_path": "/docs/896b0bc300_VIP-PM-PL_English-Enha-PS1-22Aug18.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202604&file=fDuOFAkAL7.pdf&name=DSP-VIP-PM-PS.pdf&",
+   "local_path": "/docs/cf733ab1a4_DSP-VIP-PM-PS.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202604&file=WYtbgIh0Fl.dwg&name=DSP-VIP-PM-PS.dwg&",
+   "local_path": "/docs/76e63dd2ca_DSP-VIP-PM-PS.dwg"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=5RYN2XVZiI.pdf&name=DSP-VIP-PL_PM+%EC%B9%98%EC%88%98%EB%8F%84.pdf&",
+   "local_path": "/docs/a1bf9cbba1_DSP-VIP-PL_PM_.pdf"
+  },
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=qpClFtTLBh.pdf&name=DSP-VIP-PL_PM+%EA%B2%B0%EC%84%A0%EB%8F%84.pdf&",
+   "local_path": "/docs/1b176f8544_DSP-VIP-PL_PM_.pdf"
+  },
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202307&file=QzdmgXhsWB.pdf&name=MODBUS-RTU-V32-PM-RTM-5CM-CCM-12May%EA%B8%B0%EC%A4%80_Korea_.pdf&",
+   "local_path": "/docs/031ba32133_MODBUS-RTU-V32-PM-RTM-5CM-CCM-12May__Korea_.pdf"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00203",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "แมปกับหน้า VIP-PM (power type) — รอยืนยัน"
+}

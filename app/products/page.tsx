@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import ContactBar from "../components/ContactBar";
 import { COMPANY, lineLink, messagingLink, mailtoLink } from "../lib/company";
@@ -71,6 +72,8 @@ function seriesOf(model: string): string {
   if (/^I3/.test(m)) return "EOCR-i3 (Digital)";
   if (/^IF/.test(m)) return "EOCR-iF (Ground Fault)";
   if (/^ISEM/.test(m)) return "iSEM (Communication)";
+  if (/^DSP-VIP/.test(m)) return "DSP-VIP Series";
+  if (/^DSP/.test(m)) return "Samwha DSP";
   return "Other";
 }
 
@@ -344,9 +347,12 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="flex items-start justify-between gap-2 mb-1">
-                  <p className="font-display font-bold text-ink">
-                    {p.model_number}
-                  </p>
+                  <Link
+                    href={`/products/${p.model_number}/`}
+                    className="font-display font-bold text-ink hover:text-brand transition-colors"
+                  >
+                    {p.model_number} <span className="text-gray-300 font-normal">→</span>
+                  </Link>
                   <StockBadge inStock={p.in_stock ?? null} />
                 </div>
                 <p className="font-display text-[10px] text-gray-400 uppercase tracking-wide mb-1.5">

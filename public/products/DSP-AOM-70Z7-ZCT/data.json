@@ -1,0 +1,184 @@
+{
+ "model_number": "DSP-AOM-70Z7-ZCT",
+ "title": "DSP-AOM-70Z7-ZCT - Digital Motor Protection Relay/A Series",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "Digital Motor Protection Relay/A Series",
+ "base_model": "DSP-AOM",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-AOM series. Digital Motor Protection Relay/A Series.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Panel Flush Mounting Type",
+    "Access restricted to authorized operator : Password",
+    "Compact size,Multi function",
+    "– Protection : Over current/Under current/Phase loss/Reverse phase/Locked rotor/Current unbalance,Ground fault",
+    "– Indication :Current/L1-L2- L3 , earth current, Bar Graph[operating/preset “oc”],Alarm ,Trip",
+    "To show a trip cause and operational information in a character and/or a number : 5 Digit Window",
+    "To indicate a necessasary information in every 3 sec: current(L1,L2,L3),earth current, load factor",
+    "Possible to use various rated external ZCT to sense a zero phase current for GF protection",
+    "– DSP-AOM-A : 200mA/1.5mA",
+    "– DSP-AOM-V : 200mA/100mV",
+    "– Optional:Embedded ZCT/not available for external CT application",
+    "to check and/or to change preset value of each mode during the operation",
+    "– Possible to check :press \"SET\" key",
+    "– Possible to check and to change : firstly make \"oPSEt\" mode \"on\",then press \"SET\" key",
+    "High sensitive level and wide range for ground fault protection :50mA∼2A/Zero-phase sequence current",
+    "Alarm for disconnection with ZCT",
+    "Alarm before Tripping by over current",
+    "Various way to reset after trip: Manual,Electrical or Automatic /to response flexibly for applied sequence system",
+    "Self-diagonostic test by one touch for \"CLR\" key",
+    "History,Latest 8 trip events"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Current rating",
+   "rows": [
+    "10 Type : 0.5A∼10A / 0.5A~6A with external CT",
+    "60 Type : 5A ∼70A",
+    "External CT : 1A ∼ 1200A"
+   ]
+  },
+  {
+   "group": "Operation Time",
+   "rows": [
+    "Starting trip delay time(dt) : 1 ~ 300sec /Definite T-I",
+    "definite T-I:1~60sec",
+    "Inverse :1~30Class",
+    "Inverse:1~30Class /800% to \"oc\": 10 type/0.5~6A,70 type:5A~40A",
+    "Under current trip delay time : 1~30sec",
+    "Phase loss trip delay time(PLc) : 1~5sec",
+    "Reverse phase trip delay time : within 0.5sec",
+    "Ground fault trip delay time : Edt/1~25sec,Eot/1~30sec",
+    "current unbalance trip delay time : 8sec",
+    "locked rotor trip delay time : dt+0.1sec"
+   ]
+  },
+  {
+   "group": "Allowable tollerance",
+   "rows": [
+    "Current : C≤2A : 0.2A, C>2A : ±5%",
+    "Time : t≤2sec : ±0.2sec, t>2sec : ±10%",
+    "Control power : 24VDC (Optional Type)"
+   ]
+  },
+  {
+   "group": "Trip output",
+   "rows": [
+    "Main : 95-96-98 : 1c(1-SPDT), 250VAC/3A, 30VDC/1A, Resistive",
+    "Aux:05-06-08 : 1c(1-SPDT),3A/Resistive(possible to alarm output one of Ec/Ec-tb/AL/uc/Shoc"
+   ]
+  },
+  {
+   "group": "Application environment",
+   "rows": [
+    "Operation : -25℃ ~ +70℃",
+    "Storage : -40℃ ~ +80℃",
+    "Relative humidity : 30∼85%, non-condensing"
+   ]
+  },
+  {
+   "group": "Stable operation under frequency variation from Inverter : 30Hz ∼ 400Hz ,avg ±5%",
+   "rows": []
+  },
+  {
+   "group": "Screw Torque : Max 0.6N.m",
+   "rows": []
+  },
+  {
+   "group": "Insulation Resistence / IEC-60255-5 : circuit-case, 10Mohm , 500VDC",
+   "rows": []
+  },
+  {
+   "group": "High Voltage Withstand Test : IEC-60255-5",
+   "rows": [
+    "circuit-case : AC2000V, 60Hz, 1min",
+    "contact-contact : AC1000V, 60Hz, 1min"
+   ]
+  },
+  {
+   "group": "Lightning Impulse Voltage Withstand Test : IEC-60255-5",
+   "rows": [
+    "Circuit-Ground, Circuit-Circuit : 1.2/50uS, 5KV",
+    "Control Circuits : 1.2/50uS, 5KV"
+   ]
+  },
+  {
+   "group": "1MHz Burst Immunity Test / IEC 61000-4-18 : 2.5KV, Positive / Negative under 2sec",
+   "rows": []
+  },
+  {
+   "group": "Electrostatic Discharge : IEC-61000-4-2",
+   "rows": [
+    "Air : Level 3, 8KV",
+    "Contact : Level 13, 6KV"
+   ]
+  },
+  {
+   "group": "Radiated Electromagnetic Field Disturbance / IEC-61000-4-3 : Level 3, 10V/m",
+   "rows": []
+  },
+  {
+   "group": "Electric Fast Transient Burst : IEC-61000-4-4",
+   "rows": [
+    "power,relay output : Level 4, 4KV"
+   ]
+  },
+  {
+   "group": "Surge Immunity test : IEC-61000-4-5",
+   "rows": [
+    "relay output : 1.2×50uS, 2KV(0°, 90°, 180°, 270°)"
+   ]
+  },
+  {
+   "group": "Conducted Disturbence Test / IEC-61000-4-6 : 10V, Level 3",
+   "rows": []
+  },
+  {
+   "group": "Control Voltage : 100~240VAC/Standard, 24VDC/Optional",
+   "rows": []
+  },
+  {
+   "group": "Power consumption : 4W Max",
+   "rows": []
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202009&file=Juk9DXDH44.jpg&name=78p-1.jpg&",
+ "local_photo_path": "/docs/c82705b606_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=IVZdRYXztV.pdf&name=AOM-Eng%28shoc-setting-AL%29-New+meter-LPF-21Sep15.doc.pdf&",
+   "local_path": "/docs/ba4ea87387_AOM-Eng_shoc-setting-AL_-New_meter-LPF-21Sep15.doc.pdf"
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=zH9jXrDPYY.pdf&name=DSP-AOM.pdf&",
+   "local_path": "/docs/9232cb78f1_DSP-AOM.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=yWIShUvoqb.dwg&name=DSP-AOM.dwg&",
+   "local_path": "/docs/0841cc2222_DSP-AOM.dwg"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00168",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "รุ่นยอดนิยม งบประมาณคุ้มค่า พร้อม ZCT ในตัว (embedded ZCT)"
+}

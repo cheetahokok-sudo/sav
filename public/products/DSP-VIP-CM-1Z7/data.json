@@ -1,0 +1,158 @@
+{
+ "model_number": "DSP-VIP-CM-1Z7",
+ "title": "DSP-VIP-CM-1Z7 - VIP",
+ "range_name": "DSP",
+ "brand": "Samwha DSP",
+ "series": "VIP",
+ "base_model": "DSP-VIP-RM",
+ "range_short_desc": "Samwha DSP digital protection relays",
+ "description": "Samwha DSP-VIP-RM series. VIP.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Panel Flush Mounting Type:Converter,Display meter,Communication Module",
+    "NEP(New Excellent Product) approved by Government(NEP-MKE-2009-032)",
+    "Motor Stopping:Insulation Tester, Motor Working:Protection Relay",
+    "RMS current based on RMS Chip",
+    "Protection:Over/Under Current,Ground fault,Over Temp,Shock,Locked Rotor,Phase Loss,Reverse Phase",
+    "Indication:A,GR,TEMP,Insulation resistance(Line-earth),working time,Number of ON-OFF/MC",
+    "Measuring range for Insulation Resiatance:0.1MOhm ~ 500MOhm/500VDC",
+    "Alarm before trip:65~100% of \"OC\"",
+    "Shut down turn-over : Shut down delay timer & Delay on-make timer",
+    "Pre-maintenance:Able to preset alarm point/O,U curr.GF,Temp,Shock(Stall),Number of MC ON-OFF,MOTOR working time,",
+    "Particulary Useful for process control and pre-maintenance as presetting various alarm factor"
+   ]
+  },
+  {
+   "title": "Easy Handling",
+   "items": [
+    "to realize convenient & various data input",
+    "– Display Meter",
+    "– Loader",
+    "– Note Book PC",
+    "Main/Sub/Cab Menu :three seperated menu according to usage and data input frequency",
+    "– Main menu :Data input frequency is rather higher",
+    "– Sub menu : ratherly common application for all kind of motor",
+    "– Cab menu(calibration menu):adjustable for indicating value within narrow range(+,- 12.7%)/this menu is appeared when \"SET\" key is pressed for 5 sec or more and",
+    "Back lit display:easy handling in dark space of the panel",
+    "Measurement and Indication for Insulation resistance during motor stop state",
+    "– To keep close state of P1-P2 from Aux output(b)of Contactor",
+    "– To keep close state of M1-M2 from state output(b) of MCCB",
+    "– Any current greater than 0.2A is not sensed by converter",
+    "– The state of Logic input #1 keeps low:available for LOP",
+    "– Whenever the control power is powered on after powered off,the latest measured value is appeared,but if the latest value is smaller than preset value,a character of the appeared value will be flickered.",
+    "– In case the control power is powered on,the order of display is like \"latest measured value>>ti-n0(if Pt100 temperature sensor is not connected)>> Ec-ct(if ZCT is not connected)>>stnby, then the actual measurement with the times of preset number (\"rE-nb\" mode) is done after preset measurement interval time(\"rECOd\" mode) has elapsed",
+    "– Preset for measurement interval:0.1min(6sec)~3000min/if scheduled measuring time is in the mid of motor operation,measuring action is neglected",
+    "– The normal process is going on as showing \"t1-nO\" in case the temperature sensor is not connected,also Ec-ct\" is shown ZCT is not connected, then go ahead next procedure",
+    "– In anytime,operator can command the measurement action by pressing \"SET\" key twice continuously during motor stop state, then VIP starts to measure the resistance after 5 sec without concerning with measuring interval time. This function will be available for starting motor again after long term pause.",
+    "– If \"Stnby\" is appeared after preset interval time from motor stop state,then measuring action is executing after preset measurement interval time from a point of \"Stnby\" appearance,also while \"stnby\" is shown and motor working state,any command concerened with resistance measurement and motor protection is not available",
+    "– Preset for measurement interval:0.1min(6 sec)~3000min from initial motor stop /if scheduled masuring time is in the mid of motor operation, measuring action is neglected",
+    "– Measuring range:0.1MOhm~500MOhm",
+    "– Allowable tolerence:R < = 1M:±0.05 M, 1M < R < = 50M:±5%, 50M < R < = 200M: ±10%, 200M < R < 500M:available range",
+    "– The latest measured value among 8 events is indicated during motor stop",
+    "– The rest of 7 events is checked by pressing \"UP,\"DN\" key as shown the number of turned-on LED in round bar grapgh position",
+    "– \"None\" is appeared if there is no more measurements under 8 events.",
+    "– \"Ir-Ps\" is appeared in case the value greater than 500MOhm is measured, it means line state is normal/neverthless, need to check the disconnection of line to input \"L-E \" and the openning between M1-M2",
+    "– \"Ir-0.0\" is flickering in case the measured value is under 50 KOhm",
+    "– In case the latest measured value is lower than preset value/measured value is flickeing/To start motor,enter into \"IrAL\" mode by pressing \"SET\" key,then preset \"OFF\" or lower level than the latest value",
+    "– In case of openning state between P1-P2( Aux output \"b\" from Main contactor) /\"OPEn\" is flickering",
+    "– \"Ir-Ps\" is appeared after showing \"Stnby\" ,but Motor start is possible,so connect \"b\" output from MCCB into M1-M2 or make short state between M1-M2 to clear this indication",
+    "– Alarm for \"Ir\" through 07-08-10 is available in case \"Ir\" is preset in \"Au-o\" mode",
+    "– Basic factor circulating indication:3 phase current,GR current/\"OFF\" must be set in \"rota\" mode",
+    "– Basic Factor + insulation resistance,temp(Pt),AWT(Accumulated working Time)/\"ON\" must be set in \"rota\" mode/Possible to fix one of circulated factor or to release:one touch for \"CLR\" key",
+    "– Possible to check presetting value during operation / \"SET\" & \"MODE\" key / Mode and value is shown alternatively / return to operating state without input for 10 sec or pressing \"Mode\" key / not possible to preset value",
+    "– To show load factor(actual/setting)/65%~100%,Round type",
+    "Alarm before trip : Alarm to OC ,65%~100%",
+    "To secure a safety: Password input for setting a data",
+    "ON-OFF switch:to save wiring and labor inside panel",
+    "Convenient installation:65 Phi circle or rectangular hole/Display Meter",
+    "To indicate tripped number of main contactor:contributing to check a replacing term and effective maintenance",
+    "To call initialized factory setting value:pressing test button before power-on and keeping a press for 3 sec after power-on.",
+    "To keep a stable operation under frequency variation of inverter:10 Hz~400Hz"
+   ]
+  },
+  {
+   "title": "Multi-complexed Function",
+   "items": [
+    "Multi-complexed protection relay based on Current and temperature",
+    "To indicate RMS value/Current:RMS chip adopted in every input/to contribute to check an exact condition of motor",
+    "Provides actual meter function:current,temperature,insulation tester",
+    "– Current Meter:High",
+    "– Temperature Meter:0 ~150 degree C",
+    "– Insulation resitance measurement:0.1MOhm~500MOhm",
+    "– Auto range:to indicate decimal point in conjunction with \"K/Test\" LED in Loader and DM",
+    "To cover a wide current range",
+    "– 70 Type : 0.2 ~70A/ 0.2A~6A with an external CT(“5t” must be selected in “cto”mode)",
+    "– With external CT:0.5A ~ 3600A",
+    "To be acceptable for various rating of ZCT:200/1.5mA or 200/100mV,selectable in DIP SW",
+    "Alarm to disconnection with ZCT:In case ZCT is not connected with Z1,Z2 of the converter after the control power is on before starting,Starting is not possible/ \"Off\" in \"Ec\" mode to clear alarm.",
+    "Temperature arising protection of case,winding of motor:sensed by PT100",
+    "– If measureed temperature from a motor is greater than presetting value in initial state, measured value and “tEmP” is shown alternatively,but protection job is going on regulary",
+    "– if PT100 is not connected before starting, alarm message is coming out and go ahead next precedure",
+    "– Above all condition can be clear as making temperature mode disable.",
+    "Various and multiple output of Main and Aux internal relay",
+    "Main / 1a-1b(05-06,M-C)",
+    "AUX : 1C X 1 / 07-08-10 :acts same as main trip or one of ShocEc/Uc/Shoc/AL/tEP/Ir/Ec-tE-AL selected in \"Au-o\" mode",
+    "To memoize latest number of 8 tripped cause:to contribute analysing trouble cause and keeping a data after power-off",
+    "Main contactor Auto Close:in case a line power is \"ON\" again within a preset time(SDDT) after a line power is \"OFF\" during a normal operation,main contactor is closed automatically after another preset time(DOMT)",
+    "Self-diagonostics:main trip output is tripped after counting down o-time of definite T-I or a time of 550% to \"OC\" Inverse T-I"
+   ]
+  },
+  {
+   "title": "Remote Control through RS 485/422, Ethernet Communication",
+   "items": [
+    "Remote Control through RS 485/422 Digital Communication",
+    "To realize effective system for digital communication:posible to combine a module simply if neccessary",
+    "– CM-44 Module: to response for RS 485/422, Modbus",
+    "– CM-44E Module : to response Ethernet, Modbus TCP",
+    "To select one of RS485 and 422:Simply selectable in DIP SW inside communication module",
+    "To put easily termination resistance in extreme end unit:Simply selectable in DIP SW inside communication module",
+    "To monitor and input a data in the field:Note PC converter<>in DSP",
+    "Possible to control by software for master PC which SamWhaDSP provide with free of charge",
+    "– Monitoring and Contolling : \"Samdsp\"",
+    "– Data Base Construction : \"samdspdb\""
+   ]
+  }
+ ],
+ "specs": [],
+ "oem": false,
+ "needs_review": true,
+ "end_of_sale": null,
+ "official_image_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=product&folder=202007&file=gp289MWnWa.jpg&name=20p-1.jpg&",
+ "local_photo_path": "/docs/5e6d33fc72_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202506&file=9rZ2BhPoBM.pdf&name=VIP-RM-RL-Modify-PI2000-partial+samdsp-Eng-Thailand-16Jul28.pdf&",
+   "local_path": "/docs/7c3fc8a63b_VIP-RM-RL-Modify-PI2000-partial_samdsp-Eng-Thailand-16Jul28."
+  },
+  {
+   "label": "Samwha DSP Full Catalog (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202411&file=Xrjv2EDsf5.pdf&name=2310+%EC%82%BC%ED%99%94DSP+%EC%A2%85%ED%95%A9%EC%B9%B4%EB%8B%A4%EB%A1%9C%EA%B7%B8.pdf&",
+   "local_path": "/docs/a159ef8a85_2310_DSP_.pdf"
+  },
+  {
+   "label": "Dimensional Drawing (PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=8phjuHETNi.pdf&name=DSP-VIP-RTM.pdf&",
+   "local_path": "/docs/e6f7343de6_DSP-VIP-RTM.pdf"
+  },
+  {
+   "label": "CAD Drawing (DWG)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202009&file=JU1EzlxGnz.dwg&name=DSP-VIP-RTM.dwg&",
+   "local_path": "/docs/8796bd275b_DSP-VIP-RTM.dwg"
+  },
+  {
+   "label": "Datasheet / Manual (English, PDF)",
+   "official_url": "https://www.samwhadsp.com/common/dialogue/file.html?section=board&folder=202307&file=QzdmgXhsWB.pdf&name=MODBUS-RTU-V32-PM-RTM-5CM-CCM-12May%EA%B8%B0%EC%A4%80_Korea_.pdf&",
+   "local_path": "/docs/031ba32133_MODBUS-RTU-V32-PM-RTM-5CM-CCM-12May__Korea_.pdf"
+  }
+ ],
+ "source_url": "https://www.samwhadsp.com/eng/products/detail/D93RP00201",
+ "scraped_at": "2026-07-23T13:42:25+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "แมปกับหน้า VIP-RM — รอยืนยันรุ่น VIP-CM"
+}
