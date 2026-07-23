@@ -10,7 +10,12 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-60S",
+   "local_path": "/docs/0917813bc8_EOCRSSD-60S_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-60S?filename=Schneider+Electric_EOCR_EOCRSSD-60S.pdf",
    "local_path": "/docs/00f7f26001_product_datasheet.pdf"
   },
@@ -20,7 +25,7 @@
    "local_path": "/docs/3a7361dc4b_cad.pdf"
   },
   {
-   "label": "Environmental Disclosure",
+   "label": "Environmental Disclosure (English)",
    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
    "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
   },

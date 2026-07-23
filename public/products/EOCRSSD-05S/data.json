@@ -10,12 +10,17 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-05S",
+   "local_path": "/docs/60a26cbc26_EOCRSSD-05S_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-05S?filename=Schneider+Electric_EOCR_EOCRSSD-05S.pdf",
    "local_path": "/docs/31fd422f24_product_datasheet.pdf"
   },
   {
-   "label": "Environmental Disclosure",
+   "label": "Environmental Disclosure (English)",
    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
    "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
   },

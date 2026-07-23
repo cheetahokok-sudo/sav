@@ -35,17 +35,17 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZ-WRDUT?filename=Schneider+Electric_EOCR_EOCRPFZ-WRDUT.pdf",
     "local_path": "/docs/f331fda9d3_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
     "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
    },
    {
-    "label": "Catalog",
+    "label": "Catalog (Korean)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
     "local_path": "/docs/d331336f23_카탈로그.pdf"
    },
@@ -74,17 +74,17 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPFZT-WRDUH?filename=Schneider+Electric_EOCR_EOCRPFZT-WRDUH.pdf",
     "local_path": "/docs/7c8db82378_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
     "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
    },
    {
-    "label": "Catalog",
+    "label": "Catalog (Korean)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
     "local_path": "/docs/d331336f23_카탈로그.pdf"
    },
@@ -113,12 +113,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBWZ?filename=Schneider+Electric_EOCR_I3DM-WRDBWZ.pdf",
     "local_path": "/docs/5621153c2f_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -152,12 +152,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDUTZ?filename=Schneider+Electric_EOCR_I3DM-WRDUTZ.pdf",
     "local_path": "/docs/0720bf0e58_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -191,12 +191,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDBHZ?filename=Schneider+Electric_EOCR_I3M420-WRDBHZ.pdf",
     "local_path": "/docs/8dfe5dba0f_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -230,7 +230,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/I3MZ-WRAUWZ",
+    "local_path": "/docs/23106dc45e_I3MZ-WRAUWZ_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/I3MZ-WRAUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRAUWZ.pdf",
     "local_path": "/docs/ef9de47dc1_product_datasheet.pdf"
    },
@@ -259,12 +264,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUHZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUHZ.pdf",
     "local_path": "/docs/574ab8fe54_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -298,12 +303,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUTZ.pdf",
     "local_path": "/docs/7108ceb687_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -337,12 +342,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBWZ?filename=Schneider+Electric_EOCR_IFM420-WRDBWZ.pdf",
     "local_path": "/docs/4993745923_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -376,12 +381,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRAUHZ?filename=Schneider+Electric_EOCR_IFMZ-WRAUHZ.pdf",
     "local_path": "/docs/2dde7c4ed6_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -415,12 +420,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRCUHZ?filename=Schneider+Electric_EOCR_IFMZ-WRCUHZ.pdf",
     "local_path": "/docs/e99f83dd46_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -454,17 +459,17 @@
   "image_confirmed_unavailable": true,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMETS-WRBH?filename=Schneider+Electric_EOCR_ISEMMETS-WRBH.pdf",
     "local_path": "/docs/abbf519252_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
     "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
    },
    {
-    "label": "Catalog",
+    "label": "Catalog (Korean)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-iSEM_Catalog.pdf&p_Doc_Ref=Digitial-iSEM_Catalog",
     "local_path": "/docs/8b3c5864e8_카탈로그.pdf"
    },
@@ -498,12 +503,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRABHZ?filename=Schneider+Electric_EOCR_I3BZ-WRABHZ.pdf",
     "local_path": "/docs/8c6624cf83_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -537,12 +542,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCBHZ?filename=Schneider+Electric_EOCR_I3BZ-WRCBHZ.pdf",
     "local_path": "/docs/b17861f782_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -576,12 +581,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUHZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUHZ.pdf",
     "local_path": "/docs/207bad7885_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -615,12 +620,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUTZ.pdf",
     "local_path": "/docs/df2463db72_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -654,12 +659,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDUHZ?filename=Schneider+Electric_EOCR_I3DM-WRDUHZ.pdf",
     "local_path": "/docs/201467b6d7_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -698,7 +703,7 @@
     "local_path": null
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -732,12 +737,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDBWZ?filename=Schneider+Electric_EOCR_I3M420-WRDBWZ.pdf",
     "local_path": "/docs/1630efc1d6_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -771,12 +776,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDUHZ?filename=Schneider+Electric_EOCR_I3M420-WRDUHZ.pdf",
     "local_path": "/docs/b76864d7c3_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -810,12 +815,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3M420-WRDUWZ?filename=Schneider+Electric_EOCR_I3M420-WRDUWZ.pdf",
     "local_path": "/docs/a13223b738_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -849,12 +854,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRAUHZ?filename=Schneider+Electric_EOCR_I3MZ-WRAUHZ.pdf",
     "local_path": "/docs/d85ed90329_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -888,12 +893,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCUWZ?filename=Schneider+Electric_EOCR_I3MZ-WRCUWZ.pdf",
     "local_path": "/docs/c4f64aae4a_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -927,12 +932,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRABHZ?filename=Schneider+Electric_EOCR_IFBZ-WRABHZ.pdf",
     "local_path": "/docs/e2dc8fc1b9_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -966,12 +971,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRABTZ?filename=Schneider+Electric_EOCR_IFBZ-WRABTZ.pdf",
     "local_path": "/docs/3c2d82c18d_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1005,12 +1010,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRAUHZ?filename=Schneider+Electric_EOCR_IFBZ-WRAUHZ.pdf",
     "local_path": "/docs/3308de614b_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1044,12 +1049,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFBZ-WRCUHZ?filename=Schneider+Electric_EOCR_IFBZ-WRCUHZ.pdf",
     "local_path": "/docs/78b1571373_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1083,12 +1088,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDUHZ?filename=Schneider+Electric_EOCR_IFDM-WRDUHZ.pdf",
     "local_path": "/docs/6a5916f6ff_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1122,12 +1127,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDUWZ?filename=Schneider+Electric_EOCR_IFDM-WRDUWZ.pdf",
     "local_path": "/docs/36779d1e87_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1161,12 +1166,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUHZ?filename=Schneider+Electric_EOCR_IFM420-WRDUHZ.pdf",
     "local_path": "/docs/3fd2e692bd_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1200,12 +1205,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUTZ?filename=Schneider+Electric_EOCR_IFM420-WRDUTZ.pdf",
     "local_path": "/docs/360a5383ae_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1239,12 +1244,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDUWZ?filename=Schneider+Electric_EOCR_IFM420-WRDUWZ.pdf",
     "local_path": "/docs/844394e41f_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1278,12 +1283,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRAUWZ?filename=Schneider+Electric_EOCR_IFMZ-WRAUWZ.pdf",
     "local_path": "/docs/b398a86527_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1317,12 +1322,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRCUWZ?filename=Schneider+Electric_EOCR_IFMZ-WRCUWZ.pdf",
     "local_path": "/docs/f07484ca23_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1356,12 +1361,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMET-WRUH?filename=Schneider+Electric_EOCR_ISEMMET-WRUH.pdf",
     "local_path": "/docs/cb69354612_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
     "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
    },
@@ -1371,7 +1376,7 @@
     "local_path": "/docs/ba772d4ddb_설명서.pdf"
    },
    {
-    "label": "Catalog",
+    "label": "Catalog (Korean)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
     "local_path": "/docs/6591bcc480_카탈로그.pdf"
    },
@@ -1405,12 +1410,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/ISEMMETS-WRUH?filename=Schneider+Electric_EOCR_ISEMMETS-WRUH.pdf",
     "local_path": "/docs/de1473e941_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
     "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
    },
@@ -1420,7 +1425,7 @@
     "local_path": "/docs/ba772d4ddb_설명서.pdf"
    },
    {
-    "label": "Catalog",
+    "label": "Catalog (Korean)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR-Edge+MCC+%EC%8A%A4%EB%A7%88%ED%8A%B8+%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81+%EC%8B%9C%EC%8A%A4%ED%85%9C+%EC%82%AC%EC%96%91%EC%84%9C_V0.63.pdf&p_Doc_Ref=EOCR-Edge_230731_KR",
     "local_path": "/docs/6591bcc480_카탈로그.pdf"
    },
@@ -1454,17 +1459,17 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/EOCRPMZ-WRDUH?filename=Schneider+Electric_EOCR_EOCRPMZ-WRDUH.pdf",
     "local_path": "/docs/0941eda1da_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-PFZ_PMZ_Manual_R2.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Manual_R2",
     "local_path": "/docs/f2efd9adaf_사용자_가이드.pdf"
    },
    {
-    "label": "Catalog",
+    "label": "Catalog (Korean)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-PFZ_Catalog_2021.pdf&p_Doc_Ref=Digitial-PFZ_PMZ_Catalog",
     "local_path": "/docs/d331336f23_카탈로그.pdf"
    },
@@ -1493,12 +1498,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBTZ?filename=Schneider+Electric_EOCR_I3DM-WRDBTZ.pdf",
     "local_path": "/docs/36d31938d6_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1556,12 +1561,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRABHZ?filename=Schneider+Electric_EOCR_I3MZ-WRABHZ.pdf",
     "local_path": "/docs/77ceecabfb_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1619,12 +1624,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3MZ-WRCBHZ?filename=Schneider+Electric_EOCR_I3MZ-WRCBHZ.pdf",
     "local_path": "/docs/9404f7c99a_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1658,12 +1663,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDBHZ?filename=Schneider+Electric_EOCR_IFDM-WRDBHZ.pdf",
     "local_path": "/docs/56033d70ae_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1697,12 +1702,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFDM-WRDBWZ?filename=Schneider+Electric_EOCR_IFDM-WRDBWZ.pdf",
     "local_path": "/docs/e9f780dd34_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1736,12 +1741,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFM420-WRDBHZ?filename=Schneider+Electric_EOCR_IFM420-WRDBHZ.pdf",
     "local_path": "/docs/0753cf67d6_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1775,12 +1780,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRABHZ?filename=Schneider+Electric_EOCR_IFMZ-WRABHZ.pdf",
     "local_path": "/docs/c6808b93bd_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1814,12 +1819,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/IFMZ-WRABWZ?filename=Schneider+Electric_EOCR_IFMZ-WRABWZ.pdf",
     "local_path": "/docs/7035d8efed_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1853,12 +1858,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Datasheet",
+    "label": "Datasheet (Korean)",
     "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3DM-WRDBHZ?filename=Schneider+Electric_EOCR_I3DM-WRDBHZ.pdf",
     "local_path": "/docs/735abd3392_제품_데이터_시트.pdf"
    },
    {
-    "label": "User Guide",
+    "label": "User Guide (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
     "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
    },
@@ -1892,7 +1897,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUHZ",
+    "local_path": "/docs/afcfc90c18_3DM2-WRDUHZ_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUHZ?filename=Schneider+Electric_EOCR_3DM2-WRDUHZ.pdf",
     "local_path": "/docs/600ae47e22_product_datasheet.pdf"
    },
@@ -1921,7 +1931,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUWZ",
+    "local_path": "/docs/d91eb81887_3DM2-WRDUWZ_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUWZ?filename=Schneider+Electric_EOCR_3DM2-WRDUWZ.pdf",
     "local_path": "/docs/86fd559290_product_datasheet.pdf"
    },
@@ -1950,7 +1965,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/3MZ2-WRAUWZ",
+    "local_path": "/docs/e422d1d73f_3MZ2-WRAUWZ_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/3MZ2-WRAUWZ?filename=Schneider+Electric_EOCR_3MZ2-WRAUWZ.pdf",
     "local_path": "/docs/752d59b087_product_datasheet.pdf"
    },
@@ -1979,6 +1999,11 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/3MZ2-WRDUWZ",
+    "local_path": "/docs/2dc5fd3344_3MZ2-WRDUWZ_Datasheet_EN.pdf"
+   },
+   {
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
@@ -2003,7 +2028,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/FMZ2-WRDUWZ",
+    "local_path": "/docs/b3dae9ffb7_FMZ2-WRDUWZ_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/FMZ2-WRDUWZ?filename=Schneider+Electric_EOCR_FMZ2-WRDUWZ.pdf",
     "local_path": "/docs/7af2ed7e90_product_datasheet.pdf"
    },
@@ -2032,7 +2062,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-05AUH",
+    "local_path": "/docs/e1d1c6b439_EOCR3EZ-05AUH_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-05AUH?filename=Schneider+Electric_EOCR_EOCR3EZ-05AUH.pdf",
     "local_path": "/docs/94e341ab1a_product_datasheet.pdf"
    },
@@ -2061,6 +2096,11 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-05CUH",
+    "local_path": "/docs/66ccd39146_EOCR3EZ-05CUH_Datasheet_EN.pdf"
+   },
+   {
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
@@ -2085,7 +2125,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-80AUH",
+    "local_path": "/docs/1c95abf2d9_EOCR3EZ-80AUH_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-80AUH?filename=Schneider+Electric_EOCR_EOCR3EZ-80AUH.pdf",
     "local_path": "/docs/9d9f0b3719_product_datasheet.pdf"
    },
@@ -2114,7 +2159,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-80CUH",
+    "local_path": "/docs/ca75e97acb_EOCR3EZ-80CUH_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-80CUH?filename=Schneider+Electric_EOCR_EOCR3EZ-80CUH.pdf",
     "local_path": "/docs/bb70e99332_product_datasheet.pdf"
    },
@@ -2143,7 +2193,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSE2-30NS",
+    "local_path": "/docs/e77b3d7f93_EOCRSE2-30NS_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSE2-30NS?filename=Schneider+Electric_EOCR_EOCRSE2-30NS.pdf",
     "local_path": "/docs/617d058a54_product_datasheet.pdf"
    },
@@ -2153,7 +2208,7 @@
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2182,7 +2237,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSE2-60NS",
+    "local_path": "/docs/37f7aa290d_EOCRSE2-60NS_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSE2-60NS?filename=Schneider+Electric_EOCR_EOCRSE2-60NS.pdf",
     "local_path": "/docs/fd19256fee_product_datasheet.pdf"
    },
@@ -2192,7 +2252,7 @@
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2221,7 +2281,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-05S",
+    "local_path": "/docs/16cdac87b3_EOCRSS-05S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-05S?filename=Schneider+Electric_EOCR_EOCRSS-05S.pdf",
     "local_path": "/docs/b7e543820d_product_datasheet.pdf"
    },
@@ -2236,7 +2301,7 @@
     "local_path": "/docs/81ce5e7551_cad.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2265,7 +2330,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-30S",
+    "local_path": "/docs/d193058bb6_EOCRSS-30S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-30S?filename=Schneider+Electric_EOCR_EOCRSS-30S.pdf",
     "local_path": "/docs/e494930757_product_datasheet.pdf"
    },
@@ -2275,7 +2345,7 @@
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2304,7 +2374,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-60S",
+    "local_path": "/docs/ccbc0dff61_EOCRSS-60S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-60S?filename=Schneider+Electric_EOCR_EOCRSS-60S.pdf",
     "local_path": "/docs/a3041ad932_product_datasheet.pdf"
    },
@@ -2314,7 +2389,7 @@
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2343,12 +2418,17 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-05S",
+    "local_path": "/docs/60a26cbc26_EOCRSSD-05S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-05S?filename=Schneider+Electric_EOCR_EOCRSSD-05S.pdf",
     "local_path": "/docs/31fd422f24_product_datasheet.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2377,7 +2457,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-60S",
+    "local_path": "/docs/0917813bc8_EOCRSSD-60S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSSD-60S?filename=Schneider+Electric_EOCR_EOCRSSD-60S.pdf",
     "local_path": "/docs/00f7f26001_product_datasheet.pdf"
    },
@@ -2387,7 +2472,7 @@
     "local_path": "/docs/3a7361dc4b_cad.pdf"
    },
    {
-    "label": "Environmental Disclosure",
+    "label": "Environmental Disclosure (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
     "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
    },
@@ -2416,6 +2501,11 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-05S",
+    "local_path": "/docs/6673e0dca0_EUCR-05S_Datasheet_EN.pdf"
+   },
+   {
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
@@ -2440,7 +2530,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-30S",
+    "local_path": "/docs/0e39700f8d_EUCR-30S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-30S?filename=Schneider+Electric_EOCR_EUCR-30S.pdf",
     "local_path": "/docs/8ef9ed097e_product_datasheet.pdf"
    },
@@ -2469,7 +2564,12 @@
   "image_confirmed_unavailable": false,
   "documents": [
    {
-    "label": "Product datasheet",
+    "label": "Product Datasheet (English, PDF)",
+    "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-60S",
+    "local_path": "/docs/616eb973bb_EUCR-60S_Datasheet_EN.pdf"
+   },
+   {
+    "label": "Product datasheet (English)",
     "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-60S?filename=Schneider+Electric_EOCR_EUCR-60S.pdf",
     "local_path": "/docs/ef2de8bbfc_product_datasheet.pdf"
    },

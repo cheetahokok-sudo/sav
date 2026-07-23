@@ -10,7 +10,12 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-30S",
+   "local_path": "/docs/d193058bb6_EOCRSS-30S_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCRSS-30S?filename=Schneider+Electric_EOCR_EOCRSS-30S.pdf",
    "local_path": "/docs/e494930757_product_datasheet.pdf"
   },
@@ -20,7 +25,7 @@
    "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
   },
   {
-   "label": "Environmental Disclosure",
+   "label": "Environmental Disclosure (English)",
    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Environmental+Disclosure&p_File_Name=Internal+PEP+ENVPEP2212018_V4.pdf&p_Doc_Ref=ENVPEP2212018EN",
    "local_path": "/docs/e1aa0f698e_environmental_disclosure.pdf"
   },

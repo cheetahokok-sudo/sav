@@ -10,7 +10,12 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/3MZ2-WRAUWZ",
+   "local_path": "/docs/e422d1d73f_3MZ2-WRAUWZ_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/3MZ2-WRAUWZ?filename=Schneider+Electric_EOCR_3MZ2-WRAUWZ.pdf",
    "local_path": "/docs/752d59b087_product_datasheet.pdf"
   },

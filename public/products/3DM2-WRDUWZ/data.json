@@ -10,7 +10,12 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUWZ",
+   "local_path": "/docs/d91eb81887_3DM2-WRDUWZ_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/3DM2-WRDUWZ?filename=Schneider+Electric_EOCR_3DM2-WRDUWZ.pdf",
    "local_path": "/docs/86fd559290_product_datasheet.pdf"
   },

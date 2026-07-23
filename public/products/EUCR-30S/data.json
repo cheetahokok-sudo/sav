@@ -10,7 +10,12 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-30S",
+   "local_path": "/docs/0e39700f8d_EUCR-30S_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/EUCR-30S?filename=Schneider+Electric_EOCR_EUCR-30S.pdf",
    "local_path": "/docs/8ef9ed097e_product_datasheet.pdf"
   },

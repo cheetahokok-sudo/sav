@@ -10,7 +10,12 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Product datasheet",
+   "label": "Product Datasheet (English, PDF)",
+   "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-80AUH",
+   "local_path": "/docs/1c95abf2d9_EOCR3EZ-80AUH_Datasheet_EN.pdf"
+  },
+  {
+   "label": "Product datasheet (English)",
    "official_url": "https://www.se.com/eg/en/product/download-pdf/EOCR3EZ-80AUH?filename=Schneider+Electric_EOCR_EOCR3EZ-80AUH.pdf",
    "local_path": "/docs/9d9f0b3719_product_datasheet.pdf"
   },
