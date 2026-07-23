@@ -1,12 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { COMPANY, whatsappLink, mailtoLink } from "../lib/company";
+import { COMPANY, lineLink, messagingLink, mailtoLink } from "../lib/company";
 
 // Static-site quotation form: instead of a dead Formspree placeholder, this
 // composes a real message and hands it to the channel SAV actually answers —
-// WhatsApp/LINE first, email as fallback. No backend required. A Formspree
-// endpoint can still be added later without changing this UI.
+// LINE first, email as fallback. No backend required. A Formspree endpoint can
+// still be added later without changing this UI.
+//
+// LINE can't carry a prefilled message, so the primary action COPIES the built
+// message to the clipboard and opens LINE in one tap — the customer pastes it
+// into the chat. Falls back to a prefilled WhatsApp link if LINE isn't set.
 
 const PRODUCT_OPTIONS = [
   "EOCR-SS 05 (0.5–6A)",
@@ -33,6 +37,7 @@ export default function QuoteForm() {
   const [product, setProduct] = useState("");
   const [message, setMessage] = useState("");
   const [copied, setCopied] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const buildMessage = () =>
     [
@@ -55,6 +60,27 @@ export default function QuoteForm() {
     } catch {
       /* clipboard unavailable — ignore */
     }
+  };
+
+  // LINE has no prefill: copy the details to the clipboard, briefly confirm,
+  // then open LINE so the customer can paste. If LINE isn't configured, this
+  // degrades to a prefilled WhatsApp link (which needs no copy step).
+  const sendViaLine = async () => {
+    const msg = buildMessage();
+    if (!COMPANY.lineOfficialUrl) {
+      window.open(messagingLink(msg), "_blank", "noopener");
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(msg);
+    } catch {
+      /* clipboard unavailable — customer can still paste manually */
+    }
+    setSending(true);
+    setTimeout(() => {
+      setSending(false);
+      window.open(lineLink(), "_blank", "noopener");
+    }, 700);
   };
 
   return (
@@ -133,14 +159,13 @@ export default function QuoteForm() {
         />
       </div>
 
-      <a
-        href={whatsappLink(buildMessage())}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        type="button"
+        onClick={sendViaLine}
         className="block w-full text-center bg-brand text-white font-display text-sm font-bold tracking-wider uppercase py-3.5 rounded-sm hover:bg-brand-dark transition-colors"
       >
-        💬 ส่งทาง LINE / WhatsApp →
-      </a>
+        {sending ? "คัดลอกข้อความแล้ว เปิด LINE…" : "💬 คัดลอก & เปิด LINE →"}
+      </button>
       <div className="grid grid-cols-2 gap-3 mt-3">
         <a
           href={mailtoLink("ขอใบเสนอราคา (SAV Website)", buildMessage())}
@@ -157,7 +182,7 @@ export default function QuoteForm() {
         </button>
       </div>
       <p className="text-[11px] text-gray-500 mt-3 leading-relaxed">
-        ข้อความจะเปิดในแอป WhatsApp / อีเมลของคุณพร้อมรายละเอียดที่กรอกไว้ —
+        กด “คัดลอก &amp; เปิด LINE” แล้ววางข้อความในแชท — หรือส่งทางอีเมลพร้อมรายละเอียดที่กรอกไว้
         ทีมงานตอบกลับภายในวันทำการ ({COMPANY.hoursTh})
       </p>
     </div>

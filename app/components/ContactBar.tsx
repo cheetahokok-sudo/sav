@@ -29,7 +29,7 @@ export default function ContactBar() {
           className="flex flex-col items-center justify-center py-2 text-[#06A64A] active:bg-gray-50 border-x border-gray-200"
         >
           <span className="text-base leading-none mb-0.5">💬</span>
-          LINE / WhatsApp
+          LINE
         </a>
         <a
           href={`${BASE}/products/`}

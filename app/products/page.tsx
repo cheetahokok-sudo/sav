@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import ContactBar from "../components/ContactBar";
-import { COMPANY, whatsappLink, mailtoLink } from "../lib/company";
+import { COMPANY, lineLink, messagingLink, mailtoLink } from "../lib/company";
 
 type ProductDoc = {
   label: string;
@@ -209,6 +209,26 @@ export default function ProductsPage() {
     }
   };
 
+  // LINE can't prefill: copy the basket, briefly confirm, then open LINE so
+  // the customer pastes the model/qty list. Degrades to prefilled WhatsApp if
+  // LINE isn't configured.
+  const sendQuoteViaLine = async () => {
+    if (!COMPANY.lineOfficialUrl) {
+      window.open(messagingLink(quoteMessage), "_blank", "noopener");
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(quoteMessage);
+    } catch {
+      /* clipboard unavailable — customer can still paste manually */
+    }
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+      window.open(lineLink(), "_blank", "noopener");
+    }, 700);
+  };
+
   const totalItems = quote.reduce((s, i) => s + i.qty, 0);
 
   return (
@@ -405,21 +425,21 @@ export default function ProductsPage() {
           <div className="text-center text-gray-500 mt-10">
             <p className="mb-3">ไม่พบสินค้าที่ตรงกับคำค้นหา</p>
             <a
-              href={whatsappLink(
+              href={messagingLink(
                 `สวัสดีครับ หารุ่น "${query}" ไม่พบบนเว็บไซต์ รบกวนสอบถามครับ`
               )}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block font-display text-xs font-bold tracking-wider uppercase border-[1.5px] border-brand text-brand px-5 py-2.5 hover:bg-brand hover:text-white transition-colors"
             >
-              💬 สอบถามรุ่นนี้ทาง LINE/WA →
+              💬 สอบถามรุ่นนี้ทาง LINE →
             </a>
           </div>
         )}
       </div>
 
       {/* QUOTE BASKET — persists in localStorage; submits through the
-          channels SAV actually answers (WhatsApp/LINE first). Static-site
+          channels SAV actually answers (LINE first). Static-site
           friendly: no backend required. */}
       {quote.length > 0 && (
         <div className="fixed bottom-14 lg:bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-ink shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
@@ -476,14 +496,13 @@ export default function ProductsPage() {
                 ))}
               </div>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={whatsappLink(quoteMessage)}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={sendQuoteViaLine}
                   className="flex-1 min-w-[180px] text-center bg-brand text-white font-display text-xs font-bold tracking-wider uppercase py-3 hover:bg-brand-dark transition-colors"
                 >
-                  💬 ส่งขอราคาทาง LINE / WhatsApp →
-                </a>
+                  💬 คัดลอก &amp; ส่งขอราคาทาง LINE →
+                </button>
                 <a
                   href={mailtoLink("ขอใบเสนอราคา (SAV Website)", quoteMessage)}
                   className="text-center border border-gray-300 text-ink font-display text-xs font-bold tracking-wider uppercase px-5 py-3 hover:border-brand hover:text-brand transition-colors"

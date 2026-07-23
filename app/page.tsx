@@ -2,7 +2,7 @@ import Link from "next/link";
 import MobileNav from "./components/MobileNav";
 import ContactBar from "./components/ContactBar";
 import QuoteForm from "./components/QuoteForm";
-import { COMPANY, whatsappLink } from "./lib/company";
+import { COMPANY, messagingLink } from "./lib/company";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -209,7 +209,7 @@ function Logo({ dark = false }: { dark?: boolean }) {
 }
 
 export default function Home() {
-  const consultWa = whatsappLink(
+  const consultLine = messagingLink(
     "สวัสดีครับ ต้องการคำแนะนำเลือกรุ่น EOCR ครับ"
   );
 
@@ -308,12 +308,12 @@ export default function Home() {
                 ดูสินค้าทั้งหมด →
               </Link>
               <a
-                href={consultWa}
+                href={consultLine}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-white/30 text-white px-7 py-3 hover:border-white hover:bg-white/5 transition-colors"
               >
-                💬 ปรึกษาวิศวกร (LINE/WA)
+                💬 ปรึกษาวิศวกรทาง LINE
               </a>
             </div>
           </div>
@@ -577,14 +577,14 @@ export default function Home() {
               ทีมงานหารุ่น EOCR ทดแทนให้ฟรี
             </p>
             <a
-              href={whatsappLink(
+              href={messagingLink(
                 "สวัสดีครับ ต้องการหารุ่น EOCR ทดแทนรีเลย์เดิม รุ่นเดิมคือ: "
               )}
               target="_blank"
               rel="noopener noreferrer"
               className="border-[1.5px] border-brand text-brand font-display text-xs font-bold tracking-wider uppercase px-5 py-2 hover:bg-brand hover:text-white transition-colors"
             >
-              💬 ส่งรุ่นเดิมทาง LINE/WA →
+              💬 ส่งรุ่นเดิมทาง LINE →
             </a>
           </div>
         </div>
@@ -635,12 +635,12 @@ export default function Home() {
         </div>
         <div className="flex gap-3 font-display text-xs font-bold tracking-wider uppercase">
           <a
-            href={consultWa}
+            href={consultLine}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-brand text-white px-6 py-3 hover:bg-brand-dark transition-colors"
           >
-            💬 LINE / WhatsApp
+            💬 ปรึกษาทาง LINE
           </a>
           <a
             href={COMPANY.intlPhoneHref}
@@ -754,12 +754,12 @@ export default function Home() {
             </div>
             <div className="px-7 pb-7 flex gap-3">
               <a
-                href={consultWa}
+                href={consultLine}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-brand text-white font-display text-xs font-bold tracking-wider uppercase px-5 py-2.5 hover:bg-brand-dark transition-colors"
               >
-                💬 LINE/WA →
+                💬 LINE →
               </a>
               <a
                 href="#contact"

@@ -31,14 +31,16 @@ export const COMPANY = {
   intlPhoneHref: "tel:+66949249829",
 
   // ---- Messaging ----
-  // WhatsApp deep link works with just the number. Prefill text is appended
-  // by helpers below.
+  // LINE is the primary channel — Thai B2B buyers live there. Every messaging
+  // button points here via messagingLink() below. WhatsApp is kept only as an
+  // automatic fallback (see messagingLink) and for the number that also answers
+  // WhatsApp; prefill text is appended by helpers.
   whatsappBase: "https://wa.me/66949249829",
-  // TODO: when a LINE Official Account exists, put its full URL here
-  // (e.g. "https://lin.ee/XXXXXXX") and the site will automatically show a
-  // dedicated LINE button everywhere. Until then, LINE users add by phone
-  // number +66 94 924 9829.
-  lineOfficialUrl: "",
+  // Personal LINE add-by-ID link (~ prefix = add by LINE ID). Requires the ID
+  // to exist AND "Allow adding by ID" enabled in LINE privacy settings.
+  // To upgrade to a LINE Official Account later, swap this ONE value for the
+  // OA's "https://lin.ee/XXXXXXX" link — every button follows automatically.
+  lineOfficialUrl: "https://line.me/ti/p/~cheetahok",
 
   email: "sav-545@hotmail.com",
 
@@ -52,6 +54,25 @@ export const COMPANY = {
 /** WhatsApp link with prefilled message. */
 export function whatsappLink(text: string): string {
   return `${COMPANY.whatsappBase}?text=${encodeURIComponent(text)}`;
+}
+
+/**
+ * LINE add-friend link. LINE cannot carry a prefilled message the way WhatsApp
+ * can — this opens the chat/add-friend screen only. For flows that need to send
+ * details (quote form, product quote), copy the text to the clipboard first,
+ * then open this so the customer can paste into LINE.
+ */
+export function lineLink(): string {
+  return COMPANY.lineOfficialUrl;
+}
+
+/**
+ * Primary messaging link: LINE when configured, WhatsApp as a graceful fallback
+ * (so buttons never point at a broken ~link if lineOfficialUrl is ever blanked).
+ * The `text` is used only by the WhatsApp fallback — LINE ignores it.
+ */
+export function messagingLink(text: string): string {
+  return COMPANY.lineOfficialUrl || whatsappLink(text);
 }
 
 /** mailto: link with prefilled subject + body. */
