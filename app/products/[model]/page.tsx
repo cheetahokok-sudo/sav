@@ -30,7 +30,7 @@ type Product = {
   oem?: boolean;
   local_photo_path: string | null;
   documents: Doc[];
-  in_stock: boolean;
+  in_stock: boolean | null;
   your_notes: string | null;
 };
 
@@ -172,9 +172,13 @@ export default async function ProductDetail(
               </h1>
               <p className="text-sm text-gray-600 mb-3">{p.series || p.description}</p>
               <div className="flex flex-wrap items-center gap-2 mb-4">
-                {p.in_stock ? (
+                {p.in_stock === true ? (
                   <span className="inline-block bg-green-50 text-green-700 border border-green-200 font-display text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
                     ● มีสต็อกในไทย
+                  </span>
+                ) : p.in_stock === false ? (
+                  <span className="inline-block bg-amber-50 text-amber-700 border border-amber-200 font-display text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                    ◐ สั่งล่วงหน้า
                   </span>
                 ) : (
                   <span className="inline-block bg-gray-50 text-gray-500 border border-gray-200 font-display text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">

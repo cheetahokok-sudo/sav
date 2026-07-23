@@ -38,7 +38,7 @@
  "source_url": "https://www.se.com/kr/ko/product/ISEMMETS-WRBH/isemmet-eth-wr-24vdc-hole-tmp-%2B-spectrum./",
  "scraped_at": "2026-06-28T03:23:40.534989+00:00",
  "category": null,
- "in_stock": null,
+ "in_stock": false,
  "your_price": null,
  "your_notes": null
 }

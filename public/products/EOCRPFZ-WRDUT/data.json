@@ -33,7 +33,7 @@
  "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUT/eocr-pfz-100~240-vac-dc-terminal./",
  "scraped_at": "2026-06-28T03:23:19.269810+00:00",
  "category": null,
- "in_stock": null,
+ "in_stock": false,
  "your_price": null,
  "your_notes": null
 }

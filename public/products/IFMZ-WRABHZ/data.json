@@ -6,8 +6,8 @@
  "description": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom..",
  "end_of_sale": null,
  "official_image_url": null,
- "local_photo_path": null,
- "image_confirmed_unavailable": true,
+ "local_photo_path": "/docs/3b553ae721_photo.jpg",
+ "image_confirmed_unavailable": false,
  "documents": [
   {
    "label": "Datasheet",

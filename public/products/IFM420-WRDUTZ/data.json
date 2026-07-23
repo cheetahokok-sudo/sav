@@ -33,7 +33,7 @@
  "source_url": "https://www.se.com/kr/ko/product/IFM420-WRDUTZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifm420-wr-100240v-%ED%84%B0%EB%AF%B8%EB%84%90-/",
  "scraped_at": "2026-06-28T03:27:15.879690+00:00",
  "category": null,
- "in_stock": null,
+ "in_stock": false,
  "your_price": null,
  "your_notes": null
 }

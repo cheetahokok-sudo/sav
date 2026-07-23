@@ -7,7 +7,7 @@
   "description": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole..",
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
+  "local_photo_path": "/docs/b6c99c66df_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
    {
@@ -19,7 +19,7 @@
   "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUH/%EB%8B%A4%EA%B8%B0%EB%8A%A5-%EA%B3%BC%EB%B6%80%ED%95%98-%EB%A6%B4%EB%A0%88%EC%9D%B4-eocrpfz-100240-vac-dc-hole-/",
   "scraped_at": "2026-06-28T03:23:15.426929+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -58,7 +58,7 @@
   "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUT/eocr-pfz-100~240-vac-dc-terminal./",
   "scraped_at": "2026-06-28T03:23:19.269810+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -97,7 +97,7 @@
   "source_url": "https://www.se.com/kr/ko/product/EOCRPFZT-WRDUH/eocrpfz-100240-vac-dc-hole-tmp-/",
   "scraped_at": "2026-06-28T03:23:21.213441+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -482,7 +482,7 @@
   "source_url": "https://www.se.com/kr/ko/product/ISEMMETS-WRBH/isemmet-eth-wr-24vdc-hole-tmp-%2B-spectrum./",
   "scraped_at": "2026-06-28T03:23:40.534989+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -1184,7 +1184,7 @@
   "source_url": "https://www.se.com/kr/ko/product/IFM420-WRDUHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifm420-wr-100240v-%EB%B0%94%ED%85%80-%EC%BB%A4%EB%84%A5%ED%8A%B8/",
   "scraped_at": "2026-06-28T03:27:14.016095+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -1223,7 +1223,7 @@
   "source_url": "https://www.se.com/kr/ko/product/IFM420-WRDUTZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifm420-wr-100240v-%ED%84%B0%EB%AF%B8%EB%84%90-/",
   "scraped_at": "2026-06-28T03:27:15.879690+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -1262,7 +1262,7 @@
   "source_url": "https://www.se.com/kr/ko/product/IFM420-WRDUWZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifm420-wr-100240v-%EC%9C%88%EB%8F%84%EC%9A%B0-/",
   "scraped_at": "2026-06-28T03:27:18.284967+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -1477,7 +1477,7 @@
   "source_url": "https://www.se.com/kr/ko/product/EOCRPMZ-WRDUH/%EB%8B%A4%EA%B8%B0%EB%8A%A5-%EA%B3%BC%EB%B6%80%ED%95%98-%EB%A6%B4%EB%A0%88%EC%9D%B4-0-560a-85250v-ac-dc/",
   "scraped_at": "2026-06-28T03:27:27.665236+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": false,
   "your_price": null,
   "your_notes": null
  },
@@ -1771,8 +1771,8 @@
   "description": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom..",
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
+  "local_photo_path": "/docs/3b553ae721_photo.jpg",
+  "image_confirmed_unavailable": false,
   "documents": [
    {
     "label": "Datasheet",
@@ -1975,7 +1975,7 @@
   "description": "3MZ2-WRDUWZ - Protection relay, EOCR Digital, 0.5 to 60A, 100 to 240VAC/DC, window connt, for motor protection.",
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
+  "local_photo_path": "/docs/0dcc837820_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
    {
@@ -2057,7 +2057,7 @@
   "description": "EOCR3EZ-05CUH - Electronic overcurrent relay, EOCR, 0.5 to 7A, 100 to 240V, Overloaded with grounded built in CT, Hole type.",
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
+  "local_photo_path": "/docs/3ff6c0bcfe_photo.jpg",
   "image_confirmed_unavailable": false,
   "documents": [
    {

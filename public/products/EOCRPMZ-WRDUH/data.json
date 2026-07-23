@@ -33,7 +33,7 @@
  "source_url": "https://www.se.com/kr/ko/product/EOCRPMZ-WRDUH/%EB%8B%A4%EA%B8%B0%EB%8A%A5-%EA%B3%BC%EB%B6%80%ED%95%98-%EB%A6%B4%EB%A0%88%EC%9D%B4-0-560a-85250v-ac-dc/",
  "scraped_at": "2026-06-28T03:27:27.665236+00:00",
  "category": null,
- "in_stock": null,
+ "in_stock": false,
  "your_price": null,
  "your_notes": null
 }
