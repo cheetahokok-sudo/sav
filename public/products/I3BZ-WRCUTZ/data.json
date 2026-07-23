@@ -1,39 +1,39 @@
 {
-  "model_number": "I3BZ-WRCUTZ",
-  "title": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V.",
-  "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V..",
-  "end_of_sale": null,
-  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-  "local_photo_path": "/docs/13adf4afac_photo.jpg",
-  "image_confirmed_unavailable": false,
-  "documents": [
-    {
-      "label": "Datasheet",
-      "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUTZ.pdf",
-      "local_path": "/docs/df2463db72_제품_데이터_시트.pdf"
-    },
-    {
-      "label": "User Guide",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
-      "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
-    },
-    {
-      "label": "Catalog",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
-      "local_path": "/docs/4e41af41bd_카탈로그.pdf"
-    },
-    {
-      "label": "EOCR Catalog (English)",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
-    }
-  ],
-  "source_url": "https://www.se.com/kr/ko/product/I3BZ-WRCUTZ/eocri3bz-wr-1a1b-100240v-/",
-  "scraped_at": "2026-06-28T03:26:46.277220+00:00",
-  "category": null,
-  "in_stock": true,
-  "your_price": null,
-  "your_notes": null
+ "model_number": "I3BZ-WRCUTZ",
+ "title": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V.",
+ "range_name": "EOCR",
+ "range_short_desc": "Electronic motor protection device (EOCR)",
+ "description": "I3BZ-WRCUTZ - EOCR-I3BZ WR 1A1B 100~240V..",
+ "end_of_sale": null,
+ "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUTZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+ "local_photo_path": "/docs/13adf4afac_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet",
+   "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRCUTZ?filename=Schneider+Electric_EOCR_I3BZ-WRCUTZ.pdf",
+   "local_path": "/docs/df2463db72_제품_데이터_시트.pdf"
+  },
+  {
+   "label": "User Guide",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
+   "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
+  },
+  {
+   "label": "Catalog",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
+   "local_path": "/docs/4e41af41bd_카탈로그.pdf"
+  },
+  {
+   "label": "EOCR Catalog (English)",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+   "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  }
+ ],
+ "source_url": "https://www.se.com/kr/ko/product/I3BZ-WRCUTZ/eocri3bz-wr-1a1b-100240v-/",
+ "scraped_at": "2026-06-28T03:26:46.277220+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": null
 }

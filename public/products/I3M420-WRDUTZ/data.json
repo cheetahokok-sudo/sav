@@ -1,24 +1,24 @@
 {
-  "model_number": "I3M420-WRDUTZ",
-  "title": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin.",
-  "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin..",
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": false,
-  "documents": [
-    {
-      "label": "EOCR Catalog (English)",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
-    }
-  ],
-  "source_url": "https://www.se.com/kr/ko/product/I3M420-WRDUTZ/eocri3m420-wr-100240v-termin-/",
-  "scraped_at": "2026-06-28T03:27:34.061857+00:00",
-  "category": null,
-  "in_stock": true,
-  "your_price": null,
-  "your_notes": null
+ "model_number": "I3M420-WRDUTZ",
+ "title": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin.",
+ "range_name": "EOCR",
+ "range_short_desc": "Electronic motor protection device (EOCR)",
+ "description": "I3M420-WRDUTZ - EOCR-i3M420 WR 100~240V Termin..",
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": null,
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "EOCR Catalog (English)",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+   "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  }
+ ],
+ "source_url": "https://www.se.com/kr/ko/product/I3M420-WRDUTZ/eocri3m420-wr-100240v-termin-/",
+ "scraped_at": "2026-06-28T03:27:34.061857+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": null
 }

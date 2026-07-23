@@ -1,39 +1,39 @@
 {
-  "model_number": "I3BZ-WRABHZ",
-  "title": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect",
-  "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect.",
-  "end_of_sale": null,
-  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-  "local_photo_path": "/docs/e281b20394_photo.jpg",
-  "image_confirmed_unavailable": false,
-  "documents": [
-    {
-      "label": "Datasheet",
-      "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRABHZ?filename=Schneider+Electric_EOCR_I3BZ-WRABHZ.pdf",
-      "local_path": "/docs/8c6624cf83_제품_데이터_시트.pdf"
-    },
-    {
-      "label": "User Guide",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
-      "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
-    },
-    {
-      "label": "Catalog",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
-      "local_path": "/docs/4e41af41bd_카탈로그.pdf"
-    },
-    {
-      "label": "EOCR Catalog (English)",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
-    }
-  ],
-  "source_url": "https://www.se.com/kr/ko/product/I3BZ-WRABHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocri3bz-wr-aa-24v-%EB%B0%94%ED%85%80-%EC%BB%A4%EB%84%A5%ED%8A%B8/",
-  "scraped_at": "2026-06-28T03:26:40.629690+00:00",
-  "category": null,
-  "in_stock": true,
-  "your_price": null,
-  "your_notes": null
+ "model_number": "I3BZ-WRABHZ",
+ "title": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect",
+ "range_name": "EOCR",
+ "range_short_desc": "Electronic motor protection device (EOCR)",
+ "description": "I3BZ-WRABHZ - Digital protection relay EOCR-I3BZ WR A-A 24V Bottom connect.",
+ "end_of_sale": null,
+ "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=I3DM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+ "local_photo_path": "/docs/e281b20394_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Datasheet",
+   "official_url": "https://www.se.com/kr/ko/product/download-pdf/I3BZ-WRABHZ?filename=Schneider+Electric_EOCR_I3BZ-WRABHZ.pdf",
+   "local_path": "/docs/8c6624cf83_제품_데이터_시트.pdf"
+  },
+  {
+   "label": "User Guide",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-nEOCR_Manual_R2.pdf&p_Doc_Ref=Digitial-nEOCR_Manual_R2",
+   "local_path": "/docs/5c2d0b6ff4_사용자_가이드.pdf"
+  },
+  {
+   "label": "Catalog",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=Digitial-nEOCR_Catalog.pdf&p_Doc_Ref=Digitial-nEOCR_Catalog",
+   "local_path": "/docs/4e41af41bd_카탈로그.pdf"
+  },
+  {
+   "label": "EOCR Catalog (English)",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+   "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  }
+ ],
+ "source_url": "https://www.se.com/kr/ko/product/I3BZ-WRABHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocri3bz-wr-aa-24v-%EB%B0%94%ED%85%80-%EC%BB%A4%EB%84%A5%ED%8A%B8/",
+ "scraped_at": "2026-06-28T03:26:40.629690+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": null
 }

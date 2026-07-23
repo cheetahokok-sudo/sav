@@ -1,24 +1,24 @@
 {
-  "model_number": "EUCR-05S",
-  "title": "EUCR-05S - Electronic undercurrent relay, EOCR Digital, 0.5 to 6A, 24 to 240VAC/DC, Standard",
-  "range_name": "EOCR",
-  "range_short_desc": "Electronic overcurrent relays",
-  "description": "EUCR-05S - Electronic undercurrent relay, EOCR Digital, 0.5 to 6A, 24 to 240VAC/DC, Standard.",
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": false,
-  "documents": [
-    {
-      "label": "EOCR Catalog (English)",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
-    }
-  ],
-  "source_url": "https://www.se.com/eg/en/product/EUCR-05S/electronic-undercurrent-relay-eocr-digital-0-5-to-6a-24-to-240vac-dc-standard/",
-  "scraped_at": "2026-06-28T04:29:07.919279+00:00",
-  "category": null,
-  "in_stock": true,
-  "your_price": null,
-  "your_notes": null
+ "model_number": "EUCR-05S",
+ "title": "EUCR-05S - Electronic undercurrent relay, EOCR Digital, 0.5 to 6A, 24 to 240VAC/DC, Standard",
+ "range_name": "EOCR",
+ "range_short_desc": "Electronic overcurrent relays",
+ "description": "EUCR-05S - Electronic undercurrent relay, EOCR Digital, 0.5 to 6A, 24 to 240VAC/DC, Standard.",
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/8e31092485_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "EOCR Catalog (English)",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+   "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  }
+ ],
+ "source_url": "https://www.se.com/eg/en/product/EUCR-05S/electronic-undercurrent-relay-eocr-digital-0-5-to-6a-24-to-240vac-dc-standard/",
+ "scraped_at": "2026-06-28T04:29:07.919279+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": null
 }

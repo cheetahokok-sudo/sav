@@ -110,9 +110,11 @@ export default async function ProductDetail(
       : {}),
     offers: {
       "@type": "Offer",
-      availability: p.in_stock
-        ? "https://schema.org/InStock"
-        : "https://schema.org/PreOrder",
+      // Least-claim rule: only assert availability when the owner has
+      // explicitly marked the SKU as stocked; "ask" SKUs claim nothing.
+      ...(p.in_stock === true
+        ? { availability: "https://schema.org/InStock" }
+        : {}),
       priceCurrency: "THB",
       seller: { "@type": "Organization", name: "SAV Mechanical Services & Supplies" },
     },
@@ -176,7 +178,7 @@ export default async function ProductDetail(
                   </span>
                 ) : (
                   <span className="inline-block bg-gray-50 text-gray-500 border border-gray-200 font-display text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
-                    สั่งนำเข้า
+                    สอบถามสต็อก
                   </span>
                 )}
                 {p.oem && (

@@ -1,24 +1,24 @@
 {
-  "model_number": "EOCRPFZ-WRDUH",
-  "title": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole.",
-  "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole..",
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": false,
-  "documents": [
-    {
-      "label": "EOCR Catalog (English)",
-      "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
-      "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
-    }
-  ],
-  "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUH/%EB%8B%A4%EA%B8%B0%EB%8A%A5-%EA%B3%BC%EB%B6%80%ED%95%98-%EB%A6%B4%EB%A0%88%EC%9D%B4-eocrpfz-100240-vac-dc-hole-/",
-  "scraped_at": "2026-06-28T03:23:15.426929+00:00",
-  "category": null,
-  "in_stock": true,
-  "your_price": null,
-  "your_notes": null
+ "model_number": "EOCRPFZ-WRDUH",
+ "title": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole.",
+ "range_name": "EOCR",
+ "range_short_desc": "Electronic motor protection device (EOCR)",
+ "description": "EOCRPFZ-WRDUH - Multi-function overload relay EOCR-PFZ 100~240 VAC/DC Hole..",
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": null,
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "EOCR Catalog (English)",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+   "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  }
+ ],
+ "source_url": "https://www.se.com/kr/ko/product/EOCRPFZ-WRDUH/%EB%8B%A4%EA%B8%B0%EB%8A%A5-%EA%B3%BC%EB%B6%80%ED%95%98-%EB%A6%B4%EB%A0%88%EC%9D%B4-eocrpfz-100240-vac-dc-hole-/",
+ "scraped_at": "2026-06-28T03:23:15.426929+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": null
 }
