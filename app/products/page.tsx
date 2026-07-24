@@ -74,6 +74,7 @@ function seriesOf(model: string): string {
   if (/^ISEM/.test(m)) return "iSEM (Communication)";
   if (/^DSP-VIP/.test(m)) return "DSP-VIP Series";
   if (/^DSP/.test(m)) return "Samwha DSP";
+  if (/^WYZ/.test(m)) return "Woonyoung ZCT";
   return "Other";
 }
 

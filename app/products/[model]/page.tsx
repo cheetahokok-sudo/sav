@@ -240,7 +240,7 @@ export default async function ProductDetail(
               </table>
             </div>
             <p className="text-[11px] text-gray-400 mt-3">
-              ข้อมูลตามเอกสารผู้ผลิต (Samwha DSP) — รายละเอียดฉบับเต็มดูจาก Datasheet ด้านล่าง
+              ข้อมูลตามเอกสารผู้ผลิต ({brand}) — รายละเอียดฉบับเต็มดูจาก Datasheet ด้านล่าง
             </p>
           </div>
         )}

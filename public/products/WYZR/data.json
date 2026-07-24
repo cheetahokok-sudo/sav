@@ -1,0 +1,119 @@
+{
+ "model_number": "WYZR",
+ "title": "WYZR-030–WYZR-200 - Zero-Current Transformer (ZCT), Round type, 200mA / 100 mV",
+ "range_name": "ZCT",
+ "brand": "Woonyoung",
+ "series": "Zero-Current Transformer (Round type)",
+ "base_model": "WYZR",
+ "range_short_desc": "Woonyoung zero-phase current transformers (ZCT)",
+ "description": "Woonyoung zero-phase current transformer (ZCT), round cable-through type, output 200 mA / 100 mV. Series models: WYZR-030, WYZR-050, WYZR-065, WYZR-080, WYZR-100, WYZR-120, WYZR-150, WYZR-200. Rating AC 600 V or below, 50/60 Hz. Per-model dimensions are in the dimension drawing and datasheet.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "ABS flame proof resin for self-extinguish stability",
+    "Light weighted structure without using filler inside",
+    "Terminal cover for safety"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Rating (as published)",
+   "rows": [
+    "Type : Round (cable-through)",
+    "Rated voltage : AC 600 V or below",
+    "Frequency : 50/60 Hz",
+    "Input : 200 mA",
+    "Output : 100 mV"
+   ]
+  },
+  {
+   "group": "Models in this series",
+   "rows": [
+    "WYZR-030 : dimensions per drawing & datasheet",
+    "WYZR-050 : dimensions per drawing & datasheet",
+    "WYZR-065 : dimensions per drawing & datasheet",
+    "WYZR-080 : dimensions per drawing & datasheet",
+    "WYZR-100 : dimensions per drawing & datasheet",
+    "WYZR-120 : dimensions per drawing & datasheet",
+    "WYZR-150 : dimensions per drawing & datasheet",
+    "WYZR-200 : dimensions per drawing & datasheet"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "https://woonyoung.com/data/item/2943611486_4EgZfniG_8815e233328fa6561238e913beb916895742e95e.jpg",
+ "local_photo_path": "/docs/84e3f09e2c_WYZR_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Dimension drawing (JPG)",
+   "official_url": "https://woonyoung.com/data/ckeditor_img/2943611486_1347b1de_zct+dim.jpg",
+   "local_path": "/docs/55cd09d2f8_WYZR_dimensions.jpg"
+  },
+  {
+   "label": "Specification / Datasheet (PDF)",
+   "official_url": "https://woonyoung.com/data/file/specification/1988180643_d5TQgtB8_WYZR-0307E200Round_Type2CWYZS-1607E2602CWYZS-160A7E260ASquare_type-260311.pdf",
+   "local_path": "/docs/03a09d497c_WYZR-030_200Round_Type_WYZS-160_260_WYZS-160A_260ASquare.pdf"
+  },
+  {
+   "label": "CAD drawing ZCT30 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=0",
+   "local_path": "/docs/040cb82d1f_ZCT30.dwg"
+  },
+  {
+   "label": "CAD drawing ZCT50 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=1",
+   "local_path": "/docs/dfe7b6dd0a_ZCT50.dwg"
+  },
+  {
+   "label": "CAD drawing ZR-65 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=2",
+   "local_path": "/docs/089230dbe4_ZR-65.dwg"
+  },
+  {
+   "label": "CAD drawing ZCT80 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=3",
+   "local_path": "/docs/bc0cfe1473_ZCT80.dwg"
+  },
+  {
+   "label": "CAD drawing ZCT100 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=4",
+   "local_path": "/docs/88abd806cb_ZCT100.dwg"
+  },
+  {
+   "label": "CAD drawing ZCT120 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=5",
+   "local_path": "/docs/416fbc5769_ZCT120.dwg"
+  },
+  {
+   "label": "CAD drawing ZCT150 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=6",
+   "local_path": "/docs/2bcc377577_ZCT150.dwg"
+  },
+  {
+   "label": "CAD drawing ZCT200 (DWG)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=cad&wr_id=493&no=7",
+   "local_path": "/docs/6289e11a74_ZCT200.dwg"
+  },
+  {
+   "label": "3D model WYZR-030 (STEP)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=3Dcad&wr_id=320&no=0",
+   "local_path": "/docs/d01c2b6819_WYZR-030.step"
+  },
+  {
+   "label": "3D model ZCT 50 (STEP)",
+   "official_url": "https://woonyoung.com/bbs/download.php?bo_table=3Dcad&wr_id=320&no=1",
+   "local_path": "/docs/a86995bd2b_ZCT_50.STEP"
+  }
+ ],
+ "source_url": "https://woonyoung.com/eng/page/s0201_view.php?ocatecode=1337921354&idx=176&gcname=x&gnsub=x&ogcname=Zero-Current+Trans",
+ "scraped_at": "2026-07-24T18:39:31+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "ใช้คู่กับรีเลย์ earth-leakage (EOCR/DSP รุ่นที่รับ ZCT)"
+}
