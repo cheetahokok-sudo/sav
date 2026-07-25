@@ -6,13 +6,13 @@ import { AnswerSummary, ProductCTA, Disclaimer } from "../../components/knowledg
 const SITE = "https://savautomation.com";
 
 export const metadata: Metadata = {
-  title: "เครื่องช่วยเลือกขนาดรู ZCT จาก Cable OD",
+  title: "เครื่องช่วยเลือกขนาดรู ZCT — เลือกจากการเดินสายและสเปกสาย",
   description:
-    "หาขนาดรู ZCT (Woonyoung WYZR) ที่เหมาะจากเส้นผ่านศูนย์กลางรวมของสายที่ต้องลอดผ่าน พร้อมเผื่อระยะสำหรับดัด/ร้อยสาย — เป็นแนวทางเบื้องต้น ควรยืนยันกับ Datasheet",
+    "เลือกขนาดรู ZCT (Woonyoung WYZR) แบบวิศวกร: เลือกการเดินสาย (1 เฟส / 3 เฟส / Star-Delta) และสเปกสาย (THW, CV, NYY, VCT ตามขนาด mm²) ระบบคำนวณมัดสายและวาดภาพจำลองรู ZCT พร้อมสายให้เห็นจริงตามสเกล",
   alternates: { canonical: "/learn/zct-window-calculator/" },
   openGraph: {
-    title: "เครื่องช่วยเลือกขนาดรู ZCT จาก Cable OD",
-    description: "หาขนาดรู ZCT Woonyoung WYZR จากเส้นผ่านศูนย์กลางสาย",
+    title: "เครื่องช่วยเลือกขนาดรู ZCT — เห็นภาพสายในรูจริงตามสเกล",
+    description: "เลือกการเดินสาย + สเปกสาย → เห็นภาพจำลองสายใน ZCT พร้อมรุ่นที่แนะนำ",
     url: "/learn/zct-window-calculator/",
     type: "website",
   },
@@ -45,42 +45,73 @@ export default function ZctWindowPage() {
           เครื่องมือคำนวณ
         </p>
         <h1 className="font-display font-extrabold text-3xl sm:text-[34px] leading-tight text-ink mb-2">
-          เครื่องช่วยเลือกขนาดรู ZCT จาก Cable OD
+          เครื่องช่วยเลือกขนาดรู ZCT
         </h1>
 
         <AnswerSummary>
-          ZCT เลือกจากขนาดรู (window) ไม่ใช่จากกระแสโหลด โดยให้สายที่มีกระแสทุกเส้นลอดผ่านได้ครบพร้อมเผื่อระยะ
-          สำหรับดัดและร้อยสาย เครื่องมือนี้รับเส้นผ่านศูนย์กลางรวมของสายแล้วแนะนำขนาดรู ZCT ของ Woonyoung
-          (รุ่น WYZR ตั้งชื่อตามขนาดรูโดยประมาณเป็นมิลลิเมตร) — เป็นแนวทางเบื้องต้น ต้องยืนยันขนาดรูจริงและระยะเผื่อ
-          กับ Datasheet ของรุ่น
+          ไม่ต้องรู้ Cable OD — แค่เลือกการเดินสาย (1 เฟส / 3 เฟส 3–4 สาย / Star-Delta 6 เส้น) และสเปกสายที่ใช้
+          (THW, CV, NYY, VCT ตามขนาด mm²) ระบบจะดึงเส้นผ่านศูนย์กลางสายจากสเปกผู้ผลิต จัดเรียงมัดสายตามหลัก
+          เรขาคณิต แล้ววาดภาพจำลองรู ZCT พร้อมสายให้เห็นจริงตามสเกล พร้อมแนะนำรุ่น Woonyoung WYZR ที่ใส่ได้
+          แบบเหลือระยะร้อยสายสบาย ๆ
         </AnswerSummary>
 
         <div className="my-6">
           <ZctWindowCalculator />
         </div>
 
-        <h2 className="font-display font-extrabold text-2xl text-ink mt-10 mb-3">เลือกอย่างไร</h2>
+        <h2 className="font-display font-extrabold text-2xl text-ink mt-10 mb-3">ทำไมต้องนับสายจากการเดินสาย</h2>
         <p className="text-[16px] leading-[1.85] text-gray-800 my-4">
-          รวมเส้นผ่านศูนย์กลางของสายที่มีกระแสทุกเส้นที่ต้องลอดผ่าน (เฟส + นิวทรัล) แล้วเลือกรุ่นที่ขนาดรู
-          <b> ใหญ่กว่าพอสมควร</b> เพื่อเผื่อฉนวนและการดัดสาย รุ่น WYZR ของ Woonyoung มีขนาดรูโดยประมาณ
-          Φ30, 50, 65, 80, 100, 120, 150 และ 200 มม. โดยเลขรุ่นสื่อถึงขนาดรู (เช่น WYZR-100N ≈ รู Φ100 มม.)
+          ZCT ตรวจ “ผลรวมกระแส” จึงต้องให้ <b>สายที่มีกระแสทุกเส้น</b> ลอดผ่านแกนเดียวกัน จำนวนเส้นจึงขึ้นกับ
+          การเดินสาย ไม่ใช่แค่ขนาดมอเตอร์:
+        </p>
+        <div className="overflow-x-auto my-4">
+          <table className="w-full text-[14.5px] border-collapse">
+            <thead>
+              <tr className="bg-gray-50 text-left">
+                <th className="border border-gray-200 px-3 py-2 font-semibold">การเดินสาย</th>
+                <th className="border border-gray-200 px-3 py-2 font-semibold">สายเดี่ยวที่ลอด ZCT</th>
+                <th className="border border-gray-200 px-3 py-2 font-semibold">หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-200 px-3 py-2">1 เฟส</td>
+                <td className="border border-gray-200 px-3 py-2">2 เส้น (L + N)</td>
+                <td className="border border-gray-200 px-3 py-2">—</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-3 py-2">3 เฟส 3 สาย</td>
+                <td className="border border-gray-200 px-3 py-2">3 เส้น</td>
+                <td className="border border-gray-200 px-3 py-2">มอเตอร์ทั่วไป DOL</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-3 py-2">3 เฟส 4 สาย</td>
+                <td className="border border-gray-200 px-3 py-2">4 เส้น (มีนิวทรัล)</td>
+                <td className="border border-gray-200 px-3 py-2">นิวทรัลต้องลอดด้วย</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-200 px-3 py-2">Star-Delta</td>
+                <td className="border border-gray-200 px-3 py-2"><b>6 เส้น</b> (สายมอเตอร์ 2 ชุด)</td>
+                <td className="border border-gray-200 px-3 py-2">ติด ZCT ฝั่งสายมอเตอร์</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[16px] leading-[1.85] text-gray-800 my-4">
+          ถ้าใช้ <b>สายหลายแกน (Multicore)</b> เช่น CV 4C — สายหนึ่งเส้นรวมทุกตัวนำอยู่แล้ว จึงลอดเพียง 1 เส้น
+          (Star-Delta ที่ใช้สายหลายแกน = 2 เส้น) และ <b>สายดิน (PE) ต้องไม่ลอดผ่าน ZCT</b> เสมอ
         </p>
 
-        <div className="rounded border-l-4 border-amber-300 bg-amber-50 text-amber-900 px-4 py-3 text-[14px] leading-relaxed my-4">
-          ⚠️ เลขรุ่นเป็นขนาดรู <b>โดยประมาณ</b> — ขนาดรูจริงและระยะเผื่อที่ใช้ได้ต้องดูจาก Dimension Drawing /
-          Datasheet ของรุ่นนั้น หรือให้ทีม SAV ช่วยยืนยันก่อนสั่ง
-        </div>
-
-        <h2 className="font-display font-extrabold text-2xl text-ink mt-10 mb-3">ข้อควรระวังการติดตั้ง</h2>
-        <ul className="text-[16px] leading-[1.85] text-gray-800 my-4 list-disc pl-6 space-y-1">
-          <li>ให้สายที่มีกระแสทุกเส้นลอดผ่านแกนเดียวกันในทิศทางเดียวกัน</li>
-          <li><b>สายดิน (PE) ต้องไม่ลอดผ่าน</b> ZCT มิฉะนั้นการตรวจจับจะผิดพลาด</li>
-          <li>ZCT เลือกจากขนาดรู + ความเข้ากันกับรีเลย์ ไม่ใช่จากกระแสโหลด</li>
-        </ul>
+        <h2 className="font-display font-extrabold text-2xl text-ink mt-10 mb-3">วิธีคำนวณมัดสาย</h2>
+        <p className="text-[16px] leading-[1.85] text-gray-800 my-4">
+          ระบบใช้ค่าคงที่การจัดเรียงวงกลมแบบแน่นที่สุด (circle packing): มัดสาย n เส้นต้องการวงกลมล้อมรอบ
+          เส้นผ่านศูนย์กลาง k(n) เท่าของ OD สาย — เช่น 3 เส้น ≈ 2.15×, 4 เส้น ≈ 2.41×, 6 เส้น = 3×
+          แล้วเลือกรุ่นที่มัดสายใช้ไม่เกิน ~80% ของรู เพื่อเหลือระยะร้อยและดัดสาย
+        </p>
 
         <ProductCTA
           heading="ให้ SAV ยืนยันรุ่น ZCT ที่ใช่"
-          note="ส่งจำนวนสาย ขนาดสาย และ Cable OD รวม ทีมช่วยตรวจขนาดรู ZCT Woonyoung ที่เหมาะให้"
+          note="กดปุ่มในเครื่องมือด้านบน สรุปการเดินสาย/สเปกสาย/รุ่นที่คาดว่าเหมาะจะถูกคัดลอกให้ส่งทาง LINE ได้ทันที"
           products={[
             { model: "WYZR-N", label: "ZCT Woonyoung (200mA/1.5mA)" },
             { model: "WYZR", label: "ZCT Woonyoung (200mA/100mV)" },
@@ -93,6 +124,23 @@ export default function ZctWindowPage() {
           และ{" "}
           <Link href="/learn/how-to-select-zct/" className="text-brand font-semibold hover:underline">วิธีเลือกขนาด ZCT</Link>
         </p>
+
+        <section className="mt-10 pt-6 border-t border-gray-200">
+          <h2 className="font-display font-extrabold text-lg text-ink mb-3">แหล่งอ้างอิง</h2>
+          <ol className="list-decimal pl-5 space-y-2 text-[14px] text-gray-700">
+            <li>
+              <a href="https://thaiyazaki-electricwire.co.th/download/1" target="_blank" rel="noopener" className="text-brand hover:underline font-semibold">
+                Thai Yazaki — Specification Sheets
+              </a>
+              <span className="text-gray-600"> — ค่า OD สาย: THW (TYSS 5200/5801), CV (TYSS 6004/5803), NYY (TYSS 6083), VCT (TYSS 6081) — ค่าโดยประมาณ ต่างยี่ห้อต่างกันเล็กน้อย</span>
+            </li>
+            <li>
+              <span className="font-semibold">Woonyoung ZCT Datasheet (WYZR series)</span>
+              <span className="text-gray-600"> — ขนาดรูตามเลขรุ่น (ค่าประมาณ) · </span>
+              <a href="/products/WYZR-N/" className="text-brand hover:underline">ดูเอกสารที่หน้าสินค้า</a>
+            </li>
+          </ol>
+        </section>
 
         <Disclaimer />
       </div>
