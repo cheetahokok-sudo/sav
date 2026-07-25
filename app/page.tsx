@@ -38,7 +38,7 @@ const productCategories = [
     stock: "in" as const,
   },
   {
-    icon: "🔌",
+    icon: "💧",
     name: "EUCR UNDER CURRENT",
     sub: "ป้องกัน Dry Running ปั๊มน้ำ",
     query: "EUCR",
@@ -164,7 +164,7 @@ const orderSteps = [
   {
     num: "3",
     title: "ชำระเงิน + ใบกำกับภาษี",
-    desc: "โอนผ่านบัญชีบริษัท ออกใบกำกับภาษีเต็มรูปทุกรายการ (หจก. จดทะเบียน VAT)",
+    desc: "โอนผ่านบัญชีบริษัท ออกใบกำกับภาษีเต็มรูปแบบทุกรายการ (หจก. จดทะเบียน VAT)",
   },
   {
     num: "4",
@@ -393,7 +393,7 @@ export default function Home() {
         {[
           ["🇰🇷", "นำเข้าตรงจากเกาหลี", "Samwha EOCR Ltd. / Samwha DSP"],
           ["📦", "สต็อกในไทย พร้อมส่ง", "รุ่นยอดนิยมส่งได้ทันที ทั่วประเทศ"],
-          ["🧾", "ใบกำกับภาษีเต็มรูป", `หจก. จดทะเบียน · Tax ID ${COMPANY.taxId}`],
+          ["🧾", "ใบกำกับภาษีเต็มรูปแบบ", `หจก. จดทะเบียน · Tax ID ${COMPANY.taxId}`],
           ["🔧", "วิศวกรช่วยเลือกรุ่นให้", "โทร / LINE / WhatsApp เบอร์เดียว"],
         ].map(([icon, title, sub]) => (
           <div
