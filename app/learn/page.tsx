@@ -22,6 +22,7 @@ const SHOWN: ClusterId[] = [
   "zct-ground-fault",
   "power-monitoring",
   "cable-protection",
+  "standards",
   "procurement",
 ];
 

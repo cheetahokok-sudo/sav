@@ -53,7 +53,10 @@ export const CLUSTERS: Record<ClusterId, { label: string; blurb: string }> = {
     label: "สายไฟ & อุปกรณ์ป้องกันวงจร",
     blurb: "เลือกขนาดสาย แรงดันตก การประสานการป้องกัน และการเลือก CT/ZCT",
   },
-  standards: { label: "มาตรฐานไฟฟ้าไทย", blurb: "" },
+  standards: {
+    label: "มาตรฐานไฟฟ้าไทย",
+    blurb: "วสท. มอก. MEA/PEA และ IEC — ใครกำหนดอะไร ต้องอ้างตัวไหนเมื่อไร",
+  },
   "power-monitoring": {
     label: "Power Monitoring",
     blurb: "วัดและเฝ้าดูพลังงานไฟฟ้า มิเตอร์ดิจิทัล และรีเลย์ที่มีมิเตอร์ในตัว",
