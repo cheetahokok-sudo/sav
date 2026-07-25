@@ -27,7 +27,7 @@ export default function KnowledgeHub() {
       {/* header */}
       <section className="bg-ink text-white py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="font-display text-[11px] font-extrabold tracking-[0.22em] uppercase text-red-400 mb-3">
+          <p className="font-display text-[11px] font-extrabold tracking-[0.22em] uppercase text-brand mb-3">
             SAV Engineering Knowledge Center
           </p>
           <h1 className="font-display font-extrabold text-3xl sm:text-5xl leading-tight mb-4">
