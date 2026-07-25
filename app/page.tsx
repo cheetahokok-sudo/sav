@@ -8,6 +8,7 @@ const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const navLinks = [
   { href: "/products/", label: "PRODUCTS" },
+  { href: "/learn/", label: "LEARN" },
   { href: "#eocr", label: "EOCR SERIES" },
   { href: "#solutions", label: "SOLUTIONS" },
   { href: "#why", label: "ABOUT US" },
