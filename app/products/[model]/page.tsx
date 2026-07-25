@@ -196,6 +196,14 @@ export default async function ProductDetail(
                   {p.your_notes}
                 </p>
               )}
+              {docs.length > 0 && (
+                <a
+                  href="#downloads"
+                  className="block w-full text-center bg-brand text-white font-display text-xs font-bold tracking-wider uppercase px-6 py-3 rounded-sm hover:bg-brand-dark transition-colors mb-3"
+                >
+                  📥 Download / ดาวน์โหลด
+                </a>
+              )}
               <DetailActions model={p.model_number} />
             </div>
           </div>
@@ -247,7 +255,7 @@ export default async function ProductDetail(
 
         {/* downloads */}
         {docs.length > 0 && (
-          <div className="bg-white border border-gray-200 rounded p-8 mb-6">
+          <div id="downloads" className="bg-white border border-gray-200 rounded p-8 mb-6 scroll-mt-24">
             <h2 className="font-display font-extrabold text-lg text-brand mb-4 pb-3 border-b border-gray-200">
               📥 Downloads — เอกสารสำหรับขออนุมัติโครงการ
             </h2>
