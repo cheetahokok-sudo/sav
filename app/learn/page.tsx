@@ -15,8 +15,14 @@ export const metadata: Metadata = {
   },
 };
 
-// clusters shown on the hub in this MVP (order matters)
-const SHOWN: ClusterId[] = ["motor-protection", "zct-ground-fault", "motor-current"];
+// clusters shown on the hub (order matters)
+const SHOWN: ClusterId[] = [
+  "motor-protection",
+  "troubleshooting",
+  "zct-ground-fault",
+  "power-monitoring",
+  "procurement",
+];
 
 export default function KnowledgeHub() {
   const articles = allArticles();
@@ -41,26 +47,40 @@ export default function KnowledgeHub() {
       </section>
 
       <div className="max-w-5xl mx-auto px-5 py-14">
-        {/* calculator highlight */}
-        <Link
-          href="/learn/motor-current-calculator/"
-          className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all mb-12"
-        >
-          <div className="flex items-start gap-4">
-            <div className="text-3xl">🧮</div>
-            <div>
-              <p className="font-display text-[11px] font-extrabold tracking-[0.15em] uppercase text-brand mb-1">
-                เครื่องมือคำนวณ
-              </p>
-              <h2 className="font-display font-extrabold text-xl text-ink mb-1">
-                เครื่องคำนวณกระแสมอเตอร์ 1 เฟส / 3 เฟส
-              </h2>
-              <p className="text-[14px] text-gray-600">
-                กรอก kW/HP, แรงดัน, Power Factor และ Efficiency → ได้กระแสโดยประมาณ พร้อมแนวทางเลือก EOCR
-              </p>
-            </div>
-          </div>
-        </Link>
+        {/* calculator highlights */}
+        <div className="grid gap-4 sm:grid-cols-2 mb-12">
+          {[
+            {
+              href: "/learn/motor-current-calculator/",
+              icon: "🧮",
+              title: "เครื่องคำนวณกระแสมอเตอร์ 1 / 3 เฟส",
+              desc: "กรอก kW/HP, แรงดัน, PF, Efficiency → ได้กระแสโดยประมาณ พร้อมแนวทางเลือก EOCR",
+            },
+            {
+              href: "/learn/eocr-current-range-calculator/",
+              icon: "🎯",
+              title: "เครื่องช่วยเลือกช่วงกระแส EOCR",
+              desc: "กรอกกระแสมอเตอร์ → บอกช่วง EOCR-SSD / EUCR ที่ครอบคลุมและตั้งค่าได้พอดี",
+            },
+          ].map((t) => (
+            <Link
+              key={t.href}
+              href={t.href}
+              className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="text-3xl">{t.icon}</div>
+                <div>
+                  <p className="font-display text-[11px] font-extrabold tracking-[0.15em] uppercase text-brand mb-1">
+                    เครื่องมือคำนวณ
+                  </p>
+                  <h2 className="font-display font-extrabold text-[17px] text-ink mb-1 leading-snug">{t.title}</h2>
+                  <p className="text-[13.5px] text-gray-600 leading-relaxed">{t.desc}</p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
 
         {/* clusters */}
         {SHOWN.map((cid) => {

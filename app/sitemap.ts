@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${base}/learn/eocr-current-range-calculator/`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   const products: MetadataRoute.Sitemap = productSlugs().map((m) => ({

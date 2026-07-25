@@ -51,9 +51,18 @@ export const CLUSTERS: Record<ClusterId, { label: string; blurb: string }> = {
   },
   "cable-protection": { label: "สายไฟ & อุปกรณ์ป้องกันวงจร", blurb: "" },
   standards: { label: "มาตรฐานไฟฟ้าไทย", blurb: "" },
-  "power-monitoring": { label: "Power Monitoring", blurb: "" },
-  procurement: { label: "การจัดซื้อ & เทียบรุ่น", blurb: "" },
-  troubleshooting: { label: "วิเคราะห์อาการ Trip", blurb: "" },
+  "power-monitoring": {
+    label: "Power Monitoring",
+    blurb: "วัดและเฝ้าดูพลังงานไฟฟ้า มิเตอร์ดิจิทัล และรีเลย์ที่มีมิเตอร์ในตัว",
+  },
+  procurement: {
+    label: "การจัดซื้อ & เทียบรุ่น",
+    blurb: "เทียบรุ่น เปลี่ยนรุ่นที่เลิกผลิต และข้อมูลที่ต้องส่งเพื่อขอใบเสนอราคา",
+  },
+  troubleshooting: {
+    label: "วิเคราะห์อาการ Trip",
+    blurb: "หาสาเหตุที่มอเตอร์และ EOCR ทริป พร้อมวิธีตรวจและแก้",
+  },
   tools: { label: "เครื่องมือคำนวณ", blurb: "" },
 };
 
