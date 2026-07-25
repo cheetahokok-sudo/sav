@@ -411,39 +411,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* FREE TOOLS — engineers' hook right after the hero: 5 free calculators
-          that route into /learn/ and ultimately into product pages. */}
-      <section id="tools" className="bg-gray-50 py-16 px-6 border-b border-gray-200">
-        <p className="text-center font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
-          FREE ENGINEERING TOOLS
-        </p>
-        <h2 className="text-center font-display font-extrabold text-3xl lg:text-4xl text-ink">
-          เครื่องมือคำนวณฟรี สำหรับวิศวกร
-        </h2>
-        <div className="w-10 h-[3px] bg-brand rounded mx-auto mt-4 mb-10" />
-        <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-5 gap-4">
-          {TOOLS.map((t) => (
-            <Link
-              key={t.href}
-              href={t.href}
-              className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all"
-            >
-              <div className="text-2xl mb-2">{t.icon}</div>
-              <h3 className="font-display font-extrabold text-[15px] text-ink leading-snug mb-1">
-                {t.title}
-              </h3>
-              <p className="text-[12.5px] text-gray-600 leading-relaxed">{t.desc}</p>
-            </Link>
-          ))}
-        </div>
-        <p className="text-center text-[14px] text-gray-600 mt-8">
-          ใช้ฟรี ไม่ต้องลงทะเบียน · ดูบทความและคู่มือทั้งหมดที่{" "}
-          <Link href="/learn/" className="text-brand font-semibold hover:underline">
-            คลังความรู้วิศวกรรมไฟฟ้า →
-          </Link>
-        </p>
-      </section>
-
       {/* BRANDS — placed BEFORE the product categories so buyers recognize
           the official brands first. Both are direct-import relationships. */}
       <section className="bg-white py-16 px-6">
@@ -639,6 +606,42 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* FREE TOOLS — placed AFTER the product/series sections so buyers explore
+          the catalogue first; the calculators then feed back into product pages. */}
+      <section
+        id="tools"
+        className="bg-gray-50 py-16 px-6 border-y border-gray-200"
+      >
+        <p className="text-center font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
+          FREE ENGINEERING TOOLS
+        </p>
+        <h2 className="text-center font-display font-extrabold text-3xl lg:text-4xl text-ink">
+          เครื่องมือคำนวณฟรี สำหรับวิศวกร
+        </h2>
+        <div className="w-10 h-[3px] bg-brand rounded mx-auto mt-4 mb-10" />
+        <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-5 gap-4">
+          {TOOLS.map((t) => (
+            <Link
+              key={t.href}
+              href={t.href}
+              className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+            >
+              <div className="text-2xl mb-2">{t.icon}</div>
+              <h3 className="font-display font-extrabold text-[15px] text-ink leading-snug mb-1">
+                {t.title}
+              </h3>
+              <p className="text-[12.5px] text-gray-600 leading-relaxed">{t.desc}</p>
+            </Link>
+          ))}
+        </div>
+        <p className="text-center text-[14px] text-gray-600 mt-8">
+          ใช้ฟรี ไม่ต้องลงทะเบียน · ดูบทความและคู่มือทั้งหมดที่{" "}
+          <Link href="/learn/" className="text-brand font-semibold hover:underline">
+            คลังความรู้วิศวกรรมไฟฟ้า →
+          </Link>
+        </p>
       </section>
 
       {/* INDUSTRY SOLUTIONS — market segments SAV serves. Illustrative stock
