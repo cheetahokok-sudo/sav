@@ -22,9 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${base}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/products/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/knowledge/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/learn/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     {
-      url: `${base}/knowledge/motor-current-calculator/`,
+      url: `${base}/learn/motor-current-calculator/`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const articles: MetadataRoute.Sitemap = allArticles().map((a) => ({
-    url: `${base}/knowledge/${a.slug}/`,
+    url: `${base}/learn/${a.slug}/`,
     lastModified: new Date(a.updated),
     changeFrequency: "monthly",
     priority: a.pillar ? 0.8 : 0.7,

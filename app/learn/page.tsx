@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "คลังความรู้วิศวกรรมไฟฟ้า SAV — SAV Engineering Knowledge Center",
   description:
     "บทความ เครื่องมือคำนวณ และคู่มือเลือกอุปกรณ์ระบบป้องกันมอเตอร์ EOCR, ZCT, Ground Fault และไฟฟ้าอุตสาหกรรม สำหรับวิศวกร ช่างไฟ ฝ่ายซ่อมบำรุง และฝ่ายจัดซื้อในประเทศไทย",
-  alternates: { canonical: "/knowledge/" },
+  alternates: { canonical: "/learn/" },
   openGraph: {
     title: "SAV Engineering Knowledge Center",
     description: "คลังความรู้วิศวกรรมไฟฟ้า — ระบบป้องกันมอเตอร์ EOCR, ZCT และการคำนวณกระแสมอเตอร์",
-    url: "/knowledge/",
+    url: "/learn/",
     type: "website",
   },
 };
@@ -43,7 +43,7 @@ export default function KnowledgeHub() {
       <div className="max-w-5xl mx-auto px-5 py-14">
         {/* calculator highlight */}
         <Link
-          href="/knowledge/motor-current-calculator/"
+          href="/learn/motor-current-calculator/"
           className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all mb-12"
         >
           <div className="flex items-start gap-4">
@@ -78,7 +78,7 @@ export default function KnowledgeHub() {
                 {list.map((a) => (
                   <Link
                     key={a.slug}
-                    href={`/knowledge/${a.slug}/`}
+                    href={`/learn/${a.slug}/`}
                     className="block rounded-lg border border-gray-200 bg-white p-5 hover:border-brand hover:shadow-md transition-all"
                   >
                     {a.pillar && (

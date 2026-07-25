@@ -31,11 +31,11 @@ export async function generateMetadata({
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
-    alternates: { canonical: `/knowledge/${slug}/` },
+    alternates: { canonical: `/learn/${slug}/` },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `/knowledge/${slug}/`,
+      url: `/learn/${slug}/`,
       type: "article",
       ...(meta.hero ? { images: [meta.hero] } : {}),
     },
@@ -68,7 +68,7 @@ export default async function ArticlePage({
           name: "SAV Mechanical Services & Supplies",
           logo: { "@type": "ImageObject", url: `${SITE}/logo.png` },
         },
-        mainEntityOfPage: `${SITE}/knowledge/${slug}/`,
+        mainEntityOfPage: `${SITE}/learn/${slug}/`,
         ...(meta.references?.length
           ? { citation: meta.references.map((r) => [r.name, r.detail].filter(Boolean).join(" — ")) }
           : {}),
@@ -78,8 +78,8 @@ export default async function ArticlePage({
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "หน้าแรก", item: `${SITE}/` },
-          { "@type": "ListItem", position: 2, name: "คลังความรู้", item: `${SITE}/knowledge/` },
-          { "@type": "ListItem", position: 3, name: meta.title, item: `${SITE}/knowledge/${slug}/` },
+          { "@type": "ListItem", position: 2, name: "คลังความรู้", item: `${SITE}/learn/` },
+          { "@type": "ListItem", position: 3, name: meta.title, item: `${SITE}/learn/${slug}/` },
         ],
       },
       ...(meta.faq?.length
@@ -105,7 +105,7 @@ export default async function ArticlePage({
         <nav className="text-[12.5px] text-gray-500 mb-4 flex flex-wrap gap-1.5">
           <Link href="/" className="hover:text-brand">หน้าแรก</Link>
           <span>/</span>
-          <Link href="/knowledge/" className="hover:text-brand">คลังความรู้</Link>
+          <Link href="/learn/" className="hover:text-brand">คลังความรู้</Link>
           {cluster && (
             <>
               <span>/</span>
@@ -144,7 +144,7 @@ export default async function ArticlePage({
         </article>
 
         <div className="mt-6 text-center">
-          <Link href="/knowledge/" className="text-[13px] font-semibold text-brand hover:underline">
+          <Link href="/learn/" className="text-[13px] font-semibold text-brand hover:underline">
             ← กลับไปที่คลังความรู้
           </Link>
         </div>

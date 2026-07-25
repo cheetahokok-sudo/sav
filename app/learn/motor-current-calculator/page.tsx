@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "เครื่องคำนวณกระแสมอเตอร์ 1 เฟส / 3 เฟส (Motor Current Calculator)",
   description:
     "คำนวณกระแสมอเตอร์ 1 เฟสและ 3 เฟส จาก kW/HP, แรงดัน, Power Factor และ Efficiency พร้อมสูตร ตัวอย่าง และแนวทางเลือกรีเลย์ป้องกันมอเตอร์ EOCR",
-  alternates: { canonical: "/knowledge/motor-current-calculator/" },
+  alternates: { canonical: "/learn/motor-current-calculator/" },
   openGraph: {
     title: "เครื่องคำนวณกระแสมอเตอร์ 1 เฟส / 3 เฟส",
     description: "คำนวณกระแสมอเตอร์พร้อมสูตรและแนวทางเลือก EOCR",
-    url: "/knowledge/motor-current-calculator/",
+    url: "/learn/motor-current-calculator/",
     type: "website",
   },
 };
@@ -23,12 +23,12 @@ const jsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "หน้าแรก", item: `${SITE}/` },
-    { "@type": "ListItem", position: 2, name: "คลังความรู้", item: `${SITE}/knowledge/` },
+    { "@type": "ListItem", position: 2, name: "คลังความรู้", item: `${SITE}/learn/` },
     {
       "@type": "ListItem",
       position: 3,
       name: "เครื่องคำนวณกระแสมอเตอร์",
-      item: `${SITE}/knowledge/motor-current-calculator/`,
+      item: `${SITE}/learn/motor-current-calculator/`,
     },
   ],
 };
@@ -41,7 +41,7 @@ export default function CalculatorPage() {
         <nav className="text-[12.5px] text-gray-500 mb-4 flex flex-wrap gap-1.5">
           <Link href="/" className="hover:text-brand">หน้าแรก</Link>
           <span>/</span>
-          <Link href="/knowledge/" className="hover:text-brand">คลังความรู้</Link>
+          <Link href="/learn/" className="hover:text-brand">คลังความรู้</Link>
           <span>/</span>
           <span>เครื่องคำนวณกระแสมอเตอร์</span>
         </nav>
