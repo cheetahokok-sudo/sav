@@ -183,7 +183,7 @@ const whyItems = [
     desc: "รุ่นยอดนิยม (EOCR-SS, EUCR, i3) มีสต็อกในไทยพร้อมส่งทันที — ดูสถานะสต็อกได้ที่หน้าสินค้าทุกรุ่น",
   },
   {
-    title: "ทีมเทคนิคให้คำปรึกษาการเลือกรุ่นฟรี",
+    title: "ทีมเทคนิคให้คำปรึกษาการเลือกรุ่น",
     desc: "ผู้เชี่ยวชาญช่วยเลือกรุ่นที่เหมาะกับระบบ ตั้งค่า และแก้ปัญหาการใช้งาน — บอกรุ่นรีเลย์เดิม เราหารุ่นทดแทนให้",
   },
   {
@@ -306,7 +306,7 @@ export default function Home() {
             </p>
             <p className="text-white/60 text-sm leading-relaxed mb-3 max-w-md">
               ทดแทน Thermal Overload Relay และ Schneider TeSys เดิมได้ทันที —
-              บอกรุ่นเดิมของคุณ ทีมวิศวกรหารุ่น EOCR ทดแทนให้ฟรี
+              บอกรุ่นเดิมของคุณ ทีมวิศวกรหารุ่น EOCR ทดแทนให้ได้
             </p>
             <p className="font-display text-[11px] text-white/40 tracking-wide mb-8">
               จดทะเบียน พ.ศ. {COMPANY.registeredYearBE} ({COMPANY.registeredYearAD}) ·
@@ -394,7 +394,7 @@ export default function Home() {
           ["🇰🇷", "นำเข้าตรงจากเกาหลี", "Samwha EOCR Ltd. / Samwha DSP"],
           ["📦", "สต็อกในไทย พร้อมส่ง", "รุ่นยอดนิยมส่งได้ทันที ทั่วประเทศ"],
           ["🧾", "ใบกำกับภาษีเต็มรูป", `หจก. จดทะเบียน · Tax ID ${COMPANY.taxId}`],
-          ["🔧", "วิศวกรช่วยเลือกรุ่นฟรี", "โทร / LINE / WhatsApp เบอร์เดียว"],
+          ["🔧", "วิศวกรช่วยเลือกรุ่นให้", "โทร / LINE / WhatsApp เบอร์เดียว"],
         ].map(([icon, title, sub]) => (
           <div
             key={title}
@@ -443,7 +443,7 @@ export default function Home() {
             </div>
             <p className="text-center text-sm text-gray-600 leading-relaxed mb-6 max-w-xl mx-auto">
               นำเข้าตรงจากประเทศเกาหลี — สินค้าแท้ 100% จากโรงงาน
-              รับประกัน 1 ปีทุกชิ้น พร้อมเอกสารกำกับสินค้า
+              รับประกัน 1 ปีทุกชิ้น
             </p>
             <div className="text-center">
               <Link
@@ -592,7 +592,7 @@ export default function Home() {
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed mb-5">
               ส่งรูปหรือรุ่นรีเลย์เดิม (Schneider TeSys, Thermal ฯลฯ) มาทาง LINE —
-              ทีมงานหารุ่น EOCR ทดแทนให้ฟรี
+              ทีมงานหารุ่น EOCR ทดแทนให้ได้
             </p>
             <a
               href={messagingLink(
