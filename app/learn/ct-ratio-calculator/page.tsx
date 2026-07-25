@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SiteHeader from "../../components/SiteHeader";
+import SiteFooter from "../../components/SiteFooter";
 import Link from "next/link";
 import CtRatioCalculator from "../../components/knowledge/CtRatioCalculator";
 import { AnswerSummary, ProductCTA, Disclaimer } from "../../components/knowledge/parts";
@@ -31,6 +33,7 @@ const jsonLd = {
 export default function CtRatioPage() {
   return (
     <main className="bg-gray-100 min-h-screen">
+      <SiteHeader />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-3xl mx-auto px-5 py-10">
         <nav className="text-[12.5px] text-gray-500 mb-4 flex flex-wrap gap-1.5">
@@ -97,6 +100,7 @@ export default function CtRatioPage() {
 
         <Disclaimer />
       </div>
+      <SiteFooter />
     </main>
   );
 }

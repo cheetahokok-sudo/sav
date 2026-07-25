@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import SiteHeader from "../components/SiteHeader";
+import SiteFooter from "../components/SiteFooter";
 import Link from "next/link";
 import { allArticles, CLUSTERS, type ClusterId } from "../lib/knowledge";
+import { TOOLS } from "../components/knowledge/toolsList";
 
 export const metadata: Metadata = {
   title: "คลังความรู้วิศวกรรมไฟฟ้า SAV — SAV Engineering Knowledge Center",
@@ -32,6 +35,7 @@ export default function KnowledgeHub() {
 
   return (
     <main className="bg-gray-100 min-h-screen">
+      <SiteHeader />
       {/* header */}
       <section className="bg-ink text-white py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
@@ -56,38 +60,7 @@ export default function KnowledgeHub() {
           <div className="w-10 h-[3px] bg-brand rounded mt-3" />
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
-          {[
-            {
-              href: "/learn/motor-current-calculator/",
-              icon: "🧮",
-              title: "คำนวณกระแสมอเตอร์ 1 / 3 เฟส",
-              desc: "kW/HP, แรงดัน, PF, η → กระแสโดยประมาณ + แนวทางเลือก EOCR",
-            },
-            {
-              href: "/learn/eocr-current-range-calculator/",
-              icon: "🎯",
-              title: "เลือกช่วงกระแส EOCR",
-              desc: "กระแสมอเตอร์ → ช่วง EOCR-SSD / EUCR ที่ครอบคลุมและตั้งค่าได้พอดี",
-            },
-            {
-              href: "/learn/voltage-drop-calculator/",
-              icon: "📉",
-              title: "คำนวณแรงดันตกในสายไฟ",
-              desc: "กระแส, ระยะ, mV/A/m → แรงดันตก (V/%) เทียบเกณฑ์ วสท. 5%",
-            },
-            {
-              href: "/learn/ct-ratio-calculator/",
-              icon: "🔁",
-              title: "เลือก CT Ratio",
-              desc: "กระแสโหลด (หรือ kVA) → CT ratio มาตรฐานที่ให้โหลดอยู่ 60–80%",
-            },
-            {
-              href: "/learn/zct-window-calculator/",
-              icon: "⭕",
-              title: "เลือกขนาดรู ZCT จาก Cable OD",
-              desc: "เส้นผ่านศูนย์กลางสาย → ขนาดรู ZCT Woonyoung ที่เหมาะ",
-            },
-          ].map((t) => (
+          {TOOLS.map((t) => (
             <Link
               key={t.href}
               href={t.href}
@@ -148,6 +121,7 @@ export default function KnowledgeHub() {
           </Link>
         </p>
       </div>
+      <SiteFooter />
     </main>
   );
 }

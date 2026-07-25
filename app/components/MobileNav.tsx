@@ -5,7 +5,13 @@ import Link from "next/link";
 
 type NavLink = { href: string; label: string };
 
-export default function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
+export default function MobileNav({
+  navLinks,
+  quoteHref = "#contact",
+}: {
+  navLinks: NavLink[];
+  quoteHref?: string;
+}) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -51,13 +57,23 @@ export default function MobileNav({ navLinks }: { navLinks: NavLink[] }) {
               </a>
             )
           )}
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
-            className="px-6 py-4 bg-brand text-white text-center hover:bg-brand-dark transition-colors"
-          >
-            REQUEST QUOTATION
-          </a>
+          {quoteHref.startsWith("/") ? (
+            <Link
+              href={quoteHref}
+              onClick={() => setOpen(false)}
+              className="px-6 py-4 bg-brand text-white text-center hover:bg-brand-dark transition-colors"
+            >
+              REQUEST QUOTATION
+            </Link>
+          ) : (
+            <a
+              href={quoteHref}
+              onClick={() => setOpen(false)}
+              className="px-6 py-4 bg-brand text-white text-center hover:bg-brand-dark transition-colors"
+            >
+              REQUEST QUOTATION
+            </a>
+          )}
         </div>
       )}
     </div>
