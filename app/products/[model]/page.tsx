@@ -199,9 +199,11 @@ export default async function ProductDetail(
               {docs.length > 0 && (
                 <a
                   href="#downloads"
-                  className="block w-full text-center bg-brand text-white font-display text-xs font-bold tracking-wider uppercase px-6 py-3 rounded-sm hover:bg-brand-dark transition-colors mb-3"
+                  className="group inline-flex items-center gap-1.5 mb-3 text-brand font-display text-sm font-bold hover:underline underline-offset-2"
                 >
-                  📥 Download / ดาวน์โหลด
+                  <span aria-hidden className="transition-transform group-hover:translate-y-0.5">↓</span>
+                  ดาวน์โหลดเอกสาร
+                  <span className="text-[10px] font-bold tracking-[0.14em] text-gray-400">DOWNLOAD</span>
                 </a>
               )}
               <DetailActions model={p.model_number} />
