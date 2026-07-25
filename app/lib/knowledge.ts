@@ -15,7 +15,7 @@ export type ArticleMeta = {
   cluster: ClusterId;
   summary: string; // 40–80 word answer summary (Featured-snippet / AI ready)
   updated: string; // ISO date
-  reviewer: string; // engineer byline — owner fills the real name
+  basis: string; // authority line — the standard(s)/source the article rests on (full citations at the bottom)
   keywords?: string[];
   faq?: Faq[];
   references?: Ref[];

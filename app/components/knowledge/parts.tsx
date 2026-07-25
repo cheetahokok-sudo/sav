@@ -156,7 +156,7 @@ export function FaqBlock({ items }: { items: Faq[] }) {
   );
 }
 
-export function ReviewerMeta({ reviewer, updated }: { reviewer: string; updated: string }) {
+export function Byline({ basis, updated }: { basis: string; updated: string }) {
   const d = new Date(updated);
   const th = isNaN(d.getTime())
     ? updated
@@ -164,7 +164,7 @@ export function ReviewerMeta({ reviewer, updated }: { reviewer: string; updated:
   return (
     <div className="text-[12.5px] text-gray-500 flex flex-wrap gap-x-4 gap-y-1 mt-2">
       <span>เขียนโดย: ทีมวิศวกรรม {COMPANY.nameEn.split(" ")[0]} Automation</span>
-      <span>ตรวจทานโดย: {reviewer}</span>
+      <span>อ้างอิง: {basis}</span>
       <span>ปรับปรุงล่าสุด: {th}</span>
     </div>
   );

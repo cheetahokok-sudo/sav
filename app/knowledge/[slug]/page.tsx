@@ -9,7 +9,7 @@ import {
   Toc,
   References,
   FaqBlock,
-  ReviewerMeta,
+  Byline,
   ProductCTA,
   Disclaimer,
 } from "../../components/knowledge/parts";
@@ -69,6 +69,9 @@ export default async function ArticlePage({
           logo: { "@type": "ImageObject", url: `${SITE}/logo.png` },
         },
         mainEntityOfPage: `${SITE}/knowledge/${slug}/`,
+        ...(meta.references?.length
+          ? { citation: meta.references.map((r) => [r.name, r.detail].filter(Boolean).join(" — ")) }
+          : {}),
         ...(meta.hero ? { image: `${SITE}${meta.hero}` } : {}),
       },
       {
@@ -120,7 +123,7 @@ export default async function ArticlePage({
           <h1 className="font-display font-extrabold text-3xl sm:text-[34px] leading-tight text-ink">
             {meta.title}
           </h1>
-          <ReviewerMeta reviewer={meta.reviewer} updated={meta.updated} />
+          <Byline basis={meta.basis} updated={meta.updated} />
 
           {meta.summary && <AnswerSummary>{meta.summary}</AnswerSummary>}
           <Toc items={toc} />
