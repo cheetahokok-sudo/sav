@@ -21,6 +21,7 @@ const SHOWN: ClusterId[] = [
   "troubleshooting",
   "zct-ground-fault",
   "power-monitoring",
+  "cable-protection",
   "procurement",
 ];
 
@@ -48,34 +49,54 @@ export default function KnowledgeHub() {
 
       <div className="max-w-5xl mx-auto px-5 py-14">
         {/* calculator highlights */}
-        <div className="grid gap-4 sm:grid-cols-2 mb-12">
+        <div className="mb-4">
+          <h2 className="font-display font-extrabold text-2xl text-ink">เครื่องมือคำนวณ</h2>
+          <p className="text-[14px] text-gray-600 mt-1">คำนวณเบื้องต้นฟรี ก่อนยืนยันกับทีมวิศวกร</p>
+          <div className="w-10 h-[3px] bg-brand rounded mt-3" />
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
           {[
             {
               href: "/learn/motor-current-calculator/",
               icon: "🧮",
-              title: "เครื่องคำนวณกระแสมอเตอร์ 1 / 3 เฟส",
-              desc: "กรอก kW/HP, แรงดัน, PF, Efficiency → ได้กระแสโดยประมาณ พร้อมแนวทางเลือก EOCR",
+              title: "คำนวณกระแสมอเตอร์ 1 / 3 เฟส",
+              desc: "kW/HP, แรงดัน, PF, η → กระแสโดยประมาณ + แนวทางเลือก EOCR",
             },
             {
               href: "/learn/eocr-current-range-calculator/",
               icon: "🎯",
-              title: "เครื่องช่วยเลือกช่วงกระแส EOCR",
-              desc: "กรอกกระแสมอเตอร์ → บอกช่วง EOCR-SSD / EUCR ที่ครอบคลุมและตั้งค่าได้พอดี",
+              title: "เลือกช่วงกระแส EOCR",
+              desc: "กระแสมอเตอร์ → ช่วง EOCR-SSD / EUCR ที่ครอบคลุมและตั้งค่าได้พอดี",
+            },
+            {
+              href: "/learn/voltage-drop-calculator/",
+              icon: "📉",
+              title: "คำนวณแรงดันตกในสายไฟ",
+              desc: "กระแส, ระยะ, mV/A/m → แรงดันตก (V/%) เทียบเกณฑ์ วสท. 5%",
+            },
+            {
+              href: "/learn/ct-ratio-calculator/",
+              icon: "🔁",
+              title: "เลือก CT Ratio",
+              desc: "กระแสโหลด (หรือ kVA) → CT ratio มาตรฐานที่ให้โหลดอยู่ 60–80%",
+            },
+            {
+              href: "/learn/zct-window-calculator/",
+              icon: "⭕",
+              title: "เลือกขนาดรู ZCT จาก Cable OD",
+              desc: "เส้นผ่านศูนย์กลางสาย → ขนาดรู ZCT Woonyoung ที่เหมาะ",
             },
           ].map((t) => (
             <Link
               key={t.href}
               href={t.href}
-              className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+              className="block rounded-lg border border-gray-200 border-t-[3px] border-t-brand bg-white p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all"
             >
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">{t.icon}</div>
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">{t.icon}</div>
                 <div>
-                  <p className="font-display text-[11px] font-extrabold tracking-[0.15em] uppercase text-brand mb-1">
-                    เครื่องมือคำนวณ
-                  </p>
-                  <h2 className="font-display font-extrabold text-[17px] text-ink mb-1 leading-snug">{t.title}</h2>
-                  <p className="text-[13.5px] text-gray-600 leading-relaxed">{t.desc}</p>
+                  <h3 className="font-display font-extrabold text-[16px] text-ink mb-1 leading-snug">{t.title}</h3>
+                  <p className="text-[13px] text-gray-600 leading-relaxed">{t.desc}</p>
                 </div>
               </div>
             </Link>

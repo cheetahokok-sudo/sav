@@ -49,7 +49,10 @@ export const CLUSTERS: Record<ClusterId, { label: string; blurb: string }> = {
     label: "คำนวณกระแสมอเตอร์",
     blurb: "สูตร ตาราง และเครื่องคำนวณกระแสมอเตอร์",
   },
-  "cable-protection": { label: "สายไฟ & อุปกรณ์ป้องกันวงจร", blurb: "" },
+  "cable-protection": {
+    label: "สายไฟ & อุปกรณ์ป้องกันวงจร",
+    blurb: "เลือกขนาดสาย แรงดันตก การประสานการป้องกัน และการเลือก CT/ZCT",
+  },
   standards: { label: "มาตรฐานไฟฟ้าไทย", blurb: "" },
   "power-monitoring": {
     label: "Power Monitoring",
