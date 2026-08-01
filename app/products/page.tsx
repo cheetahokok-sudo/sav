@@ -154,14 +154,22 @@ export default function ProductsPage() {
   const filtered = useMemo(() => {
     if (!products) return [];
     const q = query.trim().toLowerCase();
-    return products.filter((p) => {
-      if (series !== "all" && seriesOf(p.model_number) !== series) return false;
-      if (inStockOnly && p.in_stock !== true) return false;
-      if (!q) return true;
-      return [p.model_number, p.title, p.range_name, p.description]
-        .filter(Boolean)
-        .some((field) => field!.toLowerCase().includes(q));
-    });
+    return products
+      .filter((p) => {
+        if (series !== "all" && seriesOf(p.model_number) !== series) return false;
+        if (inStockOnly && p.in_stock !== true) return false;
+        if (!q) return true;
+        return [p.model_number, p.title, p.range_name, p.description]
+          .filter(Boolean)
+          .some((field) => field!.toLowerCase().includes(q));
+      })
+      // Group the grid by series, then by model, so the catalog reads like a
+      // catalog. Without this the order is whatever order the scrape wrote to
+      // index.json, which buries anything appended later at the bottom.
+      .sort((a, b) => {
+        const s = seriesOf(a.model_number).localeCompare(seriesOf(b.model_number), "en");
+        return s !== 0 ? s : a.model_number.localeCompare(b.model_number, "en");
+      });
   }, [products, query, series, inStockOnly]);
 
   const toggleDocs = (model: string) => {
