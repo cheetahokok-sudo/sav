@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 // clusters shown on the hub (order matters)
 const SHOWN: ClusterId[] = [
   "motor-protection",
+  "installation",
   "troubleshooting",
   "zct-ground-fault",
   "power-monitoring",

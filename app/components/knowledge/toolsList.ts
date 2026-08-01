@@ -31,4 +31,16 @@ export const TOOLS = [
     title: "เลือกขนาดรู ZCT จาก Cable OD",
     desc: "เลือกการเดินสาย + สเปกสาย → เห็นภาพจำลองสายในรู ZCT ตามสเกล",
   },
+  {
+    href: "/learn/kw-kva-amp-calculator/",
+    icon: "⚡",
+    title: "แปลง kW ↔ kVA ↔ Amp",
+    desc: "แปลงกำลังไฟฟ้า 1/3 เฟส จากแรงดันและ PF พร้อมกระแสโดยประมาณ",
+  },
+  {
+    href: "/learn/star-delta-current-calculator/",
+    icon: "🔀",
+    title: "คำนวณกระแสสตาร์-เดลต้า",
+    desc: "กระแส Line vs กิ่งเดลต้า (×0.58) และค่าตั้ง EOCR ทั้งสองตำแหน่ง CT",
+  },
 ];

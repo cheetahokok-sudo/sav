@@ -621,7 +621,7 @@ export default function Home() {
           เครื่องมือคำนวณฟรี สำหรับวิศวกร
         </h2>
         <div className="w-10 h-[3px] bg-brand rounded mx-auto mt-4 mb-10" />
-        <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {TOOLS.map((t) => (
             <Link
               key={t.href}

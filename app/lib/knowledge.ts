@@ -27,6 +27,7 @@ export type ArticleMeta = {
 
 export type ClusterId =
   | "motor-protection"
+  | "installation"
   | "zct-ground-fault"
   | "motor-current"
   | "cable-protection"
@@ -40,6 +41,10 @@ export const CLUSTERS: Record<ClusterId, { label: string; blurb: string }> = {
   "motor-protection": {
     label: "การป้องกันมอเตอร์ · EOCR",
     blurb: "เลือก ตั้งค่า และแก้ปัญหารีเลย์ป้องกันมอเตอร์",
+  },
+  installation: {
+    label: "ติดตั้ง & สตาร์ทมอเตอร์",
+    blurb: "ต่อสาย ตั้งค่า EOCR/ZCT ครั้งแรก และเลือกวิธีสตาร์ทมอเตอร์ให้ถูกตั้งแต่วันแรก",
   },
   "zct-ground-fault": {
     label: "ZCT & Ground Fault",
