@@ -81,6 +81,24 @@ function seriesOf(model: string): string {
   return "Other";
 }
 
+// Series pinned above the alphabetical groups — SAV's core stock, which
+// buyers come looking for first. Order here is the order on the page.
+const PINNED_SERIES = ["EOCR-SS / SE2", "EUCR (Under Current)"];
+
+function seriesRank(series: string): number {
+  const i = PINNED_SERIES.indexOf(series);
+  return i === -1 ? PINNED_SERIES.length : i;
+}
+
+// Inside the pinned EOCR bucket, lead with SS then SSD; SE2 follows.
+// (SSD is tested first because /^EOCRSS/ would also match it.)
+function modelRank(model: string): number {
+  if (/^EOCRSSD/.test(model)) return 1;
+  if (/^EOCRSS/.test(model)) return 0;
+  if (/^EOCRSE2/.test(model)) return 2;
+  return 3;
+}
+
 function StockBadge({ inStock }: { inStock: boolean | null }) {
   if (inStock === true)
     return (
@@ -163,12 +181,20 @@ export default function ProductsPage() {
           .filter(Boolean)
           .some((field) => field!.toLowerCase().includes(q));
       })
-      // Group the grid by series, then by model, so the catalog reads like a
-      // catalog. Without this the order is whatever order the scrape wrote to
-      // index.json, which buries anything appended later at the bottom.
+      // Pinned series first, then the rest grouped alphabetically by series,
+      // so the catalog reads like a catalog. Without this the order is
+      // whatever the scrape wrote to index.json, which buries anything
+      // appended later at the bottom of the grid.
       .sort((a, b) => {
-        const s = seriesOf(a.model_number).localeCompare(seriesOf(b.model_number), "en");
-        return s !== 0 ? s : a.model_number.localeCompare(b.model_number, "en");
+        const sa = seriesOf(a.model_number);
+        const sb = seriesOf(b.model_number);
+        const rank = seriesRank(sa) - seriesRank(sb);
+        if (rank !== 0) return rank;
+        const bySeries = sa.localeCompare(sb, "en");
+        if (bySeries !== 0) return bySeries;
+        const byModel = modelRank(a.model_number) - modelRank(b.model_number);
+        if (byModel !== 0) return byModel;
+        return a.model_number.localeCompare(b.model_number, "en");
       });
   }, [products, query, series, inStockOnly]);
 
