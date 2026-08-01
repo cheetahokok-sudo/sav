@@ -1,0 +1,69 @@
+{
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": null,
+ "image_confirmed_unavailable": true,
+ "source_url": null,
+ "scraped_at": "2026-08-01T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "CT ทรงกลมร้อยสาย เลือกพิกัดได้จากจำนวนรอบที่ร้อย (Ampere-Turn)",
+ "range_name": "CT / VT",
+ "brand": "Deesys",
+ "documents": [
+  {
+   "label": "Deesys CT / VT Catalog (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+  }
+ ],
+ "model_number": "DR",
+ "title": "DR-18, DR-1…DR-3 - Deesys Round Type Current Transformer 1.15 kV, cable through",
+ "series": "Deesys Round CT",
+ "base_model": "DR",
+ "range_short_desc": "Round (cable-through) metering current transformer",
+ "description": "Deesys round type current transformers, cable-through construction, rated up to 1.15 kV, for indoor metering. Mounting foot can be rotated 90°. Rated in ampere-turns, so the same CT covers several primary currents by changing the number of turns of the primary conductor through the window. Series: DR-18, DR-1, DR-2, DR-3.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Cable through type",
+    "Mounting parts changeable at 90° direction",
+    "For metering application, indoor",
+    "Colour: brown; case: ABS non-flammable resin; mould: polyester",
+    "Rated in ampere-turns (AT) — primary current changes with the number of turns"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Specification (as published)",
+   "rows": [
+    "DR-18 : rated 75 / 100 / 120 / 150 / 200 AT, burden 5 VA, class 1.0 %, weight 0.55 kg",
+    "DR-1 : rated 100–300 AT, burden 5 VA or 5/15 VA, class 1.0 %, weight 0.55 kg",
+    "DR-2 : rated 240–600 AT, burden 15 VA or 15/40 VA, class 1.0 %, weight 0.75 kg",
+    "DR-3 : rated 500–1500 AT, burden 40 VA, class 1.0 %, weight 1.10 kg",
+    "Over current strength : 40 In",
+    "Frequency : 50 / 60 Hz"
+   ]
+  },
+  {
+   "group": "Dimensions (mm) — A / B / øC / øD / E / F / G",
+   "rows": [
+    "DR-18 : 84 / 48 / 18 / 64 / 65 / 80 / 50",
+    "DR-1 : 95 / 55 / 27 / 70 / 75 / 94 / 40",
+    "DR-2 : 108 / 65 / 40 / 87 / 75 / 94 / 40",
+    "DR-3 : 134 / 77 / 60 / 114 / 75 / 94 / 40"
+   ]
+  },
+  {
+   "group": "Ampere-turn example",
+   "rows": [
+    "At rating 200 AT : 1 turn = 200 A primary, 2 turns = 100 A, 4 turns = 50 A"
+   ]
+  }
+ ]
+}

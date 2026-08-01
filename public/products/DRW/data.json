@@ -1,0 +1,71 @@
+{
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": null,
+ "image_confirmed_unavailable": true,
+ "source_url": null,
+ "scraped_at": "2026-08-01T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "CT แบบพันขดลวด เหมาะกับกระแสต่ำและงานมิเตอร์วัดหน่วย",
+ "range_name": "CT / VT",
+ "brand": "Deesys",
+ "documents": [
+  {
+   "label": "Deesys CT / VT Catalog (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+  }
+ ],
+ "model_number": "DRW",
+ "title": "DRW-15, DRW-40, DRB-1, DRB-2 - Deesys Winding Type Current Transformer 1.15 kV",
+ "series": "Deesys Winding CT",
+ "base_model": "DRW",
+ "range_short_desc": "Wound primary current transformer for metering",
+ "description": "Deesys winding (wound primary) type current transformers rated up to 1.15 kV, for metering and watt-hour meter duty. DRW models are terminal type for low primary currents (5–30 A); DRB models are busbar type covering 40–500 A. Mounting direction changeable through 90°.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Winding (wound primary) type",
+    "For metering and watt-hour meter",
+    "Changeable 90° at mounting direction",
+    "Colour: brown; case: ABS non-flammable resin; mould: polyester"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Single ratio C.T (as published)",
+   "rows": [
+    "DRW-15 : primary 5–30 A, burden 15 VA, class 1.0 %, terminal type, weight 0.70 kg",
+    "DRB-1 : primary 40–150 / 200–300 / 400–500 A, burden 15 VA, class 1.0 %, busbar type, weight 0.85 kg",
+    "DRW-40 : primary 5–30 A, burden 40 VA, class 1.0 %, terminal type, weight 1.0 kg",
+    "DRB-2 : primary 40–150 / 200–300 / 400–500 A, burden 40 VA, class 1.0 %, busbar type, weight 1.2 kg",
+    "Secondary : 5 A or 1 A",
+    "Over current strength : 40 in"
+   ]
+  },
+  {
+   "group": "Dimensions (mm) — DRW terminal type, A / B / C",
+   "rows": [
+    "DRW-15 : 80 / 100 / 90",
+    "DRW-40 : 100 / 118 / 102"
+   ]
+  },
+  {
+   "group": "Dimensions (mm) — DRB busbar type, A / B / C / D / E",
+   "rows": [
+    "DRB-1 40–150 A : 80 / 100 / 60 / 125 / 100",
+    "DRB-1 200–300 A : 80 / 100 / 60 / 135 / 105",
+    "DRB-1 400–500 A : 80 / 100 / 60 / 155 / 115",
+    "DRB-2 40–150 A : 100 / 118 / 70 / 135 / 110",
+    "DRB-2 200–300 A : 100 / 118 / 70 / 145 / 115",
+    "DRB-2 400–500 A : 100 / 118 / 70 / 165 / 130"
+   ]
+  }
+ ]
+}

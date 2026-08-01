@@ -66,15 +66,18 @@ function cleanDescription(title: string | null, model: string): string | null {
 function seriesOf(model: string): string {
   const m = model.toUpperCase();
   if (/^EOCR(SS|SSD|SE2)/.test(m)) return "EOCR-SS / SE2";
-  if (/^(EOCR3|3DM2|3MZ2)/.test(m)) return "EOCR-3D / 3E";
+  if (/^(EOCR3|3DM2|3MZ2|FMZ2|FDM2)/.test(m)) return "EOCR-3D / 3E";
   if (/^EOCR(PFZ|PMZ)/.test(m)) return "EOCR-PFZ / PMZ";
   if (/^EUCR/.test(m)) return "EUCR (Under Current)";
+  if (/^U?DOUCR/.test(m)) return "DOUCR (Over & Under Current)";
   if (/^I3/.test(m)) return "EOCR-i3 (Digital)";
   if (/^IF/.test(m)) return "EOCR-iF (Ground Fault)";
   if (/^ISEM/.test(m)) return "iSEM (Communication)";
   if (/^DSP-VIP/.test(m)) return "DSP-VIP Series";
   if (/^DSP/.test(m)) return "Samwha DSP";
   if (/^WYZ/.test(m)) return "Woonyoung ZCT";
+  // Deesys family stems — checked after DSP so "DSP-…" can never fall in here.
+  if (/^(DW|DRW|DRB|DR|DS-R|DS|DP|DGP)(-|$)/.test(m)) return "Deesys CT / VT";
   return "Other";
 }
 

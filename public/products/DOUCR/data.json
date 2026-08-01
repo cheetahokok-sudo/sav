@@ -1,0 +1,108 @@
+{
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": null,
+ "image_confirmed_unavailable": true,
+ "source_url": null,
+ "scraped_at": "2026-08-01T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "รีเลย์ตัวเดียวป้องกันได้ทั้งกระแสเกินและกระแสขาด (Over + Under Current) เหมาะกับปั๊มและงานที่กลัวทั้งโหลดเกินและรันตัวเปล่า",
+ "model_number": "DOUCR",
+ "title": "DOUCR - Digital Over & Under Current Relay, 0.6–70 A, 220 V AC",
+ "range_name": "EOCR",
+ "brand": "Samwha EOCR",
+ "series": "DOUCR (Over & Under Current)",
+ "base_model": "DOUCR",
+ "range_short_desc": "Digital over- and under-current protection relay",
+ "description": "Digital current relay (datasheet designation uDOUCR) providing both over-current and under-current protection in one unit, adjustment range 0.6–70 A, control supply 220 V AC. MCU-based, with 7-segment LED display of trip cause and trip current, and auto / manual / electrical reset. Protects against overload, underload, phase loss, phase reversal and locked rotor (separate thresholds for starting and running).",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Advanced electric control MCU microprocessor",
+    "Over and under current protection in a single relay",
+    "Auto / manual / electrical reset",
+    "Displays trip cause and trip current"
+   ]
+  },
+  {
+   "title": "Protection functions",
+   "items": [
+    "Overload, In > OC setting",
+    "Underload, In < UC setting",
+    "Locked rotor for starting, In > 2…10 times OC setting",
+    "Locked rotor for running, In > 1.5…5 times OC setting",
+    "Sensitivity to phase loss",
+    "Sensitivity to phase reverse"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Main",
+   "rows": [
+    "Product or component type : Protection relay",
+    "Product specific application : Over & under current",
+    "Network type : AC",
+    "Network frequency : 50…60 Hz",
+    "Protection adjustment range : 0.6…70 A",
+    "Tripping threshold : 0.6…70 A (definite)"
+   ]
+  },
+  {
+   "group": "Complementary",
+   "rows": [
+    "[Us] rated supply voltage : 220 V AC",
+    "Mounting support : Panel, 35 mm DIN rail",
+    "Contacts type and composition : Common NCNO",
+    "Short-circuit and overload protection : By 4 A gG fuse",
+    "[Ue] rated operational voltage : 690 V AC 50…60 Hz (IEC 60947-4-1), 690 V AC (CSA), 600 V AC (UL)",
+    "[Uimp] rated impulse withstand voltage : 6 kV (IEC 60947-4-1)",
+    "Reset : Manual reset; electrical < 1 s by interruption of power supply",
+    "Time delay type : O-Time 0.5…30 s (definite), U-Time 0.5…30 s, D-Time 0.5…30 s or off",
+    "Display type : 7 segment LED",
+    "Power consumption per relay : < 3 W",
+    "Connections - terminals : Control circuit 1 cable 1…2.5 mm² or 2 cables 1…1.5 mm² flexible, M3",
+    "Tightening torque : 0.8…1.2 N.m for control circuit cable, 4.7 mm head",
+    "Height : 85 mm",
+    "Width : 52 mm",
+    "Depth : 52 mm",
+    "Product weight : 0.300 kg"
+   ]
+  },
+  {
+   "group": "Environment",
+   "rows": [
+    "Standards : IEC 60947-4-1",
+    "IP degree of protection : IP20 (IEC 60529)",
+    "Ambient air temperature for operation : -20…60 °C (IEC 60947-4-1)",
+    "Ambient air temperature for storage : -30…80 °C",
+    "Operating altitude : 2000 m",
+    "Fire resistance : 960 °C (UL 94), 650 °C (IEC 60695-2-12)",
+    "Shock resistance : 15 gn for 11 ms (IEC 60068-2-7)",
+    "Vibration resistance : 2 gn on 35 mm DIN rail, 4 gn on panel mounting (IEC 60068-2-6)",
+    "Dielectric strength : 2 kV between circuit, 1 kV between contact, 2 kV between case and circuit (IEC 60255-5)",
+    "Surge withstand : 6 kV (IEC 61000-4-5)",
+    "[Ith] conventional free air thermal current : 5 A, control circuit",
+    "Permissible current : 250 V, 5 A AC"
+   ]
+  },
+  {
+   "group": "Contractual warranty",
+   "rows": [
+    "Period : 12 months"
+   ]
+  }
+ ],
+ "documents": [
+  {
+   "label": "Product datasheet (PDF)",
+   "official_url": null,
+   "local_path": "/docs/cff69afa11_DOUCR_SAV.pdf"
+  }
+ ]
+}

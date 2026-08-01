@@ -371,10 +371,10 @@
  },
  {
   "model_number": "IFMZ-WRAUHZ",
-  "title": "IFMZ-WRAUHZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Bottom connect",
+  "title": "IFMZ-WRAUHZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 100–240 V AC/DC (85–110 %, free voltage), Bottom hole type",
   "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "IFMZ-WRAUHZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Bottom connect.",
+  "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+  "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type A — a(97-98): OC, a(57-58): GR, control voltage 100–240 V AC/DC (85–110 %, free voltage), Bottom hole type.",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/41f17ffe22_photo.jpg",
@@ -399,6 +399,11 @@
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
    }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRAUHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifmz-wr-aa-100240v-%EB%B0%94%ED%85%80-%EC%BB%A4%EB%84%A5%ED%8A%B8/",
@@ -406,14 +411,120 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": null
+  "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 100–240 V AC/DC (85–110 %, free voltage) · แบบต่อใต้ตัว (Bottom hole) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-iFMZ (i-Series, ground fault)",
+  "base_model": "IFMZ",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Integrated model with improved functions over the FMZ series it replaces",
+     "Ground-fault (GF) protection with earth-leakage current display",
+     "Modbus RS-485 communication",
+     "Supports definite, inverse and thermal inverse time characteristics",
+     "RoHS compliant"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Over current (OC), In > OC setting",
+     "Under current (UC)",
+     "Ground fault (GF) — leakage current measured and displayed",
+     "Phase loss, phase reversal",
+     "Locked rotor (stall / jam)",
+     "Current imbalance"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This variant",
+    "rows": [
+     "Model : IFMZ-WRAUHZ",
+     "Current range : 0.5–60 A (direct)",
+     "Output contact type : A — a(97-98): OC, a(57-58): GR",
+     "Control voltage : 100–240 V AC/DC (85–110 %, free voltage)",
+     "CT type : Bottom hole type"
+    ]
+   },
+   {
+    "group": "Protection settings",
+    "rows": [
+     "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+     "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+     "Under current rated setting range : 0.5 A – less than OC setting",
+     "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+     "Definite D-time : 0–200 s",
+     "Definite O-time : 0.2–30 s",
+     "Inverse and thermal (cLS) : 1–30 classes",
+     "GF delay time (Edt) : 0–30 s",
+     "GF O-time (Et) : 0.05–10 s",
+     "Auto-reset : 0.5 s – 20 min",
+     "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Control power and output",
+    "rows": [
+     "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+     "Frequency : 50/60 Hz",
+     "Power consumption : lower than 7 VA",
+     "Output capacity : 3 A / 250 V AC resistive",
+     "Output composition : 1a — GR (iFMZ)",
+     "Communication : Modbus / RS-485"
+    ]
+   },
+   {
+    "group": "Display and mounting",
+    "rows": [
+     "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+     "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+     "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+     "Mounting : flush mounting (iFMZ)",
+     "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+     "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+    ]
+   },
+   {
+    "group": "Insulation and EMC",
+    "rows": [
+     "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+     "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+     "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+     "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+     "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission : CISPR11 class A (conducted and radiated)"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Storage temperature : -40 … +85 °C",
+     "Operating temperature : -20 … +60 °C",
+     "Humidity : 30–85 % RH (non-condensate)"
+    ]
+   },
+   {
+    "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+    "rows": [
+     "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+     "Output contact type : A, C or D (see specification above)",
+     "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+     "CT type : W = window, H = bottom hole, T = terminal"
+    ]
+   }
+  ]
  },
  {
   "model_number": "IFMZ-WRCUHZ",
-  "title": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot.",
+  "title": "IFMZ-WRCUHZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 100–240 V AC/DC (85–110 %, free voltage), Bottom hole type",
   "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot..",
+  "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+  "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type C — b(95-96), a(97-98): OC and GR common, control voltage 100–240 V AC/DC (85–110 %, free voltage), Bottom hole type.",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/41f17ffe22_photo.jpg",
@@ -438,6 +549,11 @@
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
    }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRCUHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifmz-wr-1a1b-100240v-bot-/",
@@ -445,7 +561,113 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": null
+  "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 100–240 V AC/DC (85–110 %, free voltage) · แบบต่อใต้ตัว (Bottom hole) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-iFMZ (i-Series, ground fault)",
+  "base_model": "IFMZ",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Integrated model with improved functions over the FMZ series it replaces",
+     "Ground-fault (GF) protection with earth-leakage current display",
+     "Modbus RS-485 communication",
+     "Supports definite, inverse and thermal inverse time characteristics",
+     "RoHS compliant"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Over current (OC), In > OC setting",
+     "Under current (UC)",
+     "Ground fault (GF) — leakage current measured and displayed",
+     "Phase loss, phase reversal",
+     "Locked rotor (stall / jam)",
+     "Current imbalance"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This variant",
+    "rows": [
+     "Model : IFMZ-WRCUHZ",
+     "Current range : 0.5–60 A (direct)",
+     "Output contact type : C — b(95-96), a(97-98): OC and GR common",
+     "Control voltage : 100–240 V AC/DC (85–110 %, free voltage)",
+     "CT type : Bottom hole type"
+    ]
+   },
+   {
+    "group": "Protection settings",
+    "rows": [
+     "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+     "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+     "Under current rated setting range : 0.5 A – less than OC setting",
+     "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+     "Definite D-time : 0–200 s",
+     "Definite O-time : 0.2–30 s",
+     "Inverse and thermal (cLS) : 1–30 classes",
+     "GF delay time (Edt) : 0–30 s",
+     "GF O-time (Et) : 0.05–10 s",
+     "Auto-reset : 0.5 s – 20 min",
+     "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Control power and output",
+    "rows": [
+     "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+     "Frequency : 50/60 Hz",
+     "Power consumption : lower than 7 VA",
+     "Output capacity : 3 A / 250 V AC resistive",
+     "Output composition : 1a — GR (iFMZ)",
+     "Communication : Modbus / RS-485"
+    ]
+   },
+   {
+    "group": "Display and mounting",
+    "rows": [
+     "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+     "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+     "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+     "Mounting : flush mounting (iFMZ)",
+     "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+     "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+    ]
+   },
+   {
+    "group": "Insulation and EMC",
+    "rows": [
+     "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+     "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+     "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+     "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+     "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission : CISPR11 class A (conducted and radiated)"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Storage temperature : -40 … +85 °C",
+     "Operating temperature : -20 … +60 °C",
+     "Humidity : 30–85 % RH (non-condensate)"
+    ]
+   },
+   {
+    "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+    "rows": [
+     "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+     "Output contact type : A, C or D (see specification above)",
+     "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+     "CT type : W = window, H = bottom hole, T = terminal"
+    ]
+   }
+  ]
  },
  {
   "model_number": "ISEMMETS-WRBH",
@@ -1273,10 +1495,10 @@
  },
  {
   "model_number": "IFMZ-WRAUWZ",
-  "title": "IFMZ-WRAUWZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Window.",
+  "title": "IFMZ-WRAUWZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 100–240 V AC/DC (85–110 %, free voltage), Window type (flush mounting)",
   "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "IFMZ-WRAUWZ - Digital protection relay EOCR-iFMZ WR A-A 100~240V Window..",
+  "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+  "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type A — a(97-98): OC, a(57-58): GR, control voltage 100–240 V AC/DC (85–110 %, free voltage), Window type (flush mounting).",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/3b553ae721_photo.jpg",
@@ -1301,6 +1523,11 @@
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
    }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRAUWZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifmz-wr-aa-100240v-%EC%9C%88%EB%8F%84%EC%9A%B0-/",
@@ -1308,14 +1535,120 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": null
+  "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 100–240 V AC/DC (85–110 %, free voltage) · แบบร้อยสายผ่านรู (Window) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-iFMZ (i-Series, ground fault)",
+  "base_model": "IFMZ",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Integrated model with improved functions over the FMZ series it replaces",
+     "Ground-fault (GF) protection with earth-leakage current display",
+     "Modbus RS-485 communication",
+     "Supports definite, inverse and thermal inverse time characteristics",
+     "RoHS compliant"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Over current (OC), In > OC setting",
+     "Under current (UC)",
+     "Ground fault (GF) — leakage current measured and displayed",
+     "Phase loss, phase reversal",
+     "Locked rotor (stall / jam)",
+     "Current imbalance"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This variant",
+    "rows": [
+     "Model : IFMZ-WRAUWZ",
+     "Current range : 0.5–60 A (direct)",
+     "Output contact type : A — a(97-98): OC, a(57-58): GR",
+     "Control voltage : 100–240 V AC/DC (85–110 %, free voltage)",
+     "CT type : Window type (flush mounting)"
+    ]
+   },
+   {
+    "group": "Protection settings",
+    "rows": [
+     "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+     "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+     "Under current rated setting range : 0.5 A – less than OC setting",
+     "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+     "Definite D-time : 0–200 s",
+     "Definite O-time : 0.2–30 s",
+     "Inverse and thermal (cLS) : 1–30 classes",
+     "GF delay time (Edt) : 0–30 s",
+     "GF O-time (Et) : 0.05–10 s",
+     "Auto-reset : 0.5 s – 20 min",
+     "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Control power and output",
+    "rows": [
+     "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+     "Frequency : 50/60 Hz",
+     "Power consumption : lower than 7 VA",
+     "Output capacity : 3 A / 250 V AC resistive",
+     "Output composition : 1a — GR (iFMZ)",
+     "Communication : Modbus / RS-485"
+    ]
+   },
+   {
+    "group": "Display and mounting",
+    "rows": [
+     "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+     "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+     "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+     "Mounting : flush mounting (iFMZ)",
+     "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+     "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+    ]
+   },
+   {
+    "group": "Insulation and EMC",
+    "rows": [
+     "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+     "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+     "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+     "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+     "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission : CISPR11 class A (conducted and radiated)"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Storage temperature : -40 … +85 °C",
+     "Operating temperature : -20 … +60 °C",
+     "Humidity : 30–85 % RH (non-condensate)"
+    ]
+   },
+   {
+    "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+    "rows": [
+     "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+     "Output contact type : A, C or D (see specification above)",
+     "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+     "CT type : W = window, H = bottom hole, T = terminal"
+    ]
+   }
+  ]
  },
  {
   "model_number": "IFMZ-WRCUWZ",
-  "title": "IFMZ-WRCUWZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Window.",
+  "title": "IFMZ-WRCUWZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 100–240 V AC/DC (85–110 %, free voltage), Window type (flush mounting)",
   "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "IFMZ-WRCUWZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Window..",
+  "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+  "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type C — b(95-96), a(97-98): OC and GR common, control voltage 100–240 V AC/DC (85–110 %, free voltage), Window type (flush mounting).",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/3b553ae721_photo.jpg",
@@ -1340,6 +1673,11 @@
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
    }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRCUWZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifmz-wr-1a1b-100240v-%EC%9C%88%EB%8F%84%EC%9A%B0-/",
@@ -1347,7 +1685,113 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": null
+  "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 100–240 V AC/DC (85–110 %, free voltage) · แบบร้อยสายผ่านรู (Window) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-iFMZ (i-Series, ground fault)",
+  "base_model": "IFMZ",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Integrated model with improved functions over the FMZ series it replaces",
+     "Ground-fault (GF) protection with earth-leakage current display",
+     "Modbus RS-485 communication",
+     "Supports definite, inverse and thermal inverse time characteristics",
+     "RoHS compliant"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Over current (OC), In > OC setting",
+     "Under current (UC)",
+     "Ground fault (GF) — leakage current measured and displayed",
+     "Phase loss, phase reversal",
+     "Locked rotor (stall / jam)",
+     "Current imbalance"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This variant",
+    "rows": [
+     "Model : IFMZ-WRCUWZ",
+     "Current range : 0.5–60 A (direct)",
+     "Output contact type : C — b(95-96), a(97-98): OC and GR common",
+     "Control voltage : 100–240 V AC/DC (85–110 %, free voltage)",
+     "CT type : Window type (flush mounting)"
+    ]
+   },
+   {
+    "group": "Protection settings",
+    "rows": [
+     "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+     "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+     "Under current rated setting range : 0.5 A – less than OC setting",
+     "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+     "Definite D-time : 0–200 s",
+     "Definite O-time : 0.2–30 s",
+     "Inverse and thermal (cLS) : 1–30 classes",
+     "GF delay time (Edt) : 0–30 s",
+     "GF O-time (Et) : 0.05–10 s",
+     "Auto-reset : 0.5 s – 20 min",
+     "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Control power and output",
+    "rows": [
+     "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+     "Frequency : 50/60 Hz",
+     "Power consumption : lower than 7 VA",
+     "Output capacity : 3 A / 250 V AC resistive",
+     "Output composition : 1a — GR (iFMZ)",
+     "Communication : Modbus / RS-485"
+    ]
+   },
+   {
+    "group": "Display and mounting",
+    "rows": [
+     "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+     "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+     "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+     "Mounting : flush mounting (iFMZ)",
+     "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+     "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+    ]
+   },
+   {
+    "group": "Insulation and EMC",
+    "rows": [
+     "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+     "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+     "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+     "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+     "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission : CISPR11 class A (conducted and radiated)"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Storage temperature : -40 … +85 °C",
+     "Operating temperature : -20 … +60 °C",
+     "Humidity : 30–85 % RH (non-condensate)"
+    ]
+   },
+   {
+    "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+    "rows": [
+     "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+     "Output contact type : A, C or D (see specification above)",
+     "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+     "CT type : W = window, H = bottom hole, T = terminal"
+    ]
+   }
+  ]
  },
  {
   "model_number": "ISEMMET-WRUH",
@@ -1770,10 +2214,10 @@
  },
  {
   "model_number": "IFMZ-WRABHZ",
-  "title": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom.",
+  "title": "IFMZ-WRABHZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 24 V AC/DC (±5 %), Bottom hole type",
   "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "IFMZ-WRABHZ - EOCR-iFMZ WR A-A 24V Bottom..",
+  "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+  "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type A — a(97-98): OC, a(57-58): GR, control voltage 24 V AC/DC (±5 %), Bottom hole type.",
   "end_of_sale": null,
   "official_image_url": null,
   "local_photo_path": "/docs/3b553ae721_photo.jpg",
@@ -1798,6 +2242,11 @@
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
    }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRABHZ/eocrifmz-wr-aa-24v-bottom-/",
@@ -1805,14 +2254,120 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": null
+  "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 24 V AC/DC (±5 %) · แบบต่อใต้ตัว (Bottom hole) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-iFMZ (i-Series, ground fault)",
+  "base_model": "IFMZ",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Integrated model with improved functions over the FMZ series it replaces",
+     "Ground-fault (GF) protection with earth-leakage current display",
+     "Modbus RS-485 communication",
+     "Supports definite, inverse and thermal inverse time characteristics",
+     "RoHS compliant"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Over current (OC), In > OC setting",
+     "Under current (UC)",
+     "Ground fault (GF) — leakage current measured and displayed",
+     "Phase loss, phase reversal",
+     "Locked rotor (stall / jam)",
+     "Current imbalance"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This variant",
+    "rows": [
+     "Model : IFMZ-WRABHZ",
+     "Current range : 0.5–60 A (direct)",
+     "Output contact type : A — a(97-98): OC, a(57-58): GR",
+     "Control voltage : 24 V AC/DC (±5 %)",
+     "CT type : Bottom hole type"
+    ]
+   },
+   {
+    "group": "Protection settings",
+    "rows": [
+     "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+     "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+     "Under current rated setting range : 0.5 A – less than OC setting",
+     "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+     "Definite D-time : 0–200 s",
+     "Definite O-time : 0.2–30 s",
+     "Inverse and thermal (cLS) : 1–30 classes",
+     "GF delay time (Edt) : 0–30 s",
+     "GF O-time (Et) : 0.05–10 s",
+     "Auto-reset : 0.5 s – 20 min",
+     "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Control power and output",
+    "rows": [
+     "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+     "Frequency : 50/60 Hz",
+     "Power consumption : lower than 7 VA",
+     "Output capacity : 3 A / 250 V AC resistive",
+     "Output composition : 1a — GR (iFMZ)",
+     "Communication : Modbus / RS-485"
+    ]
+   },
+   {
+    "group": "Display and mounting",
+    "rows": [
+     "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+     "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+     "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+     "Mounting : flush mounting (iFMZ)",
+     "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+     "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+    ]
+   },
+   {
+    "group": "Insulation and EMC",
+    "rows": [
+     "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+     "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+     "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+     "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+     "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission : CISPR11 class A (conducted and radiated)"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Storage temperature : -40 … +85 °C",
+     "Operating temperature : -20 … +60 °C",
+     "Humidity : 30–85 % RH (non-condensate)"
+    ]
+   },
+   {
+    "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+    "rows": [
+     "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+     "Output contact type : A, C or D (see specification above)",
+     "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+     "CT type : W = window, H = bottom hole, T = terminal"
+    ]
+   }
+  ]
  },
  {
   "model_number": "IFMZ-WRABWZ",
-  "title": "IFMZ-WRABWZ - EOCR-iFMZ WR A-A 24V Window.",
+  "title": "IFMZ-WRABWZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 24 V AC/DC (±5 %), Window type (flush mounting)",
   "range_name": "EOCR",
-  "range_short_desc": "Electronic motor protection device (EOCR)",
-  "description": "IFMZ-WRABWZ - EOCR-iFMZ WR A-A 24V Window..",
+  "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+  "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type A — a(97-98): OC, a(57-58): GR, control voltage 24 V AC/DC (±5 %), Window type (flush mounting).",
   "end_of_sale": null,
   "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUWZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
   "local_photo_path": "/docs/3b553ae721_photo.jpg",
@@ -1837,6 +2392,11 @@
     "label": "EOCR Catalog (English)",
     "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
     "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
    }
   ],
   "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRABWZ/eocrifmz-wr-aa-24v-window-/",
@@ -1844,7 +2404,113 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": null
+  "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 24 V AC/DC (±5 %) · แบบร้อยสายผ่านรู (Window) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-iFMZ (i-Series, ground fault)",
+  "base_model": "IFMZ",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Integrated model with improved functions over the FMZ series it replaces",
+     "Ground-fault (GF) protection with earth-leakage current display",
+     "Modbus RS-485 communication",
+     "Supports definite, inverse and thermal inverse time characteristics",
+     "RoHS compliant"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Over current (OC), In > OC setting",
+     "Under current (UC)",
+     "Ground fault (GF) — leakage current measured and displayed",
+     "Phase loss, phase reversal",
+     "Locked rotor (stall / jam)",
+     "Current imbalance"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This variant",
+    "rows": [
+     "Model : IFMZ-WRABWZ",
+     "Current range : 0.5–60 A (direct)",
+     "Output contact type : A — a(97-98): OC, a(57-58): GR",
+     "Control voltage : 24 V AC/DC (±5 %)",
+     "CT type : Window type (flush mounting)"
+    ]
+   },
+   {
+    "group": "Protection settings",
+    "rows": [
+     "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+     "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+     "Under current rated setting range : 0.5 A – less than OC setting",
+     "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+     "Definite D-time : 0–200 s",
+     "Definite O-time : 0.2–30 s",
+     "Inverse and thermal (cLS) : 1–30 classes",
+     "GF delay time (Edt) : 0–30 s",
+     "GF O-time (Et) : 0.05–10 s",
+     "Auto-reset : 0.5 s – 20 min",
+     "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Control power and output",
+    "rows": [
+     "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+     "Frequency : 50/60 Hz",
+     "Power consumption : lower than 7 VA",
+     "Output capacity : 3 A / 250 V AC resistive",
+     "Output composition : 1a — GR (iFMZ)",
+     "Communication : Modbus / RS-485"
+    ]
+   },
+   {
+    "group": "Display and mounting",
+    "rows": [
+     "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+     "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+     "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+     "Mounting : flush mounting (iFMZ)",
+     "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+     "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+    ]
+   },
+   {
+    "group": "Insulation and EMC",
+    "rows": [
+     "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+     "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+     "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+     "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+     "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission : CISPR11 class A (conducted and radiated)"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Storage temperature : -40 … +85 °C",
+     "Operating temperature : -20 … +60 °C",
+     "Humidity : 30–85 % RH (non-condensate)"
+    ]
+   },
+   {
+    "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+    "rows": [
+     "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+     "Output contact type : A, C or D (see specification above)",
+     "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+     "CT type : W = window, H = bottom hole, T = terminal"
+    ]
+   }
+  ]
  },
  {
   "model_number": "I3DM-WRDBHZ",
@@ -8779,5 +9445,612 @@
   "in_stock": true,
   "your_price": null,
   "your_notes": "ใช้คู่กับรีเลย์ earth-leakage (EOCR/DSP รุ่นที่รับ ZCT)"
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "รีเลย์ตัวเดียวป้องกันได้ทั้งกระแสเกินและกระแสขาด (Over + Under Current) เหมาะกับปั๊มและงานที่กลัวทั้งโหลดเกินและรันตัวเปล่า",
+  "model_number": "DOUCR",
+  "title": "DOUCR - Digital Over & Under Current Relay, 0.6–70 A, 220 V AC",
+  "range_name": "EOCR",
+  "brand": "Samwha EOCR",
+  "series": "DOUCR (Over & Under Current)",
+  "base_model": "DOUCR",
+  "range_short_desc": "Digital over- and under-current protection relay",
+  "description": "Digital current relay (datasheet designation uDOUCR) providing both over-current and under-current protection in one unit, adjustment range 0.6–70 A, control supply 220 V AC. MCU-based, with 7-segment LED display of trip cause and trip current, and auto / manual / electrical reset. Protects against overload, underload, phase loss, phase reversal and locked rotor (separate thresholds for starting and running).",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Advanced electric control MCU microprocessor",
+     "Over and under current protection in a single relay",
+     "Auto / manual / electrical reset",
+     "Displays trip cause and trip current"
+    ]
+   },
+   {
+    "title": "Protection functions",
+    "items": [
+     "Overload, In > OC setting",
+     "Underload, In < UC setting",
+     "Locked rotor for starting, In > 2…10 times OC setting",
+     "Locked rotor for running, In > 1.5…5 times OC setting",
+     "Sensitivity to phase loss",
+     "Sensitivity to phase reverse"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Main",
+    "rows": [
+     "Product or component type : Protection relay",
+     "Product specific application : Over & under current",
+     "Network type : AC",
+     "Network frequency : 50…60 Hz",
+     "Protection adjustment range : 0.6…70 A",
+     "Tripping threshold : 0.6…70 A (definite)"
+    ]
+   },
+   {
+    "group": "Complementary",
+    "rows": [
+     "[Us] rated supply voltage : 220 V AC",
+     "Mounting support : Panel, 35 mm DIN rail",
+     "Contacts type and composition : Common NCNO",
+     "Short-circuit and overload protection : By 4 A gG fuse",
+     "[Ue] rated operational voltage : 690 V AC 50…60 Hz (IEC 60947-4-1), 690 V AC (CSA), 600 V AC (UL)",
+     "[Uimp] rated impulse withstand voltage : 6 kV (IEC 60947-4-1)",
+     "Reset : Manual reset; electrical < 1 s by interruption of power supply",
+     "Time delay type : O-Time 0.5…30 s (definite), U-Time 0.5…30 s, D-Time 0.5…30 s or off",
+     "Display type : 7 segment LED",
+     "Power consumption per relay : < 3 W",
+     "Connections - terminals : Control circuit 1 cable 1…2.5 mm² or 2 cables 1…1.5 mm² flexible, M3",
+     "Tightening torque : 0.8…1.2 N.m for control circuit cable, 4.7 mm head",
+     "Height : 85 mm",
+     "Width : 52 mm",
+     "Depth : 52 mm",
+     "Product weight : 0.300 kg"
+    ]
+   },
+   {
+    "group": "Environment",
+    "rows": [
+     "Standards : IEC 60947-4-1",
+     "IP degree of protection : IP20 (IEC 60529)",
+     "Ambient air temperature for operation : -20…60 °C (IEC 60947-4-1)",
+     "Ambient air temperature for storage : -30…80 °C",
+     "Operating altitude : 2000 m",
+     "Fire resistance : 960 °C (UL 94), 650 °C (IEC 60695-2-12)",
+     "Shock resistance : 15 gn for 11 ms (IEC 60068-2-7)",
+     "Vibration resistance : 2 gn on 35 mm DIN rail, 4 gn on panel mounting (IEC 60068-2-6)",
+     "Dielectric strength : 2 kV between circuit, 1 kV between contact, 2 kV between case and circuit (IEC 60255-5)",
+     "Surge withstand : 6 kV (IEC 61000-4-5)",
+     "[Ith] conventional free air thermal current : 5 A, control circuit",
+     "Permissible current : 250 V, 5 A AC"
+    ]
+   },
+   {
+    "group": "Contractual warranty",
+    "rows": [
+     "Period : 12 months"
+    ]
+   }
+  ],
+  "documents": [
+   {
+    "label": "Product datasheet (PDF)",
+    "official_url": null,
+    "local_path": "/docs/cff69afa11_DOUCR_SAV.pdf"
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "CT 3 เฟสรวมในตัวเดียว ประหยัดพื้นที่ในตู้และลดเวลาติดตั้ง",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DW",
+  "title": "DW-30…DW-44 - Deesys 3-Phase Current Transformer (combined 2CT / 3CT), 1150 V",
+  "series": "Deesys 3-Phase CT",
+  "base_model": "DW",
+  "range_short_desc": "Three-phase current transformer, combined unit",
+  "description": "Deesys three-phase current transformer combining the individual CTs of all phases into one moulded body, so a single part covers a 3P3W (2CT) or 3P4W (3CT) circuit — faster to install and cheaper than separate CTs. Window (busbar/cable-through) type, polycarbonate case. Series: DW-30…DW-34 for 3P3W 2CT and DW-40…DW-44 for 3P4W 3CT.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Three phases combined in one current transformer — easy to install, saves cost",
+     "Case: polycarbonate (PC)",
+     "Window type for 3P4W (3CT) and 3P3W (2CT) circuits"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Rating (as published)",
+    "rows": [
+     "Max. voltage : 1150 V",
+     "Frequency : 60 Hz",
+     "Class : 1.0 % ~ 3.0 %",
+     "Phase : 3CT / 2CT",
+     "Over current factor : 40 In / 1 sec",
+     "Secondary current : 5 A"
+    ]
+   },
+   {
+    "group": "1150 V window type CT — 3P4W (3CT)",
+    "rows": [
+     "DW-40 : primary 50–75 A, class 3.0 %, burden 2.5 VA, MCCB/ELCB 50AF",
+     "DW-41 : primary 100–150 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 100AF",
+     "DW-42 : primary 120–250 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 225AF",
+     "DW-43 : primary 300–400 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 400AF",
+     "DW-44 : primary 500–1200 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 600/800AF"
+    ]
+   },
+   {
+    "group": "1150 V window type CT — 3P3W (2CT)",
+    "rows": [
+     "DW-30 : primary 50–75 A, class 3.0 %, burden 2.5 VA, MCCB/ELCB 50AF",
+     "DW-31 : primary 100–150 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 100AF",
+     "DW-32 : primary 120–250 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 225AF",
+     "DW-33 : primary 300–400 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 400AF",
+     "DW-34 : primary 500–1200 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 600/800AF"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — A / B / C / D / H",
+    "rows": [
+     "DW-40 (DW-30) : 117 / 94 / 66 / 82 / 60",
+     "DW-41 (DW-31) : 132 / 73 / 85 / 100 / 60",
+     "DW-42 (DW-32) : 151 / 73 / 100 / 119 / 60",
+     "DW-43 (DW-33) : 182 / 66 / 127 / 150 / 80",
+     "DW-44 (DW-34) : 262 / 66 / 210 / 230 / 85"
+    ]
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "CT สำหรับงานป้องกัน (Protection class 5P) ไม่ใช่ CT วัดค่าทั่วไป",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DS-R",
+  "title": "DS-2R…DS-6R - Deesys Protection Current Transformer, class 5P, 250–5000 A",
+  "series": "Deesys Protection CT",
+  "base_model": "DS-R",
+  "range_short_desc": "Protection-class current transformer (5P)",
+  "description": "Deesys protection current transformers for relay duty, primary ratings from 250 A up to 5000 A, secondary AC 5 A / 1 A, accuracy class 5P with over-current numeric n > 10 or n > 20. Window (busbar-through) construction. Series: DS-2R, DS-3R, DS-4R, DS-5R (DS-5-2R) and DS-6R.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Protection class 5P for relay applications",
+     "Tolerance class 1P / 3P (JEC1201), 5P / 10P (IEC 60044-1)",
+     "Over-current intensity 40 In (thermal and mechanical, no change)"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Rating (as published)",
+    "rows": [
+     "DS-2R : 1st rating 250–400 A, n > 10, burden 5 VA",
+     "DS-3R : 1st rating 150–600 A, n > 10, burden 5–10 VA",
+     "DS-4R : 1st rating 600–1500 A, n > 10, burden 5–10 VA",
+     "DS-5R (DS-5-2R) : 1st rating 1000–4000 A, n > 10 / n > 20, burden 5–40 VA / 5–15 VA",
+     "DS-6R : 1st rating 1500–5000 A, n > 10 / n > 20, burden 5–40 VA / 5–15 VA",
+     "2nd rating : AC 5 A / 1 A",
+     "Class : 5P",
+     "In : 40 in",
+     "Frequency : 50 / 60 Hz"
+    ]
+   },
+   {
+    "group": "Rating burden (standards)",
+    "rows": [
+     "JEC1201 : 5 VA / 10 VA / 15 VA / 25 VA / 40 VA",
+     "IEC 60044-1 : 2.5 VA / 5 VA / 10 VA / 15 VA / 30 VA"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — A / B / C / D",
+    "rows": [
+     "DS-2R : 65 / 115 / 65 / 11",
+     "DS-3R : 85 / 135 / 70 / 13",
+     "DS-4R : 105 / 155 / 85 / 22",
+     "DS-5R : 130 / 212 / 126 / 41",
+     "DS-5-2R : 130 / 212 / 138 / 53",
+     "DS-6R : 160 / 260 / 180 / 75"
+    ]
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "CT ทรงเหลี่ยมสำหรับร้อยบัสบาร์ ใช้กับงานมิเตอร์ในตู้",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DS",
+  "title": "DS-1…DS-6 - Deesys Square Type Current Transformer 1.15 kV, busbar through",
+  "series": "Deesys Square CT",
+  "base_model": "DS",
+  "range_short_desc": "Square (busbar-through) metering current transformer",
+  "description": "Deesys square type current transformers for panel metering, busbar-through construction, rated up to 1.15 kV, for indoor use. Brown ABS non-flammable case with polyester mould. Primary ratings from 100 A (DS-1) up to 6000 A (DS-6), secondary 5 A or 1 A.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Busbar through type",
+     "For metering",
+     "For indoor use",
+     "Colour: brown; case: ABS non-flammable resin; mould: polyester",
+     "Mounting metal makes busbar installation easy"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Single ratio C.T (as published)",
+    "rows": [
+     "DS-1 : primary 100 / 150–200 / 250–300 / 300 A, burden 5 or 15 VA, class 1.0 %, weight 1.3 kg",
+     "DS-2 : primary 400 A (burden 15 VA) and 500–600 A (burden 15–40 VA), class 1.0 / 0.5 %, weight 1.5 kg",
+     "DS-3 : primary 600–1000 A, burden 15–40 VA, weight 1.5 kg",
+     "DS-4 : primary 750–2000 A, class 1.0 %, weight 1.6 kg",
+     "DS-5 : primary 1000–4000 A, burden 40 VA, class 0.5 %, weight 1.9 kg",
+     "DS-6 : primary 2500–6000 A, class 0.3 %, weight 4.8 kg",
+     "Secondary : 5 A or 1 A",
+     "Frequency : 50 / 60 Hz"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — A / B / C / D",
+    "rows": [
+     "DS-1 : 44 / 110 / 80 / 10",
+     "DS-2 : 65 / 115 / 65 / 11",
+     "DS-3 : 85 / 135 / 70 / 13",
+     "DS-4 : 105 / 155 / 85 / 27",
+     "DS-5 : 130 / 212 / 126 / 41",
+     "DS-5-2 : 130 / 212 / 138 / 53",
+     "DS-6 : 160 / 260 / 180 / 75"
+    ]
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "CT ทรงกลมร้อยสาย เลือกพิกัดได้จากจำนวนรอบที่ร้อย (Ampere-Turn)",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DR",
+  "title": "DR-18, DR-1…DR-3 - Deesys Round Type Current Transformer 1.15 kV, cable through",
+  "series": "Deesys Round CT",
+  "base_model": "DR",
+  "range_short_desc": "Round (cable-through) metering current transformer",
+  "description": "Deesys round type current transformers, cable-through construction, rated up to 1.15 kV, for indoor metering. Mounting foot can be rotated 90°. Rated in ampere-turns, so the same CT covers several primary currents by changing the number of turns of the primary conductor through the window. Series: DR-18, DR-1, DR-2, DR-3.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Cable through type",
+     "Mounting parts changeable at 90° direction",
+     "For metering application, indoor",
+     "Colour: brown; case: ABS non-flammable resin; mould: polyester",
+     "Rated in ampere-turns (AT) — primary current changes with the number of turns"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Specification (as published)",
+    "rows": [
+     "DR-18 : rated 75 / 100 / 120 / 150 / 200 AT, burden 5 VA, class 1.0 %, weight 0.55 kg",
+     "DR-1 : rated 100–300 AT, burden 5 VA or 5/15 VA, class 1.0 %, weight 0.55 kg",
+     "DR-2 : rated 240–600 AT, burden 15 VA or 15/40 VA, class 1.0 %, weight 0.75 kg",
+     "DR-3 : rated 500–1500 AT, burden 40 VA, class 1.0 %, weight 1.10 kg",
+     "Over current strength : 40 In",
+     "Frequency : 50 / 60 Hz"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — A / B / øC / øD / E / F / G",
+    "rows": [
+     "DR-18 : 84 / 48 / 18 / 64 / 65 / 80 / 50",
+     "DR-1 : 95 / 55 / 27 / 70 / 75 / 94 / 40",
+     "DR-2 : 108 / 65 / 40 / 87 / 75 / 94 / 40",
+     "DR-3 : 134 / 77 / 60 / 114 / 75 / 94 / 40"
+    ]
+   },
+   {
+    "group": "Ampere-turn example",
+    "rows": [
+     "At rating 200 AT : 1 turn = 200 A primary, 2 turns = 100 A, 4 turns = 50 A"
+    ]
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "CT แบบพันขดลวด เหมาะกับกระแสต่ำและงานมิเตอร์วัดหน่วย",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DRW",
+  "title": "DRW-15, DRW-40, DRB-1, DRB-2 - Deesys Winding Type Current Transformer 1.15 kV",
+  "series": "Deesys Winding CT",
+  "base_model": "DRW",
+  "range_short_desc": "Wound primary current transformer for metering",
+  "description": "Deesys winding (wound primary) type current transformers rated up to 1.15 kV, for metering and watt-hour meter duty. DRW models are terminal type for low primary currents (5–30 A); DRB models are busbar type covering 40–500 A. Mounting direction changeable through 90°.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Winding (wound primary) type",
+     "For metering and watt-hour meter",
+     "Changeable 90° at mounting direction",
+     "Colour: brown; case: ABS non-flammable resin; mould: polyester"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Single ratio C.T (as published)",
+    "rows": [
+     "DRW-15 : primary 5–30 A, burden 15 VA, class 1.0 %, terminal type, weight 0.70 kg",
+     "DRB-1 : primary 40–150 / 200–300 / 400–500 A, burden 15 VA, class 1.0 %, busbar type, weight 0.85 kg",
+     "DRW-40 : primary 5–30 A, burden 40 VA, class 1.0 %, terminal type, weight 1.0 kg",
+     "DRB-2 : primary 40–150 / 200–300 / 400–500 A, burden 40 VA, class 1.0 %, busbar type, weight 1.2 kg",
+     "Secondary : 5 A or 1 A",
+     "Over current strength : 40 in"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — DRW terminal type, A / B / C",
+    "rows": [
+     "DRW-15 : 80 / 100 / 90",
+     "DRW-40 : 100 / 118 / 102"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — DRB busbar type, A / B / C / D / E",
+    "rows": [
+     "DRB-1 40–150 A : 80 / 100 / 60 / 125 / 100",
+     "DRB-1 200–300 A : 80 / 100 / 60 / 135 / 105",
+     "DRB-1 400–500 A : 80 / 100 / 60 / 155 / 115",
+     "DRB-2 40–150 A : 100 / 118 / 70 / 135 / 110",
+     "DRB-2 200–300 A : 100 / 118 / 70 / 145 / 115",
+     "DRB-2 400–500 A : 100 / 118 / 70 / 165 / 130"
+    ]
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "PT 3 เฟสในตัวเดียว ลดเวลาเดินสายในตู้สวิตช์เกียร์",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DP-350F",
+  "title": "DP-350F / DGP-350F - Deesys 3-Phase Voltage Transformer, 1150 V, 50 VA",
+  "series": "Deesys 3-Phase VT",
+  "base_model": "DP-350F",
+  "range_short_desc": "Three-phase voltage transformer for switchgear metering",
+  "description": "Deesys three-phase measuring voltage transformer in one body, rated up to 1150 V, accuracy class 1.0 %, burden 50 VA. DP-350F covers 3P3W circuits (primary 220–600 V, secondary 110–220 V); DGP-350F covers 3P4W circuits (primary 208/√3–440/√3 V, secondary 190/√3 V). Simplifies switchgear wiring compared with separate single-phase PTs.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Three-phase measuring PT in one compact body — easy to install",
+     "Less expensive and more economical to apply to switchgear",
+     "Simple wiring, reduces connection time"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Rating (as published)",
+    "rows": [
+     "Max. voltage : 1150 V",
+     "Frequency : 60 Hz",
+     "Class : 1.0 %",
+     "Phase : 3-phase",
+     "Over voltage factor : 1.2 Vn continuous"
+    ]
+   },
+   {
+    "group": "Specification",
+    "rows": [
+     "DP-350F (3P3W) : primary 220–600 V, secondary 110–220 V, class 1.0 %, burden 50 VA",
+     "DGP-350F (3P4W) : primary 208/√3–440/√3 V, secondary 190/√3 V, class 1.0 %, burden 50 VA"
+    ]
+   }
+  ]
+ },
+ {
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": null,
+  "image_confirmed_unavailable": true,
+  "source_url": null,
+  "scraped_at": "2026-08-01T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "PT / GPT 1 เฟส สำหรับงานวัดและงานป้องกันไฟรั่วลงดิน (GPT มีขดที่สาม)",
+  "range_name": "CT / VT",
+  "brand": "Deesys",
+  "documents": [
+   {
+    "label": "Deesys CT / VT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+   }
+  ],
+  "model_number": "DP",
+  "title": "DP-50…DP-200 / DGP-100…DGP-200 - Deesys Voltage & Grounding Voltage Transformer 0.72 kV",
+  "series": "Deesys VT / GPT",
+  "base_model": "DP",
+  "range_short_desc": "Single-phase voltage transformer (VT) and grounding PT (GPT)",
+  "description": "Deesys single-phase voltage transformers (V.T) and grounding voltage transformers (GPT) rated 0.72 kV, for indoor metering and relaying. Epoxy mould, brown ABS non-flammable case. V.T models DP-50/100/200 (and F variants) with 50/100/200 VA burden; GPT models DGP-100/200 and DGP-100T/200T (and F/TF variants) with a tertiary winding for earth-fault detection.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Single phase, for metering and relaying, indoor use",
+     "Colour: brown; case: ABS non-flammable; mould: epoxy",
+     "GPT versions provide a tertiary (3ry) winding for earth-fault relaying"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "V.T specification (as published)",
+    "rows": [
+     "DP-50 / DP-50F : primary 220 / 380 / 440 V, secondary 110 or 190 or 220 V, burden 50 VA, weight 2.5 kg",
+     "DP-100 / DP-100F : burden 100 VA, weight 3.2 kg",
+     "DP-200 / DP-200F : burden 200 VA, weight 5.8 kg",
+     "Accuracy class : 1.0",
+     "Frequency : 50 / 60 Hz",
+     "Voltage factor : 1.2 Vh continuous"
+    ]
+   },
+   {
+    "group": "GPT specification (as published)",
+    "rows": [
+     "DGP-100 / DGP-100F : 2ry burden 50 VA, weight 3.2 kg",
+     "DGP-200 / DGP-200F : 2ry burden 100 VA, weight 5.8 kg",
+     "DGP-100T / DGP-100TF : 2ry 50 VA, 3ry 100 VA, weight 3.2 kg",
+     "DGP-200T / DGP-200TF : 2ry 100 VA, 3ry 200 VA, weight 5.8 kg",
+     "Primary : 220/√3, 380/√3, 440/√3 V",
+     "Secondary : 190/√3 or 110/√3 V; tertiary 190/√3 or 110/√3 V",
+     "Voltage factor : 1.2 Vh continuous, 1.9 Vh for 30 s"
+    ]
+   },
+   {
+    "group": "Dimensions (mm) — A / B / C / D / E",
+    "rows": [
+     "DP-50 : 100 / 102 / 30 / 75 / 77",
+     "DP-100 / DGP-100 : 118 / 112 / 33 / 75 / 73",
+     "DP-200 / DGP-200 : 166 / 126 / 37 / 82 / 142"
+    ]
+   },
+   {
+    "group": "Application note (from catalog)",
+    "rows": [
+     "If the burden of the 3ry winding open terminal is less than the rating burden, remaining voltage may cause relay malfunction — select a PT whose applicable burden is about 70 % of the rating burden."
+    ]
+   }
+  ]
  }
 ]

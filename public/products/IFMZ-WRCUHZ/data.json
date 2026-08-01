@@ -1,9 +1,9 @@
 {
  "model_number": "IFMZ-WRCUHZ",
- "title": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot.",
+ "title": "IFMZ-WRCUHZ - EOCR-iFMZ digital motor protection relay with ground fault, 0.5–60 A (direct), 100–240 V AC/DC (85–110 %, free voltage), Bottom hole type",
  "range_name": "EOCR",
- "range_short_desc": "Electronic motor protection device (EOCR)",
- "description": "IFMZ-WRCUHZ - Digital protection relay EOCR-iFMZ WR 1A1B 100~240V Bot..",
+ "range_short_desc": "Digital motor protection relay with ground-fault protection and Modbus communication",
+ "description": "EOCR-iFMZ digital motor protection relay from the Samwha EOCR i-Series, with over-current, under-current, phase loss, phase reversal, locked-rotor, imbalance and ground-fault (GF) protection. Measured 3-phase currents and earth-leakage current are shown on a 5-digit 7-segment LED display, with Modbus RS-485 communication. This variant: current range 0.5–60 A (direct), output contact type C — b(95-96), a(97-98): OC and GR common, control voltage 100–240 V AC/DC (85–110 %, free voltage), Bottom hole type.",
  "end_of_sale": null,
  "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=IFDM-WRDUHZ_IMG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
  "local_photo_path": "/docs/41f17ffe22_photo.jpg",
@@ -28,6 +28,11 @@
    "label": "EOCR Catalog (English)",
    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
    "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  },
+  {
+   "label": "EOCR i-Series Catalog — i3MS / iFMS / iFMZ (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/b2a7dd50c8_CATALOG_EN_EOCR-I3MS-IFMS.PDF"
   }
  ],
  "source_url": "https://www.se.com/kr/ko/product/IFMZ-WRCUHZ/%EB%94%94%EC%A7%80%ED%84%B8-%EB%B3%B4%ED%98%B8-%EA%B3%84%EC%A0%84%EA%B8%B0-eocrifmz-wr-1a1b-100240v-bot-/",
@@ -35,5 +40,111 @@
  "category": null,
  "in_stock": null,
  "your_price": null,
- "your_notes": null
+ "your_notes": "รุ่นย่อย: ช่วงกระแส 0.5–60 A (direct) · ไฟเลี้ยง 100–240 V AC/DC (85–110 %, free voltage) · แบบต่อใต้ตัว (Bottom hole) — มีฟังก์ชันตรวจไฟรั่วลงดิน (GF) และสื่อสาร Modbus RS-485",
+ "brand": "Samwha EOCR",
+ "series": "EOCR-iFMZ (i-Series, ground fault)",
+ "base_model": "IFMZ",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Integrated model with improved functions over the FMZ series it replaces",
+    "Ground-fault (GF) protection with earth-leakage current display",
+    "Modbus RS-485 communication",
+    "Supports definite, inverse and thermal inverse time characteristics",
+    "RoHS compliant"
+   ]
+  },
+  {
+   "title": "Protection functions",
+   "items": [
+    "Over current (OC), In > OC setting",
+    "Under current (UC)",
+    "Ground fault (GF) — leakage current measured and displayed",
+    "Phase loss, phase reversal",
+    "Locked rotor (stall / jam)",
+    "Current imbalance"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "This variant",
+   "rows": [
+    "Model : IFMZ-WRCUHZ",
+    "Current range : 0.5–60 A (direct)",
+    "Output contact type : C — b(95-96), a(97-98): OC and GR common",
+    "Control voltage : 100–240 V AC/DC (85–110 %, free voltage)",
+    "CT type : Bottom hole type"
+   ]
+  },
+  {
+   "group": "Protection settings",
+   "rows": [
+    "Over current rated setting range : 0.5–60 A (definite TCC; use external CT above 60 A)",
+    "Over current rated setting range : 0.5–32 A (inverse and thermal TCC)",
+    "Under current rated setting range : 0.5 A – less than OC setting",
+    "Operating time characteristics : definite (Def) / inverse (Inv) / thermal (th)",
+    "Definite D-time : 0–200 s",
+    "Definite O-time : 0.2–30 s",
+    "Inverse and thermal (cLS) : 1–30 classes",
+    "GF delay time (Edt) : 0–30 s",
+    "GF O-time (Et) : 0.05–10 s",
+    "Auto-reset : 0.5 s – 20 min",
+    "Reset mode : manual (H-r) / electric (E-r) / auto (A-r)"
+   ]
+  },
+  {
+   "group": "Control power and output",
+   "rows": [
+    "Control power voltage : 100–240 V AC/DC (85–110 %, free voltage), 24 V AC/DC (±5 %)",
+    "Frequency : 50/60 Hz",
+    "Power consumption : lower than 7 VA",
+    "Output capacity : 3 A / 250 V AC resistive",
+    "Output composition : 1a — GR (iFMZ)",
+    "Communication : Modbus / RS-485"
+   ]
+  },
+  {
+   "group": "Display and mounting",
+   "rows": [
+    "Display : 5-digit 7-segment LED — 3-phase amps, cause of trip, setting parameters",
+    "Bar graph : load factor versus OC setting (minimum scale 65 %)",
+    "Current display : 3-phase load currents and leakage current shown in sequence every 2 seconds",
+    "Mounting : flush mounting (iFMZ)",
+    "Dimension window type : 70 W × 74.5 H × 83.8 D mm",
+    "Dimension bottom hole type : 70 W × 56.3 H × 108.1 D mm"
+   ]
+  },
+  {
+   "group": "Insulation and EMC",
+   "rows": [
+    "Insulation between case and circuit : over DC 500 V, 10 MΩ",
+    "Dielectric strength : 2 kV case-circuit, 1 kV between contacts, 2 kV between circuit (50/60 Hz, 1 min)",
+    "Electrostatic discharge : IEC 61000-4-2 level 3, air ±8 kV, contact ±6 kV",
+    "Radiated disturbance : IEC 61000-4-3 level 3, 10 V/m, 80–1000 MHz",
+    "Conducted disturbance : IEC 61000-4-6 level 3, 10 V, 0.15–80 MHz",
+    "EFT / burst : IEC 61000-4-4 level 3, ±2 kV, 1 min",
+    "Surge : IEC 61000-4-5 level 3, 1.2 × 50 µs, ±4 kV",
+    "Emission : CISPR11 class A (conducted and radiated)"
+   ]
+  },
+  {
+   "group": "Environment",
+   "rows": [
+    "Storage temperature : -40 … +85 °C",
+    "Operating temperature : -20 … +60 °C",
+    "Humidity : 30–85 % RH (non-condensate)"
+   ]
+  },
+  {
+   "group": "Ordering code (iFMZ - WR / D / U / W / Q)",
+   "rows": [
+    "Current range : WR = 0.5–60 A; H1 = 100:5, HH = 150:5, H2 = 200:5, H3 = 300:5, H4 = 400:5 (3CT combination type)",
+    "Output contact type : A, C or D (see specification above)",
+    "Control voltage : B = 24 V AC/DC, U = 100–240 V AC/DC",
+    "CT type : W = window, H = bottom hole, T = terminal"
+   ]
+  }
+ ]
 }

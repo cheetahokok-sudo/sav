@@ -1,0 +1,82 @@
+{
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": null,
+ "image_confirmed_unavailable": true,
+ "source_url": null,
+ "scraped_at": "2026-08-01T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "CT 3 เฟสรวมในตัวเดียว ประหยัดพื้นที่ในตู้และลดเวลาติดตั้ง",
+ "range_name": "CT / VT",
+ "brand": "Deesys",
+ "documents": [
+  {
+   "label": "Deesys CT / VT Catalog (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
+  }
+ ],
+ "model_number": "DW",
+ "title": "DW-30…DW-44 - Deesys 3-Phase Current Transformer (combined 2CT / 3CT), 1150 V",
+ "series": "Deesys 3-Phase CT",
+ "base_model": "DW",
+ "range_short_desc": "Three-phase current transformer, combined unit",
+ "description": "Deesys three-phase current transformer combining the individual CTs of all phases into one moulded body, so a single part covers a 3P3W (2CT) or 3P4W (3CT) circuit — faster to install and cheaper than separate CTs. Window (busbar/cable-through) type, polycarbonate case. Series: DW-30…DW-34 for 3P3W 2CT and DW-40…DW-44 for 3P4W 3CT.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Three phases combined in one current transformer — easy to install, saves cost",
+    "Case: polycarbonate (PC)",
+    "Window type for 3P4W (3CT) and 3P3W (2CT) circuits"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Rating (as published)",
+   "rows": [
+    "Max. voltage : 1150 V",
+    "Frequency : 60 Hz",
+    "Class : 1.0 % ~ 3.0 %",
+    "Phase : 3CT / 2CT",
+    "Over current factor : 40 In / 1 sec",
+    "Secondary current : 5 A"
+   ]
+  },
+  {
+   "group": "1150 V window type CT — 3P4W (3CT)",
+   "rows": [
+    "DW-40 : primary 50–75 A, class 3.0 %, burden 2.5 VA, MCCB/ELCB 50AF",
+    "DW-41 : primary 100–150 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 100AF",
+    "DW-42 : primary 120–250 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 225AF",
+    "DW-43 : primary 300–400 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 400AF",
+    "DW-44 : primary 500–1200 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 600/800AF"
+   ]
+  },
+  {
+   "group": "1150 V window type CT — 3P3W (2CT)",
+   "rows": [
+    "DW-30 : primary 50–75 A, class 3.0 %, burden 2.5 VA, MCCB/ELCB 50AF",
+    "DW-31 : primary 100–150 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 100AF",
+    "DW-32 : primary 120–250 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 225AF",
+    "DW-33 : primary 300–400 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 400AF",
+    "DW-34 : primary 500–1200 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 600/800AF"
+   ]
+  },
+  {
+   "group": "Dimensions (mm) — A / B / C / D / H",
+   "rows": [
+    "DW-40 (DW-30) : 117 / 94 / 66 / 82 / 60",
+    "DW-41 (DW-31) : 132 / 73 / 85 / 100 / 60",
+    "DW-42 (DW-32) : 151 / 73 / 100 / 119 / 60",
+    "DW-43 (DW-33) : 182 / 66 / 127 / 150 / 80",
+    "DW-44 (DW-34) : 262 / 66 / 210 / 230 / 85"
+   ]
+  }
+ ]
+}
