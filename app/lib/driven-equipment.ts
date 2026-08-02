@@ -221,7 +221,7 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
         fieldSymptomTh: "ไม่มีการไหล ของเหลวในเรือนปั๊มร้อนขึ้นเรื่อย ๆ จนเดือด",
         detection: ["undercurrent", "external-sensor-interlock"],
         caveatTh:
-          "ตรงข้ามกับสัญชาตญาณ และตรงข้ามกับปั๊ม Positive Displacement ซึ่งกระแสจะพุ่งขึ้นแทน อย่าตั้งค่าโดยเหมารวมสองแบบ",
+          "ใช้ได้เฉพาะปั๊มหอยโข่ง (Radial) เท่านั้น — ปั๊มใบพัดตามแนวแกน (Axial/Propeller) และปั๊ม Positive Displacement กระแสจะ **พุ่งขึ้น** เมื่อปิดปลายทาง ตรงกันข้ามกันโดยสิ้นเชิง ห้ามนำค่าที่ตั้งไว้กับปั๊มแบบหนึ่งไปใช้กับอีกแบบ",
       },
       {
         id: "ground-fault-wet",
@@ -249,6 +249,74 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
       },
     ],
     industries: ["water-pumping-motor-protection"],
+  },
+  {
+    id: "axial-propeller-pump",
+    nameTh: "ปั๊มใบพัดตามแนวแกน (Axial / Propeller)",
+    nameEn: "Axial-flow / propeller pump",
+    loadType: "variable-torque",
+    failureModes: [
+      {
+        id: "deadhead",
+        nameTh: "เดินตันปลายทาง / ประตูน้ำปิด",
+        currentSignatureTh:
+          "กระแส **พุ่งขึ้น** เมื่อการไหลลดลง — สูงสุดที่จุดปิดสนิท (Shut-off)",
+        fieldSymptomTh: "มอเตอร์ร้อนเร็ว อาจทริปภายในไม่กี่นาที เสียงและแรงสั่นเปลี่ยนชัดเจน",
+        detection: ["overload", "external-sensor-interlock"],
+        caveatTh:
+          "ตรงข้ามกับปั๊มหอยโข่งโดยสิ้นเชิง — ปั๊มหอยโข่งกระแสจะลดลงเมื่อปิดปลายทาง แต่ปั๊มแนวแกนกระแสจะสูงสุด จึงห้ามสตาร์ตปั๊มแนวแกนโดยปิดประตูน้ำไว้ (ซึ่งเป็นวิธีที่ใช้ได้กับปั๊มหอยโข่ง)",
+      },
+      {
+        id: "low-sump-level",
+        nameTh: "ระดับน้ำในบ่อต่ำเกิน",
+        currentSignatureTh: "กระแสลดลงและแกว่ง เพราะใบพัดเริ่มดูดอากาศ",
+        fieldSymptomTh:
+          "เสียงดังผิดปกติ สั่นแรง และในปั๊มจุ่มคือสูญเสียการระบายความร้อนของมอเตอร์ทันที",
+        detection: ["undercurrent", "external-sensor-interlock"],
+        caveatTh:
+          "ในปั๊มจุ่ม มอเตอร์อาศัยน้ำรอบตัวเป็นตัวระบายความร้อน ระดับน้ำต่ำจึงเป็นเรื่องความร้อนก่อนจะเป็นเรื่องการไหล ต้องใช้สวิตช์ระดับน้ำตัดการทำงาน ไม่ใช่รอให้รีเลย์กระแสตรวจเจอ",
+      },
+      {
+        id: "trash-blockage",
+        nameTh: "ตะแกรงหน้าปั๊มอุดตัน (ขยะ/ผักตบ)",
+        currentSignatureTh: "กระแสค่อย ๆ สูงขึ้นตามการไหลที่ลดลง",
+        fieldSymptomTh: "ระดับน้ำด้านหน้าตะแกรงสูงขึ้นแต่ระบายไม่ทัน",
+        detection: ["overload", "external-sensor-interlock"],
+      },
+      {
+        id: "ground-fault-wet",
+        nameTh: "ไฟรั่วลงดินในบ่อสูบ",
+        currentSignatureTh: "กระแสสามเฟสอาจปกติ แต่ผลรวมผ่าน ZCT ไม่เป็นศูนย์",
+        fieldSymptomTh: "ค่าความเป็นฉนวนลดลง มักเริ่มจากรอยต่อสายเคเบิลหรือซีลที่รั่ว",
+        detection: ["ground-fault"],
+        caveatTh:
+          "ปั๊มจุ่มจมอยู่ในน้ำตลอดเวลา การป้องกันไฟรั่วลงดินจึงไม่ใช่ของเสริม และควรวัดค่าความเป็นฉนวนตามรอบ ไม่ใช่รอให้รีเลย์ทำงาน",
+      },
+      {
+        id: "reverse-rotation",
+        nameTh: "หมุนกลับทาง",
+        currentSignatureTh: "กระแสต่ำกว่าที่ควรเป็น และการไหลลดลงมาก",
+        fieldSymptomTh: "ระบายน้ำได้น้อยผิดปกติ พบบ่อยหลังถอดซ่อมหรือสลับสายเมน",
+        detection: ["phase-loss", "undercurrent"],
+        caveatTh: "ยืนยันด้วยการวัดลำดับเฟส ไม่ใช่จากกระแสอย่างเดียว",
+      },
+      {
+        id: "long-cable-vdrop",
+        nameTh: "แรงดันตกในสายเคเบิลที่ยาว",
+        currentSignatureTh: "กระแสสูงกว่าที่คาดที่ภาระเดิม และสูงไม่เท่ากันทั้งสามเฟส",
+        fieldSymptomTh: "สตาร์ตยาก มอเตอร์ร้อนกว่าปกติ โดยเฉพาะบ่อลึกหรือสายเดินไกล",
+        detection: ["unbalance", "overload"],
+      },
+    ],
+    required: ["overload", "phase-loss", "ground-fault", "external-sensor-interlock"],
+    recommended: ["unbalance", "undercurrent", "start-delay"],
+    conditional: [
+      {
+        fn: "start-count",
+        whenTh: "สถานีที่สั่งเดิน–หยุดตามระดับน้ำบ่อย ต้องจำกัดจำนวนครั้งที่สตาร์ตต่อชั่วโมง",
+      },
+    ],
+    industries: [],
   },
   {
     id: "centrifugal-fan",
