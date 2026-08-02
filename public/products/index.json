@@ -10920,7 +10920,7 @@
   "series": "SDDR (Auto Restart)",
   "base_model": "SDDR-C",
   "range_short_desc": "Shutdown auto restart relay for momentary power failure (EOCR SDDR)",
-  "description": "Schneider / Samwha EOCR SDDR-CF7 shutdown auto restart relay — 순간정전 재기동 계전기. It solves the problem of having to restart every motor on a line by hand after a process trips on a brief voltage dip. Two settings do the work: SDDT (shut down delay time) is how long an outage may last and still count as momentary, and DOMT (delay on make time) is how long the relay holds its contacts open after power returns before letting the motor restart, so a whole plant does not slam back on at once. An A/B selector matches the relay to whichever way the external sequence is wired, and a TEST button simulates an outage for preventive maintenance. Plugs into a standard 8-pin socket. The unit SAV stocks is the CF7, the analogue knob-set version on 110/115/120 VAC.",
+  "description": "Schneider / Samwha EOCR SDDR-CF7 shutdown auto restart relay. It solves the problem of having to restart every motor on a line by hand after a process trips on a brief voltage dip. Two settings do the work: SDDT (shut down delay time) is how long an outage may last and still count as momentary, and DOMT (delay on make time) is how long the relay holds its contacts open after power returns before letting the motor restart, so a whole plant does not slam back on at once. An A/B selector matches the relay to whichever way the external sequence is wired, and a TEST button simulates an outage for preventive maintenance. Plugs into a standard 8-pin socket. The unit SAV stocks is the CF7, the analogue knob-set version on 110/115/120 VAC.",
   "feature_groups": [
    {
     "title": "Main Feature",
@@ -11015,12 +11015,16 @@
   "needs_review": false,
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": "/docs/da0b121a01_SDDR-CF7_stock_photo_front.jpg",
+  "local_photo_path": "/docs/f64618d95c_SDDR-CF7_stock_photo_front.jpg",
   "image_confirmed_unavailable": false,
   "extra_photos": [
    {
-    "path": "/docs/fb824b708a_SDDR-CF7_stock_photo_socket.jpg",
-    "caption": "ภาพถ่ายจริงจากสต็อก SAV — ด้านหน้าตั้งค่า SDDT/DOMT และด้านหลังขาเสียบซ็อกเก็ต 8 ขา คลิกเพื่อดูภาพเต็ม"
+    "path": "/docs/4ce7f24f6f_SDDR-CF7_stock_photo_socket.jpg",
+    "caption": "ภาพถ่ายจริงจากสต็อก SAV — ด้านหน้าตั้งค่า SDDT/DOMT, ด้านหลังขาเสียบ 8 ขา และซ็อกเก็ต KH-KTS-8 ที่ให้มาด้วย คลิกเพื่อดูภาพเต็มและอ่านป้ายพิกัด"
+   },
+   {
+    "path": "/docs/d1d320fd9d_SDDR-CF7_stock_photo_socket_base.jpg",
+    "caption": null
    }
   ],
   "documents": [
@@ -11040,6 +11044,6 @@
   "category": null,
   "in_stock": null,
   "your_price": null,
-  "your_notes": "รีเลย์รีสตาร์ทอัตโนมัติหลังไฟดับชั่วขณะ (順間停電 / 순간정전 재기동) — แก้ปัญหาไฟตกแวบเดียวแล้วต้องไปกดสตาร์ทมอเตอร์ใหม่ทีละตัว | SDDT = ไฟต้องกลับมาภายในเวลานี้ถึงจะรีสตาร์ทอัตโนมัติ (0.5–5 วินาที) | DOMT = หน่วงก่อนต่อหน้าสัมผัสกลับ (Off, 1–30 วินาที) ใช้ทยอยสตาร์ทมอเตอร์ไม่ให้ขึ้นพร้อมกัน | สวิตช์ A/B เลือกให้ตรงกับวงจรควบคุมเดิม กดปุ่ม TEST จำลองไฟดับเพื่อตรวจสอบได้ | ตัวที่มีในสต็อกเป็น CF7 ไฟเลี้ยง 110/115/120VAC เสียบซ็อกเก็ต 8 ขา (KH-KTS-8 / K2CF08 / PS-08) | ⚠ ถ้าระบบมีฮาร์มอนิกมาก แรงดันที่ถือว่า \"ไฟดับ\" จะสูงขึ้น ต้องเผื่อไว้"
+  "your_notes": "รีเลย์รีสตาร์ทอัตโนมัติหลังไฟดับชั่วขณะ — แก้ปัญหาไฟตกแวบเดียวแล้วต้องไปกดสตาร์ทมอเตอร์ใหม่ทีละตัว | SDDT = ไฟต้องกลับมาภายในเวลานี้ถึงจะรีสตาร์ทอัตโนมัติ (0.5–5 วินาที) | DOMT = หน่วงก่อนต่อหน้าสัมผัสกลับ (Off, 1–30 วินาที) ใช้ทยอยสตาร์ทมอเตอร์ไม่ให้ขึ้นพร้อมกัน | สวิตช์ A/B เลือกให้ตรงกับวงจรควบคุมเดิม กดปุ่ม TEST จำลองไฟดับเพื่อตรวจสอบได้ | ตัวที่มีในสต็อกเป็น CF7 ไฟเลี้ยง 110/115/120VAC เสียบซ็อกเก็ต 8 ขา (KH-KTS-8 / K2CF08 / PS-08) | ⚠ ถ้าระบบมีฮาร์มอนิกมาก แรงดันที่ถือว่า \"ไฟดับ\" จะสูงขึ้น ต้องเผื่อไว้"
  }
 ]
