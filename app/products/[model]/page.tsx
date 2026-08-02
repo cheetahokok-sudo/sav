@@ -29,10 +29,22 @@ type Product = {
   specs?: SpecGroup[];
   oem?: boolean;
   local_photo_path: string | null;
+  // Real photos of the stock SAV actually holds, shown under the catalog
+  // render. A buyer trusts "here is the unit on our shelf" in a way a
+  // manufacturer illustration cannot earn. Optional and additive: a product
+  // with none behaves exactly as before.
+  extra_photos?: { path: string; caption?: string | null }[];
   documents: Doc[];
   in_stock: boolean | null;
   your_notes: string | null;
 };
+
+// Every image of a product, catalog render first, real stock photos after.
+function allPhotos(p: Product): string[] {
+  return [p.local_photo_path, ...(p.extra_photos ?? []).map((x) => x.path)].filter(
+    (x): x is string => Boolean(x),
+  );
+}
 
 function loadAll(): Product[] {
   const p = path.join(process.cwd(), "public", "products", "index.json");
@@ -61,7 +73,7 @@ export async function generateMetadata(
       description,
       url: `/products/${p.model_number}/`,
       type: "website",
-      ...(p.local_photo_path ? { images: [p.local_photo_path] } : {}),
+      ...(allPhotos(p).length ? { images: allPhotos(p) } : {}),
     },
   };
 }
@@ -105,8 +117,8 @@ export default async function ProductDetail(
     mpn: p.model_number,
     brand: { "@type": "Brand", name: brand },
     description: p.description,
-    ...(p.local_photo_path
-      ? { image: `https://savautomation.com${p.local_photo_path}` }
+    ...(allPhotos(p).length
+      ? { image: allPhotos(p).map((x) => `https://savautomation.com${x}`) }
       : {}),
     offers: {
       "@type": "Offer",
@@ -151,16 +163,54 @@ export default async function ProductDetail(
         {/* hero card */}
         <div className="bg-white border border-gray-200 border-t-[3px] border-t-brand rounded p-8 mb-6">
           <div className="grid md:grid-cols-[280px_1fr] gap-8 items-start">
-            <div className="bg-gray-50 border border-gray-100 rounded flex items-center justify-center p-4">
-              {p.local_photo_path ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={`${BASE}${p.local_photo_path}`}
-                  alt={p.model_number}
-                  className="max-h-[240px] w-auto object-contain"
-                />
-              ) : (
-                <span className="text-6xl opacity-20 py-16">⚙️</span>
+            <div>
+              <div className="bg-gray-50 border border-gray-100 rounded flex items-center justify-center p-4">
+                {p.local_photo_path ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={`${BASE}${p.local_photo_path}`}
+                    alt={p.model_number}
+                    className="max-h-[240px] w-auto object-contain"
+                  />
+                ) : (
+                  <span className="text-6xl opacity-20 py-16">⚙️</span>
+                )}
+              </div>
+              {/* Real stock photos. Plain links to the full-size file rather
+                  than a JS lightbox — the reason to open one is to read the
+                  rating label, and the browser's own image viewer zooms
+                  better than anything worth writing here. */}
+              {p.extra_photos && p.extra_photos.length > 0 && (
+                <div className="mt-3">
+                  <p className="font-display text-[10px] font-bold tracking-[0.15em] uppercase text-gray-500 mb-2">
+                    ภาพสินค้าจริง
+                  </p>
+                  <div className="grid grid-cols-3 gap-2">
+                    {p.extra_photos.map((ph) => (
+                      <a
+                        key={ph.path}
+                        href={`${BASE}${ph.path}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block bg-gray-50 border border-gray-200 rounded overflow-hidden hover:border-brand transition-colors"
+                        title={ph.caption || `${p.model_number} — ภาพสินค้าจริง`}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={`${BASE}${ph.path}`}
+                          alt={ph.caption || `${p.model_number} ภาพสินค้าจริง`}
+                          loading="lazy"
+                          className="w-full h-16 object-cover"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                  {p.extra_photos.some((ph) => ph.caption) && (
+                    <p className="text-[11px] text-gray-500 mt-2 leading-snug">
+                      {p.extra_photos.find((ph) => ph.caption)?.caption}
+                    </p>
+                  )}
+                </div>
               )}
             </div>
             <div>

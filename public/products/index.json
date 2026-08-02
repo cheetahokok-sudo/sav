@@ -2615,9 +2615,15 @@
   "source_url": "https://www.se.com/eg/en/product/3DM2-WRDUWZ/protection-relay-eocr-digital-0-5-to-60a-100-to-240vac-dc-window-connt-for-motor-protection/",
   "scraped_at": "2026-06-28T03:28:53.761198+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": true,
   "your_price": null,
-  "your_notes": null
+  "your_notes": null,
+  "extra_photos": [
+   {
+    "path": "/docs/af960b3d3d_3DM2-WRDUWZ_stock_photo.jpg",
+    "caption": "ภาพถ่ายจริงจากสต็อก SAV — คลิกเพื่อดูภาพเต็มและอ่านป้ายพิกัด"
+   }
+  ]
  },
  {
   "model_number": "3MZ2-WRAUWZ",
