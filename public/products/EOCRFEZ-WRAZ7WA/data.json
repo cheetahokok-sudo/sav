@@ -1,0 +1,115 @@
+{
+ "model_number": "EOCRFEZ-WRAZ7WA",
+ "title": "EOCRFEZ-WRAZ7WA - EOCR-FEZ digital over current relay with ground fault, 0.5–60 A, 85–250 V AC/DC",
+ "range_name": "EOCR",
+ "brand": "Samwha EOCR",
+ "series": "EOCR-FDE / FEZ",
+ "base_model": "EOCRFEZ",
+ "range_short_desc": "Digital over-current relay with ground-fault protection",
+ "description": "EOCR-FEZ digital over current relay with a separate ground-fault element, separate-display (remote panel) type. Protects against over-current, under-current, phase loss, phase unbalance, phase reversal, locked rotor and ground fault, with a digital ammeter and trip-cause indication. This variant: current range 0.5–60 A, control voltage 85–250 V AC/DC. Output is a 1-SPST overload contact (97-98) plus a dedicated ground-fault relay (57-58), with the ZCT wired to Z1-Z2.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "MCU based",
+    "3 integral current transformers",
+    "Digital ammeter and trip-cause indication",
+    "Selectable trip time characteristics (inverse or definite)",
+    "Independently adjustable starting trip delay (D-TIME) and trip time (O-TIME)",
+    "Ground fault protection (EOCR-FEZ)"
+   ]
+  },
+  {
+   "title": "Protection functions",
+   "items": [
+    "Over current",
+    "Under current",
+    "Phase loss",
+    "Phase unbalance",
+    "Phase reversal",
+    "Locked rotor",
+    "Ground fault"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "This variant (as marked on the box)",
+   "rows": [
+    "Model : EOCRFEZ-WRAZ7WA",
+    "Current range : 0.5–60 A",
+    "Control voltage : 85–250 V AC/DC",
+    "Origin : Made in South Korea"
+   ]
+  },
+  {
+   "group": "Terminals",
+   "rows": [
+    "A1(+), A2 : control supply",
+    "Z1, Z2 : ZCT input",
+    "97, 98 : OL/UL output contact",
+    "57, 58 : GR (ground fault) output contact"
+   ]
+  },
+  {
+   "group": "Specification (family, per catalog)",
+   "rows": [
+    "Start time setting (D-TIME) : 1–200 sec",
+    "Trip time setting (O-TIME), inverse : 1–30",
+    "Trip time setting (O-TIME), definite : 0.2–30 sec",
+    "Control voltage (family) : 24 V AC/DC, 110 V AC ±15 %, 220 V AC ±15 %",
+    "Contact rating : 3 A / 250 V AC resistive",
+    "Time characteristic In/tc mode : inverse (curve 1)",
+    "Time characteristic dE/tc mode : definite (curve 2)",
+    "Trip indication : LED display (SSD + LED)",
+    "Current sensing : 3-CT",
+    "Mounting : 35 mm DIN rail"
+   ]
+  },
+  {
+   "group": "Protection and trip time",
+   "rows": [
+    "Over current : O-TIME",
+    "Under current : 0.5–30 sec",
+    "Phase loss : 3 sec",
+    "Phase unbalance : 8 sec",
+    "Phase reversal : 0.1–0.3 sec",
+    "Locked rotor : D-TIME",
+    "Ground fault : 0.05–10 sec"
+   ]
+  },
+  {
+   "group": "Note from catalog",
+   "rows": [
+    "An external CT should be used when the inverse curve (tc In setting) is applied above 10 A."
+   ]
+  },
+  {
+   "group": "Ground fault (family, per catalog)",
+   "rows": [
+    "Ground fault current setting : type A 0.02–3 A / type B 0.2–10 A",
+    "Contact rating OL : 1-SPST",
+    "AL/GR : ground fault relay"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/b76ecd63fe_EOCR-FEZ.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "EOCR-FDE / FEZ Catalog page (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/33309b1327_EOCR_FEZ_p15.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": true,
+ "your_price": null,
+ "your_notes": "รุ่นเก่าที่ SAV ยังจำหน่ายอยู่ — มีฟังก์ชันตรวจไฟรั่วลงดิน (Ground Fault) ต้องใช้คู่กับ ZCT ต่อที่ขั้ว Z1-Z2"
+}

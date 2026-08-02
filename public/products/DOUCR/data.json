@@ -8,7 +8,7 @@
  "source_url": null,
  "scraped_at": "2026-08-01T00:00:00+00:00",
  "category": null,
- "in_stock": null,
+ "in_stock": true,
  "your_price": null,
  "your_notes": "รีเลย์ตัวเดียวป้องกันได้ทั้งกระแสเกินและกระแสขาด (Over + Under Current) เหมาะกับปั๊มและงานที่กลัวทั้งโหลดเกินและรันตัวเปล่า",
  "model_number": "DOUCR",
@@ -103,6 +103,11 @@
    "label": "Product datasheet (PDF)",
    "official_url": null,
    "local_path": "/docs/cff69afa11_DOUCR_SAV.pdf"
+  },
+  {
+   "label": "User manual — uDOUCR REV20121020-1 (PDF)",
+   "official_url": null,
+   "local_path": "/docs/979a8f78b7_uDO_UCR_REV20121020-1.pdf"
   }
  ]
 }
