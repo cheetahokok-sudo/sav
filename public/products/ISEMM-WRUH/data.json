@@ -119,8 +119,8 @@
  "oem": false,
  "needs_review": false,
  "end_of_sale": null,
- "official_image_url": null,
- "local_photo_path": "/docs/34f7e7deab_ISEMM-WRUH_stock_photo.jpg",
+ "official_image_url": "https://download.schneider-electric.com/files?p_Doc_Ref=ISEMM-WRUH_IMG&p_File_Type=rendition_369_jpg",
+ "local_photo_path": "/docs/f6ac5fdfa0_ISEMM-WRUH_catalog_photo.jpg",
  "image_confirmed_unavailable": false,
  "documents": [
   {
@@ -144,5 +144,11 @@
  "category": null,
  "in_stock": true,
  "your_price": null,
- "your_notes": "พร้อมส่ง — EOCR-iSEM รุ่น iSEMM วัดทั้งกระแส แรงดัน และกำลังไฟฟ้า ตั้งกระแส 0.5–100A (เส้นโค้ง inverse/thermal 0.5–60A) ระบบ 3 เฟส 110–690V ไฟเลี้ยง 100–240VAC สื่อสาร Modbus-RTU RS-485 และมีเอาต์พุต 4–20mA | ตัวเครื่องติดหลังตู้ ใช้คู่กับจอ sPDM ขนาด 72×72 มม. (ในภาพมีจอมาด้วย) | ⚠ แนะนำให้ใส่ฟิวส์ gG 0.5–1A (500–690V) ที่ขา LV1–LV3 ตามคำเตือนบนตัวเครื่อง"
+ "your_notes": "พร้อมส่ง — EOCR-iSEM รุ่น iSEMM วัดทั้งกระแส แรงดัน และกำลังไฟฟ้า ตั้งกระแส 0.5–100A (เส้นโค้ง inverse/thermal 0.5–60A) ระบบ 3 เฟส 110–690V ไฟเลี้ยง 100–240VAC สื่อสาร Modbus-RTU RS-485 และมีเอาต์พุต 4–20mA | ตัวเครื่องติดหลังตู้ ใช้คู่กับจอ sPDM ขนาด 72×72 มม. (ในภาพมีจอมาด้วย) | ⚠ แนะนำให้ใส่ฟิวส์ gG 0.5–1A (500–690V) ที่ขา LV1–LV3 ตามคำเตือนบนตัวเครื่อง",
+ "extra_photos": [
+  {
+   "path": "/docs/34f7e7deab_ISEMM-WRUH_stock_photo.jpg",
+   "caption": "ภาพถ่ายจริงจากสต็อก SAV — พร้อมกล่องและจอแสดงผล sPDM คลิกเพื่อดูภาพเต็มและอ่านป้ายพิกัด"
+  }
+ ]
 }
