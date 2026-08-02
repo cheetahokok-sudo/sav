@@ -77,7 +77,9 @@ export const LOAD_TYPES: Record<
   overhauling: {
     nameTh: "Overhauling Load",
     behaviourTh: "โหลดขับมอเตอร์กลับ มอเตอร์กลายเป็นเครื่องกำเนิดชั่วขณะ",
-    riskTh: "แรงดันย้อนกลับ, ความเร็วเกิน, เบรกไม่อยู่",
+    // "พลังงานไหลย้อนกลับ" not "แรงดันย้อนกลับ": what comes back is power,
+    // which shows up as DC-bus overvoltage on a drive — not a reversed voltage.
+    riskTh: "พลังงานไหลย้อนกลับ, ความเร็วเกิน, เบรกไม่อยู่",
   },
   "constant-power": {
     nameTh: "Constant Power",
@@ -251,6 +253,11 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
     recommended: ["undercurrent", "unbalance", "ground-fault"],
     conditional: [
       { fn: "start-delay", whenTh: "ท่อยาวหรือใช้เวลาไล่อากาศนานตอนสตาร์ต" },
+      {
+        fn: "stall-locked-rotor",
+        whenTh:
+          "ปั๊มน้ำเสียหรือปั๊มที่มีเศษวัสดุพันใบพัดจนล็อกได้ (จึงมีใบพัดแบบ Chopper และ Vortex ขาย) — ปั๊มน้ำสะอาดทั่วไปไม่จำเป็น",
+      },
       {
         fn: "external-sensor-interlock",
         whenTh:
@@ -441,6 +448,339 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
     articleSlug: "belt-conveyor-motor-protection",
     industries: [],
   },
+  {
+    // The third answer to "what happens when you close the discharge".
+    // Rotodynamic pumps have a shut-off point on their curve; a positive
+    // displacement machine has fixed displacement per revolution, so closing
+    // the discharge does not reduce flow, it raises pressure — and power
+    // follows the pressure ratio with nothing bounding it but the relief
+    // valve. That is why external-sensor-interlock is REQUIRED here and only
+    // conditional on the pumps.
+    id: "screw-air-compressor",
+    nameTh: "เครื่องอัดอากาศแบบสกรู",
+    nameEn: "Rotary screw air compressor",
+    loadType: "positive-displacement",
+    failureModes: [
+      {
+        id: "blocked-discharge",
+        nameTh: "ทางส่งปิดหรืออุดตัน",
+        currentSignatureTh:
+          "กระแส **สูงขึ้นตามความดันด้านส่ง** และ **ไม่มีจุดสูงสุดในตัวเอง** ต่างจากปั๊มที่กราฟกำลังมีเพดาน",
+        fieldSymptomTh: "ความดันขึ้นเร็วผิดปกติ วาล์วนิรภัยระบาย เสียงและอุณหภูมิด้านส่งเปลี่ยนชัดเจน",
+        detection: ["external-sensor-interlock", "overload"],
+        caveatTh:
+          "**รีเลย์กระแสไม่ใช่อุปกรณ์นิรภัยด้านความดัน** ด่านหลักคือวาล์วนิรภัยกับสวิตช์ความดัน และเมื่อวาล์วนิรภัยระบายเป็นจังหวะ กระแสจะขึ้น–ลงสลับจนอาจไม่ค้างสูงนานพอให้รีเลย์ทริปเลย",
+      },
+      {
+        id: "separator-clogged",
+        nameTh: "ไส้กรองแยกน้ำมันตัน (Separator ΔP)",
+        currentSignatureTh:
+          "กระแส **สูงขึ้น ทั้งที่เกจความดันในไลน์อ่านได้ปกติ** เพราะแอร์เอนด์ต้องอัดสูงกว่าไลน์เท่ากับ ΔP ที่คร่อมไส้กรอง",
+        fieldSymptomTh: "ค่าไฟต่อลมที่ผลิตได้สูงขึ้นเรื่อย ๆ อุณหภูมิสูงขึ้น อาจมีน้ำมันหลุดไปกับลม",
+        detection: ["overload", "external-sensor-interlock"],
+        caveatTh:
+          "เป็น “ทางส่งตันอยู่ข้างในเครื่อง” — ช่างดูเกจไลน์แล้วสรุปว่าปกติ ตัวชี้ขาดคือเกจ ΔP คร่อมไส้กรองแยก ไม่ใช่เกจไลน์",
+      },
+      {
+        id: "inlet-filter-clogged",
+        nameTh: "กรองอากาศขาเข้าตัน",
+        currentSignatureTh:
+          "กระแส **ลดลงเล็กน้อย** เพราะอากาศขาเข้าถูกหรี่ มวลอากาศต่อรอบจึงลดลง",
+        fieldSymptomTh: "ลมที่ได้ต่อชั่วโมงลดลง เวลาเติมถังนานขึ้น สุญญากาศที่ด้านหน้ากรองสูงขึ้น",
+        detection: ["external-sensor-interlock"],
+        caveatTh:
+          "**ทิศทางตรงข้ามกับไส้กรองแยกตัน** — จุดตันสองจุดในเครื่องเดียวกันให้กระแสคนละทาง และค่าที่เปลี่ยนอยู่ระดับไม่กี่เปอร์เซ็นต์ ซึ่งจมอยู่ในความแปรปรวนปกติ **จึงห้ามตั้ง Undercurrent เพื่อหวังจับอาการนี้**",
+      },
+      {
+        id: "start-against-pressure",
+        nameTh: "สตาร์ตขณะยังมีความดันค้าง (Blowdown ไม่ทำงาน)",
+        currentSignatureTh: "กระแสสตาร์ตสูงค้างนานกว่าปกติมาก บางครั้งไม่เร่งขึ้นจนเข้าเขตมอเตอร์ค้าง",
+        fieldSymptomTh: "สตาร์ตแล้วครางแต่ไม่ขึ้นรอบ มักเกิดเมื่อสั่งเดินใหม่เร็วเกินไปหลังเพิ่งหยุด",
+        detection: ["start-delay", "stall-locked-rotor"],
+        caveatTh:
+          "**อย่าแก้ด้วยการยืด D-Time** เครื่องสกรูออกแบบให้สตาร์ตขณะไม่มีภาระ ถ้าเวลาเร่งยาวขึ้นแปลว่าวาล์วระบายความดันค้างหรือเวลาหยุดขั้นต่ำยังไม่ครบ",
+      },
+      {
+        id: "drive-loss",
+        nameTh: "คัปปลิ้งหรือสายพานขับขาด",
+        currentSignatureTh: "กระแสตกลงสู่ระดับเดินตัวเปล่าและค้างอยู่",
+        fieldSymptomTh: "มอเตอร์หมุนแต่ไม่มีลมออก ความดันในถังไม่ขึ้น",
+        detection: ["undercurrent"],
+        caveatTh:
+          "**การควบคุมแบบโหลด–อันโหลดทำให้แยกไม่ออก** เพราะตอนอันโหลดกระแสก็ตกลงอยู่แล้ว ต้องอินฮิบิต Undercurrent ขณะอันโหลด หรือตั้งต่ำกว่ากระแสตอนอันโหลดแล้วยอมรับว่ามองไม่เห็นช่วงนั้น",
+      },
+      {
+        id: "overheat-cooling",
+        nameTh: "ระบายความร้อนไม่พอ (คูลเลอร์ตัน น้ำมันต่ำ ห้องอับ)",
+        currentSignatureTh: "กระแส **แทบไม่เปลี่ยน** ความเสียหายเดินไปทางอุณหภูมิ ไม่ใช่ทางกระแส",
+        fieldSymptomTh: "อุณหภูมิด้านส่งสูงขึ้น เครื่องตัดตัวเองด้วยเทอร์โมสตัท น้ำมันเสื่อมเร็ว",
+        detection: ["external-sensor-interlock"],
+        caveatTh:
+          "รีเลย์กระแสไม่มีทางเห็นอาการนี้เลย สวิตช์อุณหภูมิของตัวเครื่องคือด่านเดียว และห้าม bypass เพื่อให้เดินต่อ",
+      },
+    ],
+    required: ["overload", "phase-loss", "start-delay", "external-sensor-interlock"],
+    recommended: ["unbalance", "stall-locked-rotor"],
+    conditional: [
+      {
+        fn: "undercurrent",
+        whenTh:
+          "ต้องจับคัปปลิ้งหรือสายพานขาด และตั้งได้ต่ำกว่ากระแสตอนอันโหลดจริง หรืออินฮิบิตขณะอันโหลดได้",
+      },
+      {
+        fn: "start-count",
+        whenTh:
+          "ควบคุมแบบสตาร์ต–หยุด หรือสั่งเดินเองหลังไฟดับ — จำกัดตามจำนวนครั้งต่อชั่วโมงและเวลาหยุดขั้นต่ำที่คู่มือกำหนด",
+      },
+      { fn: "ground-fault", whenTh: "ติดตั้งกลางแจ้ง ในห้องชื้น หรือมอเตอร์ที่เคยพันใหม่" },
+    ],
+    articleSlug: "screw-air-compressor-motor-protection",
+    industries: [],
+  },
+  {
+    // Same physics as the screw at the discharge, different physics inside the
+    // measuring window: torque swings between near zero and a sharp peak
+    // within every revolution, at a frequency slow enough to sit inside a
+    // relay's RMS window. That is the whole reason this is a separate entry.
+    id: "reciprocating-air-compressor",
+    nameTh: "เครื่องอัดอากาศแบบลูกสูบ",
+    nameEn: "Reciprocating (piston) air compressor",
+    loadType: "pulsating",
+    failureModes: [
+      {
+        id: "start-against-pressure",
+        nameTh: "สตาร์ตขณะยังมีความดันค้างที่หัวสูบ",
+        currentSignatureTh: "กระแสสตาร์ตสูงค้างนานผิดปกติ บางครั้งไม่เร่งขึ้นเลย",
+        fieldSymptomTh: "สตาร์ตแล้วครางอยู่กับที่ พบบ่อยเมื่อวาล์วปลดภาระหรือเช็ควาล์วไม่ระบายความดัน",
+        detection: ["stall-locked-rotor", "start-delay"],
+        caveatTh:
+          "แยกจาก “แรงดันตกที่ปลายสาย” ด้วยกระแสอย่างเดียวไม่ได้ ทั้งสองอย่างทำให้สตาร์ตไม่ขึ้นเหมือนกัน ต้องวัดแรงดันที่ขั้วมอเตอร์ขณะสตาร์ตประกอบเสมอ",
+      },
+      {
+        id: "blocked-discharge",
+        nameTh: "ทางส่งปิดหรืออุดตัน",
+        currentSignatureTh:
+          "กระแส **สูงขึ้น** และ **ค่ายอดต่อรอบสูงขึ้นเร็วกว่าค่า RMS**",
+        fieldSymptomTh: "วาล์วนิรภัยระบายเป็นจังหวะ หัวสูบร้อนจัด เสียงเปลี่ยน",
+        detection: ["external-sensor-interlock", "overload"],
+        caveatTh:
+          "เมื่อวาล์วนิรภัยระบายเป็นจังหวะ กระแสจะขึ้น–ลงสลับ **รีเลย์อาจไม่เคยเห็นค่าสูงค้างนานพอจะทริปเลย** ทั้งที่เครื่องกำลังเสียหาย ด่านที่ถูกคือสวิตช์ความดันกับวาล์วนิรภัย",
+      },
+      {
+        id: "valve-plate-leak",
+        nameTh: "ลิ้น/แผ่นวาล์วรั่ว หรือปะเก็นฝาสูบแตก",
+        currentSignatureTh: "กระแส **ลดลง** เพราะงานที่ทำได้ต่อรอบลดลง ทั้งที่เครื่องกำลังเสีย",
+        fieldSymptomTh: "เวลาเติมถังนานขึ้นมาก หัวสูบร้อนผิดปกติ ลมที่ได้ต่อชั่วโมงตก",
+        detection: ["undercurrent", "external-sensor-interlock"],
+        caveatTh:
+          "**อาการเสียที่ทำให้กระแส “ดูดีขึ้น”** ค่า Undercurrent ที่ตั้งไว้จับสายพานขาดจะต่ำเกินกว่าจะเห็น ตัวชี้ขาดคือเวลาเติมถังเทียบกับตอนเครื่องยังดี และอุณหภูมิหัวสูบ",
+      },
+      {
+        id: "belt-slip-break",
+        nameTh: "สายพานลื่นหรือขาด",
+        currentSignatureTh: "ลื่น: กระแสต่ำกว่าที่ควรเป็น · ขาด: ตกสู่ระดับเดินตัวเปล่าทันที",
+        fieldSymptomTh: "มีเสียงลื่นและฝุ่นยาง ล้อช่วยแรงหมุนช้ากว่าปกติ หรือไม่หมุนเลย",
+        detection: ["undercurrent"],
+        caveatTh:
+          "สายพานลื่น วาล์วรั่ว และการเดินตอนปลดภาระ ให้กระแสต่ำเหมือนกันหมด แยกได้จากความเร็วล้อช่วยแรงและเวลาเติมถัง ไม่ใช่จากค่ากระแส",
+      },
+      {
+        id: "short-cycling",
+        nameTh: "สตาร์ต–หยุดถี่เกิน (ถังเล็ก ระบบรั่ว ช่วงความดันแคบ)",
+        currentSignatureTh: "กระแสตอนเดินปกติดี แต่มีช่วงกระแสสตาร์ตซ้ำถี่ตลอดกะ",
+        fieldSymptomTh: "เครื่องตัด–ต่อทุกไม่กี่นาที มอเตอร์ร้อนสะสมทั้งที่ไม่เคยทริป",
+        detection: ["start-count"],
+        caveatTh:
+          "แบบจำลองความร้อนของ Overload มองไม่เห็น เพราะระหว่างรอบกระแสกลับมาปกติหมด ความร้อนมาจากกระแสสตาร์ตซ้ำ ๆ ที่โรเตอร์ และต้นเหตุจริงมักคือรอยรั่วในระบบลมหรือถังเล็กเกิน",
+      },
+      {
+        id: "uneven-pulsation",
+        nameTh: "แรงบิดเต้นรุนแรงผิดปกติ (สูบทำงานไม่เท่ากัน ล้อช่วยแรงหลวม)",
+        currentSignatureTh:
+          "กระแสเต้นตามรอบข้อเหวี่ยงลึกกว่าเดิม และค่ารายเฟสอ่านได้ต่างกันชั่วขณะ **ทั้งที่แหล่งจ่ายสมดุลดี**",
+        fieldSymptomTh: "สั่นแรงขึ้น ฐานแท่นคลอน เสียงเครื่องไม่สม่ำเสมอ",
+        detection: ["unbalance", "external-sensor-interlock"],
+        caveatTh:
+          "**ก่อนสรุปว่าไฟไม่สมดุล ต้องแยกให้ออกก่อนว่าเป็นแรงบิดเต้นหรือไม่** — เดินตอนปลดภาระ หรือถอดสายพานแล้วเดินมอเตอร์เปล่า แล้วอ่านซ้ำ ถ้าเป็นปัญหาฝั่งไฟจะยังอยู่ ถ้าเป็นภาพหลอกจากแรงบิดจะหายไป และต้องวัดแรงดันสามเฟสประกอบเสมอ",
+      },
+    ],
+    required: ["overload", "phase-loss", "start-delay", "external-sensor-interlock"],
+    recommended: ["start-count", "unbalance", "stall-locked-rotor"],
+    conditional: [
+      {
+        fn: "undercurrent",
+        whenTh:
+          "ขับด้วยสายพานและต้องจับสายพานขาด — ตั้งได้เฉพาะเมื่อกระแสเดินปกติกับตอนปลดภาระห่างกันพอ",
+      },
+      { fn: "ground-fault", whenTh: "ติดตั้งกลางแจ้ง ในที่ชื้น หรือมอเตอร์เก่า/พันใหม่" },
+    ],
+    articleSlug: "reciprocating-air-compressor-motor-protection",
+    industries: [],
+  },
+  {
+    // The machine where "how high" tells you nothing and "how long" tells you
+    // everything: a normal feed peak and the first instant of a real jam are
+    // the same current. And when the mechanical fuse does its job, current
+    // goes DOWN while the chamber is packed solid.
+    id: "crusher-mill",
+    nameTh: "เครื่องบด / เครื่องย่อย",
+    nameEn: "Crusher / hammer mill",
+    loadType: "shock",
+    failureModes: [
+      {
+        id: "jam-stall",
+        nameTh: "ติดค้างจริง (ของแข็งเข้าเครื่อง)",
+        currentSignatureTh:
+          "กระแสพุ่งขึ้นแล้ว **ค้างสูง ไม่กลับลงมาเอง** และความเร็วไม่คืนตัว",
+        fieldSymptomTh: "เครื่องหยุดหรือหมุนช้าลงชัดเจน มีเสียงผิดปกติและกลิ่นไหม้จากสายพานขับ",
+        detection: ["stall-locked-rotor", "overload"],
+        caveatTh:
+          "**ในวินาทีแรกเหมือนกระแสกระชากตามปกติทุกประการ** สิ่งเดียวที่แยกได้จากกระแสคือ “นานแค่ไหน” ไม่ใช่ “สูงแค่ไหน” จึงต้องยอมให้มีหน่วงเวลาสั้น ๆ ก่อนตัด ตัวที่แยกได้ทันทีคือสวิตช์ความเร็วที่เพลาเครื่องบด",
+      },
+      {
+        id: "mechanical-fuse-slip",
+        nameTh: "ฟิวส์ทางกลทำงาน (สายพานวีลื่น โทเกิลเพลตหัก สลักเฉือนขาด วาล์วปลดแรงดัน)",
+        currentSignatureTh:
+          "กระแส **ตกลง ทั้งที่เครื่องกำลังติดค้าง** เพราะมอเตอร์หมุนอยู่แต่ไม่ได้ขับอะไรแล้ว",
+        fieldSymptomTh: "ห้องบดเต็มแน่นแต่มอเตอร์เดินเบา มีควันหรือกลิ่นไหม้จากสายพาน",
+        detection: ["undercurrent", "external-sensor-interlock"],
+        caveatTh:
+          "**กรณีที่ Overload และ Stall มองไม่เห็นอะไรเลย** เพราะกระแสลด ไม่ได้เพิ่ม และ Undercurrent เองก็แยก “ฟิวส์ทางกลทำงาน” ออกจาก “ช่วงไม่มีวัตถุดิบป้อน” ไม่ได้ ต้องใช้สวิตช์ความเร็ว",
+      },
+      {
+        id: "start-into-choked-chamber",
+        nameTh: "สตาร์ตขณะมีวัสดุค้างในห้องบด",
+        currentSignatureTh: "กระแสสตาร์ตสูงและยาวกว่าสตาร์ตตัวเปล่ามาก อาจไม่พ้นช่วงเร่งเลย",
+        fieldSymptomTh: "สตาร์ตไม่ขึ้นหลังหยุดฉุกเฉินหรือหลังไฟดับขณะยังป้อนวัสดุอยู่",
+        detection: ["start-delay", "stall-locked-rotor"],
+        caveatTh:
+          "**ทางแก้คือเคลียร์ห้องบด ไม่ใช่ยืด D-Time** — D-Time ที่ยาวขึ้นคือช่วงเวลาที่ Stall ไม่ทำงาน จึงเป็นการเปิดช่องให้มอเตอร์ค้างได้นานขึ้น",
+      },
+      {
+        id: "overfeed-choke",
+        nameTh: "ป้อนวัสดุมากเกิน (Choke feed)",
+        currentSignatureTh: "กระแสสูงต่อเนื่องแต่ยังหมุนอยู่ ความเร็วต่ำกว่าปกติเล็กน้อย",
+        fieldSymptomTh: "วัสดุล้นปากป้อน ผลผลิตหยาบขึ้น มอเตอร์ร้อนสะสม",
+        detection: ["overload", "external-sensor-interlock"],
+      },
+      {
+        id: "worn-hammers-liners",
+        nameTh: "ค้อน ไลเนอร์ หรือฟันบดสึก",
+        currentSignatureTh:
+          "กระแสฐาน **ค่อย ๆ ลดลงเป็นสัปดาห์ถึงเดือน** พร้อมผลผลิตที่หยาบขึ้น",
+        fieldSymptomTh: "ต้องบดซ้ำมากขึ้น ขนาดผลผลิตไม่ผ่านสเปก กำลังผลิตต่อชั่วโมงลด",
+        detection: ["undercurrent", "external-sensor-interlock"],
+        caveatTh:
+          "เป็นแนวโน้มที่ช้าเกินกว่าจะทำเป็นค่าทริป **อย่าตั้ง Undercurrent ให้ตัดจากเรื่องนี้** ใช้เป็นข้อมูลวางแผนบำรุงรักษาแทน โดยจดกระแสฐานตอนใส่ค้อนใหม่ไว้เป็นค่าอ้างอิง",
+      },
+      {
+        id: "ground-fault-dust",
+        nameTh: "ไฟรั่วลงดินจากฝุ่นและแรงสั่นสะเทือน",
+        currentSignatureTh: "กระแสสามเฟสอาจปกติ แต่ผลรวมผ่าน ZCT ไม่เป็นศูนย์",
+        fieldSymptomTh: "ค่าความเป็นฉนวนลดลง มักเริ่มที่จุดสายเข้ามอเตอร์ซึ่งถูกสั่นจนเปื่อย",
+        detection: ["ground-fault"],
+      },
+    ],
+    required: ["overload", "stall-locked-rotor", "start-delay", "phase-loss"],
+    recommended: ["ground-fault", "unbalance", "undercurrent"],
+    conditional: [
+      {
+        fn: "external-sensor-interlock",
+        whenTh:
+          "ต้องมีสวิตช์ความเร็วที่เพลาเครื่องบด อินเตอร์ล็อกกับเครื่องป้อน และสวิตช์ความสั่นสะเทือน โดยเฉพาะเครื่องที่ขับด้วยสายพานวีหรือมีสลักเฉือน ซึ่งเวลาติดค้างกระแสจะลด ไม่ใช่เพิ่ม",
+      },
+      {
+        fn: "start-count",
+        whenTh:
+          "เครื่องที่ถูกสั่งเดิน–หยุดบ่อย เช่น โรงโม่เคลื่อนที่ — ล้อช่วยแรงทำให้การสตาร์ตแต่ละครั้งมีต้นทุนความร้อนสูง",
+      },
+    ],
+    articleSlug: "crusher-hammer-mill-motor-protection",
+    industries: [],
+  },
+  {
+    // The one machine on this list where the most dangerous failure produces
+    // no current signal at all. A slipping brake drops the load while the
+    // motor is not even energised.
+    //
+    // NOTE: undercurrent is deliberately absent from every tier and every
+    // detection list. Low current during a normal lower is correct behaviour,
+    // not a fault, and listing the function would make the Selector recommend
+    // exactly what the article spends a section forbidding.
+    id: "hoist-crane",
+    nameTh: "รอก / เครน",
+    nameEn: "Hoist / crane",
+    loadType: "overhauling",
+    failureModes: [
+      {
+        id: "lowering-regenerative",
+        nameTh: "ลดโหลดลง — โหลดขับมอเตอร์กลับ",
+        currentSignatureTh:
+          "กระแส **ต่ำกว่าตอนยกที่น้ำหนักเท่ากัน** แต่ไม่เป็นศูนย์ และ **ไม่แปรตามน้ำหนักโหลด** เพราะทิศทางของกำลังกลับด้าน ส่วนรีเลย์อ่านได้แค่ขนาด",
+        fieldSymptomTh: "เป็นการทำงานปกติ ไม่ใช่ความผิดปกติ — แต่เป็นภาพที่ทำให้อ่านค่าผิดบ่อยที่สุด",
+        detection: ["external-sensor-interlock"],
+        caveatTh:
+          "**ห้ามตั้ง Undercurrent ให้แปลว่า “โหลดหาย” บนรอก** กระแสต่ำตอนลดโหลดคือพฤติกรรมปกติ และถ้าเป็นรอก VFD ที่ทิ้งพลังงานลงเบรกรีซิสเตอร์ กระแสด้านไลน์จะยิ่งต่ำทั้งที่มอเตอร์ทำงานเต็มแรงบิด — **ตำแหน่งที่คล้อง CT เปลี่ยนคำตอบทั้งหมด**",
+      },
+      {
+        id: "brake-slip",
+        nameTh: "เบรกลื่นหรือผ้าเบรกสึก — โหลดไหลลงเอง",
+        currentSignatureTh:
+          "**ไม่มีสัญญาณใด ๆ ในกระแสเลย** เพราะโหลดไหลลงตอนที่มอเตอร์ไม่ได้จ่ายไฟอยู่ด้วยซ้ำ",
+        fieldSymptomTh: "โหลดค่อย ๆ ไหลลงหลังปล่อยปุ่ม ระยะเบรกยาวขึ้น มีเสียงและกลิ่นผ้าเบรก",
+        detection: ["external-sensor-interlock"],
+        caveatTh:
+          "**อาการที่อันตรายที่สุดของรอก คืออาการที่รีเลย์กระแสมองไม่เห็นเลย** สิ่งที่กันได้คือเบรกแบบสปริงกด–ไฟฟ้าปลด สวิตช์ยืนยันการปลดและจับเบรก การวัดผ้าเบรกและระยะห่างตามรอบ และการทดสอบด้วยน้ำหนักตามกฎหมาย",
+      },
+      {
+        id: "overload-lifting",
+        nameTh: "ยกเกินพิกัด",
+        currentSignatureTh:
+          "กระแสตอนยกสูงขึ้น และถ้ายกไม่ขึ้นจะกลายเป็นกระแสค้างระดับมอเตอร์ค้าง",
+        fieldSymptomTh: "ยกไม่ขึ้นหรือขึ้นช้าผิดปกติ โครงสร้างและรอกมีเสียงลั่น",
+        detection: ["overload", "stall-locked-rotor"],
+        caveatTh:
+          "**กระแสไม่ใช่เครื่องชั่ง** ที่ความเร็วต่ำ ตอนกระตุกทีละนิด และบนรอก VFD กระแสไม่แปรตามน้ำหนักอย่างที่คิด อุปกรณ์จำกัดน้ำหนักจริงคือโหลดเซลล์หรือคลัตช์จำกัดแรงบิด ไม่ใช่รีเลย์",
+      },
+      {
+        id: "brake-not-released",
+        nameTh: "เบรกไม่ปลดแล้วสั่งเดิน",
+        currentSignatureTh: "กระแสค้างที่ระดับมอเตอร์ค้าง โดยที่โหลดไม่ขยับ",
+        fieldSymptomTh: "มอเตอร์ครางอยู่กับที่ ผ้าเบรกไหม้ คอยล์เบรกร้อนจัด",
+        detection: ["stall-locked-rotor", "overload"],
+        caveatTh:
+          "เป็นหนึ่งในไม่กี่อาการของชุดเบรกที่กระแสเห็นชัด แต่เบรกที่ “ปลดไม่หมด” จะลากไปเงียบ ๆ โดยกระแสขึ้นไม่มากพอให้ทริป จึงยังต้องมีสวิตช์ยืนยันการปลดอยู่ดี",
+      },
+      {
+        id: "collector-contact-loss",
+        nameTh: "หน้าสัมผัสรางไฟหรือสายเฟสตองหลุดชั่วขณะ",
+        currentSignatureTh:
+          "กระแสเฟสหนึ่งหายเป็นช่วงสั้น ๆ อีกสองเฟสสูงขึ้นชั่วขณะ ค่าไม่สมดุลกระพริบไปมา",
+        fieldSymptomTh: "คนใช้งานรายงานว่า “รอกไม่มีแรง” หรือสะดุดเป็นช่วง มักสัมพันธ์กับตำแหน่งบนราง",
+        detection: ["phase-loss", "unbalance"],
+        caveatTh:
+          "อาการเป็นแบบชั่วขณะ **ถ้าตั้งหน่วงเวลายาวเกินจะไม่เห็นเลย** และจะถูกรายงานเป็นปัญหาทางกลแทนที่จะเป็นปัญหาทางไฟฟ้า",
+      },
+      {
+        id: "ground-fault-trailing-cable",
+        nameTh: "ไฟรั่วที่สายลากหรือรางไฟ",
+        currentSignatureTh: "กระแสสามเฟสอาจปกติ แต่ผลรวมผ่าน ZCT ไม่เป็นศูนย์",
+        fieldSymptomTh: "สายลากถูกดึงและเสียดสีจนฉนวนเปื่อย มักพบที่จุดงอซ้ำ ๆ และที่ปลายทางเข้า",
+        detection: ["ground-fault"],
+      },
+    ],
+    required: ["overload", "phase-loss", "start-count", "external-sensor-interlock"],
+    recommended: ["stall-locked-rotor", "unbalance", "ground-fault"],
+    conditional: [
+      {
+        fn: "start-delay",
+        whenTh:
+          "ใช้ซอฟต์สตาร์ตหรือรอกสองความเร็วที่ช่วงเร่งยาว — ตั้งสั้นที่สุดเท่าที่สตาร์ตขึ้น เพราะช่วง D-Time คือช่วงที่ Stall ไม่ทำงาน",
+      },
+    ],
+    articleSlug: "hoist-crane-motor-protection",
+    industries: [],
+  },
 ];
 
 const BY_ID = new Map(DRIVEN_EQUIPMENT.map((e) => [e.id, e]));
@@ -517,5 +857,29 @@ for (const e of DRIVEN_EQUIPMENT) {
     throw new Error(
       `driven-equipment: "${e.id}" lists ${dupes[0]} in more than one tier — pick required, recommended or conditional`
     );
+  }
+
+  // Anything named as a detection method must also be named as a function to
+  // fit. Section E says "ตรวจจับด้วย X" and Section F is the list of what to
+  // buy — a function in the first and not the second tells the reader to use
+  // something the same page never tells them to install.
+  //
+  // centrifugal-pump shipped exactly that: clogging was detected by
+  // stall-locked-rotor, which appeared in none of its tiers.
+  //
+  // The reverse is NOT checked, and must not be: a tier entry with no matching
+  // failure-mode row is legitimate and deliberate. unbalance on the pumps and
+  // start-count on the hoist mean "fit this because the failure is real",
+  // whether or not the table happens to enumerate it.
+  const inTiers = new Set<ProtectionFunction>(tiers);
+  for (const fm of e.failureModes) {
+    for (const fn of fm.detection) {
+      if (!inTiers.has(fn)) {
+        throw new Error(
+          `driven-equipment: "${e.id}/${fm.id}" is detected by "${fn}", but "${fn}" is in no tier — ` +
+            `section E would render a chip that section F never tells the reader to fit`
+        );
+      }
+    }
   }
 }

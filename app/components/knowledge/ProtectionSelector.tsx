@@ -38,6 +38,10 @@ const ICONS: Record<string, string> = {
   "axial-propeller-pump": "🌊",
   "centrifugal-fan": "🌀",
   "belt-conveyor": "📦",
+  "screw-air-compressor": "💨",
+  "reciprocating-air-compressor": "🔁",
+  "crusher-mill": "🪨",
+  "hoist-crane": "🏗️",
 };
 
 /** Reads as a sentence in the summary the customer sends us. */

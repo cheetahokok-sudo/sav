@@ -78,6 +78,42 @@ Two deliberate choices in the rows above:
 `IEC 60034-5` (IP code for rotating machines — submersible pump motors) and `ISO 20816-3`
 (industrial machines above 15 kW). Both are named in prose without an edition year or URL.
 
+## Verified — load-types batch 2 (compressors · crusher · hoist)
+
+Checked 2026-08-02 while writing the second load-type batch.
+
+| Standard | Edition / year | URL | Used in |
+|---|---|---|---|
+| IEC 60204-32 | **2023, Ed. 3.0** — Safety of machinery: Electrical equipment of machines, Part 32: Requirements for hoisting machines (supersedes Ed. 2.0:2008) | `webstore.iec.ch/en/publication/63094` | hoist-crane |
+| ISO 1217 | **2009, Ed. 4** + **Amd 1:2016** (isentropic efficiency). 1975 and 1996 editions withdrawn; a new edition is at AWI stage and **not** published | `iso.org/standard/44769.html` | both compressors |
+| ISO 12100 | **2010** — Safety of machinery: General principles for design, risk assessment and risk reduction. Under revision (FDIS expected 2026) but **2010 is still the published edition** | `iso.org/standard/51528.html` | compressors, crusher |
+| ISO 4301-1 | **2016, Ed. 3** — note the title changed to **"Cranes — Classification"**; the 1986 edition was "Cranes and lifting appliances". The 2016 edition classifies by load cycles (A-class) where 1986 was time-based (M-class) — do not mix the two notations | `iso.org/standard/63070.html` | hoist-crane |
+| กฎกระทรวงฯ เครื่องจักร ปั้นจั่น และหม้อน้ำ | **พ.ศ. 2564** — full title read back from the enforcing ministry's own page: "กฎกระทรวงกำหนดมาตรฐานในการบริหาร จัดการ และดำเนินการด้านความปลอดภัย อาชีวอนามัยและสภาพแวดล้อมในการทำงานเกี่ยวกับเครื่องจักร ปั้นจั่น และหม้อน้ำ พ.ศ. 2564" | `labour.go.th/index.php/59597-2564-31` | hoist-crane |
+
+### Checked and deliberately NOT cited
+
+- **ISO 5388 — Stationary air compressors, safety rules and code of practice.** Every source agrees the
+  edition is **1981**, but `iso.org/standard/11424.html` returns HTTP 403 to automated fetching, so its
+  **published-or-withdrawn status could not be read back**. Citing a 44-year-old safety standard whose
+  status is unknown is exactly the failure this file exists to prevent. The compressors lean on
+  **ISO 12100** for the "the safety device is the PRV and the pressure switch, not the relay" framing
+  instead. Re-check by hand if a compressor-specific safety citation is ever needed.
+- **`ratchakitcha.soc.go.th` PDFs return 403** to automated fetching. The Thai crane regulation above is
+  therefore cited to the Department of Labour Protection and Welfare's own listing, which is the
+  enforcing authority and states the full title and year verbatim.
+- **FEM 9.511** (hoist mechanism duty groups 1Bm–5m) is mentioned in prose **undated and uncited** —
+  the FEM publication page was not confirmed. ISO 4301-1:2016 carries the citable duty argument.
+- **EN 1012-1, EN 1009, ISO 21873, ISO 14119, EN 14492-2** were candidates that turned out unnecessary
+  once ISO 12100 and ISO 13850 covered the safety framing. Not checked, so **not citable** without a
+  verification pass.
+
+### Reused unchanged in this batch
+
+`IEC 60947-4-1:2023` (trip class — all four articles) · `วสท. 022001-22` (all four, no URL by
+convention) · `ISO 13850:2015` (crusher emergency stop) · `ISO 20816-3` undated (crusher and
+compressor vibration) · `IEC 60034-1` Ed. 15.0 (2026) for duty types S1–S10, still current as
+recorded above — cited without URL, publication ID never confirmed.
+
 ## Editions confirmed current for the upcoming library
 
 Checked while planning the Motor · Load · Industry library. Re-verify at write time; these were
