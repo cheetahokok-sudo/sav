@@ -1,0 +1,82 @@
+{
+ "model_number": "EUCR-2C",
+ "title": "EUCR-2C - Electronic undercurrent relay, 2 CT, non-fail-safe, 0.5–60 A",
+ "range_name": "EOCR",
+ "brand": "Samwha EOCR",
+ "series": "EUCR (Under Current)",
+ "base_model": "EUCR",
+ "range_short_desc": "Analogue undercurrent (dry-run) relay, two-CT version",
+ "description": "Older analogue EUCR electronic undercurrent relay — the two-CT version, headed simply EUCR in the catalog and known as the 2C alongside its three-CT sibling. Protects pumps and driven loads against under-load and dry running. Non-fail-safe (normally de-energized) operation with a 1-SPDT (1C) changeover output. Current setting 0.5–60 A across three body types, or up to 600 A using the 05 type with external CTs.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Compact design",
+    "Two integral current transformers",
+    "Under-load protection (dry-run protector)",
+    "Wide current adjustment range",
+    "Definite trip time characteristic",
+    "Manual (instantaneous) / electrical (remote) reset",
+    "Ambient insensitive",
+    "Non-fail-safe operation"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "This version",
+   "rows": [
+    "Current sensing : 2 CT",
+    "Contact mode : 1-SPDT (1C)",
+    "Contact status : normally de-energized",
+    "Operation : non-fail-safe"
+   ]
+  },
+  {
+   "group": "Current setting (by type)",
+   "rows": [
+    "05 type : 0.5–6 A",
+    "30 type : 3.0–30 A",
+    "60 type : 5.0–60 A",
+    "100–600 : 05 type fitted to external CT (current ratio 100/5 A – 600/5 A)"
+   ]
+  },
+  {
+   "group": "Specification",
+   "rows": [
+    "Trip time setting (O-TIME) : 0.2–30 sec",
+    "Time-current characteristic : definite",
+    "Reset : manual (instantaneous) / electrical (remote)",
+    "Power supply voltage : 24 V AC/DC, 110 V AC, 220 V AC",
+    "Frequency : 50/60 Hz",
+    "Contact rating : 3 A / 250 V AC resistive",
+    "Mounting : 35 mm DIN rail / panel"
+   ]
+  },
+  {
+   "group": "Protection",
+   "rows": [
+    "Undercurrent (dry-run) : trips after O-TIME"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/6391b434f7_EUCR-2C_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "EUCR / EUCR-3C Catalog page (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/778b0a6439_EUCR_2C_3C_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "รุ่นเก่าแบบอนาล็อก 2 CT หน้าสัมผัส 1C แบบ Normally De-energized (ไม่ fail-safe) — ป้องกันปั๊มรันตัวเปล่า (Dry-run)"
+}

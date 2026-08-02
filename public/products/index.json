@@ -9923,5 +9923,441 @@
   "in_stock": true,
   "your_price": null,
   "your_notes": "รุ่นเก่าที่ SAV ยังจำหน่ายอยู่ — มีฟังก์ชันแจ้งเตือนโหลด (Load Alert) ตั้งได้ 50–100 %"
+ },
+ {
+  "model_number": "EUCR-2C",
+  "title": "EUCR-2C - Electronic undercurrent relay, 2 CT, non-fail-safe, 0.5–60 A",
+  "range_name": "EOCR",
+  "brand": "Samwha EOCR",
+  "series": "EUCR (Under Current)",
+  "base_model": "EUCR",
+  "range_short_desc": "Analogue undercurrent (dry-run) relay, two-CT version",
+  "description": "Older analogue EUCR electronic undercurrent relay — the two-CT version, headed simply EUCR in the catalog and known as the 2C alongside its three-CT sibling. Protects pumps and driven loads against under-load and dry running. Non-fail-safe (normally de-energized) operation with a 1-SPDT (1C) changeover output. Current setting 0.5–60 A across three body types, or up to 600 A using the 05 type with external CTs.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Compact design",
+     "Two integral current transformers",
+     "Under-load protection (dry-run protector)",
+     "Wide current adjustment range",
+     "Definite trip time characteristic",
+     "Manual (instantaneous) / electrical (remote) reset",
+     "Ambient insensitive",
+     "Non-fail-safe operation"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This version",
+    "rows": [
+     "Current sensing : 2 CT",
+     "Contact mode : 1-SPDT (1C)",
+     "Contact status : normally de-energized",
+     "Operation : non-fail-safe"
+    ]
+   },
+   {
+    "group": "Current setting (by type)",
+    "rows": [
+     "05 type : 0.5–6 A",
+     "30 type : 3.0–30 A",
+     "60 type : 5.0–60 A",
+     "100–600 : 05 type fitted to external CT (current ratio 100/5 A – 600/5 A)"
+    ]
+   },
+   {
+    "group": "Specification",
+    "rows": [
+     "Trip time setting (O-TIME) : 0.2–30 sec",
+     "Time-current characteristic : definite",
+     "Reset : manual (instantaneous) / electrical (remote)",
+     "Power supply voltage : 24 V AC/DC, 110 V AC, 220 V AC",
+     "Frequency : 50/60 Hz",
+     "Contact rating : 3 A / 250 V AC resistive",
+     "Mounting : 35 mm DIN rail / panel"
+    ]
+   },
+   {
+    "group": "Protection",
+    "rows": [
+     "Undercurrent (dry-run) : trips after O-TIME"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/6391b434f7_EUCR-2C_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "EUCR / EUCR-3C Catalog page (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/778b0a6439_EUCR_2C_3C_Catalog_EN.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "รุ่นเก่าแบบอนาล็อก 2 CT หน้าสัมผัส 1C แบบ Normally De-energized (ไม่ fail-safe) — ป้องกันปั๊มรันตัวเปล่า (Dry-run)"
+ },
+ {
+  "model_number": "EUCR-3C",
+  "title": "EUCR-3C - Electronic undercurrent relay, 3 CT, fail-safe, 0.5–60 A",
+  "range_name": "EOCR",
+  "brand": "Samwha EOCR",
+  "series": "EUCR (Under Current)",
+  "base_model": "EUCR",
+  "range_short_desc": "Analogue undercurrent (dry-run) relay, three-CT fail-safe version",
+  "description": "Older analogue EUCR-3C electronic undercurrent relay for three-phase motors and other under-current applications. Three integral current transformers, fail-safe (normally energized) operation and a 2-SPST (1a1b) output. Load cables pass through the integral CTs; circuits up to 600 A are covered by using the 05 type with standard 5 A metering CTs, and for single-phase one external CT is fed through all three integral CTs. Front-panel O-TIME and LOAD dials are calibrated so the relay can be set with no control power applied.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Compact design",
+     "Three integral current transformers",
+     "Under-load protection / dry-run protector",
+     "Phase loss protection",
+     "Wide current adjustment range",
+     "Definite trip time characteristic",
+     "Manual (instantaneous) / electrical (remote) reset",
+     "Trip indication red LED",
+     "Ambient insensitive",
+     "Fail-safe operation"
+    ]
+   },
+   {
+    "title": "Applications",
+    "items": [
+     "Pumping cavitation or loss of prime",
+     "Detecting malfunction of fans",
+     "Broken belt or coupling failure",
+     "Shutting down motors when unloaded"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "This version",
+    "rows": [
+     "Current sensing : 3 CT",
+     "Contact mode : 2-SPST (1a1b)",
+     "Contact status : normally energized",
+     "Operation : fail-safe",
+     "Terminals : L1, L2 control power; 95-96 and 97-98 output"
+    ]
+   },
+   {
+    "group": "Current setting (by type)",
+    "rows": [
+     "05 type : 0.5–6 A",
+     "30 type : 3.0–30 A",
+     "60 type : 5.0–60 A",
+     "100–600 : 05 type fitted to external CT (current ratio 100/5 A – 600/5 A)"
+    ]
+   },
+   {
+    "group": "Specification",
+    "rows": [
+     "Trip time setting (O-TIME) : 0.2–30 sec",
+     "Time-current characteristic : definite",
+     "Reset : manual (instantaneous) / electrical (remote)",
+     "Power supply voltage : 24 V AC/DC, 110 V AC, 220 V AC",
+     "Frequency : 50/60 Hz",
+     "Contact rating : 3 A / 250 V AC resistive",
+     "Mounting : 35 mm DIN rail / panel"
+    ]
+   },
+   {
+    "group": "Protection",
+    "rows": [
+     "Undercurrent (dry-run) : trips after O-TIME"
+    ]
+   },
+   {
+    "group": "Additional specification (datasheet)",
+    "rows": [
+     "Phase loss trip time : 0.2–30 sec",
+     "Control voltages : 24 V AC/DC, 110 (85–150 V AC), 220 (180–260 V AC), 440 (320–480 V AC)",
+     "Output relay : independent volt-free contact, 3 A / 250 V AC resistive",
+     "Tolerance : current ±10 %, time ±15 %",
+     "Ambient temperature : storage -30…80 °C, operation -25…70 °C",
+     "Humidity : 45–85 % without condensation",
+     "Insulation : over 10 MΩ at 500 V DC between casing and circuits",
+     "Dielectric strength : casing/circuit 2 kV, between contacts 1 kV, between circuits 2 kV",
+     "Power consumption : less than 2 VA",
+     "Mounting : 35 mm DIN rail / surface"
+    ]
+   },
+   {
+    "group": "Ordering (EUCR-3C __ - N - ___)",
+    "rows": [
+     "Current range : 05, 30, 60, or 100–600 with external current transformers",
+     "N : fail safe",
+     "Control voltage : 24, 110, 220, 440"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/2072843928_EUCR-3C_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "EUCR-3C Datasheet (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/907480431d_EUCR-3C_Datasheet_EN.pdf"
+   },
+   {
+    "label": "EUCR / EUCR-3C Catalog page (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/778b0a6439_EUCR_2C_3C_Catalog_EN.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "รุ่นเก่าแบบอนาล็อก 3 CT ทำงานแบบ Fail-safe (Normally Energized) หน้าสัมผัส 1a1b — ป้องกันปั๊มรันตัวเปล่าและขาดเฟส"
+ },
+ {
+  "model_number": "DZR",
+  "title": "DZR-030…DZR-200 - Deesys round ZCT (zero-phase CT), 200 mA / 100 mV",
+  "range_name": "ZCT",
+  "brand": "Deesys",
+  "series": "Deesys ZCT",
+  "base_model": "DZR",
+  "range_short_desc": "Round cable-through zero-phase current transformer for ELD / GFR",
+  "description": "Deesys DZR round (cable-through) zero-phase sequence current transformer for earth-leakage detectors and ground-fault relays. Voltage-output type with a zero-phase current ratio of 200 mA / 100 mV (75–125 mV at 2 kΩ). Window sizes from Ø30 up to Ø200 mm covering rated currents from 100 A to 2000 A. Note the output is a voltage type suited to ELD and static-type relays, so it cannot be applied to induction-type relays.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "High magnetivity core giving high linearity and safety characteristics",
+     "Wide model range makes ZCT selection straightforward",
+     "Cable-through (round) construction, indoor use",
+     "ABS non-flammable casing with terminal cover"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Specification (round series)",
+    "rows": [
+     "DZR-030 : rated 100 A, inside dia. Ø30 mm, 0.2 kg",
+     "DZR-050 : rated 250 A, inside dia. Ø50 mm, 0.3 kg",
+     "DZR-065 : rated 400 A, inside dia. Ø65 mm, 0.4 kg",
+     "DZR-080 : rated 600 A, inside dia. Ø80 mm, 0.8 kg",
+     "DZR-100 : rated 800 A, inside dia. Ø100 mm, 1.0 kg",
+     "DZR-120 : rated 1000 A, inside dia. Ø120 mm, 1.2 kg",
+     "ZR-150 : rated 1400 A, inside dia. Ø150 mm",
+     "ZR-200 : rated 2000 A, inside dia. Ø200 mm",
+     "Zero phase current ratio : 200 mA / 100 mV (75–125 mV at 2 kΩ)"
+    ]
+   },
+   {
+    "group": "Through-wire capacity (EV, mm²)",
+    "rows": [
+     "DZR-030 : 1ø2W 60 · 1ø3W/3ø3W 14 · 3ø4W 8",
+     "DZR-050 : 1ø2W 150 · 1ø3W/3ø3W 80 · 3ø4W 38",
+     "DZR-065 : 1ø2W 325 · 1ø3W/3ø3W 150 · 3ø4W 100",
+     "DZR-080 : 1ø2W 400 · 1ø3W/3ø3W 250 · 3ø4W 2000",
+     "DZR-100 : 1ø2W 500 · 1ø3W/3ø3W 325 · 3ø4W 250",
+     "DZR-120 : 1ø3W/3ø3W 850 · 3ø4W 725"
+    ]
+   },
+   {
+    "group": "Ordering",
+    "rows": [
+     "DZR : for ELD and GFR",
+     "Size code : 030 = Ø30, 050 = Ø50, 065 = Ø65, 080 = Ø80, 100 = Ø100, 120 = Ø120, 150 = Ø150, 200 = Ø200"
+    ]
+   },
+   {
+    "group": "General (per catalog)",
+    "rows": [
+     "Application : earth-leakage detection, indoor use",
+     "Type : cable and busbar through",
+     "Casing : ABS non-flammable",
+     "Colour : black (N1.5)",
+     "Operating temperature : -10 °C … +60 °C",
+     "Withstand voltage : AC 2000 V for 1 min (between secondary coil and base)",
+     "Insulation resistance : more than 1000 MΩ at DC 500 V (between coil and base)"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/1427369d01_Deesys_DZR_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "Deesys Low Voltage ZCT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "ZCT ทรงกลมร้อยสาย เอาต์พุตแบบแรงดัน 200mA/100mV ใช้กับ ELD / Ground Fault Relay (ใช้กับรีเลย์แบบ Induction ไม่ได้)"
+ },
+ {
+  "model_number": "DZS",
+  "title": "DZS-160 / DZS-210 / DZS-260 - Deesys square busbar-through ZCT, 200 mA / 100 mV",
+  "range_name": "ZCT",
+  "brand": "Deesys",
+  "series": "Deesys ZCT",
+  "base_model": "DZS",
+  "range_short_desc": "Square busbar-through zero-phase current transformer",
+  "description": "Deesys DZS square (busbar-through) zero-phase sequence current transformer for earth-leakage detection on busbar systems where a round window will not fit. Voltage-output type at 200 mA / 100 mV, in three window sizes from 30 × 160 mm to 30 × 260 mm covering 400 A to 600 A.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Square busbar-through window for flat busbar runs",
+     "High magnetivity core giving high linearity and safety characteristics",
+     "ABS non-flammable casing with terminal cover",
+     "Type approved by inspection agency for fire"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Specification (square series)",
+    "rows": [
+     "DZS-160 : rated 400 A, window 30 × 160 mm, 2.8 kg",
+     "DZS-210 : rated 500 A, window 30 × 210 mm, 3.5 kg",
+     "DZS-260 : rated 600 A, window 30 × 260 mm, 3.8 kg",
+     "Zero phase current ratio : 200 mA / 100 mV (75–125 mV at 2 kΩ)",
+     "Busbar size : 6T × 25 mm"
+    ]
+   },
+   {
+    "group": "Ordering",
+    "rows": [
+     "DZS : square type",
+     "Size code : 160 = 160 mm, 210 = 210 mm, 260 = 260 mm"
+    ]
+   },
+   {
+    "group": "General (per catalog)",
+    "rows": [
+     "Application : earth-leakage detection, indoor use",
+     "Type : cable and busbar through",
+     "Casing : ABS non-flammable",
+     "Colour : black (N1.5)",
+     "Operating temperature : -10 °C … +60 °C",
+     "Withstand voltage : AC 2000 V for 1 min (between secondary coil and base)",
+     "Insulation resistance : more than 1000 MΩ at DC 500 V (between coil and base)"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/e2f49300ae_Deesys_DZS_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "Deesys Low Voltage ZCT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "ZCT ทรงเหลี่ยมสำหรับร้อยบัสบาร์ เอาต์พุตแบบแรงดัน 200mA/100mV"
+ },
+ {
+  "model_number": "SZR",
+  "title": "SZR-030…SZR-200 - Deesys high-sensitivity ZCT (nickel core), 30 mA / 50 mV",
+  "range_name": "ZCT",
+  "brand": "Deesys",
+  "series": "Deesys ZCT",
+  "base_model": "SZR",
+  "range_short_desc": "High-sensitivity zero-phase current transformer for directional ground relays",
+  "description": "Deesys SZR high-sensitivity zero-phase sequence current transformer. A nickel core allows small leakage currents down to about 30 mA to be detected correctly, so it suits static-type directional ground relays where the standard 200 mA / 100 mV ZCT is not sensitive enough. Same round cable-through bodies and window sizes as the DZR series, with a 30 mA / 50 mV output ratio.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Nickel core allows correct detection of small currents (about 30 mA)",
+     "For high sensitivity and static-type directional ground relays",
+     "Round cable-through construction, indoor use",
+     "ABS non-flammable casing with terminal cover"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Specification (high-sensitivity series)",
+    "rows": [
+     "Zero phase current ratio : 30 mA / 50 mV (SZR type)",
+     "SZR-030 : rated 100 A, inside dia. Ø30 mm",
+     "SZR-050 : rated 250 A, inside dia. Ø50 mm",
+     "SZR-065 : rated 400 A, inside dia. Ø65 mm",
+     "SZR-080 : rated 600 A, inside dia. Ø80 mm",
+     "SZR-100 : rated 800 A, inside dia. Ø100 mm",
+     "SZR-120 : rated 1000 A, inside dia. Ø120 mm",
+     "SZR-150 : rated 1400 A, inside dia. Ø150 mm",
+     "SZR-200 : rated 2000 A, inside dia. Ø200 mm"
+    ]
+   },
+   {
+    "group": "Ordering",
+    "rows": [
+     "SZR : for high sensitivity and static-type directional ground relay",
+     "Size code : 025, 030, 050, 065, 080, 100, 120, 150, 200"
+    ]
+   },
+   {
+    "group": "General (per catalog)",
+    "rows": [
+     "Application : earth-leakage detection, indoor use",
+     "Type : cable and busbar through",
+     "Casing : ABS non-flammable",
+     "Colour : black (N1.5)",
+     "Operating temperature : -10 °C … +60 °C",
+     "Withstand voltage : AC 2000 V for 1 min (between secondary coil and base)",
+     "Insulation resistance : more than 1000 MΩ at DC 500 V (between coil and base)"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/55956e70b7_Deesys_SZR_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "Deesys Low Voltage ZCT Catalog (PDF, English)",
+    "official_url": null,
+    "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "ZCT ความไวสูง (แกน Nickel) 30mA/50mV สำหรับ Directional Ground Relay แบบ Static — ไวกว่ารุ่น DZR ปกติ"
  }
 ]

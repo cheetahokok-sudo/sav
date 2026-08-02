@@ -1,0 +1,71 @@
+{
+ "model_number": "DZS",
+ "title": "DZS-160 / DZS-210 / DZS-260 - Deesys square busbar-through ZCT, 200 mA / 100 mV",
+ "range_name": "ZCT",
+ "brand": "Deesys",
+ "series": "Deesys ZCT",
+ "base_model": "DZS",
+ "range_short_desc": "Square busbar-through zero-phase current transformer",
+ "description": "Deesys DZS square (busbar-through) zero-phase sequence current transformer for earth-leakage detection on busbar systems where a round window will not fit. Voltage-output type at 200 mA / 100 mV, in three window sizes from 30 × 160 mm to 30 × 260 mm covering 400 A to 600 A.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Square busbar-through window for flat busbar runs",
+    "High magnetivity core giving high linearity and safety characteristics",
+    "ABS non-flammable casing with terminal cover",
+    "Type approved by inspection agency for fire"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Specification (square series)",
+   "rows": [
+    "DZS-160 : rated 400 A, window 30 × 160 mm, 2.8 kg",
+    "DZS-210 : rated 500 A, window 30 × 210 mm, 3.5 kg",
+    "DZS-260 : rated 600 A, window 30 × 260 mm, 3.8 kg",
+    "Zero phase current ratio : 200 mA / 100 mV (75–125 mV at 2 kΩ)",
+    "Busbar size : 6T × 25 mm"
+   ]
+  },
+  {
+   "group": "Ordering",
+   "rows": [
+    "DZS : square type",
+    "Size code : 160 = 160 mm, 210 = 210 mm, 260 = 260 mm"
+   ]
+  },
+  {
+   "group": "General (per catalog)",
+   "rows": [
+    "Application : earth-leakage detection, indoor use",
+    "Type : cable and busbar through",
+    "Casing : ABS non-flammable",
+    "Colour : black (N1.5)",
+    "Operating temperature : -10 °C … +60 °C",
+    "Withstand voltage : AC 2000 V for 1 min (between secondary coil and base)",
+    "Insulation resistance : more than 1000 MΩ at DC 500 V (between coil and base)"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/e2f49300ae_Deesys_DZS_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Deesys Low Voltage ZCT Catalog (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "ZCT ทรงเหลี่ยมสำหรับร้อยบัสบาร์ เอาต์พุตแบบแรงดัน 200mA/100mV"
+}

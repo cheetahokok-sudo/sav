@@ -1,0 +1,86 @@
+{
+ "model_number": "DZR",
+ "title": "DZR-030…DZR-200 - Deesys round ZCT (zero-phase CT), 200 mA / 100 mV",
+ "range_name": "ZCT",
+ "brand": "Deesys",
+ "series": "Deesys ZCT",
+ "base_model": "DZR",
+ "range_short_desc": "Round cable-through zero-phase current transformer for ELD / GFR",
+ "description": "Deesys DZR round (cable-through) zero-phase sequence current transformer for earth-leakage detectors and ground-fault relays. Voltage-output type with a zero-phase current ratio of 200 mA / 100 mV (75–125 mV at 2 kΩ). Window sizes from Ø30 up to Ø200 mm covering rated currents from 100 A to 2000 A. Note the output is a voltage type suited to ELD and static-type relays, so it cannot be applied to induction-type relays.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "High magnetivity core giving high linearity and safety characteristics",
+    "Wide model range makes ZCT selection straightforward",
+    "Cable-through (round) construction, indoor use",
+    "ABS non-flammable casing with terminal cover"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Specification (round series)",
+   "rows": [
+    "DZR-030 : rated 100 A, inside dia. Ø30 mm, 0.2 kg",
+    "DZR-050 : rated 250 A, inside dia. Ø50 mm, 0.3 kg",
+    "DZR-065 : rated 400 A, inside dia. Ø65 mm, 0.4 kg",
+    "DZR-080 : rated 600 A, inside dia. Ø80 mm, 0.8 kg",
+    "DZR-100 : rated 800 A, inside dia. Ø100 mm, 1.0 kg",
+    "DZR-120 : rated 1000 A, inside dia. Ø120 mm, 1.2 kg",
+    "ZR-150 : rated 1400 A, inside dia. Ø150 mm",
+    "ZR-200 : rated 2000 A, inside dia. Ø200 mm",
+    "Zero phase current ratio : 200 mA / 100 mV (75–125 mV at 2 kΩ)"
+   ]
+  },
+  {
+   "group": "Through-wire capacity (EV, mm²)",
+   "rows": [
+    "DZR-030 : 1ø2W 60 · 1ø3W/3ø3W 14 · 3ø4W 8",
+    "DZR-050 : 1ø2W 150 · 1ø3W/3ø3W 80 · 3ø4W 38",
+    "DZR-065 : 1ø2W 325 · 1ø3W/3ø3W 150 · 3ø4W 100",
+    "DZR-080 : 1ø2W 400 · 1ø3W/3ø3W 250 · 3ø4W 2000",
+    "DZR-100 : 1ø2W 500 · 1ø3W/3ø3W 325 · 3ø4W 250",
+    "DZR-120 : 1ø3W/3ø3W 850 · 3ø4W 725"
+   ]
+  },
+  {
+   "group": "Ordering",
+   "rows": [
+    "DZR : for ELD and GFR",
+    "Size code : 030 = Ø30, 050 = Ø50, 065 = Ø65, 080 = Ø80, 100 = Ø100, 120 = Ø120, 150 = Ø150, 200 = Ø200"
+   ]
+  },
+  {
+   "group": "General (per catalog)",
+   "rows": [
+    "Application : earth-leakage detection, indoor use",
+    "Type : cable and busbar through",
+    "Casing : ABS non-flammable",
+    "Colour : black (N1.5)",
+    "Operating temperature : -10 °C … +60 °C",
+    "Withstand voltage : AC 2000 V for 1 min (between secondary coil and base)",
+    "Insulation resistance : more than 1000 MΩ at DC 500 V (between coil and base)"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/1427369d01_Deesys_DZR_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Deesys Low Voltage ZCT Catalog (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "ZCT ทรงกลมร้อยสาย เอาต์พุตแบบแรงดัน 200mA/100mV ใช้กับ ELD / Ground Fault Relay (ใช้กับรีเลย์แบบ Induction ไม่ได้)"
+}

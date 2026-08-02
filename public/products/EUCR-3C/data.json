@@ -1,0 +1,122 @@
+{
+ "model_number": "EUCR-3C",
+ "title": "EUCR-3C - Electronic undercurrent relay, 3 CT, fail-safe, 0.5–60 A",
+ "range_name": "EOCR",
+ "brand": "Samwha EOCR",
+ "series": "EUCR (Under Current)",
+ "base_model": "EUCR",
+ "range_short_desc": "Analogue undercurrent (dry-run) relay, three-CT fail-safe version",
+ "description": "Older analogue EUCR-3C electronic undercurrent relay for three-phase motors and other under-current applications. Three integral current transformers, fail-safe (normally energized) operation and a 2-SPST (1a1b) output. Load cables pass through the integral CTs; circuits up to 600 A are covered by using the 05 type with standard 5 A metering CTs, and for single-phase one external CT is fed through all three integral CTs. Front-panel O-TIME and LOAD dials are calibrated so the relay can be set with no control power applied.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Compact design",
+    "Three integral current transformers",
+    "Under-load protection / dry-run protector",
+    "Phase loss protection",
+    "Wide current adjustment range",
+    "Definite trip time characteristic",
+    "Manual (instantaneous) / electrical (remote) reset",
+    "Trip indication red LED",
+    "Ambient insensitive",
+    "Fail-safe operation"
+   ]
+  },
+  {
+   "title": "Applications",
+   "items": [
+    "Pumping cavitation or loss of prime",
+    "Detecting malfunction of fans",
+    "Broken belt or coupling failure",
+    "Shutting down motors when unloaded"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "This version",
+   "rows": [
+    "Current sensing : 3 CT",
+    "Contact mode : 2-SPST (1a1b)",
+    "Contact status : normally energized",
+    "Operation : fail-safe",
+    "Terminals : L1, L2 control power; 95-96 and 97-98 output"
+   ]
+  },
+  {
+   "group": "Current setting (by type)",
+   "rows": [
+    "05 type : 0.5–6 A",
+    "30 type : 3.0–30 A",
+    "60 type : 5.0–60 A",
+    "100–600 : 05 type fitted to external CT (current ratio 100/5 A – 600/5 A)"
+   ]
+  },
+  {
+   "group": "Specification",
+   "rows": [
+    "Trip time setting (O-TIME) : 0.2–30 sec",
+    "Time-current characteristic : definite",
+    "Reset : manual (instantaneous) / electrical (remote)",
+    "Power supply voltage : 24 V AC/DC, 110 V AC, 220 V AC",
+    "Frequency : 50/60 Hz",
+    "Contact rating : 3 A / 250 V AC resistive",
+    "Mounting : 35 mm DIN rail / panel"
+   ]
+  },
+  {
+   "group": "Protection",
+   "rows": [
+    "Undercurrent (dry-run) : trips after O-TIME"
+   ]
+  },
+  {
+   "group": "Additional specification (datasheet)",
+   "rows": [
+    "Phase loss trip time : 0.2–30 sec",
+    "Control voltages : 24 V AC/DC, 110 (85–150 V AC), 220 (180–260 V AC), 440 (320–480 V AC)",
+    "Output relay : independent volt-free contact, 3 A / 250 V AC resistive",
+    "Tolerance : current ±10 %, time ±15 %",
+    "Ambient temperature : storage -30…80 °C, operation -25…70 °C",
+    "Humidity : 45–85 % without condensation",
+    "Insulation : over 10 MΩ at 500 V DC between casing and circuits",
+    "Dielectric strength : casing/circuit 2 kV, between contacts 1 kV, between circuits 2 kV",
+    "Power consumption : less than 2 VA",
+    "Mounting : 35 mm DIN rail / surface"
+   ]
+  },
+  {
+   "group": "Ordering (EUCR-3C __ - N - ___)",
+   "rows": [
+    "Current range : 05, 30, 60, or 100–600 with external current transformers",
+    "N : fail safe",
+    "Control voltage : 24, 110, 220, 440"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/2072843928_EUCR-3C_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "EUCR-3C Datasheet (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/907480431d_EUCR-3C_Datasheet_EN.pdf"
+  },
+  {
+   "label": "EUCR / EUCR-3C Catalog page (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/778b0a6439_EUCR_2C_3C_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "รุ่นเก่าแบบอนาล็อก 3 CT ทำงานแบบ Fail-safe (Normally Energized) หน้าสัมผัส 1a1b — ป้องกันปั๊มรันตัวเปล่าและขาดเฟส"
+}

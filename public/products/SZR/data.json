@@ -1,0 +1,75 @@
+{
+ "model_number": "SZR",
+ "title": "SZR-030…SZR-200 - Deesys high-sensitivity ZCT (nickel core), 30 mA / 50 mV",
+ "range_name": "ZCT",
+ "brand": "Deesys",
+ "series": "Deesys ZCT",
+ "base_model": "SZR",
+ "range_short_desc": "High-sensitivity zero-phase current transformer for directional ground relays",
+ "description": "Deesys SZR high-sensitivity zero-phase sequence current transformer. A nickel core allows small leakage currents down to about 30 mA to be detected correctly, so it suits static-type directional ground relays where the standard 200 mA / 100 mV ZCT is not sensitive enough. Same round cable-through bodies and window sizes as the DZR series, with a 30 mA / 50 mV output ratio.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Nickel core allows correct detection of small currents (about 30 mA)",
+    "For high sensitivity and static-type directional ground relays",
+    "Round cable-through construction, indoor use",
+    "ABS non-flammable casing with terminal cover"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Specification (high-sensitivity series)",
+   "rows": [
+    "Zero phase current ratio : 30 mA / 50 mV (SZR type)",
+    "SZR-030 : rated 100 A, inside dia. Ø30 mm",
+    "SZR-050 : rated 250 A, inside dia. Ø50 mm",
+    "SZR-065 : rated 400 A, inside dia. Ø65 mm",
+    "SZR-080 : rated 600 A, inside dia. Ø80 mm",
+    "SZR-100 : rated 800 A, inside dia. Ø100 mm",
+    "SZR-120 : rated 1000 A, inside dia. Ø120 mm",
+    "SZR-150 : rated 1400 A, inside dia. Ø150 mm",
+    "SZR-200 : rated 2000 A, inside dia. Ø200 mm"
+   ]
+  },
+  {
+   "group": "Ordering",
+   "rows": [
+    "SZR : for high sensitivity and static-type directional ground relay",
+    "Size code : 025, 030, 050, 065, 080, 100, 120, 150, 200"
+   ]
+  },
+  {
+   "group": "General (per catalog)",
+   "rows": [
+    "Application : earth-leakage detection, indoor use",
+    "Type : cable and busbar through",
+    "Casing : ABS non-flammable",
+    "Colour : black (N1.5)",
+    "Operating temperature : -10 °C … +60 °C",
+    "Withstand voltage : AC 2000 V for 1 min (between secondary coil and base)",
+    "Insulation resistance : more than 1000 MΩ at DC 500 V (between coil and base)"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/55956e70b7_Deesys_SZR_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Deesys Low Voltage ZCT Catalog (PDF, English)",
+   "official_url": null,
+   "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "ZCT ความไวสูง (แกน Nickel) 30mA/50mV สำหรับ Directional Ground Relay แบบ Static — ไวกว่ารุ่น DZR ปกติ"
+}
