@@ -1,0 +1,157 @@
+{
+ "model_number": "HVCLF-24",
+ "title": "HVCLF-24 - 24kV high voltage current limiting fuse (HCLF), types IB-D0 to IB-D4, 2-200 A",
+ "range_name": "HVCLF",
+ "brand": "Joongwon",
+ "series": "24kV Current Limiting Fuse",
+ "base_model": "HVCLF",
+ "range_short_desc": "ฟิวส์แรงสูงชนิดจำกัดกระแส 24kV สำหรับป้องกันหม้อแปลงและคาปาซิเตอร์",
+ "description": "Joongwon HVCLF 24 kV high voltage current limiting fuse — ฟิวส์แรงสูงชนิดจำกัดกระแส (한류형 퓨즈) สำหรับป้องกันหม้อแปลงจำหน่ายและชุดคาปาซิเตอร์ในระบบ 24 kV. A current limiting fuse does not simply melt and wait for the next current zero: it forces the fault current down and clears it inside the first half cycle, so the let-through energy reaching the transformer is a fraction of the prospective short-circuit current. The range covers 2 A to 200 A across five body types, IB-D0 through IB-D4, all sharing the same 442 mm contact spacing and 510 mm overall length so any rating drops into the same JWF-24 base. Rated breaking capacity is 50 kA for IB-D1 to IB-D3, 31.5 kA on the 2 A back-up type and 25 kA on the largest IB-D4 bodies. Each fuse carries a striker that fires on operation, which is what a load break switch uses to trip all three phases together after a single-phase fault. Fitted as standard in 24 kV 630 A load break switch panels and in SF6 ring main units.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Current limiting — clears the fault within the first half cycle, so peak let-through current and I²t reaching the transformer are far below the prospective short-circuit level",
+    "Rated breaking capacity 50 kA on IB-D1 / IB-D2 / IB-D3 (31.5 kA on the 2 A IB-D0 back-up type, 25 kA on IB-D4)",
+    "Striker fitted — fires on operation to trip a three-phase load break switch after a single-phase fault, so no phase is left energised",
+    "Watertight construction, rated by the manufacturer for indoor or outdoor service",
+    "Low power loss, which matters inside the confined fuse holders of SF6 gas-insulated switchgear where heat cannot escape easily",
+    "One base fits the whole range — 442 mm contact spacing and 510 mm length are common to every rating"
+   ]
+  },
+  {
+   "title": "Typical applications",
+   "items": [
+    "Distribution transformer protection on 24 kV systems (see the selection table below)",
+    "Capacitor bank protection, 3-phase",
+    "24 kV 630 A load break switch panels and SF6 ring main units",
+    "Back-up protection in series with a switching device (the 2 A IB-D0 type)"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Ratings (Joongwon catalog p.174)",
+   "rows": [
+    "Rated voltage : 24 kV (12 kV and 36 kV exist but are import-order items — ask before quoting)",
+    "Rated current : 2, 6.3, 10, 16, 20, 25, 31.5, 40, 50, 63, 80, 100, 125, 160, 200 A",
+    "IB-D0 : 2 A — H 442 mm, L 510 mm, ØD 53 mm, 2.3 kg",
+    "IB-D1 : 6.3 / 10 / 16 / 20 / 25 / 31.5 / 40 A — H 442 mm, L 510 mm, ØD 53 mm, 2.3 kg",
+    "IB-D2 : 50 A — ØD 58 mm, 3.0 kg · 63 A — ØD 77 mm, 4.8 kg (both H 442 mm, L 510 mm)",
+    "IB-D3 : 80 / 100 A — H 442 mm, L 510 mm, ØD 77 mm, 4.8 kg",
+    "IB-D4 : 125 / 160 / 200 A — H 442 mm, L 510 mm, ØD 86 mm, 5.8 kg",
+    "Contact ferrule diameter : Ø45 mm (common to all types)"
+   ]
+  },
+  {
+   "group": "Rated breaking capacity (I₁)",
+   "rows": [
+    "IB-D0 (2 A) : 31.5 kA",
+    "IB-D1 (6.3 – 40 A) : 50 kA",
+    "IB-D2 (50, 63 A) : 50 kA",
+    "IB-D3 (80, 100 A) : 50 kA",
+    "IB-D4 (125, 160, 200 A) : 25 kA",
+    "⚠ Minimum melting current (I₃), power loss, cold resistance and I²t are listed per rating in the manufacturer catalog linked below. Read them from that document rather than from memory — and note the printed table shows 49 A at the 6.3 A rating and 31 A at the 10 A rating, which does not follow the trend of the other rows; confirm those two with SAV before relying on them."
+   ]
+  },
+  {
+   "group": "Transformer protection — fuse selection (Joongwon application guide)",
+   "rows": [
+    "Read as : fuse rated current (A) → largest transformer it protects, 1-phase kVA / 3-phase kVA",
+    "2 A → 14 / 25 kVA",
+    "6.3 A → 43 / 75 kVA · 57 / 100 kVA",
+    "6.3 or 10 A → 72 / 125 kVA · 86 / 150 kVA",
+    "10 or 16 A → 115 / 200 kVA",
+    "16 A → 144 / 250 kVA",
+    "16 or 20 A → 173 / 300 kVA · 202 / 350 kVA",
+    "20 or 25 A → 230 / 400 kVA · 260 / 450 kVA",
+    "25 or 31.5 A → 288 / 500 kVA · 346 / 600 kVA",
+    "31.5 or 40 A → 404 / 700 kVA · 433 / 750 kVA · 461 / 800 kVA",
+    "40 or 50 A → 519 / 900 kVA",
+    "40, 50 or 63 A → 577 / 1,000 kVA",
+    "50 or 63 A → 721 / 1,250 kVA",
+    "63 or 80 A → 866 / 1,500 kVA",
+    "80 A → 1,010 / 1,750 kVA",
+    "100 A → 1,154 / 2,000 kVA",
+    "100 or 125 A → 1,443 / 2,500 kVA",
+    "125 or 160 A → 1,732 / 3,000 kVA",
+    "160 or 200 A → 2,309 / 4,000 kVA",
+    "200 A → 2,598 / 4,500 kVA",
+    "Manufacturer's note : where a row offers two ratings, take the larger one",
+    "Selection basis : transformer inrush assumed at 10 × full load current for 0.1 s, and a secondary-side short circuit cleared within 0.2 s"
+   ]
+  },
+  {
+   "group": "Capacitor protection — fuse selection, 24 kV 3-phase",
+   "rows": [
+    "40 kVAR or less → 6.3 A",
+    "40 – 90 kVAR → 10 A",
+    "90 – 140 kVAR → 16 A",
+    "140 – 200 kVAR → 20 A",
+    "200 – 280 kVAR → 25 A",
+    "280 – 400 kVAR → 31.5 A",
+    "400 – 600 kVAR → 40 A",
+    "600 – 800 kVAR → 50 A",
+    "800 – 1,100 kVAR → 63 A",
+    "1,100 – 1,400 kVAR → 80 A",
+    "1,400 – 1,900 kVAR → 100 A",
+    "1,900 – 2,500 kVAR → 125 A",
+    "2,500 – 3,100 kVAR → 160 A",
+    "3,100 – 4,000 kVAR → 200 A",
+    "Selection basis : capacitor inrush assumed at 71 × rated current for 0.002 s, and the fuse sized to carry 1.5 × the capacitor rated current continuously"
+   ]
+  },
+  {
+   "group": "Striker",
+   "rows": [
+    "No-energy path (OA) : 4 mm max",
+    "Energised path (AB) : 16 mm",
+    "Real path (AC) : 35 mm",
+    "Force required to return the striker to origin : 20 N"
+   ]
+  },
+  {
+   "group": "Ordering and standards",
+   "rows": [
+    "Order code : HVCLF – <type> – <rated voltage> – <rated current>, e.g. HVCLF-IB-D1-24-40 for a 40 A fuse",
+    "Type codes : IB-D0, IB-D1, IB-D2, IB-D3, IB-D4 (IB-D5 also appears on the manufacturer's order sheet)",
+    "Voltage codes : 12, 24, 36 — SAV stocks the 24 kV range; 12 kV and 36 kV are import-order items needing prior agreement",
+    "Standard : IEC 60282-1",
+    "KOEMA certificate 2004-라-010 : 24 kV 50 kA, 6.3/10/16/20/25/31.5/40 A, 50/63 A, 80/100 A (base JWF-24, links IB-D1 / IB-D2 / IB-D3)",
+    "KOEMA certificate 2007-가-085 : 24 kV 2 A 31.5 kA back-up type (base JWF-24, link IB-D0)",
+    "Manufacturer holds Korean patent 10-0811416 for a back-up current limiting fuse with an integral temperature sensing wire",
+    "Manufacturer : Joongwon Electric Corporation (중원전기), Ansan-si, Gyeonggi-do, Korea — ISO 9001 and ISO 14001"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/f56e9f6c41_HVCLF-24_fuse_and_base.jpg",
+ "image_confirmed_unavailable": false,
+ "extra_photos": [
+  {
+   "path": "/docs/4593403b81_HVCLF-24_types_IB-D0_to_IB-D4.jpg",
+   "caption": "ภาพจากแคตตาล็อกผู้ผลิต — ฟิวส์ทั้ง 5 ขนาดตัวถัง IB-D0 ถึง IB-D4 เรียงเทียบกัน และภาพฟิวส์ประกอบบนฐาน JWF-24 คลิกเพื่อดูภาพเต็ม"
+  }
+ ],
+ "documents": [
+  {
+   "label": "Joongwon 24kV HVCLF catalog (p.170–179) — ratings, electrical characteristics, transformer and capacitor selection tables, time-current and cut-off curves, certificates",
+   "official_url": "http://elec.joongwon.co.kr/eng/?page_id=355",
+   "local_path": "/docs/5f91ed6ca7_Joongwon_24kV_HVCLF_catalog_p170-179.pdf"
+  },
+  {
+   "label": "Joongwon 24kV HVCLF leaflet — overview and time-current characteristic (note: some tables in this file do not render, use the catalog above for figures)",
+   "official_url": null,
+   "local_path": "/docs/9380261f97_Joongwon_24kV_HVCLF_leaflet.pdf"
+  }
+ ],
+ "source_url": "http://elec.joongwon.co.kr/eng/?page_id=355",
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "ฟิวส์แรงสูงชนิดจำกัดกระแส 24kV (한류형 퓨즈) ยี่ห้อ Joongwon เกาหลี | ใช้ป้องกันหม้อแปลงจำหน่ายและคาปาซิเตอร์แบงก์ในระบบ 24kV และเป็นฟิวส์ที่ใส่ในตู้ LBS 630A / RMU SF6 | เลือกพิกัดจากตารางด้านบน — รู้ kVA ของหม้อแปลงหรือ kVAR ของคาปาซิเตอร์ก็เลือกได้เลย ถ้าตารางให้สองค่าให้เลือกค่าที่สูงกว่า | พิกัดตัดกระแสลัดวงจร 50kA สำหรับ IB-D1/D2/D3, 31.5kA สำหรับ 2A และ 25kA สำหรับ IB-D4 (125–200A) — ต้องเช็กว่าสูงกว่ากระแสลัดวงจรที่จุดติดตั้ง | ระยะประกบหน้าสัมผัส 442 มม. และความยาว 510 มม. เท่ากันทุกพิกัด ใช้ฐาน JWF-24 ตัวเดียวกันได้หมด | มี striker ในตัว ใช้สั่งปลด LBS ทั้งสามเฟสเมื่อฟิวส์ขาดเฟสเดียว | ⚠ 12kV และ 36kV เป็นของสั่งนำเข้า ต้องคุยก่อนสั่ง | ⚠ ค่ากระแสหลอมละลายต่ำสุด (I₃) กำลังสูญเสีย และ I²t ให้ดูจากแคตตาล็อกผู้ผลิตที่แนบ อย่าจำเอา — และแถว 6.3A / 10A ในตารางที่พิมพ์มาไม่เข้าแนวโน้มกับแถวอื่น ให้สอบถามยืนยันก่อนใช้งาน"
+}

@@ -7,8 +7,8 @@ savthai.com/home/promotion/,https://savautomation.com/products/,301,false,true,f
 savthai.com/product-category/all-products/,https://savautomation.com/products/,301,false,true,false,false
 savthai.com/product-category/motor-protection-system/,https://savautomation.com/products/series/eocr-ss-se2/,301,false,true,false,false
 savthai.com/product-category/current-voltage-transformer/,https://savautomation.com/products/series/zct-ct/,301,false,true,false,false
-savthai.com/product-category/medium-voltage-equipment/,https://savautomation.com/products/,301,false,true,false,false
-savthai.com/product-category/power-fuse-link-3-3kv-24kv/,https://savautomation.com/products/,301,false,true,false,false
+savthai.com/product-category/medium-voltage-equipment/,https://savautomation.com/products/series/mv-fuse-24kv/,301,false,true,false,false
+savthai.com/product-category/power-fuse-link-3-3kv-24kv/,https://savautomation.com/products/series/mv-fuse-24kv/,301,false,true,false,false
 savthai.com/product-category/automatic-transfer-switch/,https://savautomation.com/products/,301,false,true,false,false
 savthai.com/product/eocr-ss-schneider-samwha/,https://savautomation.com/products/series/eocr-ss-se2/,301,false,true,false,false
 savthai.com/product/eocr-s-w-schneider-samwha/,https://savautomation.com/products/series/eocr-ss-se2/,301,false,true,false,false
@@ -34,3 +34,5 @@ savthai.com/contact-sav/,https://savautomation.com/contact/,301,false,true,false
 savthai.com/my-account/,https://savautomation.com/contact/,301,false,true,false,false
 savthai.com/cart/,https://savautomation.com/contact/,301,false,true,false,false
 savthai.com/payment/,https://savautomation.com/contact/,301,false,true,false,false
+savthai.com/product/24kv-current-limiting-fuses/,https://savautomation.com/products/HVCLF-24/,301,false,true,false,false
+savthai.com/product/24kv-load-break-switch-lbs/,https://savautomation.com/products/series/mv-fuse-24kv/,301,false,true,false,false

@@ -35,6 +35,11 @@ export function seriesOf(model: string): string {
   // mistaken for the 600 V class ZCTs sitting next to it.
   if (/^(HZR|HZS)(-|$)/.test(m)) return "Deesys ZCT (High Voltage)";
   if (/^(DZR|DZS|SZR|ZR)(-|$)/.test(m)) return "Deesys ZCT";
+  // Joongwon medium-voltage range. Distinct from everything above: 24 kV,
+  // not a motor-protection product, and the only family here where getting
+  // the selection wrong is a safety matter rather than a nuisance trip.
+  if (/^HVCLF/.test(m)) return "24kV Current Limiting Fuse";
+  if (/^JWF/.test(m)) return "24kV Fuse Base";
   return "Other";
 }
 
@@ -226,6 +231,25 @@ export const CATEGORIES: Category[] = [
       "power-monitoring-guide",
       "what-is-ct-and-ct-ratio",
     ],
+  },
+  {
+    // Two products, below the four-product floor the other categories keep.
+    // Kept anyway: the page carries substantial selection content of its own
+    // (transformer kVA and capacitor kVAR tables), it is the only 24 kV
+    // equipment on the site so it has nowhere else to sit, and it is the
+    // redirect target for five medium-voltage URLs from the old savthai.com
+    // site — see docs/savthai-redirects.md.
+    slug: "mv-fuse-24kv",
+    title: "ฟิวส์แรงสูง 24kV และฐานฟิวส์ (HVCLF)",
+    lede: "ฟิวส์จำกัดกระแส 24kV สำหรับป้องกันหม้อแปลงและคาปาซิเตอร์ พร้อมฐานรองฟิวส์",
+    intro: [
+      "ฟิวส์จำกัดกระแส (Current Limiting Fuse) ต่างจากฟิวส์ธรรมดาตรงที่ไม่ได้แค่ขาดแล้วรอให้กระแสผ่านศูนย์ แต่บังคับให้กระแสลัดวงจรลดลงและตัดจบภายในครึ่งไซเคิลแรก พลังงานที่วิ่งไปถึงหม้อแปลงจึงเหลือเพียงเศษเสี้ยวของกระแสลัดวงจรที่ระบบจ่ายได้จริง",
+      "ตระกูล HVCLF ของ Joongwon ครอบคลุมพิกัด 2–200 A ในตัวถัง 5 ขนาด (IB-D0 ถึง IB-D4) ทุกพิกัดมีระยะประกบหน้าสัมผัส 442 มม. และความยาว 510 มม. เท่ากัน จึงใช้ฐาน JWF-24 ตัวเดียวกันได้ทั้งหมด เปลี่ยนพิกัดฟิวส์ได้โดยไม่ต้องแก้จุดยึด",
+      "การเลือกพิกัดเริ่มจากสิ่งที่จะป้องกัน — ถ้าเป็นหม้อแปลงให้ดูจาก kVA ถ้าเป็นคาปาซิเตอร์ให้ดูจาก kVAR ตารางเลือกรุ่นอยู่ในหน้าสินค้าแต่ละตัว สิ่งที่ต้องตรวจเพิ่มเสมอคือพิกัดตัดกระแสลัดวงจรของฟิวส์ต้องสูงกว่ากระแสลัดวงจรที่จุดติดตั้งจริง",
+      "⚠ อุปกรณ์แรงสูง 24kV การเลือกผิดไม่ได้จบแค่ทริปหลอก — ส่งค่าระบบและพิกัดหม้อแปลงมาให้ทีมวิศวกรรมช่วยตรวจก่อนสั่งทุกครั้ง",
+    ],
+    series: ["24kV Current Limiting Fuse", "24kV Fuse Base"],
+    articles: ["circuit-protection-coordination", "iec-standards-on-datasheets"],
   },
   {
     slug: "zct-ct",

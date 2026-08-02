@@ -1,0 +1,101 @@
+{
+ "model_number": "JWF-24",
+ "title": "JWF-24 - 24kV fuse base for HVCLF current limiting fuses, 200 A, BIL 125 kV",
+ "range_name": "HVCLF",
+ "brand": "Joongwon",
+ "series": "24kV Fuse Base",
+ "base_model": "JWF",
+ "range_short_desc": "ฐานฟิวส์แรงสูง 24kV สำหรับฟิวส์จำกัดกระแส HVCLF",
+ "description": "Joongwon JWF-24 fuse base — ฐานรองฟิวส์แรงสูง 24 kV สำหรับฟิวส์จำกัดกระแสตระกูล HVCLF. Two porcelain post insulators on a galvanised channel base, with a spring fuse clip at one end and a fixed holder at the other, so a fuse is dropped in and latched without tools. Because every HVCLF rating from 2 A to 200 A shares the same 442 mm contact spacing and 510 mm length, one base accepts the whole range — a 24 kV panel can be re-fused to a different rating without changing the mounting. Rated 200 A continuous with a 125 kV BIL impulse withstand, so it is matched to the largest IB-D4 fuse in the family. The base is the item KOEMA certified together with the fuse links, and it is what SAV quotes alongside a fuse when a panel is being built rather than re-fused.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "Accepts the entire HVCLF range, 2 A to 200 A — every rating shares 442 mm contact spacing and 510 mm overall length",
+    "Rated 200 A continuous, matched to the largest IB-D4 fuse",
+    "Impulse withstand voltage (BIL) 125 kV",
+    "Spring fuse clip one end, fixed holder the other — fuse changes need no tools",
+    "Two porcelain post insulators on a galvanised steel channel base",
+    "Certified by KOEMA together with the IB-D0 to IB-D3 fuse links"
+   ]
+  },
+  {
+   "title": "Typical applications",
+   "items": [
+    "24 kV 630 A load break switch panels",
+    "Distribution transformer and capacitor bank protection assemblies",
+    "Replacement base where an existing 24 kV fuse mount is cracked, tracked or has lost clip tension"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Ratings (Joongwon catalog p.174)",
+   "rows": [
+    "Type : JWF-24",
+    "Rated voltage : 24 kV",
+    "Rated current : 200 A",
+    "Impulse withstand voltage (BIL) : 125 kV",
+    "Accepts : HVCLF fuse links IB-D0, IB-D1, IB-D2, IB-D3, IB-D4 (2 – 200 A)"
+   ]
+  },
+  {
+   "group": "Construction",
+   "rows": [
+    "Fuse clip : spring clip, upper terminal end",
+    "Fixed holder : opposite end, with pull ring on the clip for fuse removal",
+    "Insulators : two porcelain post insulators",
+    "Channel base : galvanised steel, drilled for panel mounting",
+    "Terminals : upper and lower flat terminals"
+   ]
+  },
+  {
+   "group": "Installation dimensions (Joongwon catalog p.173)",
+   "rows": [
+    "Overall width : 613 mm",
+    "Insulator centres : 361 mm · terminal centres 313 mm",
+    "Overall height with fuse swung open : 632 mm (590 mm to the pivot)",
+    "Depth : 241 mm",
+    "Fuse opening angle : 38°",
+    "Mounting hole pitch : 380 mm along the channel, 260 mm between channels on a 3-phase assembly",
+    "Mounting holes : Ø15 mm and Ø12.5 mm",
+    "Base plate width : 80 mm, edge offset 35 mm",
+    "⚠ Confirm these against the drawing in the catalog before cutting a mounting plate — the figures above are transcribed from it, not measured from stock."
+   ]
+  },
+  {
+   "group": "Standards and certification",
+   "rows": [
+    "Standard : IEC 60282-1",
+    "KOEMA certificate 2004-라-010 : base JWF-24 with links IB-D1 / IB-D2 / IB-D3, 24 kV 50 kA",
+    "KOEMA certificate 2007-가-085 : base JWF-24 with link IB-D0, 24 kV 2 A 31.5 kA back-up",
+    "Manufacturer : Joongwon Electric Corporation (중원전기), Ansan-si, Gyeonggi-do, Korea — ISO 9001 and ISO 14001"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/221b662dea_JWF-24_fuse_base.jpg",
+ "image_confirmed_unavailable": false,
+ "extra_photos": [
+  {
+   "path": "/docs/f56e9f6c41_HVCLF-24_fuse_and_base.jpg",
+   "caption": "ภาพจากแคตตาล็อกผู้ผลิต — ฐาน JWF-24 พร้อมฟิวส์ HVCLF ประกอบอยู่ แสดงคลิปสปริงด้านซ้ายและตัวจับยึดด้านขวา คลิกเพื่อดูภาพเต็ม"
+  }
+ ],
+ "documents": [
+  {
+   "label": "Joongwon 24kV HVCLF catalog (p.170–179) — fuse base ratings, installation drawing and certificates",
+   "official_url": "http://elec.joongwon.co.kr/eng/?page_id=355",
+   "local_path": "/docs/5f91ed6ca7_Joongwon_24kV_HVCLF_catalog_p170-179.pdf"
+  }
+ ],
+ "source_url": "http://elec.joongwon.co.kr/eng/?page_id=355",
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "ฐานรองฟิวส์แรงสูง 24kV ยี่ห้อ Joongwon เกาหลี ใช้คู่กับฟิวส์จำกัดกระแส HVCLF | พิกัด 24kV 200A, BIL 125kV | รับฟิวส์ได้ทุกพิกัดตั้งแต่ 2A ถึง 200A เพราะฟิวส์ทุกตัวมีระยะประกบ 442 มม. และยาว 510 มม. เท่ากัน — เปลี่ยนพิกัดฟิวส์ได้โดยไม่ต้องเปลี่ยนฐาน | คลิปสปริงด้านหนึ่ง ตัวจับยึดอีกด้าน ถอดเปลี่ยนฟิวส์ได้โดยไม่ต้องใช้เครื่องมือ | ลูกถ้วยพอร์ซเลน 2 ต้น บนฐานเหล็กชุบกัลวาไนซ์ | ใช้เปลี่ยนแทนฐานเดิมที่ลูกถ้วยร้าว มีรอยไหม้ตามผิว หรือคลิปหมดแรงกด | ⚠ ระยะติดตั้งให้ยึดตามแบบในแคตตาล็อกที่แนบ ก่อนสั่งเจาะแผ่นรอง"
+}
