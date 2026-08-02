@@ -141,7 +141,12 @@ export default function ProductsPage() {
   // the page stays compatible with `output: "export"` without a Suspense
   // boundary.
   useEffect(() => {
-    fetch(`${BASE}/products/index.json`)
+    // no-cache, not no-store: GitHub Pages serves the catalog with
+    // Cache-Control: max-age=600, so for ten minutes after a deploy a
+    // returning buyer would get the old catalog and a newly added product
+    // would look missing. This revalidates against Last-Modified instead,
+    // so an unchanged catalog still costs only a 304.
+    fetch(`${BASE}/products/index.json`, { cache: "no-cache" })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
@@ -313,7 +318,7 @@ export default function ProductsPage() {
           PRODUCT CATALOG
         </p>
         <h1 className="text-center font-display font-extrabold text-3xl sm:text-4xl text-ink mb-4">
-          สินค้า EOCR ทั้งหมด
+          สินค้าทั้งหมด
         </h1>
         <div className="w-10 h-[3px] bg-brand rounded mx-auto mb-8" />
 
