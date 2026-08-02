@@ -76,6 +76,7 @@ function seriesOf(model: string): string {
   if (/^I3/.test(m)) return "EOCR-i3 (Digital)";
   if (/^IF/.test(m)) return "EOCR-iF (Ground Fault)";
   if (/^ISEM/.test(m)) return "iSEM (Communication)";
+  if (/^(EOCR-?)?SDDR/.test(m)) return "SDDR (Auto Restart)";
   if (/^DSP-VIP/.test(m)) return "DSP-VIP Series";
   if (/^DSP/.test(m)) return "Samwha DSP";
   if (/^WYZ/.test(m)) return "Woonyoung ZCT";

@@ -10911,5 +10911,135 @@
   "in_stock": null,
   "your_price": null,
   "your_notes": "รุ่นเก่า (legacy) SAV ยังจำหน่ายอยู่ — EOCR ดั้งเดิมของ Samwha Engineering ก่อนมาเป็นแบรนด์ Schneider | 2CT ในตัว หน่วงเวลาสตาร์ท (D-TIME) และเวลาทริป (O-TIME) ปรับแยกกันได้ ลักษณะเวลาแบบ Definite | ป้องกัน overcurrent, phase loss, locked rotor | ตัวที่มีในสต็อกเป็น Type 60-440 : ตั้งกระแส 5~60/70A ไฟเลี้ยง 320~480VAC ติดราง DIN 35 มม. | รุ่น inverse time คือ EOCR-SS1"
+ },
+ {
+  "model_number": "SDDR-CF7",
+  "title": "SDDR-CF7 - EOCR shutdown auto restart relay (SDDR), 110/115/120 VAC",
+  "range_name": "EOCR",
+  "brand": "Schneider EOCR",
+  "series": "SDDR (Auto Restart)",
+  "base_model": "SDDR-C",
+  "range_short_desc": "Shutdown auto restart relay for momentary power failure (EOCR SDDR)",
+  "description": "Schneider / Samwha EOCR SDDR-CF7 shutdown auto restart relay — 순간정전 재기동 계전기. It solves the problem of having to restart every motor on a line by hand after a process trips on a brief voltage dip. Two settings do the work: SDDT (shut down delay time) is how long an outage may last and still count as momentary, and DOMT (delay on make time) is how long the relay holds its contacts open after power returns before letting the motor restart, so a whole plant does not slam back on at once. An A/B selector matches the relay to whichever way the external sequence is wired, and a TEST button simulates an outage for preventive maintenance. Plugs into a standard 8-pin socket. The unit SAV stocks is the CF7, the analogue knob-set version on 110/115/120 VAC.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Shut Down Delay Time (SDDT) — power must return within the set SDDT for auto restart to trigger; if the outage runs longer, auto restart is inhibited and the operator restarts manually",
+     "Delay on Make Time (DOMT) — after power returns within SDDT, contacts are held open for the set DOMT and then closed, so restarts can be staggered across a line",
+     "A/B selection switch — set to match the wiring on the external sequence drawing, then press TEST to apply immediately",
+     "TEST button simulates a real outage for as long as it is held, for preventive maintenance checks",
+     "PWR (green) and MON (red) status LEDs",
+     "Plugs into a standard 8-pin socket"
+    ]
+   },
+   {
+    "title": "Typical applications",
+    "items": [
+     "Continuously running conveyor systems and batch-processing chemical plants",
+     "Steel mill transfer equipment and textile factories",
+     "Other magnetic contactors driving special loads"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Nameplate of the stocked unit (photographed from SAV stock)",
+    "rows": [
+     "Model : SDDR-CF7",
+     "Description : Shutdown Auto Restart Relay / 순간정전 재기동 계전기",
+     "Power supply : 110/115/120 VAC",
+     "Reference : K14323 — Made in South Korea, CE, Schneider Electric",
+     "Front panel : TEST button, A/B selector, DOMT knob (Off, 1, 3, 5, 10, 15, 20, 25, 30), SDDT knob (0.5, 1, 2, 3, 5), MON (red) and PWR (green) LEDs",
+     "Terminals : A1, A2, with ON/OFF positions marked for A and B"
+    ]
+   },
+   {
+    "group": "Time settings and ratings",
+    "rows": [
+     "SDDT (shut down delay time) : 0.5 – 5 seconds",
+     "DOMT (delay on make time) : Off, 1 – 30 seconds",
+     "Control power : code 110 = AC 85–150 V, code 220 = AC 180–260 V",
+     "Frequency : 50/60 Hz",
+     "Auxiliary contact : 3 A / 250 VAC resistive load",
+     "Operation status display : 2 × 5 rectangular LED, green and red",
+     "Installation : 8-pin socket"
+    ]
+   },
+   {
+    "group": "Power failure recognition voltage",
+    "rows": [
+     "50 Hz, rated 110/115/120 VAC : 77 – 83 V",
+     "50 Hz, rated 220/230/240 VAC : 154 – 165 V",
+     "60 Hz, rated 110/115/120 VAC : 66 – 72 V",
+     "60 Hz, rated 220/230/240 VAC : 132 – 143 V",
+     "Time of duration : 85 ms or over",
+     "Caution : heavy harmonics on the control supply can raise the recognition voltage, so allow for it in harmonic-rich installations"
+    ]
+   },
+   {
+    "group": "LED and internal relay status",
+    "rows": [
+     "Power supplied : relay open",
+     "On switch input : relay closed",
+     "Momentary power outage : relay open",
+     "Outage longer than SDDT : relay open",
+     "DOMT timer running : relay open",
+     "Back to normal operation : relay closed"
+    ]
+   },
+   {
+    "group": "Installation and wiring (SDDR instruction sheet)",
+    "rows": [
+     "Recommended sockets : KH-KTS-8 (Koino), K2CF08 (KACON), PS-08 (MENICS)",
+     "Mounting : 35 mm DIN rail and screw mounting",
+     "Wiring options : 3-wire A type, 3-wire B type, 4-wire B type",
+     "Dimensions : 60 × 50 mm body, 56.6 mm socket, 15 mm depth behind the socket, 8 × Ø2.4 pin circle",
+     "SDDR operates normally once its internal capacitor has charged, about five seconds after power is applied"
+    ]
+   },
+   {
+    "group": "Environment and EMC",
+    "rows": [
+     "Temperature : operation -20 … 60 °C, storage -30 … 80 °C",
+     "Humidity : 30 – 85% RH, non-condensing",
+     "Insulation resistance : 10 MΩ or over at 500 VDC between case and circuit",
+     "Insulation withstand : 2 kV, 50/60 Hz, 1 min between case and circuit",
+     "ESD (IEC 61000-4-2) level 3 : air ±8 kV, contact ±6 kV",
+     "Radiated disturbance (IEC 61000-4-3) level 3 : 10 V/m, 80 MHz – 1 GHz and 1.4 – 2.7 GHz",
+     "EFT/burst (IEC 61000-4-4) level 3 : ±2 kV, 1 min"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/da0b121a01_SDDR-CF7_stock_photo_front.jpg",
+  "image_confirmed_unavailable": false,
+  "extra_photos": [
+   {
+    "path": "/docs/fb824b708a_SDDR-CF7_stock_photo_socket.jpg",
+    "caption": "ภาพถ่ายจริงจากสต็อก SAV — ด้านหน้าตั้งค่า SDDT/DOMT และด้านหลังขาเสียบซ็อกเก็ต 8 ขา คลิกเพื่อดูภาพเต็ม"
+   }
+  ],
+  "documents": [
+   {
+    "label": "SDDR instruction sheet (image) — wiring, dimensions and recommended sockets (illustrations show the DZ7 digital variant; the CF7 shares the 8-pin socket and wiring)",
+    "official_url": null,
+    "local_path": "/docs/9e37db92d1_SDDR_Instruction_Sheet_RD14-03-013_R9.jpg"
+   },
+   {
+    "label": "EOCR Catalog (English) — SDDR-C shut down delay relay section, p.217–218",
+    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+    "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "รีเลย์รีสตาร์ทอัตโนมัติหลังไฟดับชั่วขณะ (順間停電 / 순간정전 재기동) — แก้ปัญหาไฟตกแวบเดียวแล้วต้องไปกดสตาร์ทมอเตอร์ใหม่ทีละตัว | SDDT = ไฟต้องกลับมาภายในเวลานี้ถึงจะรีสตาร์ทอัตโนมัติ (0.5–5 วินาที) | DOMT = หน่วงก่อนต่อหน้าสัมผัสกลับ (Off, 1–30 วินาที) ใช้ทยอยสตาร์ทมอเตอร์ไม่ให้ขึ้นพร้อมกัน | สวิตช์ A/B เลือกให้ตรงกับวงจรควบคุมเดิม กดปุ่ม TEST จำลองไฟดับเพื่อตรวจสอบได้ | ตัวที่มีในสต็อกเป็น CF7 ไฟเลี้ยง 110/115/120VAC เสียบซ็อกเก็ต 8 ขา (KH-KTS-8 / K2CF08 / PS-08) | ⚠ ถ้าระบบมีฮาร์มอนิกมาก แรงดันที่ถือว่า \"ไฟดับ\" จะสูงขึ้น ต้องเผื่อไว้"
  }
 ]
