@@ -10,7 +10,8 @@ const NAV_LINKS = [
   { href: "/", label: "หน้าแรก" },
   { href: "/products/", label: "PRODUCTS" },
   { href: "/learn/", label: "LEARN" },
-  { href: "/#contact", label: "CONTACT" },
+  { href: "/about/", label: "ABOUT" },
+  { href: "/contact/", label: "CONTACT" },
 ];
 
 export default function SiteHeader() {

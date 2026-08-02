@@ -16,7 +16,9 @@ import {
   Disclaimer,
 } from "../../components/knowledge/parts";
 
-const SITE = "https://savautomation.com";
+import { SITE_URL, COMPANY } from "../../lib/company";
+
+const SITE = SITE_URL;
 
 export function generateStaticParams() {
   return articleSlugs().map((slug) => ({ slug }));
@@ -67,8 +69,16 @@ export default async function ArticlePage({
         author: { "@type": "Organization", name: "SAV Automation" },
         publisher: {
           "@type": "Organization",
-          name: "SAV Mechanical Services & Supplies",
-          logo: { "@type": "ImageObject", url: `${SITE}/logo.png` },
+          "@id": `${SITE}/#organization`,
+          name: COMPANY.nameEn,
+          // Was /logo.png, which 404s — publisher.logo is required for Article
+          // rich results, so every article was failing validation on this alone.
+          logo: {
+            "@type": "ImageObject",
+            url: `${SITE}/sav-logo.png`,
+            width: 590,
+            height: 140,
+          },
         },
         mainEntityOfPage: `${SITE}/learn/${slug}/`,
         ...(meta.references?.length

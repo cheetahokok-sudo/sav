@@ -6,6 +6,13 @@
 // (NAP) hurts both customer trust and Google Business ranking.
 // ============================================================================
 
+/**
+ * Canonical origin, no trailing slash. Every absolute URL in metadata, JSON-LD,
+ * the sitemap and robots.txt is built from this — it used to be hardcoded in
+ * five separate files, which is exactly how a domain migration goes wrong.
+ */
+export const SITE_URL = "https://savautomation.com";
+
 export const COMPANY = {
   nameEn: "SAV Mechanical Services & Supplies Ltd., Part.",
   nameTh: "หจก. เอส เอ วี เมคคานิคคอล เซอร์วิสส์ แอนด์ ซัพพลายส์",
@@ -49,6 +56,21 @@ export const COMPANY = {
 
   mapsEmbed:
     "https://maps.google.com/maps?q=13.5909269,100.6159041&hl=th&z=17&output=embed",
+
+  // Same coordinates as mapsEmbed above, split out for LocalBusiness JSON-LD.
+  latitude: 13.5909269,
+  longitude: 100.6159041,
+
+  /**
+   * Profiles that are demonstrably the same business, for schema.org `sameAs`.
+   * This is how Google and LLMs confirm "this website = this real company", so
+   * it earns its keep — but ONLY with URLs that actually resolve to SAV. Adding
+   * a plausible-looking profile that isn't ours is worse than an empty list.
+   *
+   * TODO (owner): append the Google Business Profile URL once created, plus
+   * Facebook page and any manufacturer distributor-listing page.
+   */
+  sameAs: ["https://line.me/ti/p/~cheetahok"] as string[],
 } as const;
 
 /** WhatsApp link with prefilled message. */

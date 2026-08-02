@@ -1,8 +1,10 @@
-import fs from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import type { Metadata } from "next";
 import DetailActions from "./DetailActions";
+import { SITE_URL } from "../../lib/company";
+import { allProducts, type Product, type SpecGroup } from "../../lib/products";
+import { categoryOf } from "../../lib/series";
+import { articlesBySlugs } from "../../lib/knowledge";
 
 // ============================================================================
 // Per-product page — the modern version of a manufacturer datasheet page.
@@ -14,31 +16,6 @@ import DetailActions from "./DetailActions";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-type Doc = { label: string; official_url: string | null; local_path: string | null };
-type SpecGroup = { group: string; rows: string[] };
-type FeatureGroup = { title: string; items: string[] };
-type Product = {
-  model_number: string;
-  title: string;
-  range_name: string;
-  brand?: string;
-  series?: string;
-  base_model?: string;
-  description: string;
-  feature_groups?: FeatureGroup[];
-  specs?: SpecGroup[];
-  oem?: boolean;
-  local_photo_path: string | null;
-  // Real photos of the stock SAV actually holds, shown under the catalog
-  // render. A buyer trusts "here is the unit on our shelf" in a way a
-  // manufacturer illustration cannot earn. Optional and additive: a product
-  // with none behaves exactly as before.
-  extra_photos?: { path: string; caption?: string | null }[];
-  documents: Doc[];
-  in_stock: boolean | null;
-  your_notes: string | null;
-};
-
 // Every image of a product, catalog render first, real stock photos after.
 function allPhotos(p: Product): string[] {
   const seen = new Set<string>();
@@ -49,10 +26,7 @@ function allPhotos(p: Product): string[] {
     .filter((x) => !seen.has(x) && seen.add(x));
 }
 
-function loadAll(): Product[] {
-  const p = path.join(process.cwd(), "public", "products", "index.json");
-  return JSON.parse(fs.readFileSync(p, "utf-8"));
-}
+const loadAll = allProducts;
 
 export function generateStaticParams() {
   return loadAll().map((p) => ({ model: p.model_number }));
@@ -104,6 +78,12 @@ export default async function ProductDetail(
       (x.base_model && p.base_model ? x.base_model === p.base_model : x.range_name === p.range_name))
     .slice(0, 6);
 
+  // The category page this part belongs to, and the Knowledge Center articles
+  // that explain it. Product pages previously linked only to sibling products
+  // and never once into /learn/, so the two halves of the site were islands.
+  const category = categoryOf(p.model_number);
+  const guides = articlesBySlugs(category?.articles ?? []).slice(0, 4);
+
   // Deduplicate docs (series pages repeat the shared catalog)
   const seen = new Set<string>();
   const docs = p.documents.filter((d) => {
@@ -113,26 +93,53 @@ export default async function ProductDetail(
     return true;
   });
 
+  const url = `${SITE_URL}/products/${p.model_number}/`;
+
+  // No `offers` node. SAV quotes rather than sells online, and an Offer that
+  // carries priceCurrency without a price is invalid — Google rejects it, which
+  // was suppressing the Product result on every page here. Product without
+  // offers is valid markup that still tells search engines what the part is;
+  // stock status stays where it is honest, on the visible page.
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    name: p.model_number,
-    mpn: p.model_number,
-    brand: { "@type": "Brand", name: brand },
-    description: p.description,
-    ...(allPhotos(p).length
-      ? { image: allPhotos(p).map((x) => `https://savautomation.com${x}`) }
-      : {}),
-    offers: {
-      "@type": "Offer",
-      // Least-claim rule: only assert availability when the owner has
-      // explicitly marked the SKU as stocked; "ask" SKUs claim nothing.
-      ...(p.in_stock === true
-        ? { availability: "https://schema.org/InStock" }
-        : {}),
-      priceCurrency: "THB",
-      seller: { "@type": "Organization", name: "SAV Mechanical Services & Supplies" },
-    },
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": `${url}#product`,
+        name: p.model_number,
+        mpn: p.model_number,
+        sku: p.model_number,
+        url,
+        brand: { "@type": "Brand", name: brand },
+        manufacturer: { "@type": "Organization", name: brand },
+        ...(p.series ? { category: p.series } : {}),
+        description: p.description,
+        ...(allPhotos(p).length
+          ? { image: allPhotos(p).map((x) => `${SITE_URL}${x}`) }
+          : {}),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "หน้าแรก", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "สินค้า", item: `${SITE_URL}/products/` },
+          ...(category
+            ? [{
+                "@type": "ListItem",
+                position: 3,
+                name: category.title,
+                item: `${SITE_URL}/products/series/${category.slug}/`,
+              }]
+            : []),
+          {
+            "@type": "ListItem",
+            position: category ? 4 : 3,
+            name: p.model_number,
+            item: url,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -156,9 +163,20 @@ export default async function ProductDetail(
       </div>
 
       <div className="max-w-5xl mx-auto px-6 py-10">
-        {/* breadcrumb */}
+        {/* breadcrumb — mirrors the BreadcrumbList in JSON-LD above */}
         <p className="font-display text-[11px] font-bold tracking-wider uppercase text-gray-500 mb-6">
           <Link href="/products/" className="hover:text-brand">Products</Link>
+          {category && (
+            <>
+              <span className="mx-2 text-gray-300">/</span>
+              <Link
+                href={`/products/series/${category.slug}/`}
+                className="hover:text-brand normal-case tracking-normal"
+              >
+                {category.title}
+              </Link>
+            </>
+          )}
           <span className="mx-2 text-gray-300">/</span>
           <span className="text-ink">{p.model_number}</span>
         </p>
@@ -351,12 +369,49 @@ export default async function ProductDetail(
                 </Link>
               ))}
             </div>
+            {category && (
+              <p className="text-[12.5px] text-gray-600 mt-4">
+                ดูรุ่นทั้งหมดในกลุ่มนี้ที่{" "}
+                <Link
+                  href={`/products/series/${category.slug}/`}
+                  className="text-brand font-semibold hover:underline"
+                >
+                  {category.title}
+                </Link>
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Knowledge Center cross-links. A buyer landing here from a search is
+            usually mid-decision, not mid-purchase — the articles that explain
+            how to size and set the part are the most useful next click. */}
+        {guides.length > 0 && (
+          <div className="bg-white border border-gray-200 rounded p-8 mb-6">
+            <h2 className="font-display font-extrabold text-lg text-ink mb-4 pb-3 border-b border-gray-200">
+              อ่านก่อนเลือกรุ่น
+            </h2>
+            <ul className="space-y-3">
+              {guides.map((g) => (
+                <li key={g.slug}>
+                  <Link
+                    href={`/learn/${g.slug}/`}
+                    className="font-semibold text-[14px] text-ink hover:text-brand transition-colors"
+                  >
+                    {g.title}
+                  </Link>
+                  <p className="text-[12.5px] text-gray-600 leading-snug mt-0.5">
+                    {g.description}
+                  </p>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
 
         <p className="text-center text-[12px] text-gray-500 pb-8">
           จำหน่ายโดย หจก. เอส เอ วี เมคคานิคคอล เซอร์วิสส์ แอนด์ ซัพพลายส์ —
-          สอบถาม/ขอใบเสนอราคา: <Link href="/#contact" className="text-brand font-bold">ติดต่อเรา</Link>
+          สอบถาม/ขอใบเสนอราคา: <Link href="/contact/" className="text-brand font-bold">ติดต่อเรา</Link>
         </p>
       </div>
     </main>

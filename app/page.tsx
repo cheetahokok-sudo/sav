@@ -4,6 +4,7 @@ import ContactBar from "./components/ContactBar";
 import QuoteForm from "./components/QuoteForm";
 import { COMPANY, messagingLink } from "./lib/company";
 import { TOOLS } from "./components/knowledge/toolsList";
+import { allArticles } from "./lib/knowledge";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -12,9 +13,9 @@ const navLinks = [
   { href: "/learn/", label: "LEARN" },
   { href: "#eocr", label: "EOCR SERIES" },
   { href: "#solutions", label: "SOLUTIONS" },
-  { href: "#why", label: "ABOUT US" },
+  { href: "/about/", label: "ABOUT US" },
   { href: "#how-to-order", label: "HOW TO ORDER" },
-  { href: "#contact", label: "CONTACT" },
+  { href: "/contact/", label: "CONTACT" },
 ];
 
 // Market segments SAV serves. Photos live in public/images/solutions/ — real
@@ -27,13 +28,16 @@ const solutions = [
 ];
 
 // Category cards: EOCR first and featured (it's the business), each linked to
-// a prefiltered catalog search so the click actually goes somewhere useful.
+// its permanent /products/series/ page. These used to point at "/products/?q=…"
+// filter states, which are all the same URL — a search engine cannot index
+// them separately, so the click went somewhere useful for a human and nowhere
+// at all for a crawler.
 const productCategories = [
   {
     icon: "⚡",
     name: "EOCR OVERLOAD RELAY",
     sub: "รีเลย์ป้องกันมอเตอร์ดิจิทัล",
-    query: "EOCR",
+    href: "/products/series/eocr-ss-se2/",
     featured: true,
     stock: "in" as const,
   },
@@ -41,7 +45,7 @@ const productCategories = [
     icon: "💧",
     name: "EUCR UNDER CURRENT",
     sub: "ป้องกัน Dry Running ปั๊มน้ำ",
-    query: "EUCR",
+    href: "/products/series/eucr-under-current/",
     featured: false,
     stock: "in" as const,
   },
@@ -49,7 +53,7 @@ const productCategories = [
     icon: "📟",
     name: "EOCR-i3 DIGITAL",
     sub: "จอแสดงผล + สื่อสาร Modbus",
-    query: "I3M",
+    href: "/products/series/eocr-i3-digital/",
     featured: false,
     stock: "in" as const,
   },
@@ -57,7 +61,7 @@ const productCategories = [
     icon: "🛡️",
     name: "EOCR-iF GROUND FAULT",
     sub: "ป้องกันกระแสรั่วลงดิน",
-    query: "IFM",
+    href: "/products/series/eocr-if-ground-fault/",
     featured: false,
     stock: "in" as const,
   },
@@ -65,7 +69,7 @@ const productCategories = [
     icon: "📊",
     name: "DSP PANEL METER",
     sub: "มิเตอร์วัดค่าพร้อม Display",
-    query: "DSP",
+    href: "/products/series/samwha-dsp/",
     featured: false,
     stock: "ask" as const,
   },
@@ -73,7 +77,7 @@ const productCategories = [
     icon: "🔩",
     name: "ACCESSORIES & CT",
     sub: "อุปกรณ์เสริมและ External CT",
-    query: "",
+    href: "/products/series/zct-ct/",
     featured: false,
     stock: "ask" as const,
   },
@@ -83,7 +87,7 @@ const eocrProducts = [
   {
     tag: "Samwha EOCR · Best Seller",
     name: "EOCR-SS Series",
-    query: "EOCRSS",
+    href: "/products/series/eocr-ss-se2/",
     stock: "in" as const,
     desc: "รีเลย์ป้องกัน Overcurrent แบบ Digital ขนาดกะทัดรัด รองรับ AC/DC (Free Voltage) ในตัวเดียว",
     specs: [
@@ -100,7 +104,7 @@ const eocrProducts = [
   {
     tag: "Samwha EOCR · Advanced",
     name: "EOCR-3DE / 3EZ",
-    query: "EOCR3",
+    href: "/products/series/eocr-3d-3e/",
     stock: "in" as const,
     desc: "รุ่น Advanced ป้องกันครบทุกความผิดปกติ รองรับ External CT สำหรับมอเตอร์กำลังสูง",
     specs: [
@@ -117,7 +121,7 @@ const eocrProducts = [
   {
     tag: "Samwha EOCR · Digital",
     name: "EOCR-i3 / iF Series",
-    query: "I3M",
+    href: "/products/series/eocr-i3-digital/",
     stock: "in" as const,
     desc: "รุ่นจอดิจิทัล แสดงกระแสจริง Real-time พร้อมรุ่น iF ป้องกันกระแสรั่วลงดิน (Ground Fault)",
     specs: [
@@ -133,7 +137,7 @@ const eocrProducts = [
   {
     tag: "Samwha EOCR",
     name: "EUCR Series",
-    query: "EUCR",
+    href: "/products/series/eucr-under-current/",
     stock: "in" as const,
     desc: "Under Current Relay สำหรับระบบปั๊มน้ำ ตรวจจับ Dry Running และโหลดต่ำผิดปกติ",
     specs: [
@@ -224,6 +228,14 @@ export default function Home() {
   const consultLine = messagingLink(
     "สวัสดีครับ ต้องการคำแนะนำเลือกรุ่น EOCR ครับ"
   );
+
+  const articles = allArticles();
+  const articleCount = articles.length;
+  // Pillar pages are the ones written to be entry points; fall back to the
+  // first few if none are flagged, so this section can never render empty.
+  const pillarArticles = (
+    articles.filter((a) => a.pillar).length ? articles.filter((a) => a.pillar) : articles
+  ).slice(0, 6);
 
   return (
     <main>
@@ -484,7 +496,7 @@ export default function Home() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 max-w-6xl mx-auto mb-10">
           {productCategories.map((c) => (
             <Link
-              href={c.query ? `/products/?q=${c.query}` : "/products/"}
+              href={c.href}
               key={c.name}
               className={`group bg-white border rounded p-5 text-center hover:shadow-lg hover:-translate-y-0.5 transition-all ${
                 c.featured
@@ -574,7 +586,7 @@ export default function Home() {
                 ))}
               </div>
               <Link
-                href={`/products/?q=${p.query}`}
+                href={p.href}
                 className="mt-auto text-center border border-gray-300 text-ink font-display text-xs font-bold tracking-wider uppercase py-2.5 rounded-sm hover:border-brand hover:text-brand transition-colors"
               >
                 ดูรุ่นทั้งหมด + ขอราคา →
@@ -644,6 +656,43 @@ export default function Home() {
         </p>
       </section>
 
+      {/* KNOWLEDGE CENTER — the pillar articles, linked from the homepage.
+          The Knowledge Center is the strongest thing on this site and the
+          homepage previously linked to none of it, so none of that authority
+          reached the articles. */}
+      <section className="bg-white py-16 px-6">
+        <p className="text-center font-display text-[11px] font-extrabold tracking-[0.2em] uppercase text-brand mb-2">
+          KNOWLEDGE CENTER
+        </p>
+        <h2 className="text-center font-display font-extrabold text-3xl lg:text-4xl text-ink">
+          คู่มือเลือกและแก้ปัญหา
+        </h2>
+        <div className="w-10 h-[3px] bg-brand rounded mx-auto mt-4 mb-10" />
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {pillarArticles.map((a) => (
+            <Link
+              key={a.slug}
+              href={`/learn/${a.slug}/`}
+              className="block rounded-lg border border-gray-200 bg-white p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+            >
+              <h3 className="font-display font-extrabold text-[16px] text-ink leading-snug mb-2">
+                {a.title}
+              </h3>
+              <p className="text-[13px] text-gray-600 leading-relaxed">{a.description}</p>
+              <span className="inline-block font-display text-[11px] font-bold tracking-wider uppercase text-brand mt-3">
+                อ่านต่อ →
+              </span>
+            </Link>
+          ))}
+        </div>
+        <p className="text-center text-[14px] text-gray-600 mt-8">
+          ทั้งหมด {articleCount} บทความ อ้างอิงมาตรฐาน IEC และมาตรฐานการติดตั้งของไทย ·{" "}
+          <Link href="/learn/" className="text-brand font-semibold hover:underline">
+            ดูทั้งหมด →
+          </Link>
+        </p>
+      </section>
+
       {/* INDUSTRY SOLUTIONS — market segments SAV serves. Illustrative stock
           photos per segment; no claims about specific clients. */}
       <section id="solutions" className="bg-white py-20 px-6">
@@ -687,8 +736,9 @@ export default function Home() {
       </section>
 
       {/* LATEST PROJECT — example installation (real motor-protection panel
-          photo). Stats shown per the owner's request; swap for figures from a
-          named/consented job when available. */}
+          photo). The 99.9% uptime figure is confirmed by the owner as real;
+          publishing the measurement period and method alongside it would make
+          it defensible to an engineer rather than merely asserted. */}
       <section id="applications" className="bg-gray-100 py-20 px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
@@ -705,12 +755,15 @@ export default function Home() {
               ป้องกันความเสียหายจากโหลดเกิน กระแสไม่สมดุล และกราวด์ฟอลต์
               ช่วยลดการหยุดเดินเครื่องและยืดอายุการใช้งานมอเตอร์
             </p>
-            <a
-              href="#contact"
+            {/* Was labelled "VIEW CASE STUDY" but only jumped to the contact
+                form — a promise with nothing behind it. Says what it does
+                until a written, consented case study exists to link to. */}
+            <Link
+              href="/contact/"
               className="inline-flex items-center gap-2 border border-brand text-brand font-display text-xs font-bold tracking-wider uppercase px-6 py-2.5 hover:bg-brand hover:text-white transition-colors"
             >
-              VIEW CASE STUDY →
-            </a>
+              สอบถามการติดตั้งลักษณะนี้ →
+            </Link>
           </div>
           <div className="grid grid-cols-[1fr_0.62fr] bg-neutral-900 rounded overflow-hidden min-h-[240px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -720,8 +773,14 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
             <div className="flex flex-col gap-5 justify-center p-6 bg-ink">
+              {/* Only measured figures carry a number. The energy-saving row
+                  used to read "18%" with no baseline, period or method behind
+                  it — a protection relay does not directly save energy, and an
+                  unsupported percentage is the first thing a plant engineer
+                  discounts. It now states the reliability outcome in words,
+                  which is what the equipment actually delivers. */}
               {[
-                ["ENERGY SAVING", "18%", "ลดการใช้พลังงาน"],
+                ["MOTOR RELIABILITY", "ลดลง", "การหยุดเดินเครื่องนอกแผน"],
                 ["SYSTEM UPTIME", "99.9%", "ความเสถียรของระบบ"],
                 ["TRIP PROTECTION", "24/7", "ตัดวงจรทันทีเมื่อผิดปกติ"],
               ].map(([label, num, unit]) => (
@@ -1065,15 +1124,17 @@ export default function Home() {
             </h4>
             <ul className="flex flex-col gap-2.5 text-sm">
               {[
-                ["EOCR-SS Series", "EOCRSS"],
-                ["EOCR-3DE / 3EZ", "EOCR3"],
-                ["EOCR-i3 Series", "I3M"],
-                ["EOCR-iF Series", "IFM"],
-                ["EUCR Series", "EUCR"],
-              ].map(([label, q]) => (
-                <li key={q}>
+                ["EOCR-SS / SE2", "eocr-ss-se2"],
+                ["EOCR-3D / 3E", "eocr-3d-3e"],
+                ["EOCR-i3 Digital", "eocr-i3-digital"],
+                ["EOCR-iF Ground Fault", "eocr-if-ground-fault"],
+                ["EUCR Under Current", "eucr-under-current"],
+                ["Samwha DSP", "samwha-dsp"],
+                ["ZCT / CT", "zct-ct"],
+              ].map(([label, slug]) => (
+                <li key={slug}>
                   <Link
-                    href={`/products/?q=${q}`}
+                    href={`/products/series/${slug}/`}
                     className="text-gray-500 hover:text-brand transition-colors"
                   >
                     {label}

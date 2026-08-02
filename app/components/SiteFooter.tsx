@@ -33,7 +33,8 @@ export default function SiteFooter() {
               { href: "/", label: "หน้าแรก" },
               { href: "/products/", label: "สินค้าทั้งหมด" },
               { href: "/learn/", label: "คลังความรู้" },
-              { href: "/#contact", label: "ติดต่อ / ขอใบเสนอราคา" },
+              { href: "/about/", label: "เกี่ยวกับ SAV" },
+              { href: "/contact/", label: "ติดต่อ / ขอใบเสนอราคา" },
             ].map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="text-gray-500 hover:text-brand transition-colors">

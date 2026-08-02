@@ -114,3 +114,16 @@ export function allArticles(): ArticleMeta[] {
     .map((slug) => getArticle(slug).meta)
     .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
 }
+
+/**
+ * Look up articles by slug, in the order asked for, skipping any that no
+ * longer exist. Product and category pages cross-link into the Knowledge
+ * Center by slug; a renamed article should quietly drop out of those lists
+ * rather than break the build or emit a dead link.
+ */
+export function articlesBySlugs(slugs: string[]): ArticleMeta[] {
+  const bySlug = new Map(allArticles().map((a) => [a.slug, a]));
+  return slugs
+    .map((s) => bySlug.get(s))
+    .filter((a): a is ArticleMeta => Boolean(a));
+}
