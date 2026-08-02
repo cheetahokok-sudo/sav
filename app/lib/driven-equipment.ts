@@ -52,7 +52,7 @@ export const LOAD_TYPES: Record<
   "positive-displacement": {
     nameTh: "Positive Displacement",
     behaviourTh: "อัตราการไหลผูกกับความเร็วโดยตรง ไม่ขึ้นกับความดันปลายทาง",
-    riskTh: "เดินตันปลายทาง (Deadhead), ความดันเกินพิกัด",
+    riskTh: "เดินขณะทางส่งปิดหรืออุดตัน (Deadhead), ความดันเกินพิกัด",
   },
   "high-inertia": {
     nameTh: "High Inertia",
@@ -216,12 +216,20 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
       },
       {
         id: "deadhead",
-        nameTh: "เดินตันปลายทาง (Deadhead)",
-        currentSignatureTh: "ปั๊มหอยโข่ง — กระแส **ลดลง** เมื่อวาล์วด้านส่งปิด",
-        fieldSymptomTh: "ไม่มีการไหล ของเหลวในเรือนปั๊มร้อนขึ้นเรื่อย ๆ จนเดือด",
-        detection: ["undercurrent", "external-sensor-interlock"],
+        nameTh: "เดินปั๊มขณะทางส่งปิดหรืออุดตัน (Deadhead)",
+        // "มัก" is load-bearing. Radial-flow shut-off power is typically lower
+        // than duty power, but how much lower is a property of the individual
+        // pump curve — stating it as a law invites a setting copied onto a pump
+        // where it does not hold.
+        currentSignatureTh:
+          "ปั๊มหอยโข่งแบบ Radial-flow **มักมี**กระแสและกำลัง**ลดลง**เมื่ออัตราการไหลเข้าใกล้ศูนย์ — ต้องยืนยันกับกราฟกำลังของรุ่นนั้นก่อน",
+        fieldSymptomTh:
+          "ไม่มีการไหลผ่านเพื่อพาความร้อนออก ของเหลวในเรือนปั๊มหมุนวนและรับพลังงานจากใบพัดต่อเนื่องจนอุณหภูมิสูงขึ้น ถ้าเดินค้างไว้นานอาจเกิดไอหรือเดือด ทำให้แมคคานิคอลซีลและชิ้นส่วนภายในเสียหาย",
+        // Interlock first: the order these are listed in is the order they are
+        // read as priority, and current is the weaker signal here.
+        detection: ["external-sensor-interlock", "undercurrent"],
         caveatTh:
-          "ใช้ได้เฉพาะปั๊มหอยโข่ง (Radial) เท่านั้น — ปั๊มใบพัดตามแนวแกน (Axial/Propeller) และปั๊ม Positive Displacement กระแสจะ **พุ่งขึ้น** เมื่อปิดปลายทาง ตรงกันข้ามกันโดยสิ้นเชิง ห้ามนำค่าที่ตั้งไว้กับปั๊มแบบหนึ่งไปใช้กับอีกแบบ",
+          "**อย่าใช้ Undercurrent เป็นด่านหลักของอาการนี้** — กระแสตอน Deadhead อาจอยู่ใกล้กับกระแสตอนโหลดต่ำตามปกติจนแยกไม่ออก และเปลี่ยนไปอีกเมื่อขับด้วย VFD ด่านหลักคือสวิตช์การไหล ความดันด้านส่ง หรืออุณหภูมิที่เรือนปั๊ม ร่วมกับ Minimum-flow Bypass ส่วน Undercurrent เป็นด่านเสริมที่ตั้งจากค่าที่วัดหน้างานจริงเท่านั้น อีกข้อคือทิศทางกระแสนี้ใช้ได้เฉพาะ Radial-flow — ปั๊ม Axial/Propeller และ Positive Displacement กระแสจะ **พุ่งขึ้น** เมื่อปิดปลายทาง ตรงกันข้ามกันโดยสิ้นเชิง",
       },
       {
         id: "ground-fault-wet",
@@ -245,7 +253,8 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
       { fn: "start-delay", whenTh: "ท่อยาวหรือใช้เวลาไล่อากาศนานตอนสตาร์ต" },
       {
         fn: "external-sensor-interlock",
-        whenTh: "ต้องกันเดินแห้งอย่างแน่นอน — ใช้สวิตช์ระดับน้ำหรือสวิตช์การไหลร่วมด้วย",
+        whenTh:
+          "ต้องกันเดินแห้งหรือ Deadhead อย่างแน่นอน — ใช้สวิตช์ระดับน้ำ สวิตช์การไหล ความดันด้านส่ง หรืออุณหภูมิเรือนปั๊ม และพิจารณา Minimum-flow Bypass ทั้งสองอาการนี้กระแสอย่างเดียวยืนยันไม่ได้",
       },
     ],
     articleSlug: "centrifugal-pump-motor-protection",
@@ -259,7 +268,7 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
     failureModes: [
       {
         id: "deadhead",
-        nameTh: "เดินตันปลายทาง / ประตูน้ำปิด",
+        nameTh: "เดินปั๊มขณะทางส่งปิดหรือประตูน้ำปิด (Deadhead)",
         currentSignatureTh:
           "กระแส **พุ่งขึ้น** เมื่อการไหลลดลง — สูงสุดที่จุดปิดสนิท (Shut-off)",
         fieldSymptomTh: "มอเตอร์ร้อนเร็ว อาจทริปภายในไม่กี่นาที เสียงและแรงสั่นเปลี่ยนชัดเจน",
