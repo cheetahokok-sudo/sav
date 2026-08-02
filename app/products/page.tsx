@@ -66,7 +66,8 @@ function cleanDescription(title: string | null, model: string): string | null {
 function seriesOf(model: string): string {
   const m = model.toUpperCase();
   if (/^EOCR(SS|SSD|SE2)/.test(m)) return "EOCR-SS / SE2";
-  if (/^(EOCR3|3DM2|3MZ2|FMZ2|FDM2)/.test(m)) return "EOCR-3D / 3E";
+  // EOCR-?3 so the legacy "EOCR-3E420" spelling lands here too, not in Other.
+  if (/^(EOCR-?3|3DM2|3MZ2|FMZ2|FDM2)/.test(m)) return "EOCR-3D / 3E";
   if (/^EOCR(PFZ|PMZ)/.test(m)) return "EOCR-PFZ / PMZ";
   if (/^EOCR(FDE|FEZ)/.test(m)) return "EOCR-FDE / FEZ";
   if (/^EUCR/.test(m)) return "EUCR (Under Current)";

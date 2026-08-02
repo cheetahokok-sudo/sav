@@ -41,9 +41,12 @@ type Product = {
 
 // Every image of a product, catalog render first, real stock photos after.
 function allPhotos(p: Product): string[] {
-  return [p.local_photo_path, ...(p.extra_photos ?? []).map((x) => x.path)].filter(
-    (x): x is string => Boolean(x),
-  );
+  const seen = new Set<string>();
+  return [p.local_photo_path, ...(p.extra_photos ?? []).map((x) => x.path)]
+    .filter((x): x is string => Boolean(x))
+    // A product whose only image IS the stock photo would otherwise list it
+    // twice in schema.org and the OG preview.
+    .filter((x) => !seen.has(x) && seen.add(x));
 }
 
 function loadAll(): Product[] {

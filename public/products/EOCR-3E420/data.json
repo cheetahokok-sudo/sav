@@ -1,0 +1,73 @@
+{
+ "model_number": "EOCR-3E420",
+ "title": "EOCR-3E420 - Samwha EOCR electronic over-current relay with 4–20 mA output (legacy model)",
+ "range_name": "EOCR",
+ "brand": "Samwha EOCR",
+ "series": "EOCR-3D / 3E",
+ "base_model": "3E420",
+ "range_short_desc": "Legacy 3-phase electronic over-current relay with a 4–20 mA transmitter output",
+ "description": "LEGACY MODEL — still supplied by SAV. Samwha EOCR-3E420 three-phase electronic over-current relay in the original EOCR housing, from before the EOCR line was brought under Schneider Electric. The \"420\" denotes the built-in 4–20 mA current transmitter output, which reports motor load back to a PLC or DCS alongside the relay's own trip contacts. Front panel carries a 3-digit LED readout with Amp and sec indicators, L1/L2/L3 phase lamps, SET/store, MODE·ADJUST, UP/DN and RESET keys, over separate OL and UL output contacts on terminals 95/96 and 97/98. Schneider's current EOCR catalog lists 3E420 under \"existing / old model\", superseded by the i3M420. SAV continues to stock the legacy part for like-for-like replacement in panels already built around it.",
+ "feature_groups": [
+  {
+   "title": "Why this record is thin",
+   "items": [
+    "This is a discontinued model and no original 3E420 datasheet survives in SAV's catalog archive or on Schneider's current document server",
+    "The figures below are only what can be sourced with certainty: the unit's own front panel, and the replacement table in Schneider's current EOCR catalog",
+    "Full electrical ratings — current range, control voltage, trip curves, contact capacity — must be confirmed against the original datasheet or the unit's nameplate before quoting"
+   ]
+  },
+  {
+   "title": "Front panel (from the product photo)",
+   "items": [
+    "Three-phase window (through-hole) current sensing, L1 / L2 / L3 lamps",
+    "3-digit LED display with Amp and sec indication",
+    "Keys : SET/store, MODE·ADJUST, UP, DN, RESET",
+    "Terminals : A1(+) and A2 control power, 4~20 mA output (+ / −), 95/96 and 97/98 output contacts marked OL/UL",
+    "Branded \"Electronic Over-current Relay EOCR\" with the Schneider Electric mark of the transition period"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Ordering codes (Schneider EOCR catalog, replacement table)",
+   "rows": [
+    "3E420-WR9 — replaced by i3M420-WRDBW (window) / i3M420-WRDBH (bottom)",
+    "3E420-WR91 — replaced by i3M420-WRDUW (window) / i3M420-WRDUH (bottom)",
+    "The pairing implies -WR9 is the 24 VDC control-power variant and -WR91 the 100–240 VAC one, following the DB / DU suffixes of the replacement — confirm against the unit's nameplate before quoting"
+   ]
+  },
+  {
+   "group": "Lifecycle",
+   "rows": [
+    "Status : existing / old model in Schneider's current EOCR catalog selection guide",
+    "Successor : i3M420 (new digital range, with Modbus RS-485 communication)",
+    "Listed alongside 3D420 and 3M420 as the 4–20 mA members of the legacy digital family",
+    "SAV still supplies 3E420 for panels already wired for it, where swapping to the i3M420 would mean re-terminating"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": true,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/8dafc7686a_EOCR-3E420_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Successor model catalog (PDF, English) — EOCR-i3M420 / iFM420, the 3E420's replacement",
+   "official_url": null,
+   "local_path": "/docs/b2a7dd50c8_EOCR_i3M420_iFM420_Catalog_EN.pdf"
+  },
+  {
+   "label": "EOCR Catalog (English) — selection guide and old-to-new replacement table listing 3E420",
+   "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+   "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "รุ่นเก่า (legacy) SAV ยังจำหน่ายอยู่ — EOCR รุ่นดั้งเดิมก่อนรวมกับ Schneider | \"420\" คือมีเอาต์พุต 4–20mA ส่งค่ากระแสมอเตอร์เข้า PLC/DCS ได้ในตัว พร้อมหน้าสัมผัส OL/UL แยก (95/96, 97/98) | รหัสสั่งซื้อ 3E420-WR9 และ 3E420-WR91 | รุ่นทดแทนปัจจุบันคือ i3M420 — เก็บรุ่นเก่าไว้สำหรับตู้ที่เดินสายไว้เดิม ไม่ต้องรื้อ | ⚠ ยังไม่มีดาต้าชีตต้นฉบับ ต้องยืนยันพิกัดกระแส/ไฟเลี้ยงจากป้ายบนตัวสินค้าก่อนเสนอราคา"
+}

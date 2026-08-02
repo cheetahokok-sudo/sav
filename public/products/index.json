@@ -10581,5 +10581,226 @@
   "in_stock": null,
   "your_price": null,
   "your_notes": "รีเลย์ตรวจจับไฟรั่ว/กราวด์ฟอลต์แบบดิจิทัล ใช้คู่กับ ZCT อินพุต 200mA/100mV (รุ่นลงท้าย A = 200mA/1.5mA) ไฟเลี้ยง Free Volt AC/DC 100–240V หน้าสัมผัส 1a AC250V 10A / DC30V 10A ตั้งกระแส 0.1–10.0A เวลา INST–5.00 วินาที มีหน่วยความจำบันทึกค่ากระแสตอนเกิดฟอลต์ รุ่นลงท้าย -C มีพอร์ต RS-485 Modbus | ทรงตั้ง D11F = ฝังหน้าตู้, D11P = แบบเสียบซ็อกเก็ต, ทรงนอน D11H สำหรับตู้ MCC — ⚠ ผู้ผลิตระบุใช้กับวงจรแรงดันต่ำกว่า 600V ให้ใช้คู่กับ ZCT แรงต่ำ DZR / DZS / SZR ไม่ใช่ ZCT แรงสูง HZR (6,600/3,300V) ซึ่งระบุให้ใช้รีเลย์ HGR/DGR"
+ },
+ {
+  "model_number": "ISEMM-WRUH",
+  "title": "ISEMM-WRUH - EOCR-iSEM intelligent motor protection relay, 0.5–100 A, 100–240 VAC",
+  "range_name": "EOCR",
+  "brand": "Schneider EOCR",
+  "series": "iSEM (Communication)",
+  "base_model": "ISEMM",
+  "range_short_desc": "Intelligent smart energy monitoring and motor protection relay (EOCR-iSEM)",
+  "description": "Schneider / Samwha EOCR-iSEM series intelligent motor protection and energy monitoring relay. The iSEMM is the current, voltage and power measuring model of the family: it protects on over/under current, earth fault, short circuit, stall, jam, phase loss, unbalance and reverse phase, and additionally on over/under voltage, over/low power and power factor. Current range 0.5–100 A definite (0.5–60 A on the inverse and thermal-inverse curves), system voltage 3-phase AC 110–690 V, control power 100–240 VAC. Reports over Modbus-RTU / RS-485 and converts the largest of the three phase currents to a 4–20 mA output. The relay body mounts behind the panel and drives a separate sPDM 72 × 72 mm display.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Measures and displays current, voltage, earth-fault current, active/reactive power, energy, operating time, total operating time and power factor",
+     "Fault-cause display, plus a fault wave record sampling 3-phase current and voltage at 1 ms for 200 ms around a trip (readable over communication)",
+     "Total operating-time counter that the user cannot reset — only cleared in the factory",
+     "Date and time stamping of faults, so a motor failure can be placed exactly",
+     "Restart limit caps reset attempts within 30 minutes when auto reset is enabled",
+     "Self test runs watchdog and RAM checks while the motor is not drawing current",
+     "Communication watchdog raises an alert if the PLC/DCS stops polling for a user-set 1–999 s"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Nameplate (photographed from SAV stock)",
+    "rows": [
+     "Model : ISEMM-WRUH",
+     "Control voltage : Us 100–240 VAC, 50/60 Hz, Uimp 4 kV",
+     "Ie : 0.5–100 A",
+     "Ue : 690 V, Uimp 6 kV",
+     "Aux. contact : 3 A / 250 VAC resistive — OL (1NC+1NO), AL (1NO), GR (1NO), SP (1NO)",
+     "Wiring : CCAWG 18–14, Cu 75 °C, terminal torque 1.2 N·m",
+     "Caution (on unit) : for LV1–LV3 a 500–690 V, 0.5–1 A gG type fuse is recommended for safety and device protection",
+     "Marks : KC, CE — Made in South Korea, Samwha EOCR / Schneider Electric",
+     "Box : EOCR-iSEM, Intelligent Smart Energy Monitoring, current range 0.5–100 A, Us 100–240 VAC"
+    ]
+   },
+   {
+    "group": "Current protection settings",
+    "rows": [
+     "Over current setting range (oc) : definite 0.5–100 A; inverse / thermal inverse 0.5–60 A",
+     "Under current setting range (uc) : 0.5 A up to the oc setting, or off",
+     "Overload characteristic curve (tcc) : definite (Def) / inverse (Inv) / thermal inverse (th)",
+     "Short-circuit current setting (SH) : 2–50 × (settable while oc × SH ≤ 500 A)",
+     "Stall (Sc) : 2–8 × (settable while oc × Sc ≤ 500 A)",
+     "Jam (JA) : 1.5–8 × (settable while oc × JA ≤ 500 A)"
+    ]
+   },
+   {
+    "group": "Current operation times",
+    "rows": [
+     "Start delay time (dt) : 0–600 s",
+     "Over current operation time (definite, ot) : 0.2–120 s",
+     "Over current characteristic curve (inverse, cls) : class 1–30",
+     "Under current operation time (definite, ut) : 0.5–120 s",
+     "Earth-fault current operation time (Et) : 0.05–10 s external, 0.1–10 s internal",
+     "Earth-fault delay at start-up (Edt) : 0–30 s",
+     "Short-circuit operation time : within 0.05 s; delay at start-up (Sdt) 0–20 s",
+     "Jam operation time (Jt) : 0.2–10 s",
+     "Phase loss operation time (Plt) : 0.5–5 s",
+     "Unbalance operation time (Cut) : 1–10 s",
+     "Reverse phase operation time : within 0.15 s",
+     "Auto reset time : 0.5 s – 20 min",
+     "Reset type : manual (H-r) / remote (E-r) / auto (A-r)"
+    ]
+   },
+   {
+    "group": "Voltage, power and power-factor protection",
+    "rows": [
+     "Over voltage setting (ov) : 101–115% of a nominal 110–690 V; operation time (ovt) 0.2–30 s",
+     "Under voltage setting (uv) : 70–99% of a nominal 110–690 V; operation time (uvt) 0.2–30 s",
+     "Voltage phase loss operation time (Vlt) : 0.1–30 s",
+     "Voltage unbalance operation time (Vut) : 0.2–20 s",
+     "Voltage reverse phase operation time : within 0.15 s",
+     "Overpower setting (op) : 20–800% of a nominal 0.1–999 kW; operation time (opt) 1–100 s",
+     "Low power setting (up) : 20–800% of a nominal 0.1–999 kW; operation time (upt) 1–30 s",
+     "Overpower factor (of) : 1–100, operation time (oft) 2–30 s",
+     "Underpower factor (uf) : 1–100, operation time (uft) 1–30 s"
+    ]
+   },
+   {
+    "group": "Ratings, display and communication",
+    "rows": [
+     "Control power : 100–240 VAC / 24 VDC, 50/60 Hz, 8 VA or less",
+     "System voltage : 3-phase AC 110–690 V, 50/60 Hz",
+     "Output contact capacity : 3 A / 250 VAC resistive",
+     "Output configuration : over current 1a1b, earth fault 1a, short circuit 1a, alert 1a",
+     "Display : 7-segment LED, plus a bar graph showing 65–100% load factor",
+     "Communication : Modbus-RTU over RS-485, 1.2 / 2.4 / 4.8 / 9.6 / 19.2 / 38.4 kbps, max 1.2 km, shielded twisted 2-pair cable",
+     "Current loop : converts the maximum of the 3-phase currents to 4–20 mA",
+     "Mounting : embedded panel (flush mounting)"
+    ]
+   },
+   {
+    "group": "Insulation, EMC and environment",
+    "rows": [
+     "Insulation resistance : DC 500 V, 10 MΩ or higher between circuit and case",
+     "Withstand voltage : 2 kV between circuit and case, 1 kV between contacts, 2 kV between circuits, 50/60 Hz for 1 min",
+     "ESD (IEC 61000-4-2 / IEC 60255-22-2) : level 3, air ±8 kV, contact ±6 kV",
+     "Radiated disturbance (IEC 61000-4-3 / IEC 60255-22-3) : level 3, 10 V/m, 80–1000 MHz",
+     "Conducted disturbance (IEC 61000-4-6 / IEC 60255-22-6) : level 3, 10 V, 0.15–80 MHz",
+     "EFT/burst (IEC 61000-4-4 / IEC 60255-22-4) : level 3, ±2 kV, 1 min",
+     "Surge (IEC 61000-4-5 / IEC 60255-22-5) : level 3, 1.2 × 50 µs, ±4 kV",
+     "Emission (CISPR 11 / IEC 60255-22-26) : class A, conducted and radiated",
+     "Temperature : storage -40 … +85 °C, operation -20 … +60 °C",
+     "Humidity : 30–85% RH, no condensation"
+    ]
+   },
+   {
+    "group": "Dimensions and weight",
+    "rows": [
+     "Main body : 90.3 W × 52.1 H × 108.1 D mm",
+     "Display sPDM : 72 W × 72 H × 28.1 D mm",
+     "Weight : iSEMM 454 g (iSEMD 422 g, iSEMZ 450 g); sPDM 125 g; 1 m cable 55 g"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/34f7e7deab_ISEMM-WRUH_stock_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "EOCR Catalog (English) — EOCR-iSEM specifications, p.92–93",
+    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+    "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   },
+   {
+    "label": "User Guide (English) — Digital iSEM Ethernet manual",
+    "official_url": "https://download.schneider-electric.com/files?p_enDocType=User+guide&p_File_Name=Digitial-iSEM_Ethernet_Manual_R2.pdf&p_Doc_Ref=Digitial-iSEMEthernet_ManualR2",
+    "local_path": "/docs/b857cf6f4b_사용자_가이드.pdf"
+   },
+   {
+    "label": "Instruction sheet — ISEMD / ISEMZE / ISEMME",
+    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Instruction+sheet&p_File_Name=ISEMD_ISEMZE_ISEMME.pdf&p_Doc_Ref=ISEMD_ISEMZE_ISEMME",
+    "local_path": "/docs/ba772d4ddb_설명서.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": true,
+  "your_price": null,
+  "your_notes": "พร้อมส่ง — EOCR-iSEM รุ่น iSEMM วัดทั้งกระแส แรงดัน และกำลังไฟฟ้า ตั้งกระแส 0.5–100A (เส้นโค้ง inverse/thermal 0.5–60A) ระบบ 3 เฟส 110–690V ไฟเลี้ยง 100–240VAC สื่อสาร Modbus-RTU RS-485 และมีเอาต์พุต 4–20mA | ตัวเครื่องติดหลังตู้ ใช้คู่กับจอ sPDM ขนาด 72×72 มม. (ในภาพมีจอมาด้วย) | ⚠ แนะนำให้ใส่ฟิวส์ gG 0.5–1A (500–690V) ที่ขา LV1–LV3 ตามคำเตือนบนตัวเครื่อง"
+ },
+ {
+  "model_number": "EOCR-3E420",
+  "title": "EOCR-3E420 - Samwha EOCR electronic over-current relay with 4–20 mA output (legacy model)",
+  "range_name": "EOCR",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-3D / 3E",
+  "base_model": "3E420",
+  "range_short_desc": "Legacy 3-phase electronic over-current relay with a 4–20 mA transmitter output",
+  "description": "LEGACY MODEL — still supplied by SAV. Samwha EOCR-3E420 three-phase electronic over-current relay in the original EOCR housing, from before the EOCR line was brought under Schneider Electric. The \"420\" denotes the built-in 4–20 mA current transmitter output, which reports motor load back to a PLC or DCS alongside the relay's own trip contacts. Front panel carries a 3-digit LED readout with Amp and sec indicators, L1/L2/L3 phase lamps, SET/store, MODE·ADJUST, UP/DN and RESET keys, over separate OL and UL output contacts on terminals 95/96 and 97/98. Schneider's current EOCR catalog lists 3E420 under \"existing / old model\", superseded by the i3M420. SAV continues to stock the legacy part for like-for-like replacement in panels already built around it.",
+  "feature_groups": [
+   {
+    "title": "Why this record is thin",
+    "items": [
+     "This is a discontinued model and no original 3E420 datasheet survives in SAV's catalog archive or on Schneider's current document server",
+     "The figures below are only what can be sourced with certainty: the unit's own front panel, and the replacement table in Schneider's current EOCR catalog",
+     "Full electrical ratings — current range, control voltage, trip curves, contact capacity — must be confirmed against the original datasheet or the unit's nameplate before quoting"
+    ]
+   },
+   {
+    "title": "Front panel (from the product photo)",
+    "items": [
+     "Three-phase window (through-hole) current sensing, L1 / L2 / L3 lamps",
+     "3-digit LED display with Amp and sec indication",
+     "Keys : SET/store, MODE·ADJUST, UP, DN, RESET",
+     "Terminals : A1(+) and A2 control power, 4~20 mA output (+ / −), 95/96 and 97/98 output contacts marked OL/UL",
+     "Branded \"Electronic Over-current Relay EOCR\" with the Schneider Electric mark of the transition period"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Ordering codes (Schneider EOCR catalog, replacement table)",
+    "rows": [
+     "3E420-WR9 — replaced by i3M420-WRDBW (window) / i3M420-WRDBH (bottom)",
+     "3E420-WR91 — replaced by i3M420-WRDUW (window) / i3M420-WRDUH (bottom)",
+     "The pairing implies -WR9 is the 24 VDC control-power variant and -WR91 the 100–240 VAC one, following the DB / DU suffixes of the replacement — confirm against the unit's nameplate before quoting"
+    ]
+   },
+   {
+    "group": "Lifecycle",
+    "rows": [
+     "Status : existing / old model in Schneider's current EOCR catalog selection guide",
+     "Successor : i3M420 (new digital range, with Modbus RS-485 communication)",
+     "Listed alongside 3D420 and 3M420 as the 4–20 mA members of the legacy digital family",
+     "SAV still supplies 3E420 for panels already wired for it, where swapping to the i3M420 would mean re-terminating"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": true,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/8dafc7686a_EOCR-3E420_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "Successor model catalog (PDF, English) — EOCR-i3M420 / iFM420, the 3E420's replacement",
+    "official_url": null,
+    "local_path": "/docs/b2a7dd50c8_EOCR_i3M420_iFM420_Catalog_EN.pdf"
+   },
+   {
+    "label": "EOCR Catalog (English) — selection guide and old-to-new replacement table listing 3E420",
+    "official_url": "https://download.schneider-electric.com/files?p_enDocType=Catalog&p_File_Name=EOCR+catalog_EN.pdf&p_Doc_Ref=1588-2630",
+    "local_path": "/docs/e100e2b2bb_eocr_catalog_english.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "รุ่นเก่า (legacy) SAV ยังจำหน่ายอยู่ — EOCR รุ่นดั้งเดิมก่อนรวมกับ Schneider | \"420\" คือมีเอาต์พุต 4–20mA ส่งค่ากระแสมอเตอร์เข้า PLC/DCS ได้ในตัว พร้อมหน้าสัมผัส OL/UL แยก (95/96, 97/98) | รหัสสั่งซื้อ 3E420-WR9 และ 3E420-WR91 | รุ่นทดแทนปัจจุบันคือ i3M420 — เก็บรุ่นเก่าไว้สำหรับตู้ที่เดินสายไว้เดิม ไม่ต้องรื้อ | ⚠ ยังไม่มีดาต้าชีตต้นฉบับ ต้องยืนยันพิกัดกระแส/ไฟเลี้ยงจากป้ายบนตัวสินค้าก่อนเสนอราคา"
  }
 ]
