@@ -289,3 +289,18 @@ export function categoryOf(model: string): Category | null {
 export function categoryBySlug(slug: string): Category | undefined {
   return CATEGORIES.find((c) => c.slug === slug);
 }
+
+/**
+ * Chip-sized name for a category: the model-family stem of the title, without
+ * the descriptive half after the em dash. "EOCR-iF — Ground Fault Relay
+ * ดิจิทัล" becomes "EOCR-iF".
+ *
+ * Falls back to the slug only if the category is gone, which the build-time
+ * check in driven-equipment.ts already prevents — but a caller should never
+ * print a raw slug at a customer, so the fallback tidies it anyway.
+ */
+export function categoryShortLabel(slug: string): string {
+  const c = categoryBySlug(slug);
+  if (!c) return slug.replace(/-/g, " ").toUpperCase();
+  return c.title.split(" — ")[0].trim();
+}

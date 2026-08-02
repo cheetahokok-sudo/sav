@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Sarabun } from "next/font/google";
 import "./globals.css";
+import HashScroll from "./components/HashScroll";
 import { COMPANY, SITE_URL } from "./lib/company";
 
 const barlow = Barlow({
@@ -151,7 +152,12 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className="antialiased bg-gray-100">{children}</body>
+      <body className="antialiased bg-gray-100">
+        {/* Deep links (#section, #fm-…) land at the top without this — the
+            router resets scroll on hydration. See the component. */}
+        <HashScroll />
+        {children}
+      </body>
     </html>
   );
 }

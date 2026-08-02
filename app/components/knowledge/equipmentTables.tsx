@@ -1,11 +1,15 @@
 import Link from "next/link";
 import {
   equipmentById,
+  failureModeAnchor,
+  FAILURE_MODES_ANCHOR,
   LOAD_TYPES,
   PROTECTION_FUNCTIONS,
-  type DrivenEquipment,
+  PROTECTION_MATRIX_ANCHOR,
   type ProtectionFunction,
 } from "../../lib/driven-equipment";
+import { industryArticlesFor } from "../../lib/equipment-articles";
+import { Emphasis } from "./emphasis";
 
 // ============================================================================
 // Sections E and F of the article template, rendered from the shared dataset
@@ -17,6 +21,12 @@ import {
 //
 // An unknown id renders a visible build-time warning rather than nothing, so a
 // typo cannot silently drop the most important table on the page.
+//
+// Both blocks are deep-link targets. The whole table answers "what goes wrong
+// with this machine"; a single row answers "what is happening to mine right
+// now", which is the question a reader arrives with when the Selector or a
+// solution card sends them here. Ids come from driven-equipment.ts so the link
+// and the target cannot drift apart.
 // ============================================================================
 
 function Missing({ id, what }: { id: string; what: string }) {
@@ -50,7 +60,7 @@ export function FailureModes({ equipment }: { equipment: string }) {
 
   return (
     <>
-      <div className="my-6 overflow-x-auto rounded border border-gray-200">
+      <div id={FAILURE_MODES_ANCHOR} className="my-6 overflow-x-auto rounded border border-gray-200">
         <table className="w-full border-collapse text-[14.5px]">
           <thead className="bg-gray-50 text-left">
             <tr>
@@ -70,10 +80,18 @@ export function FailureModes({ equipment }: { equipment: string }) {
           </thead>
           <tbody>
             {e.failureModes.map((fm) => (
-              <tr key={fm.id} className="border-b border-gray-100">
+              <tr
+                key={fm.id}
+                id={failureModeAnchor(e.id, fm.id)}
+                className="anchor-target border-b border-gray-100"
+              >
                 <td className="px-3 py-2.5 align-top font-semibold text-ink">{fm.nameTh}</td>
-                <td className="px-3 py-2.5 align-top text-gray-800">{fm.currentSignatureTh}</td>
-                <td className="px-3 py-2.5 align-top text-gray-800">{fm.fieldSymptomTh}</td>
+                <td className="px-3 py-2.5 align-top text-gray-800">
+                  <Emphasis text={fm.currentSignatureTh} />
+                </td>
+                <td className="px-3 py-2.5 align-top text-gray-800">
+                  <Emphasis text={fm.fieldSymptomTh} />
+                </td>
                 <td className="px-3 py-2.5 align-top">
                   <FunctionChips fns={fm.detection} />
                 </td>
@@ -93,7 +111,7 @@ export function FailureModes({ equipment }: { equipment: string }) {
               .filter((fm) => fm.caveatTh)
               .map((fm) => (
                 <li key={fm.id}>
-                  <strong>{fm.nameTh}</strong> — {fm.caveatTh}
+                  <strong>{fm.nameTh}</strong> — <Emphasis text={fm.caveatTh!} />
                 </li>
               ))}
           </ul>
@@ -155,7 +173,10 @@ export function ProtectionMatrix({ equipment }: { equipment: string }) {
   const load = LOAD_TYPES[e.loadType];
 
   return (
-    <div className="my-6 rounded border border-gray-200 border-t-[3px] border-t-brand bg-white p-6">
+    <div
+      id={PROTECTION_MATRIX_ANCHOR}
+      className="anchor-target my-6 rounded border border-gray-200 border-t-[3px] border-t-brand bg-white p-6"
+    >
       <p className="mb-1 text-[13px] text-gray-600">
         <strong className="text-ink">{e.nameTh}</strong> — ลักษณะโหลด{" "}
         <strong className="text-ink">{load.nameTh}</strong> · {load.behaviourTh}
@@ -185,18 +206,29 @@ export function ProtectionMatrix({ equipment }: { equipment: string }) {
   );
 }
 
-/** Generated back-links: which industry articles reference this equipment. */
+/**
+ * Generated back-links: which industry articles reference this equipment.
+ *
+ * Resolved against the articles that actually exist, for two reasons. The
+ * dataset names industry articles before they are written — centrifugal-pump
+ * has pointed at water-pumping-motor-protection since the dataset landed, and
+ * rendering that eagerly meant shipping a link to a 404. And a slug is not a
+ * title: "water-pumping-motor-protection" told the reader nothing about what
+ * was on the other end of the link.
+ */
 export function UsedIn({ equipment }: { equipment: string }) {
-  const e: DrivenEquipment | undefined = equipmentById(equipment);
-  if (!e || e.industries.length === 0) return null;
+  const e = equipmentById(equipment);
+  if (!e) return null;
+  const articles = industryArticlesFor(e);
+  if (articles.length === 0) return null;
   return (
     <p className="my-4 text-[14px] text-gray-700">
       อ่านการใช้งานจริงในอุตสาหกรรม:{" "}
-      {e.industries.map((slug, i) => (
-        <span key={slug}>
+      {articles.map((a, i) => (
+        <span key={a.slug}>
           {i > 0 && " · "}
-          <Link href={`/learn/${slug}/`} className="font-semibold text-brand hover:underline">
-            {slug}
+          <Link href={`/learn/${a.slug}/`} className="font-semibold text-brand hover:underline">
+            {a.title}
           </Link>
         </span>
       ))}

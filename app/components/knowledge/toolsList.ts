@@ -2,6 +2,12 @@
 // /learn/ hub tools grid and the landing-page promo section.
 export const TOOLS = [
   {
+    href: "/learn/motor-protection-selector/",
+    icon: "🛡️",
+    title: "เลือกฟังก์ชันป้องกันตามเครื่องจักร",
+    desc: "ปั๊ม พัดลม สายพาน → ต้องมีฟังก์ชันอะไร และอะไรที่กระแสมองไม่เห็น",
+  },
+  {
     href: "/learn/motor-current-calculator/",
     icon: "🧮",
     title: "คำนวณกระแสมอเตอร์ 1 / 3 เฟส",

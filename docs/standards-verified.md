@@ -49,6 +49,35 @@ and read the designation before pasting the link.
 | IEEE Std 1159 | Recommended Practice for Monitoring Electric Power Quality | `standards.ieee.org/ieee/1159/7168/` | 2026-08-02 (URL resolves; designation not re-read) |
 | NEMA MG 1 | Motors and Generators | `nema.org/standards/view/american-national-standard-motors-and-generators` | 2026-08-02 (redirects — recheck when next cited) |
 
+## Verified — driven-equipment (load-types) library
+
+Checked 2026-08-02 while writing the four load-type articles.
+
+| Standard | Edition / year | URL | Used in |
+|---|---|---|---|
+| ISO 9906 | **2012, Ed. 2** — Grades 1, 2 and 3 (cancels ISO 9906:1999). Covers centrifugal, **mixed-flow and axial** pumps | `iso.org/standard/41202.html` | centrifugal-pump, axial-propeller-pump |
+| ANSI/HI 9.6.3 | Guideline for Operating Regions (POR / AOR). Current edition **2024** | `pumps.org/product/ansi-hi-9-6-3-rotodynamic-pumps-guideline-for-operating-regions/` | centrifugal-pump, axial-propeller-pump |
+| ANSI/HI 9.6.1 | Guideline for NPSH Margin. Current edition **2024** | `pumps.org/product/ansi-hi-9-6-1-rotodynamic-pumps-guideline-for-npsh-margin/` | centrifugal-pump |
+| AMCA Publication 201 | **201-23** — Fans and Systems (origin of the System Effect Factor) | `webstore.ansi.org/standards/amca/amca20123` | fan-blower |
+| ISO 5048 | **1989, Ed. 2** — belt conveyors with carrying idlers; the 1979 edition is **withdrawn** | `iso.org/standard/11069.html` | belt-conveyor |
+| ISO 13850 | **2015, Ed. 3** — emergency stop function (revises 2006) | `iso.org/standard/59970.html` | belt-conveyor |
+| ISO 20816-1 | **2016** — supersedes ISO 10816-1:1995; merges casing (10816) and shaft (7919) vibration | `iso.org/standard/63180.html` | fan-blower |
+| CEMA, Belt Conveyors for Bulk Materials | **7th ed., Second Printing (Aug 2020)** — there is no 8th edition | `cemanet.org/resources/publications/` | belt-conveyor |
+
+Two deliberate choices in the rows above:
+
+- **The two Hydraulic Institute links are the publisher's undated product pages, not edition-stamped
+  webstore listings.** HI revised both 9.6.1 and 9.6.3 in 2024, and the resellers disagree about
+  which edition that supersedes (one says 2018, another says 2017). An undated publisher page
+  always resolves to the current edition, so it cannot rot the way a pinned edition URL does.
+- **ANSI/AMCA 210 is cited undated and without a URL.** Sources returned both `210-16` and a page
+  headed `210-25`; the edition could not be settled, and rule 5 above applies.
+
+### Also relied on, cited undated by design
+
+`IEC 60034-5` (IP code for rotating machines — submersible pump motors) and `ISO 20816-3`
+(industrial machines above 15 kW). Both are named in prose without an edition year or URL.
+
 ## Editions confirmed current for the upcoming library
 
 Checked while planning the Motor · Load · Industry library. Re-verify at write time; these were

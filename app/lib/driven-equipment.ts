@@ -248,6 +248,7 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
         whenTh: "ต้องกันเดินแห้งอย่างแน่นอน — ใช้สวิตช์ระดับน้ำหรือสวิตช์การไหลร่วมด้วย",
       },
     ],
+    articleSlug: "centrifugal-pump-motor-protection",
     industries: ["water-pumping-motor-protection"],
   },
   {
@@ -316,6 +317,7 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
         whenTh: "สถานีที่สั่งเดิน–หยุดตามระดับน้ำบ่อย ต้องจำกัดจำนวนครั้งที่สตาร์ตต่อชั่วโมง",
       },
     ],
+    articleSlug: "axial-propeller-pump-motor-protection",
     industries: [],
   },
   {
@@ -333,10 +335,13 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
       },
       {
         id: "excess-airflow",
-        nameTh: "ลมไหลมากเกิน (แดมเปอร์เปิดสุด)",
-        currentSignatureTh: "กระแสสูงเกินพิกัด โดยเฉพาะพัดลมแบบ Backward-curved",
-        fieldSymptomTh: "ทริปตอนสตาร์ตหรือหลังเปิดแดมเปอร์ ระบบต้านทานต่ำกว่าที่ออกแบบ",
+        nameTh: "ลมไหลมากเกิน (แดมเปอร์เปิดสุด / ท่อยังไม่ต่อ)",
+        currentSignatureTh:
+          "กระแสสูงเกินพิกัด — เฉพาะพัดลมแบบ Forward-curved ที่กำลังเพิ่มขึ้นเรื่อย ๆ ตามปริมาณลม",
+        fieldSymptomTh: "ทริปหลังเปิดแดมเปอร์สุด หรือตอนทดลองเดินก่อนต่อท่อ ระบบต้านทานต่ำกว่าที่ออกแบบ",
         detection: ["overload", "start-delay"],
+        caveatTh:
+          "ขึ้นกับชนิดใบพัด — Forward-curved เป็นแบบ Overloading กำลังเพิ่มต่อเนื่องจนถึงจุดลมออกอิสระ จึงทริปได้จริง ส่วน Backward-curved และ Airfoil เป็นแบบ Non-overloading กำลังขึ้นสูงสุดใกล้จุด BEP แล้วลดลง เปิดแดมเปอร์สุดจึงไม่ทำให้โหลดเกินในลักษณะเดียวกัน ต้องดูชนิดใบพัดก่อนสรุป",
       },
       {
         id: "blocked-inlet",
@@ -369,6 +374,7 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
       { fn: "ground-fault", whenTh: "ติดตั้งกลางแจ้งหรือในพื้นที่ชื้น" },
       { fn: "external-sensor-interlock", whenTh: "ต้องแยกฟิลเตอร์ตันออกจากสายพานขาด" },
     ],
+    articleSlug: "fan-blower-motor-protection",
     industries: [],
   },
   {
@@ -423,6 +429,7 @@ export const DRIVEN_EQUIPMENT: DrivenEquipment[] = [
       },
       { fn: "ground-fault", whenTh: "ติดตั้งกลางแจ้ง ในที่ชื้น หรือมีฝุ่นนำไฟฟ้า" },
     ],
+    articleSlug: "belt-conveyor-motor-protection",
     industries: [],
   },
 ];
@@ -431,6 +438,32 @@ const BY_ID = new Map(DRIVEN_EQUIPMENT.map((e) => [e.id, e]));
 
 export function equipmentById(id: string): DrivenEquipment | undefined {
   return BY_ID.get(id);
+}
+
+// ---------------------------------------------------------------------------
+// Anchor ids.
+//
+// Other pages link at a section of an article rather than the top of it — the
+// selector sends a reader to the exact failure mode it just named, and product
+// pages link at the protection matrix. Those strings are built here so a link
+// and its target can never be written differently in two places.
+//
+// Row ids carry the equipment id as well as the failure mode id because
+// "dry-run" and "reverse-rotation" repeat across equipment: an article showing
+// two tables would otherwise emit the same id twice and the browser would
+// scroll to whichever came first.
+// ---------------------------------------------------------------------------
+export const FAILURE_MODES_ANCHOR = "failure-modes";
+export const PROTECTION_MATRIX_ANCHOR = "protection-matrix";
+
+export function failureModeAnchor(equipmentId: string, failureModeId: string): string {
+  return `fm-${equipmentId}-${failureModeId}`;
+}
+
+/** Deep link straight at one failure-mode row, e.g. from the selector. */
+export function failureModeHref(e: DrivenEquipment, failureModeId: string): string | undefined {
+  if (!e.articleSlug) return undefined;
+  return `/learn/${e.articleSlug}/#${failureModeAnchor(e.id, failureModeId)}`;
 }
 
 /** Every protection function an equipment names, deduplicated, in tier order. */

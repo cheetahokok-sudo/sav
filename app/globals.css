@@ -30,3 +30,51 @@ body {
   opacity: 1;
   transform: none;
 }
+
+/* ---------------------------------------------------------------------------
+   Deep links into a section.
+
+   Cards elsewhere on the site — solution cards, product pages, the protection
+   selector — link at a specific block or a single failure-mode row rather than
+   the top of an article. `scroll-behavior: smooth` above does the travelling;
+   these two rules do the arriving.
+
+   1. Every anchor target clears the 64px sticky header (SiteHeader is h-16).
+      Setting it on [id]:target covers dataset-rendered blocks, table rows and
+      anything else added later, not just the headings that carry scroll-mt-24.
+   2. .anchor-target flashes on arrival. Landing mid-article with no marker
+      leaves the reader scanning for which row was meant — on a six-row failure
+      table that is the whole point of the link.
+   --------------------------------------------------------------------------- */
+[id]:target {
+  scroll-margin-top: 6rem;
+}
+
+.anchor-target:target {
+  animation: anchor-flash 2.6s ease-out 1;
+}
+
+@keyframes anchor-flash {
+  0%,
+  55% {
+    background-color: #fef3c7; /* amber-100 — matches the caveat blocks */
+    box-shadow: inset 3px 0 0 0 var(--color-brand);
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: inset 3px 0 0 0 transparent;
+  }
+}
+
+/* Honour reduced-motion: keep the marker, drop the movement and the fade.
+   The highlight is information, so it stays — as a steady tint, not a flash. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .anchor-target:target {
+    animation: none;
+    background-color: #fef3c7;
+    box-shadow: inset 3px 0 0 0 var(--color-brand);
+  }
+}
