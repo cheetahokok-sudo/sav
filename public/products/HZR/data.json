@@ -1,0 +1,90 @@
+{
+ "model_number": "HZR",
+ "title": "HZR-050…HZR-200 - Deesys HIGH VOLTAGE zero-phase CT (ZCT), 6.6 / 3.3 kV",
+ "range_name": "ZCT",
+ "brand": "Deesys",
+ "series": "Deesys ZCT (High Voltage)",
+ "base_model": "HZR",
+ "range_short_desc": "High-voltage zero-phase current transformer (6.6 / 3.3 kV) for ground-fault relays",
+ "description": "HIGH VOLTAGE product. Deesys HZR zero-phase sequence current transformer rated 6,600 / 3,300 V, for supporting ground-fault relays on high-voltage systems. Withstands 22,000 V AC for 1 minute between the primary conductor and the coil. Zero-phase primary current ratio 200 mA / 100 mV at a 2 kOhm load, in round cable-through bodies from inside diameter 50 mm up to 200 mm. This is NOT a low-voltage ZCT: for 600 V class installations use the DZR, DZS or SZR series instead.",
+ "feature_groups": [
+  {
+   "title": "High voltage rating",
+   "items": [
+    "Rated voltage 6,600 / 3,300 V — high-voltage systems only",
+    "Dielectric strength 22,000 V AC, 50/60 Hz for 1 min (primary conductor to coil, and primary conductor to mounting flange)",
+    "Not interchangeable with the low-voltage DZR / DZS / SZR ZCT series"
+   ]
+  },
+  {
+   "title": "Main Feature",
+   "items": [
+    "Sophisticated ZCT for supporting ground fault relay",
+    "Designed for excellent usability and safety, more economical than conventional ZCT",
+    "Wide range of operating currents, conveniently structured for cabling networks",
+    "Light and easy for panel setting, with model choice according to the selected cable",
+    "Case colour: black"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Rating",
+   "rows": [
+    "Rated voltage : 6,600 / 3,300 V",
+    "Rated zero-phase primary current : 200 mA / 100 mV (load 2 kOhm)",
+    "Conforming to JEC 1201 dielectric strength characteristics : 6 A",
+    "Dielectric strength : 22,000 V AC, 50/60 Hz for 1 min (between primary conductor and coil, and between primary conductor and mounting flange)",
+    "Secondary/test coil : 2,200 V AC, 50/60 Hz for 1 min (between secondary coil and test coil)",
+    "Insulation resistance : more than 1,000 MOhm at 500 V DC (between each coil, and between each coil and mounting flange)"
+   ]
+  },
+  {
+   "group": "Models and dimensions (mm) — A / B / C / D / E / F / G / H / hole",
+   "rows": [
+    "HZR-050 : 50 / 25 / 50 / 131 / 122 / 7 / 32 / 36 / 6",
+    "HZR-065 : 65 / 26 / 65 / 143 / 133 / 7 / 39 / 37 / 6",
+    "HZR-080 : 80 / 34 / 80 / 174 / 180 / 7 / 40 / 40 / 6",
+    "HZR-100 : 100 / 38 / 100 / 203 / 180 / 7 / 40 / 40 / 6",
+    "HZR-120 : 120 / 45 / 120 / 225 / 210 / 16 / 55 / 35 / 10",
+    "HZR-150 : 150 / 45 / 150 / 260 / 210 / 16 / 55 / 35 / 10",
+    "HZR-200 : 200 / 53 / 200 / 310 / 286 / 10 / 70 / 35 / 10",
+    "Dimension A is the inside diameter, matching the size code in the model number"
+   ]
+  },
+  {
+   "group": "Special specification",
+   "rows": [
+    "Epoxy mold : 65 dia., 120 dia.",
+    "Mold : 150 dia., 200 dia.",
+    "Use of relay : HGR, DGR"
+   ]
+  },
+  {
+   "group": "Ordering",
+   "rows": [
+    "HZR : for high voltage relay",
+    "Size code : 030, 050, 065, 080, 100, 120, 150, 200 (the HZR specification table covers 050–200)"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": null,
+ "local_photo_path": "/docs/ba58f2a2a7_Deesys_HZR_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Deesys Low Voltage ZCT Catalog (PDF, English) — HZR section",
+   "official_url": null,
+   "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": null,
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "⚠ สินค้าสำหรับระบบไฟฟ้าแรงสูง 6,600/3,300 V เท่านั้น (ทนแรงดันทดสอบ 22,000 V AC 1 นาที) — ใช้คู่กับรีเลย์ HGR/DGR ไม่ใช่ ZCT แรงต่ำ ถ้าเป็นระบบ 600 V ให้ใช้รุ่น DZR / DZS / SZR แทน"
+}
