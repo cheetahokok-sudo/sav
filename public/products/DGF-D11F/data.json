@@ -1,0 +1,126 @@
+{
+ "model_number": "DGF-D11F",
+ "title": "DGF-D11F / D11P / D11H - Deesys digital ground fault relay (GFR) with LCD, ZCT input",
+ "range_name": "GFR",
+ "brand": "Deesys",
+ "series": "Deesys GFR (Ground Fault Relay)",
+ "base_model": "DGF-D11",
+ "range_short_desc": "Digital ground fault relay with LCD and fault memory, for low-voltage circuits",
+ "description": "Deesys DGF-D11 series digital ground fault relay. Detects ground faults on both grounded and ungrounded systems through a zero-phase current transformer (ZCT), measuring the ZCT input precisely while rejecting harmonic components and noise. The ground-fault (leakage) status of each circuit is alarmed and shown on the LCD, and the fault current at the moment of the trip is stored so it can be read back for post-fault analysis. Free-voltage AC/DC 100–240 V control power, 1a output contact rated AC 250 V 10 A / DC 30 V 10 A, current tap LOCK and 0.1–10.0 A, definite-time operation from INST to 5.00 s, built to KS C 8328. Available vertical (D11F flush, D11P socket) and horizontal (D11H), with an optional RS-485 Modbus port on the -C models. Deesys specifies this relay for ground-fault protection of circuits below 600 V, so it pairs with the low-voltage DZR, DZS or SZR ZCTs — it is NOT the relay for the high-voltage HZR ZCT.",
+ "feature_groups": [
+  {
+   "title": "Main Feature",
+   "items": [
+    "The ground fault (leakage) status of the electric line is alarmed and displayed for each circuit, and the ground fault current in the event of a ground fault is displayed on the LCD display",
+    "It stores the ground fault current value at the time of an accident and can be used as data for condition analysis after a fault",
+    "Built-in communication port enables remote monitoring (optional function)",
+    "Provides convenient HMI through key interface",
+    "Malfunction can be prevented against harmonic components and various noises"
+   ]
+  },
+  {
+   "title": "Voltage class",
+   "items": [
+    "Deesys specifies this relay for protecting ground faults on circuits below 600 V",
+    "Pair with the low-voltage Deesys ZCTs: DZR (round cable-through), DZS (square busbar-through) or SZR",
+    "Not the relay for the high-voltage HZR ZCT (6,600 / 3,300 V), whose catalog specifies HGR / DGR relays"
+   ]
+  }
+ ],
+ "specs": [
+  {
+   "group": "Rating",
+   "rows": [
+    "Rated input : ZCT input AC 200 mA / 100 mV — models with an A suffix are AC 200 mA / 1.5 mA",
+    "Display : LCD display",
+    "Frequency : 60 Hz / 50 Hz",
+    "Control power : AC/DC 100 V ~ 240 V (free volt)",
+    "Consumption : standby less than 5 W, run less than 7 W",
+    "Output contact : 1a contact (AC 250 V 10 A, DC 30 V 10 A)",
+    "Communication : RS-485 Modbus — on the -C models only",
+    "Applicable standard : KS C 8328"
+   ]
+  },
+  {
+   "group": "Operation current",
+   "rows": [
+    "Current TAP : LOCK, 0.1 ~ 10.0 A [0.1 A step]",
+    "Metering range : 0.01 ~ 12.5 A [abnormal current input shows OvC (over current)]",
+    "Operation range : within 75~100% of each correction value"
+   ]
+  },
+  {
+   "group": "Operation time and return",
+   "rows": [
+    "Operating characteristic : definite time",
+    "Op. lever : INST ~ 5.00 sec [0.1 sec step]",
+    "Accuracy : INST ~ 0.20 sec within ±40 ms / 0.20 ~ 5.00 sec within ±10%",
+    "Return current : firmly returns at 90% of each correction value",
+    "Return time : INST / 0.1 ~ 30.0 sec (under 1 sec : 0.1 sec step, over 1 sec : 1 sec step)",
+    "Return method : auto (return time applied) / manual"
+   ]
+  },
+  {
+   "group": "Fault memory and HMI",
+   "rows": [
+    "Fault memory : when a fault current occurs the fault current value is displayed on the LCD; the latest fault current can be read back with the fault current check function",
+    "Fault recovery : LCD backlight and output contact [auto return setting possible]",
+    "Keypad : M (menu), ▲, ▼, SET, TEST, RESET",
+    "LCD backlight : off = RUN, green = normal, red = alarm"
+   ]
+  },
+  {
+   "group": "Model lineup — vertical type (general MCC panel)",
+   "rows": [
+    "DGF-D11F : flush mounted, ZCT input AC 200 mA / 100 mV",
+    "DGF-D11F-C : flush mounted, AC 200 mA / 100 mV, RS-485 Modbus",
+    "DGF-D11FA : flush mounted, ZCT input AC 200 mA / 1.5 mA",
+    "DGF-D11FA-C : flush mounted, AC 200 mA / 1.5 mA, RS-485 Modbus",
+    "DGF-D11P : socket type, ZCT input AC 200 mA / 100 mV",
+    "DGF-D11P-C : socket type, AC 200 mA / 100 mV, RS-485 Modbus",
+    "DGF-D11PA : socket type, ZCT input AC 200 mA / 1.5 mA",
+    "DGF-D11PA-C : socket type, AC 200 mA / 1.5 mA, RS-485 Modbus"
+   ]
+  },
+  {
+   "group": "Model lineup — horizontal type (smart distribution board MCC panel)",
+   "rows": [
+    "DGF-D11H-F / DGF-D11H-F-C : flush mounted, ZCT input AC 200 mA / 100 mV (-C adds RS-485 Modbus)",
+    "DGF-D11H-FA / DGF-D11H-FA-C : flush mounted, ZCT input AC 200 mA / 1.5 mA (-C adds RS-485 Modbus)",
+    "DGF-D11H-P / DGF-D11H-P-C : socket type, ZCT input AC 200 mA / 100 mV (-C adds RS-485 Modbus)",
+    "DGF-D11H-PA / DGF-D11H-PA-C : socket type, ZCT input AC 200 mA / 1.5 mA (-C adds RS-485 Modbus)",
+    "The general rating specifications of the horizontal and vertical types are the same"
+   ]
+  },
+  {
+   "group": "Dimensions and wiring",
+   "rows": [
+    "The external dimensions of the vertical and horizontal types are the same",
+    "Flush mounted type : panel cut-out 56 × 94 mm, front frame 70 × 124 mm",
+    "Flush type terminals : 1 Pp, 2 Pn (control power) · 3 Ta, 4 Tc (output contact) · 7 Z1, 8 Z2 (to ZCT)",
+    "Socket type : 8-pin socket — ① Pp ② Pn ③ Ta ④ Tc ⑤ 485+ ⑥ 485- ⑦ Z1 ⑧ Z2",
+    "Terminal numbering of the vertical and horizontal types is the same",
+    "Control power is taken from R S T N through a line filter — install the line filter when there are many harmonic components in the power line"
+   ]
+  }
+ ],
+ "oem": false,
+ "needs_review": false,
+ "end_of_sale": null,
+ "official_image_url": "http://www.deesys.com/eng/wp-content/uploads/slider23/dgf-d11f-01.jpg",
+ "local_photo_path": "/docs/71dc967de6_Deesys_DGF-D11F_photo.jpg",
+ "image_confirmed_unavailable": false,
+ "documents": [
+  {
+   "label": "Deesys DGF-D11F/D11P/D11H Catalog (PDF, English) — catalog p.102 and p.104",
+   "official_url": "http://www.deesys.com/eng/catalog/?pageid=2&mod=document&uid=94",
+   "local_path": "/docs/a1918190df_Deesys_DGF-D11F_Catalog_EN.pdf"
+  }
+ ],
+ "source_url": "http://www.deesys.com/eng/project/dgf-d11f/",
+ "scraped_at": "2026-08-02T00:00:00+00:00",
+ "category": null,
+ "in_stock": null,
+ "your_price": null,
+ "your_notes": "รีเลย์ตรวจจับไฟรั่ว/กราวด์ฟอลต์แบบดิจิทัล ใช้คู่กับ ZCT อินพุต 200mA/100mV (รุ่นลงท้าย A = 200mA/1.5mA) ไฟเลี้ยง Free Volt AC/DC 100–240V หน้าสัมผัส 1a AC250V 10A / DC30V 10A ตั้งกระแส 0.1–10.0A เวลา INST–5.00 วินาที มีหน่วยความจำบันทึกค่ากระแสตอนเกิดฟอลต์ รุ่นลงท้าย -C มีพอร์ต RS-485 Modbus | ทรงตั้ง D11F = ฝังหน้าตู้, D11P = แบบเสียบซ็อกเก็ต, ทรงนอน D11H สำหรับตู้ MCC — ⚠ ผู้ผลิตระบุใช้กับวงจรแรงดันต่ำกว่า 600V ให้ใช้คู่กับ ZCT แรงต่ำ DZR / DZS / SZR ไม่ใช่ ZCT แรงสูง HZR (6,600/3,300V) ซึ่งระบุให้ใช้รีเลย์ HGR/DGR"
+}

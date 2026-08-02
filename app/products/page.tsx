@@ -78,6 +78,7 @@ function seriesOf(model: string): string {
   if (/^DSP/.test(m)) return "Samwha DSP";
   if (/^WYZ/.test(m)) return "Woonyoung ZCT";
   // Deesys family stems — checked after DSP so "DSP-…" can never fall in here.
+  if (/^DGF(-|$)/.test(m)) return "Deesys GFR (Ground Fault Relay)";
   if (/^(DR|DS)(-|$)/.test(m)) return "Deesys CT";
   // High-voltage ZCT kept in its own bucket so a 6.6 kV part can never be
   // mistaken for the 600 V class ZCTs sitting next to it.
