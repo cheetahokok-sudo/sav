@@ -2980,7 +2980,7 @@
   "source_url": "https://www.se.com/eg/en/product/EOCRSS-05S/electronic-overcurrent-relay-0-5-6-a-220-v-ac/",
   "scraped_at": "2026-06-28T03:29:38.765966+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": true,
   "your_price": null,
   "your_notes": null
  },
@@ -3024,7 +3024,7 @@
   "source_url": "https://www.se.com/eg/en/product/EOCRSS-30S/electronic-overcurrent-relay-330a-220-v-ac/",
   "scraped_at": "2026-06-28T03:29:40.756138+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": true,
   "your_price": null,
   "your_notes": null
  },
@@ -3068,7 +3068,7 @@
   "source_url": "https://www.se.com/eg/en/product/EOCRSS-60S/electronic-overcurrent-relay-560a-220-v-ac/",
   "scraped_at": "2026-06-28T03:29:43.645040+00:00",
   "category": null,
-  "in_stock": null,
+  "in_stock": true,
   "your_price": null,
   "your_notes": null
  },
