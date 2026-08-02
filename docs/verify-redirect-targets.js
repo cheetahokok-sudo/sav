@@ -64,5 +64,46 @@ for (const { source, target, status } of rows) {
   }
 }
 
-console.log(`\n${rows.length} redirects checked, ${bad} problem(s).`);
-process.exit(bad ? 1 : 0);
+// ---------------------------------------------------------------------------
+// The Worker map must agree with the CSV. Two copies of a redirect table drift
+// the moment one is edited alone, and the drift is invisible until traffic is
+// already going to the wrong place.
+// ---------------------------------------------------------------------------
+const workerSrc = fs.readFileSync(path.join(__dirname, "savthai-redirect-worker.js"), "utf8");
+const workerPairs = new Map();
+const mapBody = workerSrc.slice(
+  workerSrc.indexOf("const MAP = {"),
+  workerSrc.indexOf("const FALLBACK")
+);
+for (const m of mapBody.matchAll(/"([^"]+)":\s*\n?\s*"([^"]+)"/g)) {
+  workerPairs.set(m[1], m[2]);
+}
+
+let drift = 0;
+for (const { source, target } of rows) {
+  const p = source.replace(/^savthai\.com/, "").toLowerCase();
+  const expected = target.replace(ORIGIN, "");
+  const got = workerPairs.get(p);
+  if (got === undefined) {
+    console.log(`WORKER MISSING    ${p}`);
+    drift++;
+  } else if (decodeURIComponent(got) !== decodeURIComponent(expected)) {
+    console.log(`WORKER MISMATCH   ${p}\n                  csv=${expected}\n                  wkr=${got}`);
+    drift++;
+  }
+}
+for (const key of workerPairs.keys()) {
+  const inCsv = rows.some(
+    (r) => r.source.replace(/^savthai\.com/, "").toLowerCase() === key
+  );
+  if (!inCsv) {
+    console.log(`CSV MISSING       ${key}`);
+    drift++;
+  }
+}
+
+console.log(
+  `\n${rows.length} redirects checked, ${bad} target problem(s), ` +
+    `${workerPairs.size} worker entries, ${drift} csv/worker drift.`
+);
+process.exit(bad + drift ? 1 : 0);

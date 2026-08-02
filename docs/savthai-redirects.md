@@ -46,10 +46,38 @@ Three defects, all fixed by moving back to Cloudflare:
    cannot complete a TLS handshake to.
 3. **No path preservation.** Every deep URL 404s instead of redirecting.
 
+## Why PORAR's own forwarding cannot do this
+
+PORAR's "ส่งต่อเว็บไซต์" forwards the **apex only, to a single URL**. Measured
+2026-08-02: it emits a 302 (not 301), serves no certificate for
+`https://savthai.com/`, has no `www` record at all, and 404s every path.
+
+The URLs Google actually has are `https://www.savthai.com/product/...`. Those
+fail twice over — no `www` DNS record, no TLS certificate — so the forwarding
+rescues nothing that ranks. No amount of configuring PORAR fixes this; the
+feature does not do per-path redirects or issue certificates.
+
+## Moving nameservers is not transferring the domain
+
+This is the point that usually causes hesitation. Pointing the nameservers at
+Cloudflare **leaves the domain registered at PORAR**. There is no transfer, no
+auth/EPP code, no registrar fee, and no 60-day transfer lock. Two fields change
+in the PORAR panel (the เนมเซิร์ฟเวอร์ tab) and everything else about the
+registration stays exactly as it is. It is reversible at any time.
+
+**Checked before recommending it:** `savthai.com` has **no MX and no TXT
+records** (verified 2026-08-02). Nothing is relying on the current DNS — no
+mail, no domain-verification records — so moving the zone breaks nothing. The
+company's email is on `@hotmail.com`, not on this domain.
+
+If any of that changes, re-check before moving, because changing nameservers
+moves *all* DNS for the domain, not just the web records.
+
 ## Setup
 
-Cloudflare Redirect Rules run at the edge *before* any origin fetch, so this
-needs **no server** — which is the point, since the old host is unrecoverable.
+Cloudflare Redirect Rules and Workers run at the edge *before* any origin
+fetch, so this needs **no server** — which is the point, since the old host is
+unrecoverable.
 
 1. **Nameservers.** At PORAR (เนมเซิร์ฟเวอร์ tab) set them back to the
    Cloudflare pair the zone previously used:
@@ -75,25 +103,48 @@ needs **no server** — which is the point, since the old host is unrecoverable.
    curl -sI https://www.savthai.com/ | head -1
    ```
 
-4. **Bulk Redirects.** Import `savthai-redirects.csv` (same directory).
-   Cloudflare's importer expects specific column headers and these have changed
-   between dashboard revisions — download the template CSV from the Bulk
-   Redirects UI and match its header row before uploading. With 35 rows,
-   pasting them in by hand is also perfectly reasonable.
+4. **The redirects themselves — use the Worker.**
 
-   Per-row settings that matter: **301**, `include_subdomains` **on** (so
-   `www.savthai.com` matches the same rules), `subpath_matching` **off**,
-   `preserve_query_string` **off**.
+   Deploy `savthai-redirect-worker.js` (same directory) with a route of
+   `*savthai.com/*`:
 
-5. **Catch-all.** One Redirect Rule, evaluated after the bulk list:
+   ```bash
+   npx wrangler deploy docs/savthai-redirect-worker.js --name savthai-redirect
+   ```
+
+   Then in the Cloudflare dashboard add the route `*savthai.com/*` to that
+   Worker. Free plan covers this comfortably — the limit is 100,000 requests a
+   day and a dead domain's residual traffic is a tiny fraction of that.
+
+   **Why not Bulk Redirects:** Cloudflare's Free plan advertises 10,000
+   bulk-redirect URLs, but as of 2026 it is still capped at **20 items** in
+   practice — a known, unfixed issue. This map has 37. Splitting it across a
+   truncated bulk list plus a catch-all would work but silently drops 17
+   mappings, and nothing would tell you which.
+
+   The Worker also keeps the map in the repo, version-controlled, and checked
+   by `verify-redirect-targets.js` against the CSV so the two cannot drift.
+
+   *If you would rather not deploy a Worker:* import the first 20 rows of
+   `savthai-redirects.csv` as Bulk Redirects (301, `include_subdomains` **on**,
+   `subpath_matching` **off**, `preserve_query_string` **off**) and let step 5's
+   catch-all take the rest. Prioritise the rows for URLs known to rank —
+   `/product-list/` and `/product/eocr-ss-schneider-samwha/` are the two
+   confirmed to appear in search results.
+
+5. **Catch-all.** The Worker already does this — its `FALLBACK` sends anything
+   unmapped to `/products/`, so no extra rule is needed.
+
+   Only if you took the Bulk Redirects route instead, add one Redirect Rule
+   evaluated after the bulk list:
 
    - Expression: `(http.host eq "savthai.com" or http.host eq "www.savthai.com")`
    - Target: `https://savautomation.com/products/`
    - Status: **301**
 
-   Send the remainder to `/products/`, **not** the homepage. Google treats a
-   large number of unrelated URLs collapsing onto one homepage as soft-404 and
-   discards the signal; landing on the catalogue at least matches intent.
+   Either way the remainder goes to `/products/`, **not** the homepage. Google
+   treats a large number of unrelated URLs collapsing onto one homepage as
+   soft-404 and discards the signal; landing on the catalogue matches intent.
 
 6. **Turn off the PORAR forwarding** once Cloudflare is live, or the two
    mechanisms will conflict.
@@ -113,10 +164,13 @@ Check that every target still exists in the built site:
 npm run build && node docs/verify-redirect-targets.js
 ```
 
-That script fails if a target 404s, if a row is not a 301, or if a source is
-duplicated. Run it whenever a category slug or model number changes — the
-slugs in [`app/lib/series.ts`](../app/lib/series.ts) are permanent URLs partly
-because this map depends on them.
+That script fails if a target 404s, if a row is not a 301, if a source is
+duplicated, **or if the CSV and the Worker map disagree**. Run it whenever a
+category slug or model number changes — the slugs in
+[`app/lib/series.ts`](../app/lib/series.ts) are permanent URLs partly because
+this map depends on them.
+
+Current state: 37 redirects, 0 target problems, 37 worker entries, 0 drift.
 
 ## Open item — product lines with no home
 
