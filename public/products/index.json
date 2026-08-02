@@ -9451,8 +9451,8 @@
   "needs_review": false,
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
+  "local_photo_path": "/docs/9570391487_DOUCR_photo.jpg",
+  "image_confirmed_unavailable": false,
   "source_url": null,
   "scraped_at": "2026-08-01T00:00:00+00:00",
   "category": null,
@@ -9559,170 +9559,15 @@
   "needs_review": false,
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
-  "source_url": null,
-  "scraped_at": "2026-08-01T00:00:00+00:00",
-  "category": null,
-  "in_stock": null,
-  "your_price": null,
-  "your_notes": "CT 3 เฟสรวมในตัวเดียว ประหยัดพื้นที่ในตู้และลดเวลาติดตั้ง",
-  "range_name": "CT / VT",
-  "brand": "Deesys",
-  "documents": [
-   {
-    "label": "Deesys CT / VT Catalog (PDF, English)",
-    "official_url": null,
-    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
-   }
-  ],
-  "model_number": "DW",
-  "title": "DW-30…DW-44 - Deesys 3-Phase Current Transformer (combined 2CT / 3CT), 1150 V",
-  "series": "Deesys 3-Phase CT",
-  "base_model": "DW",
-  "range_short_desc": "Three-phase current transformer, combined unit",
-  "description": "Deesys three-phase current transformer combining the individual CTs of all phases into one moulded body, so a single part covers a 3P3W (2CT) or 3P4W (3CT) circuit — faster to install and cheaper than separate CTs. Window (busbar/cable-through) type, polycarbonate case. Series: DW-30…DW-34 for 3P3W 2CT and DW-40…DW-44 for 3P4W 3CT.",
-  "feature_groups": [
-   {
-    "title": "Main Feature",
-    "items": [
-     "Three phases combined in one current transformer — easy to install, saves cost",
-     "Case: polycarbonate (PC)",
-     "Window type for 3P4W (3CT) and 3P3W (2CT) circuits"
-    ]
-   }
-  ],
-  "specs": [
-   {
-    "group": "Rating (as published)",
-    "rows": [
-     "Max. voltage : 1150 V",
-     "Frequency : 60 Hz",
-     "Class : 1.0 % ~ 3.0 %",
-     "Phase : 3CT / 2CT",
-     "Over current factor : 40 In / 1 sec",
-     "Secondary current : 5 A"
-    ]
-   },
-   {
-    "group": "1150 V window type CT — 3P4W (3CT)",
-    "rows": [
-     "DW-40 : primary 50–75 A, class 3.0 %, burden 2.5 VA, MCCB/ELCB 50AF",
-     "DW-41 : primary 100–150 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 100AF",
-     "DW-42 : primary 120–250 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 225AF",
-     "DW-43 : primary 300–400 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 400AF",
-     "DW-44 : primary 500–1200 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 600/800AF"
-    ]
-   },
-   {
-    "group": "1150 V window type CT — 3P3W (2CT)",
-    "rows": [
-     "DW-30 : primary 50–75 A, class 3.0 %, burden 2.5 VA, MCCB/ELCB 50AF",
-     "DW-31 : primary 100–150 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 100AF",
-     "DW-32 : primary 120–250 A, class 1.0 / 3.0 %, burden 5 / 15 VA, MCCB/ELCB 225AF",
-     "DW-33 : primary 300–400 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 400AF",
-     "DW-34 : primary 500–1200 A, class 1.0 %, burden 15 / 40 VA, MCCB/ELCB 600/800AF"
-    ]
-   },
-   {
-    "group": "Dimensions (mm) — A / B / C / D / H",
-    "rows": [
-     "DW-40 (DW-30) : 117 / 94 / 66 / 82 / 60",
-     "DW-41 (DW-31) : 132 / 73 / 85 / 100 / 60",
-     "DW-42 (DW-32) : 151 / 73 / 100 / 119 / 60",
-     "DW-43 (DW-33) : 182 / 66 / 127 / 150 / 80",
-     "DW-44 (DW-34) : 262 / 66 / 210 / 230 / 85"
-    ]
-   }
-  ]
- },
- {
-  "oem": false,
-  "needs_review": false,
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
-  "source_url": null,
-  "scraped_at": "2026-08-01T00:00:00+00:00",
-  "category": null,
-  "in_stock": null,
-  "your_price": null,
-  "your_notes": "CT สำหรับงานป้องกัน (Protection class 5P) ไม่ใช่ CT วัดค่าทั่วไป",
-  "range_name": "CT / VT",
-  "brand": "Deesys",
-  "documents": [
-   {
-    "label": "Deesys CT / VT Catalog (PDF, English)",
-    "official_url": null,
-    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
-   }
-  ],
-  "model_number": "DS-R",
-  "title": "DS-2R…DS-6R - Deesys Protection Current Transformer, class 5P, 250–5000 A",
-  "series": "Deesys Protection CT",
-  "base_model": "DS-R",
-  "range_short_desc": "Protection-class current transformer (5P)",
-  "description": "Deesys protection current transformers for relay duty, primary ratings from 250 A up to 5000 A, secondary AC 5 A / 1 A, accuracy class 5P with over-current numeric n > 10 or n > 20. Window (busbar-through) construction. Series: DS-2R, DS-3R, DS-4R, DS-5R (DS-5-2R) and DS-6R.",
-  "feature_groups": [
-   {
-    "title": "Main Feature",
-    "items": [
-     "Protection class 5P for relay applications",
-     "Tolerance class 1P / 3P (JEC1201), 5P / 10P (IEC 60044-1)",
-     "Over-current intensity 40 In (thermal and mechanical, no change)"
-    ]
-   }
-  ],
-  "specs": [
-   {
-    "group": "Rating (as published)",
-    "rows": [
-     "DS-2R : 1st rating 250–400 A, n > 10, burden 5 VA",
-     "DS-3R : 1st rating 150–600 A, n > 10, burden 5–10 VA",
-     "DS-4R : 1st rating 600–1500 A, n > 10, burden 5–10 VA",
-     "DS-5R (DS-5-2R) : 1st rating 1000–4000 A, n > 10 / n > 20, burden 5–40 VA / 5–15 VA",
-     "DS-6R : 1st rating 1500–5000 A, n > 10 / n > 20, burden 5–40 VA / 5–15 VA",
-     "2nd rating : AC 5 A / 1 A",
-     "Class : 5P",
-     "In : 40 in",
-     "Frequency : 50 / 60 Hz"
-    ]
-   },
-   {
-    "group": "Rating burden (standards)",
-    "rows": [
-     "JEC1201 : 5 VA / 10 VA / 15 VA / 25 VA / 40 VA",
-     "IEC 60044-1 : 2.5 VA / 5 VA / 10 VA / 15 VA / 30 VA"
-    ]
-   },
-   {
-    "group": "Dimensions (mm) — A / B / C / D",
-    "rows": [
-     "DS-2R : 65 / 115 / 65 / 11",
-     "DS-3R : 85 / 135 / 70 / 13",
-     "DS-4R : 105 / 155 / 85 / 22",
-     "DS-5R : 130 / 212 / 126 / 41",
-     "DS-5-2R : 130 / 212 / 138 / 53",
-     "DS-6R : 160 / 260 / 180 / 75"
-    ]
-   }
-  ]
- },
- {
-  "oem": false,
-  "needs_review": false,
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
+  "local_photo_path": "/docs/6b4b13809e_DS_photo.jpg",
+  "image_confirmed_unavailable": false,
   "source_url": null,
   "scraped_at": "2026-08-01T00:00:00+00:00",
   "category": null,
   "in_stock": null,
   "your_price": null,
   "your_notes": "CT ทรงเหลี่ยมสำหรับร้อยบัสบาร์ ใช้กับงานมิเตอร์ในตู้",
-  "range_name": "CT / VT",
+  "range_name": "CT",
   "brand": "Deesys",
   "documents": [
    {
@@ -9782,15 +9627,15 @@
   "needs_review": false,
   "end_of_sale": null,
   "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
+  "local_photo_path": "/docs/122a5095cf_DR_photo.jpg",
+  "image_confirmed_unavailable": false,
   "source_url": null,
   "scraped_at": "2026-08-01T00:00:00+00:00",
   "category": null,
   "in_stock": null,
   "your_price": null,
   "your_notes": "CT ทรงกลมร้อยสาย เลือกพิกัดได้จากจำนวนรอบที่ร้อย (Ampere-Turn)",
-  "range_name": "CT / VT",
+  "range_name": "CT",
   "brand": "Deesys",
   "documents": [
    {
@@ -9842,213 +9687,6 @@
     "group": "Ampere-turn example",
     "rows": [
      "At rating 200 AT : 1 turn = 200 A primary, 2 turns = 100 A, 4 turns = 50 A"
-    ]
-   }
-  ]
- },
- {
-  "oem": false,
-  "needs_review": false,
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
-  "source_url": null,
-  "scraped_at": "2026-08-01T00:00:00+00:00",
-  "category": null,
-  "in_stock": null,
-  "your_price": null,
-  "your_notes": "CT แบบพันขดลวด เหมาะกับกระแสต่ำและงานมิเตอร์วัดหน่วย",
-  "range_name": "CT / VT",
-  "brand": "Deesys",
-  "documents": [
-   {
-    "label": "Deesys CT / VT Catalog (PDF, English)",
-    "official_url": null,
-    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
-   }
-  ],
-  "model_number": "DRW",
-  "title": "DRW-15, DRW-40, DRB-1, DRB-2 - Deesys Winding Type Current Transformer 1.15 kV",
-  "series": "Deesys Winding CT",
-  "base_model": "DRW",
-  "range_short_desc": "Wound primary current transformer for metering",
-  "description": "Deesys winding (wound primary) type current transformers rated up to 1.15 kV, for metering and watt-hour meter duty. DRW models are terminal type for low primary currents (5–30 A); DRB models are busbar type covering 40–500 A. Mounting direction changeable through 90°.",
-  "feature_groups": [
-   {
-    "title": "Main Feature",
-    "items": [
-     "Winding (wound primary) type",
-     "For metering and watt-hour meter",
-     "Changeable 90° at mounting direction",
-     "Colour: brown; case: ABS non-flammable resin; mould: polyester"
-    ]
-   }
-  ],
-  "specs": [
-   {
-    "group": "Single ratio C.T (as published)",
-    "rows": [
-     "DRW-15 : primary 5–30 A, burden 15 VA, class 1.0 %, terminal type, weight 0.70 kg",
-     "DRB-1 : primary 40–150 / 200–300 / 400–500 A, burden 15 VA, class 1.0 %, busbar type, weight 0.85 kg",
-     "DRW-40 : primary 5–30 A, burden 40 VA, class 1.0 %, terminal type, weight 1.0 kg",
-     "DRB-2 : primary 40–150 / 200–300 / 400–500 A, burden 40 VA, class 1.0 %, busbar type, weight 1.2 kg",
-     "Secondary : 5 A or 1 A",
-     "Over current strength : 40 in"
-    ]
-   },
-   {
-    "group": "Dimensions (mm) — DRW terminal type, A / B / C",
-    "rows": [
-     "DRW-15 : 80 / 100 / 90",
-     "DRW-40 : 100 / 118 / 102"
-    ]
-   },
-   {
-    "group": "Dimensions (mm) — DRB busbar type, A / B / C / D / E",
-    "rows": [
-     "DRB-1 40–150 A : 80 / 100 / 60 / 125 / 100",
-     "DRB-1 200–300 A : 80 / 100 / 60 / 135 / 105",
-     "DRB-1 400–500 A : 80 / 100 / 60 / 155 / 115",
-     "DRB-2 40–150 A : 100 / 118 / 70 / 135 / 110",
-     "DRB-2 200–300 A : 100 / 118 / 70 / 145 / 115",
-     "DRB-2 400–500 A : 100 / 118 / 70 / 165 / 130"
-    ]
-   }
-  ]
- },
- {
-  "oem": false,
-  "needs_review": false,
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
-  "source_url": null,
-  "scraped_at": "2026-08-01T00:00:00+00:00",
-  "category": null,
-  "in_stock": null,
-  "your_price": null,
-  "your_notes": "PT 3 เฟสในตัวเดียว ลดเวลาเดินสายในตู้สวิตช์เกียร์",
-  "range_name": "CT / VT",
-  "brand": "Deesys",
-  "documents": [
-   {
-    "label": "Deesys CT / VT Catalog (PDF, English)",
-    "official_url": null,
-    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
-   }
-  ],
-  "model_number": "DP-350F",
-  "title": "DP-350F / DGP-350F - Deesys 3-Phase Voltage Transformer, 1150 V, 50 VA",
-  "series": "Deesys 3-Phase VT",
-  "base_model": "DP-350F",
-  "range_short_desc": "Three-phase voltage transformer for switchgear metering",
-  "description": "Deesys three-phase measuring voltage transformer in one body, rated up to 1150 V, accuracy class 1.0 %, burden 50 VA. DP-350F covers 3P3W circuits (primary 220–600 V, secondary 110–220 V); DGP-350F covers 3P4W circuits (primary 208/√3–440/√3 V, secondary 190/√3 V). Simplifies switchgear wiring compared with separate single-phase PTs.",
-  "feature_groups": [
-   {
-    "title": "Main Feature",
-    "items": [
-     "Three-phase measuring PT in one compact body — easy to install",
-     "Less expensive and more economical to apply to switchgear",
-     "Simple wiring, reduces connection time"
-    ]
-   }
-  ],
-  "specs": [
-   {
-    "group": "Rating (as published)",
-    "rows": [
-     "Max. voltage : 1150 V",
-     "Frequency : 60 Hz",
-     "Class : 1.0 %",
-     "Phase : 3-phase",
-     "Over voltage factor : 1.2 Vn continuous"
-    ]
-   },
-   {
-    "group": "Specification",
-    "rows": [
-     "DP-350F (3P3W) : primary 220–600 V, secondary 110–220 V, class 1.0 %, burden 50 VA",
-     "DGP-350F (3P4W) : primary 208/√3–440/√3 V, secondary 190/√3 V, class 1.0 %, burden 50 VA"
-    ]
-   }
-  ]
- },
- {
-  "oem": false,
-  "needs_review": false,
-  "end_of_sale": null,
-  "official_image_url": null,
-  "local_photo_path": null,
-  "image_confirmed_unavailable": true,
-  "source_url": null,
-  "scraped_at": "2026-08-01T00:00:00+00:00",
-  "category": null,
-  "in_stock": null,
-  "your_price": null,
-  "your_notes": "PT / GPT 1 เฟส สำหรับงานวัดและงานป้องกันไฟรั่วลงดิน (GPT มีขดที่สาม)",
-  "range_name": "CT / VT",
-  "brand": "Deesys",
-  "documents": [
-   {
-    "label": "Deesys CT / VT Catalog (PDF, English)",
-    "official_url": null,
-    "local_path": "/docs/b94724eeb4_Deesys_CT_VT_Catalog_EN.pdf"
-   }
-  ],
-  "model_number": "DP",
-  "title": "DP-50…DP-200 / DGP-100…DGP-200 - Deesys Voltage & Grounding Voltage Transformer 0.72 kV",
-  "series": "Deesys VT / GPT",
-  "base_model": "DP",
-  "range_short_desc": "Single-phase voltage transformer (VT) and grounding PT (GPT)",
-  "description": "Deesys single-phase voltage transformers (V.T) and grounding voltage transformers (GPT) rated 0.72 kV, for indoor metering and relaying. Epoxy mould, brown ABS non-flammable case. V.T models DP-50/100/200 (and F variants) with 50/100/200 VA burden; GPT models DGP-100/200 and DGP-100T/200T (and F/TF variants) with a tertiary winding for earth-fault detection.",
-  "feature_groups": [
-   {
-    "title": "Main Feature",
-    "items": [
-     "Single phase, for metering and relaying, indoor use",
-     "Colour: brown; case: ABS non-flammable; mould: epoxy",
-     "GPT versions provide a tertiary (3ry) winding for earth-fault relaying"
-    ]
-   }
-  ],
-  "specs": [
-   {
-    "group": "V.T specification (as published)",
-    "rows": [
-     "DP-50 / DP-50F : primary 220 / 380 / 440 V, secondary 110 or 190 or 220 V, burden 50 VA, weight 2.5 kg",
-     "DP-100 / DP-100F : burden 100 VA, weight 3.2 kg",
-     "DP-200 / DP-200F : burden 200 VA, weight 5.8 kg",
-     "Accuracy class : 1.0",
-     "Frequency : 50 / 60 Hz",
-     "Voltage factor : 1.2 Vh continuous"
-    ]
-   },
-   {
-    "group": "GPT specification (as published)",
-    "rows": [
-     "DGP-100 / DGP-100F : 2ry burden 50 VA, weight 3.2 kg",
-     "DGP-200 / DGP-200F : 2ry burden 100 VA, weight 5.8 kg",
-     "DGP-100T / DGP-100TF : 2ry 50 VA, 3ry 100 VA, weight 3.2 kg",
-     "DGP-200T / DGP-200TF : 2ry 100 VA, 3ry 200 VA, weight 5.8 kg",
-     "Primary : 220/√3, 380/√3, 440/√3 V",
-     "Secondary : 190/√3 or 110/√3 V; tertiary 190/√3 or 110/√3 V",
-     "Voltage factor : 1.2 Vh continuous, 1.9 Vh for 30 s"
-    ]
-   },
-   {
-    "group": "Dimensions (mm) — A / B / C / D / E",
-    "rows": [
-     "DP-50 : 100 / 102 / 30 / 75 / 77",
-     "DP-100 / DGP-100 : 118 / 112 / 33 / 75 / 73",
-     "DP-200 / DGP-200 : 166 / 126 / 37 / 82 / 142"
-    ]
-   },
-   {
-    "group": "Application note (from catalog)",
-    "rows": [
-     "If the burden of the 3ry winding open terminal is less than the rating burden, remaining voltage may cause relay malfunction — select a PT whose applicable burden is about 70 % of the rating burden."
     ]
    }
   ]

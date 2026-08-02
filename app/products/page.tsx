@@ -77,7 +77,7 @@ function seriesOf(model: string): string {
   if (/^DSP/.test(m)) return "Samwha DSP";
   if (/^WYZ/.test(m)) return "Woonyoung ZCT";
   // Deesys family stems — checked after DSP so "DSP-…" can never fall in here.
-  if (/^(DW|DRW|DRB|DR|DS-R|DS|DP|DGP)(-|$)/.test(m)) return "Deesys CT / VT";
+  if (/^(DR|DS)(-|$)/.test(m)) return "Deesys CT";
   return "Other";
 }
 
