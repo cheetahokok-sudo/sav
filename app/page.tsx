@@ -780,7 +780,7 @@ export default function Home() {
                   discounts. It now states the reliability outcome in words,
                   which is what the equipment actually delivers. */}
               {[
-                ["MOTOR RELIABILITY", "ลดลง", "การหยุดเดินเครื่องนอกแผน"],
+                ["MOTOR RELIABILITY", "ระบบมอเตอร์", "ลดการหยุดเครื่องโดยไม่ได้วางแผน"],
                 ["SYSTEM UPTIME", "99.9%", "ความเสถียรของระบบ"],
                 ["TRIP PROTECTION", "24/7", "ตัดวงจรทันทีเมื่อผิดปกติ"],
               ].map(([label, num, unit]) => (
