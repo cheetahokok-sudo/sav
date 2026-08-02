@@ -203,7 +203,7 @@ export default async function ProductDetail(
                           src={`${BASE}${ph.path}`}
                           alt={ph.caption || `${p.model_number} ภาพสินค้าจริง`}
                           loading="lazy"
-                          className="w-full h-16 object-cover"
+                          className="w-full aspect-square object-cover"
                         />
                       </a>
                     ))}

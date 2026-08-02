@@ -10802,5 +10802,108 @@
   "in_stock": null,
   "your_price": null,
   "your_notes": "รุ่นเก่า (legacy) SAV ยังจำหน่ายอยู่ — EOCR รุ่นดั้งเดิมก่อนรวมกับ Schneider | \"420\" คือมีเอาต์พุต 4–20mA ส่งค่ากระแสมอเตอร์เข้า PLC/DCS ได้ในตัว พร้อมหน้าสัมผัส OL/UL แยก (95/96, 97/98) | รหัสสั่งซื้อ 3E420-WR9 และ 3E420-WR91 | รุ่นทดแทนปัจจุบันคือ i3M420 — เก็บรุ่นเก่าไว้สำหรับตู้ที่เดินสายไว้เดิม ไม่ต้องรื้อ | ⚠ ยังไม่มีดาต้าชีตต้นฉบับ ต้องยืนยันพิกัดกระแส/ไฟเลี้ยงจากป้ายบนตัวสินค้าก่อนเสนอราคา"
+ },
+ {
+  "model_number": "EOCR-SS2",
+  "title": "EOCR-SS2 - Samwha electronic overload relay, definite time, 2CT (legacy model)",
+  "range_name": "EOCR",
+  "brand": "Samwha EOCR",
+  "series": "EOCR-SS / SE2",
+  "base_model": "EOCR-SS2",
+  "range_short_desc": "Legacy 2CT electronic overload relay with definite time characteristic",
+  "description": "LEGACY MODEL — still supplied by SAV. Samwha EOCR-SS2 electronic overload relay in the original Samwha Engineering housing, from before the EOCR line came under Schneider Electric. Two integral current transformers, definite time characteristic, and independently adjustable starting trip delay (D-TIME) and trip time (O-TIME), so a motor can be given a long start window without dulling the running trip. Protects against over-current, phase loss and locked rotor, with two LEDs on the dial plate giving run-monitor and trip-cause indication. 35 mm DIN rail mounting. The unit SAV stocks is Type 60-440: 5–60/70 A current range on 320–480 VAC control power.",
+  "feature_groups": [
+   {
+    "title": "Main Feature",
+    "items": [
+     "Two integral current transformers — no external CT needed within the rated range",
+     "Independently adjustable starting trip delay (D-TIME) and trip time (O-TIME)",
+     "Definite time characteristic (the inverse-time sibling is the EOCR-SS1)",
+     "Run monitor and troubleshooting from two LEDs on the dial plate",
+     "TEST and RESET buttons on the front face",
+     "Compact 35 mm DIN rail mounting"
+    ]
+   },
+   {
+    "title": "Legacy status",
+    "items": [
+     "Original Samwha Engineering Co., Ltd. product, made in Seoul, Korea — predates the Schneider Electric EOCR branding",
+     "SAV continues to stock it for like-for-like replacement in panels already built around it"
+    ]
+   }
+  ],
+  "specs": [
+   {
+    "group": "Nameplate of the stocked unit (photographed from SAV stock)",
+    "rows": [
+     "Model : EOCR-SS2",
+     "Type : 60-440",
+     "Current range : 5 ~ 60/70 A",
+     "Power supply : 320~480 VAC",
+     "Maker : 삼화기연주식회사 SAMWHA Engineering Co., Ltd. — Made in Seoul, Korea",
+     "Marks : CE, recyclable",
+     "Front panel : MON. (green) and TRIP (red) LEDs, D-TIME 1–50 sec, LOAD (A) 5–70, O-TIME 1–10 sec, TEST and RESET",
+     "Terminals : L1, L2/05, 08, 96, 95, 98"
+    ]
+   },
+   {
+    "group": "Protection (EOCR catalog, EOCR-SS1 / SS2 section)",
+    "rows": [
+     "Protective items : over-current, phase loss, locked rotor",
+     "Over-current trip time : O-TIME",
+     "Phase loss trip time : O-TIME",
+     "Locked rotor trip time : O-TIME + D-TIME",
+     "Time characteristic : definite — shares the definite-time curve of the EOCR-SP2 / SS2 / DS2(T) / DS3(T)",
+     "Protection ranges : 0.5–6 A, 3–30 A, 5–60 A, plus an external CT option above 60 A",
+     "D-TIME (starting trip delay) : 1–50 sec",
+     "O-TIME (trip time) : 0.2–10 sec"
+    ]
+   },
+   {
+    "group": "Ratings and construction",
+    "rows": [
+     "Output contact, X1 mode : 1-SPST, 3 A / 250 VAC resistive, normally energised",
+     "Output contact, X2 mode : 1-SPDT, 3 A / 250 VAC resistive, normally de-energised",
+     "Indication : 2-LED, trip and trip-cause",
+     "Mounting : 35 mm DIN rail",
+     "Current transformers : 2CT, integral"
+    ]
+   },
+   {
+    "group": "LED display table (printed on the unit)",
+    "rows": [
+     "Columns : green LED (MON.) and red LED (TRIP), each shown as on / off / flicker",
+     "Conditions listed : Stop, Run, Starting, Overloading, O.C Trip, Locked Trip, Phase Loss Trip",
+     "Phase loss trip additionally indicates the affected phase R, S or T"
+    ]
+   },
+   {
+    "group": "Ordering",
+    "rows": [
+     "Current setting codes : 05 (0.5–6 A), 30 (3–30 A), 60 (5–60 A), 100~ (over 60 A, external CT)",
+     "Control voltage codes : 24 (24 VAC/DC, 50/60 Hz), 110, 220 — per the EOCR-SS1 / SS2 page of SAV's catalog edition",
+     "The stocked unit is Type 60-440, i.e. the 60 current code on a 440 V class control supply (320~480 VAC). That 440 code is not printed on the SS1/SS2 page of this catalog edition, though the neighbouring EOCR-SS / AR pages do list a 320–480 VAC option — so treat 440 as a later addition and confirm the control voltage from the unit's own label before quoting"
+    ]
+   }
+  ],
+  "oem": false,
+  "needs_review": false,
+  "end_of_sale": null,
+  "official_image_url": null,
+  "local_photo_path": "/docs/130bfde910_EOCR-SS2_stock_photo.jpg",
+  "image_confirmed_unavailable": false,
+  "documents": [
+   {
+    "label": "EOCR Total Catalog (PDF, English) — legacy Samwha range, EOCR-SS1 / SS2 section",
+    "official_url": null,
+    "local_path": "/docs/d4a289c5aa_EOCR_Total_Catalog_EN_legacy.pdf"
+   }
+  ],
+  "source_url": null,
+  "scraped_at": "2026-08-02T00:00:00+00:00",
+  "category": null,
+  "in_stock": null,
+  "your_price": null,
+  "your_notes": "รุ่นเก่า (legacy) SAV ยังจำหน่ายอยู่ — EOCR ดั้งเดิมของ Samwha Engineering ก่อนมาเป็นแบรนด์ Schneider | 2CT ในตัว หน่วงเวลาสตาร์ท (D-TIME) และเวลาทริป (O-TIME) ปรับแยกกันได้ ลักษณะเวลาแบบ Definite | ป้องกัน overcurrent, phase loss, locked rotor | ตัวที่มีในสต็อกเป็น Type 60-440 : ตั้งกระแส 5~60/70A ไฟเลี้ยง 320~480VAC ติดราง DIN 35 มม. | รุ่น inverse time คือ EOCR-SS1"
  }
 ]
