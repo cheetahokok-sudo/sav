@@ -124,6 +124,62 @@ export const PACK_K: Record<number, number> = {
   1: 1, 2: 2, 3: 2.1547, 4: 2.4142, 6: 3.0, 8: 3.3048, 12: 4.0296,
 };
 
+// ---------------------------------------------------------------------------
+// Bundle slack.
+//
+// PACK_K above is the mathematical optimum: every cable perfectly straight,
+// perfectly parallel, each one touching its neighbours with zero gap. No cable
+// pulled through a ZCT window on site is any of those things. Conductors keep
+// a bend radius from the drum, stiff large-section cable resists being dressed
+// flat, lugged tails splay, and nobody compresses a bundle to its theoretical
+// minimum while threading it through a core.
+//
+// So the ideal figure is a floor, not a working number. Each cable's diameter
+// is inflated by this factor before the bundle is computed — an allowance per
+// conductor, which is how the looseness actually accumulates.
+//
+// This is a workmanship allowance, not a published figure from any standard.
+// It is offered as a choice rather than baked in because the honest answer
+// depends on the cable and the panel, and the user can see what it costs them.
+// ---------------------------------------------------------------------------
+export const SLACK_OPTIONS: { value: number; label: string; desc: string }[] = [
+  { value: 0.1, label: "10%", desc: "สายอ่อน จัดเรียงเรียบร้อย รัดมัดแน่น" },
+  { value: 0.15, label: "15%", desc: "งานทั่วไป — ค่าที่แนะนำ" },
+  { value: 0.2, label: "20%", desc: "สายใหญ่/แข็ง ดัดยาก หรือพื้นที่คับ" },
+];
+export const DEFAULT_SLACK = 0.15;
+
+// ---------------------------------------------------------------------------
+// Threading headroom — the fraction of the window that must stay empty.
+//
+// Separate from slack, and for a separate reason. Slack says the finished
+// bundle is bigger than the ideal. This says the bundle has to be BUILT inside
+// the window, one conductor at a time, and threading is not symmetric: the
+// first cable goes in freely, and the last two or three have nowhere left to
+// move. On a six-conductor star-delta run that final pair is what decides
+// whether the ZCT goes on at all — a window that the finished bundle would sit
+// in quite happily can still be impossible to actually thread.
+//
+// Judgment values from installation practice, not from any published standard.
+// Sized so a six-conductor run is given noticeably more room than a three.
+// ---------------------------------------------------------------------------
+export function threadingHeadroom(n: number): number {
+  if (n >= 6) return 0.3; // last 2–3 of six have no room to manoeuvre
+  if (n >= 4) return 0.25;
+  return 0.2;
+}
+
+// Extra headroom when the cables arrive with lugs already crimped on.
+//
+// The lug palm and the capping over it are wider than the conductor, so on a
+// pre-terminated run the widest thing passing through the core is not the
+// cable at all. On HV and high-current cable the lug usually cannot simply be
+// cut off and redone on site, so the ZCT has to clear it. The calculator
+// cannot know the lug size — that is why it asks the user to measure it rather
+// than inventing a multiplier — but a terminated run is harder to thread even
+// once the right diameter is used, and this covers that part.
+export const TERMINATED_EXTRA_HEADROOM = 0.05;
+
 // Positions of n equal circles (unit = cable radius) inside their minimal enclosing
 // circle — offsets of each cable center from the bundle center, in cable radii.
 export function packPositions(n: number): [number, number][] {
