@@ -29,7 +29,10 @@ export type ClusterId =
   | "motor-protection"
   | "installation"
   | "zct-ground-fault"
-  | "motor-current"
+  | "motor-types"
+  | "load-types"
+  | "industry"
+  | "failure-modes"
   | "cable-protection"
   | "standards"
   | "power-monitoring"
@@ -50,9 +53,21 @@ export const CLUSTERS: Record<ClusterId, { label: string; blurb: string }> = {
     label: "ZCT & Ground Fault",
     blurb: "การตรวจจับไฟรั่วและการเลือก ZCT ในโรงงาน",
   },
-  "motor-current": {
-    label: "คำนวณกระแสมอเตอร์",
-    blurb: "สูตร ตาราง และเครื่องคำนวณกระแสมอเตอร์",
+  "motor-types": {
+    label: "ประเภทมอเตอร์",
+    blurb: "เลือกชนิดมอเตอร์ให้ตรงงาน อ่าน Nameplate และเข้าใจพิกัดที่เขียนอยู่บนตัวมัน",
+  },
+  "load-types": {
+    label: "ลักษณะโหลด",
+    blurb: "ปั๊ม พัดลม สายพาน เครื่องบด — โหลดแต่ละแบบทำอะไรกับมอเตอร์ และต้องป้องกันอย่างไร",
+  },
+  industry: {
+    label: "งานตามอุตสาหกรรม",
+    blurb: "มอเตอร์ในระบบน้ำ โรงงานน้ำตาล โรงไฟฟ้า และกระบวนการผลิต — เสียจากอะไร ป้องกันด้วยอะไร",
+  },
+  "failure-modes": {
+    label: "อาการเสียและการวินิจฉัย",
+    blurb: "เริ่มจากอาการที่เห็นหน้างาน แล้วไล่กลับไปหาสาเหตุ",
   },
   "cable-protection": {
     label: "สายไฟ & อุปกรณ์ป้องกันวงจร",

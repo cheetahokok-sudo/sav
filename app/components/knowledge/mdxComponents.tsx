@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { headingId } from "../../lib/knowledge";
 import { Callout, Formula, ProductCTA } from "./parts";
+import { FailureModes, ProtectionMatrix, UsedIn } from "./equipmentTables";
 
 function textOf(children: ReactNode): string {
   if (typeof children === "string") return children;
@@ -82,4 +83,9 @@ export const mdxComponents = {
   Callout,
   Formula,
   ProductCTA,
+  // Sections E and F of the article template, rendered from the shared
+  // driven-equipment dataset so no article hand-writes a failure table.
+  FailureModes,
+  ProtectionMatrix,
+  UsedIn,
 };

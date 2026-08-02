@@ -18,16 +18,26 @@ export const metadata: Metadata = {
   },
 };
 
-// clusters shown on the hub (order matters)
-const SHOWN: ClusterId[] = [
-  "motor-protection",
-  "installation",
-  "troubleshooting",
-  "zct-ground-fault",
-  "power-monitoring",
-  "cable-protection",
-  "standards",
-  "procurement",
+// Clusters grouped into bands. A flat list worked at 8 clusters; at 12 it
+// becomes ~70 links with no hierarchy, which serves neither a reader scanning
+// for their problem nor a crawler working out what the section is about.
+// Order matters within each band.
+const BANDS: { title: string; blurb: string; clusters: ClusterId[] }[] = [
+  {
+    title: "เลือกและติดตั้งอุปกรณ์",
+    blurb: "รู้อยู่แล้วว่าต้องใช้อะไร — เลือกรุ่น ต่อสาย ตั้งค่า",
+    clusters: ["motor-protection", "installation", "zct-ground-fault", "procurement"],
+  },
+  {
+    title: "มอเตอร์ โหลด และอุตสาหกรรม",
+    blurb: "เริ่มจากเครื่องจักรที่มีอยู่ — มอเตอร์แบบไหน ขับโหลดอะไร เสี่ยงเสียจากอะไร",
+    clusters: ["motor-types", "load-types", "industry"],
+  },
+  {
+    title: "วิเคราะห์ปัญหาและมาตรฐาน",
+    blurb: "มีอาการอยู่ตรงหน้า — หาสาเหตุ วัดค่า และอ้างอิงมาตรฐาน",
+    clusters: ["troubleshooting", "failure-modes", "power-monitoring", "cable-protection", "standards"],
+  },
 ];
 
 export default function KnowledgeHub() {
@@ -78,40 +88,53 @@ export default function KnowledgeHub() {
           ))}
         </div>
 
-        {/* clusters */}
-        {SHOWN.map((cid) => {
-          const list = byCluster(cid);
-          if (!list.length) return null;
-          const c = CLUSTERS[cid];
+        {/* clusters, grouped into bands */}
+        {BANDS.map((band) => {
+          const populated = band.clusters.filter((cid) => byCluster(cid).length > 0);
+          if (populated.length === 0) return null;
           return (
-            <section key={cid} className="mb-12">
-              <div className="mb-5">
-                <h2 className="font-display font-extrabold text-2xl text-ink">{c.label}</h2>
-                {c.blurb && <p className="text-[14px] text-gray-600 mt-1">{c.blurb}</p>}
-                <div className="w-10 h-[3px] bg-brand rounded mt-3" />
+            <div key={band.title} className="mb-14">
+              <div className="mb-8 border-b-2 border-ink pb-3">
+                <h2 className="font-display font-extrabold text-[13px] tracking-[0.18em] uppercase text-ink">
+                  {band.title}
+                </h2>
+                <p className="text-[13px] text-gray-600 mt-1">{band.blurb}</p>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {list.map((a) => (
-                  <Link
-                    key={a.slug}
-                    href={`/learn/${a.slug}/`}
-                    className="block rounded-lg border border-gray-200 bg-white p-5 hover:border-brand hover:shadow-md transition-all"
-                  >
-                    {a.pillar && (
-                      <span className="inline-block text-[10px] font-display font-bold tracking-wider uppercase text-brand bg-red-50 rounded px-2 py-0.5 mb-2">
-                        คู่มือหลัก
-                      </span>
-                    )}
-                    <h3 className="font-display font-bold text-[17px] text-ink leading-snug mb-1.5">
-                      {a.title}
-                    </h3>
-                    <p className="text-[13.5px] text-gray-600 leading-relaxed line-clamp-2">
-                      {a.description}
-                    </p>
-                  </Link>
-                ))}
-              </div>
-            </section>
+              {populated.map((cid) => {
+                const list = byCluster(cid);
+                const c = CLUSTERS[cid];
+                return (
+                  <section key={cid} className="mb-12">
+                    <div className="mb-5">
+                      <h3 className="font-display font-extrabold text-2xl text-ink">{c.label}</h3>
+                      {c.blurb && <p className="text-[14px] text-gray-600 mt-1">{c.blurb}</p>}
+                      <div className="w-10 h-[3px] bg-brand rounded mt-3" />
+                    </div>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      {list.map((a) => (
+                        <Link
+                          key={a.slug}
+                          href={`/learn/${a.slug}/`}
+                          className="block rounded-lg border border-gray-200 bg-white p-5 hover:border-brand hover:shadow-md transition-all"
+                        >
+                          {a.pillar && (
+                            <span className="inline-block text-[10px] font-display font-bold tracking-wider uppercase text-brand bg-red-50 rounded px-2 py-0.5 mb-2">
+                              คู่มือหลัก
+                            </span>
+                          )}
+                          <h4 className="font-display font-bold text-[17px] text-ink leading-snug mb-1.5">
+                            {a.title}
+                          </h4>
+                          <p className="text-[13.5px] text-gray-600 leading-relaxed line-clamp-2">
+                            {a.description}
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  </section>
+                );
+              })}
+            </div>
           );
         })}
 
