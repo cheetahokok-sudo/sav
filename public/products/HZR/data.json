@@ -32,8 +32,7 @@
    "group": "Rating",
    "rows": [
     "Rated voltage : 6,600 / 3,300 V",
-    "Rated zero-phase primary current : 200 mA / 100 mV (load 2 kOhm)",
-    "Conforming to JEC 1201 dielectric strength characteristics : 6 A",
+    "Rated zero-phase primary current : 200 mA / 100 mV (load 2 kOhm), conforming to JEC 1201 dielectric strength characteristics : 6A",
     "Dielectric strength : 22,000 V AC, 50/60 Hz for 1 min (between primary conductor and coil, and between primary conductor and mounting flange)",
     "Secondary/test coil : 2,200 V AC, 50/60 Hz for 1 min (between secondary coil and test coil)",
     "Insulation resistance : more than 1,000 MOhm at 500 V DC (between each coil, and between each coil and mounting flange)"
@@ -64,7 +63,8 @@
    "group": "Ordering",
    "rows": [
     "HZR : for high voltage relay",
-    "Size code : 030, 050, 065, 080, 100, 120, 150, 200 (the HZR specification table covers 050–200)"
+    "Size code : 050, 065, 080, 100, 120, 150, 200 — inside diameter in mm",
+    "HZR-030 appears only in the shared round-type dimension table on catalog p.150 (row \"ZR/SZR/HZR-030\"), not in the HZR high-voltage rating table — confirm with Deesys before quoting it"
    ]
   }
  ],
@@ -76,7 +76,7 @@
  "image_confirmed_unavailable": false,
  "documents": [
   {
-   "label": "Deesys Low Voltage ZCT Catalog (PDF, English) — HZR section",
+   "label": "Deesys ZCT Catalog (PDF, English) — high-voltage HZR section, p.151",
    "official_url": null,
    "local_path": "/docs/4c008d4cd9_Deesys_ZCT_Catalog_EN.pdf"
   }
